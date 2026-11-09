@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 106,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: gun scar_h",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "scar_h",
+      "description": "gun scar_h"
+    }
+  ]
+}

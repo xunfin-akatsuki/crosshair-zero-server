@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:ammo",
+  "fuzzy_match": true,
+  "priority": 103,
+  "rarity": 2,
+  "enabled": true,
+  "description": "zeropoint: ammo 9mm",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "9mm",
+      "description": "ammo 9mm"
+    }
+  ]
+}

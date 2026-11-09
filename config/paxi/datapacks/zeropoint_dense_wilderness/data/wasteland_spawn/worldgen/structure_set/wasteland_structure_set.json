@@ -1,0 +1,39 @@
+{
+  "structures": [
+    {
+      "structure": "wasteland_spawn:base_car_ring",
+      "weight": 1
+    },
+    {
+      "structure": "wasteland_spawn:bell_uh_1",
+      "weight": 1
+    },
+    {
+      "structure": "wasteland_spawn:expedition_rover",
+      "weight": 1
+    },
+    {
+      "structure": "wasteland_spawn:plane_northern_lights",
+      "weight": 1
+    },
+    {
+      "structure": "wasteland_spawn:cogrider_car",
+      "weight": 1
+    },
+    {
+      "structure": "wasteland_spawn:rainers_monstercar",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 12,
+    "separation": 5,
+    "spread_type": "linear",
+    "salt": 16472942,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 16
+    }
+  }
+}

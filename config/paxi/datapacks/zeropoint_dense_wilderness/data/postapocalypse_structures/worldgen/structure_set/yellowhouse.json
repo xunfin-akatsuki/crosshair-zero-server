@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "postapocalypse_structures:yellowhouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 72,
+    "separation": 34,
+    "salt": 197432071
+  }
+}

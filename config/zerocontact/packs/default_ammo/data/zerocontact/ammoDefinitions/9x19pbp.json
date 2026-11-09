@@ -1,0 +1,23 @@
+{
+  "ammo_id": "tacz:9mm",
+
+  "variant": "9x19pbp",
+
+  "life": 44,
+
+  "friction": 0.022,
+
+  "gravity": 0.12,
+
+  "recoil_multiplier": 1.15,
+
+  "inaccuracy_multiplier": 1.12,
+
+  "penetration_class": 10,
+
+  "armor_damage": 0.15,
+
+  "flesh_damage": 6,
+
+  "stack_size": 60
+}

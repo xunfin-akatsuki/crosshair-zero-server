@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "sourceScale": 0.10,
+  "description": "Scale original acquisition, mineral, loot and process budgets before recipe solving. Never scale the final manufactured catalogue. Existing wallets and manual rarity rules are unchanged. Economic tier boundaries are 5,20,80,300,1200 coins."
+}

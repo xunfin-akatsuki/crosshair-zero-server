@@ -1,0 +1,52 @@
+#手动覆盖硬件检测结果（storage_type）。
+#取值：AUTO / HDD / SSD / NVME。AUTO = 启动时自动检测。
+#推荐：机械硬盘选 HDD，SATA 固态选 SSD，NVMe 选 NVME（NVMe 下模组将被禁用或静默）。
+#Allowed Values: AUTO, HDD, SSD, NVME
+storage_type = "AUTO"
+#强制本地策略模式（force_mode），覆盖硬件检测推荐。
+#取值：AUTO / CONSERVATIVE / AGGRESSIVE。AUTO = 遵循硬件检测。
+#服务器策略不受此项影响（始终尝试激进模式，需内存校验）。
+#Allowed Values: AUTO, CONSERVATIVE, AGGRESSIVE
+force_mode = "AUTO"
+
+[local]
+	#本地策略：异步世界保存。拦截 RegionFile 写入，移至后台 hdd-io-worker 线程。
+	enable_async_save = true
+	#本地策略：写入合并（缓冲池）。合并合并窗口内同一区块的多次小修改为一次磁盘写入。
+	enable_write_merge = true
+	#本地策略：自动保存防卡顿。拦截 ServerLevel.save 定时任务并转为异步。
+	enable_auto_save_async = true
+	#本地策略（仅激进模式）：存档回滚保护。写入前创建临时备份，防止崩溃导致存档损坏。
+	enable_rollback_protection = true
+	#保守模式缓冲区大小（字节）。
+	# Default: 8192
+	# Range: 1024 ~ 1048576
+	conservative_buffer_size = 8192
+	#保守模式写入合并窗口时间（毫秒）。
+	# Default: 500
+	# Range: 0 ~ 60000
+	conservative_merge_window_ms = 500
+	#激进模式缓冲区大小（字节）。
+	# Default: 65536
+	# Range: 1024 ~ 8388608
+	aggressive_buffer_size = 65536
+	#激进模式写入合并窗口时间（毫秒）。
+	# Default: 1000
+	# Range: 0 ~ 120000
+	aggressive_merge_window_ms = 1000
+
+[remote]
+	#服务器策略：Bobby / 遥远地平线（Distant Horizons）区块缓存文件读写缓冲区增强。
+	enable_cache_boost = true
+	#服务器策略：区块缓存文件读写缓冲区大小（字节）。
+	# Default: 262144
+	# Range: 8192 ~ 8388608
+	cache_buffer_size = 262144
+	#服务器策略：小地图（JourneyMap / Xaero）元数据异步批量写入。
+	enable_minimap_async = true
+	#服务器策略：资源包 / 音效流异步解压，防止加载新音效卡顿。
+	enable_resource_streaming = true
+	#服务器激进模式前置校验：JVM 最大内存低于该值（GB）时自动回退保守模式。
+	# Default: 6
+	# Range: 1 ~ 64
+	aggressive_min_memory_gb = 6

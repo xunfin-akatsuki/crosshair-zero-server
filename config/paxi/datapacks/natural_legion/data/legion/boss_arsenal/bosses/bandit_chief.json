@@ -1,0 +1,57 @@
+{
+  "entity": "minecraft:pillager",
+  "priority": -10,
+  "spawn_chance": 1,
+  "required_tag": "legion:chief",
+  "name": "掠夺者 · 锈带头目",
+  "spawn_radius": 12,
+  "spawn_spacing": 2,
+  "follow_distance": 12,
+  "persistent": true,
+  "waves": [
+    {
+      "id": "phase_100",
+      "health_ratio": 1,
+      "minions": [
+        {
+          "profile": "legion:pistol_raider",
+          "count": 1
+        },
+        {
+          "profile": "legion:rifle_ak",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "phase_75",
+      "health_ratio": 0.75,
+      "minions": [
+        {
+          "profile": "legion:pistol_raider",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "phase_50",
+      "health_ratio": 0.5,
+      "minions": [
+        {
+          "profile": "legion:rifle_ak",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "phase_25",
+      "health_ratio": 0.25,
+      "minions": [
+        {
+          "profile": "legion:pistol_raider",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

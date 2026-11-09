@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 4,
+  "enabled": true,
+  "description": "zeropoint: att m7_silencer",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "suffuse:m7_silencer",
+      "description": "zeropoint: att m7_silencer"
+    }
+  ]
+}

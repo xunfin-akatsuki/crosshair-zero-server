@@ -1,0 +1,69 @@
+{
+  "entity": "cataclysm:ender_guardian",
+  "priority": -10,
+  "spawn_chance": 1,
+  "spawn_mode": "air",
+  "name": "虚空守望 · 折跃军团",
+  "spawn_radius": 18,
+  "spawn_spacing": 2,
+  "follow_distance": 22,
+  "persistent": true,
+  "waves": [
+    {
+      "id": "phase_100",
+      "health_ratio": 1,
+      "minions": [
+        {
+          "profile": "legion:cataclysm_smg_fly",
+          "count": 3
+        },
+        {
+          "profile": "legion:cataclysm_shotgun",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "phase_75",
+      "health_ratio": 0.75,
+      "minions": [
+        {
+          "profile": "legion:cataclysm_smg_fly",
+          "count": 3
+        },
+        {
+          "profile": "legion:cataclysm_dmr_fly",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "phase_50",
+      "health_ratio": 0.5,
+      "minions": [
+        {
+          "profile": "legion:cataclysm_smg_fly",
+          "count": 3
+        },
+        {
+          "profile": "legion:cataclysm_shotgun",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "phase_25",
+      "health_ratio": 0.25,
+      "minions": [
+        {
+          "profile": "legion:cataclysm_smg_fly",
+          "count": 5
+        },
+        {
+          "profile": "legion:cataclysm_dmr_fly",
+          "count": 3
+        }
+      ]
+    }
+  ]
+}

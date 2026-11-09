@@ -1,0 +1,27 @@
+#Wallet balances survive death. MySQL settings require a server restart.
+[mysql]
+	enabled = false
+	host = "127.0.0.1"
+	# Default: 3306
+	# Range: 1 ~ 65535
+	port = 3306
+	database = "shippingbin"
+	#Servers must use the same database AND table to share wallets.
+	table = "shippingbin_wallets"
+	user = "shippingbin"
+	password = "REDACTED"
+	#A non-empty environment variable overrides password.
+	passwordEnvironmentVariable = "SHIPPINGBIN_MYSQL_PASSWORD"
+	#VERIFY_IDENTITY is recommended for remote databases.
+	sslMode = "VERIFY_IDENTITY"
+	#Async snapshot interval; also saves on logout and shutdown.
+	# Default: 5
+	# Range: 1 ~ 30
+	syncIntervalSeconds = 5
+	#After a crash, a wallet can reconnect when this lease expires.
+	# Default: 120
+	# Range: 60 ~ 3600
+	sessionLeaseSeconds = 120
+	# Default: 5000
+	# Range: 1000 ~ 30000
+	connectionTimeoutMillis = 5000

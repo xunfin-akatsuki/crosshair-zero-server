@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 104,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: gun m870",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "m870",
+      "description": "gun m870"
+    }
+  ]
+}

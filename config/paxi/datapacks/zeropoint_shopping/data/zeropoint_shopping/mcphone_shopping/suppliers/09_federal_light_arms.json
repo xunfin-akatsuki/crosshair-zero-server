@@ -1,0 +1,261 @@
+{
+  "name": "联邦残部军需·轻武器柜",
+  "requires_mod": "tacz",
+  "products": [
+    {
+      "id": "g_glock17",
+      "display_name": "格洛克 17",
+      "count": 1,
+      "price": 7800,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:glock_17"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_m9a4",
+      "display_name": "M9A4",
+      "count": 1,
+      "price": 7800,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m9a4"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_taurus943",
+      "display_name": "Taurus 943",
+      "count": 1,
+      "price": 1350,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:taurus943"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_uzi",
+      "display_name": "UZI",
+      "count": 1,
+      "price": 11000,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:uzi"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_mp5a5",
+      "display_name": "HK MP5A5",
+      "count": 1,
+      "price": 12600,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:hk_mp5a5"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_m4a1",
+      "display_name": "M4A1",
+      "count": 1,
+      "price": 13725,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m4a1"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_scar_l",
+      "display_name": "SCAR-L",
+      "count": 1,
+      "price": 19000,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:scar_l"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_g36k",
+      "display_name": "G36K",
+      "count": 1,
+      "price": 30200,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:g36k"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_aug",
+      "display_name": "AUG",
+      "count": 1,
+      "price": 14450,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:aug"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_9mm",
+      "display_name": "9mm 手枪弹",
+      "count": 60,
+      "price": 600,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:9mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_57x28",
+      "display_name": "5.7×28mm",
+      "count": 60,
+      "price": 600,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:57x28"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_556",
+      "display_name": "5.56×45mm",
+      "count": 60,
+      "price": 1680,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:556x45"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_545",
+      "display_name": "5.45×39mm",
+      "count": 60,
+      "price": 1680,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:545x39"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "s_sight552",
+      "display_name": "EOTech 552 全息",
+      "count": 1,
+      "price": 88,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:sight_552"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "s_sightexp3",
+      "display_name": "EXPS3 全息",
+      "count": 1,
+      "price": 250,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:sight_exp3"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "s_grip_cobra",
+      "display_name": "眼镜蛇握把",
+      "count": 1,
+      "price": 88,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:grip_cobra"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "s_muzzle_comp",
+      "display_name": "三叉补偿器",
+      "count": 1,
+      "price": 88,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:muzzle_compensator_trident"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    }
+  ]
+}

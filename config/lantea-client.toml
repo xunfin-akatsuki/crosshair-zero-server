@@ -1,0 +1,9 @@
+[sound]
+	ancientChairSound = true
+	padChargingSound = true
+
+[display]
+	#Allowed Values: EU, FE
+	energyUnit = "EU"
+	jumperPaneCrystals = true
+	chairEnergyPercent = false

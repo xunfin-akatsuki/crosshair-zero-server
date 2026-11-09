@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "abandoned_structures:tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "berezka_api:berezkas_structure_placement",
+    "spacing": 22,
+    "separation": 6,
+    "salt": 512251955
+  }
+}

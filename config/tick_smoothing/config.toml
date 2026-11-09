@@ -1,0 +1,64 @@
+#General settings for Tick Smoothing
+[general]
+	#Master toggle. When disabled, Tick Smoothing does nothing (factor = 1.0).
+	enabled = true
+	#Number of recent ticks in the TPS smoothing window (5-200).
+	# Default: 40
+	# Range: 5 ~ 200
+	tpsWindow = 40
+	#Minimum smoothing factor (0.01-1.0). Lower values allow more aggressive catch-up on very laggy servers.
+	# Default: 0.05
+	# Range: 0.01 ~ 1.0
+	minFactor = 0.05
+
+#Compensation modules for player actions
+[actions]
+	#Compensate block-breaking time when TPS is low.
+	blockBreaking = true
+	#Compensate item-use duration (eating, potions, etc.).
+	itemUse = true
+	#Compensate bow charge speed.
+	bow = true
+	#Compensate crossbow charge speed.
+	crossbow = true
+	#Compensate item pickup delay.
+	itemPickup = true
+
+#World and entity compensation modules
+[world]
+	#Run potion effects extra iterations when TPS is low.
+	potionEffects = true
+	#Accelerate mob timers (breeding, growth) when TPS is low.
+	mobTimers = true
+	#Speed up fluid spread when TPS is low.
+	fluidSpread = true
+	#Accelerate random ticks when TPS is low (capped by maxRandomTickMultiplier).
+	randomTick = true
+	#Accelerate day/night cycle when TPS is low.
+	daytime = true
+	#Compensate portal transition delay when TPS is low.
+	portal = true
+	#Accelerate sleeping progress when TPS is low.
+	sleeping = true
+	#Accelerate TNT fuse when TPS is low. OFF by default for safety.
+	tnt = false
+	#Extra-tick block entities when TPS is low. OFF by default (experimental).
+	blockEntities = false
+	#Allow/deny list for extra-ticked block entities (namespace:id format).
+	blockEntityMask = ["*:*"]
+	#Maximum random-tick multiplier (1-10). Caps the extra random ticks per tick.
+	# Default: 3
+	# Range: 1 ~ 10
+	maxRandomTickMultiplier = 3
+	#Minimum TPS below which random-tick acceleration is disabled to avoid feedback loops (0.0-20.0).
+	# Default: 8.0
+	# Range: 0.0 ~ 20.0
+	randomTickTpsFloor = 8.0
+
+#Safety and anti-rubber-banding settings
+[safety]
+	#Widen the 'moved too quickly' threshold when TPS is low, reducing rubber-banding.
+	reduceRubberBanding = true
+	#Watchdog behaviour: VANILLA (do nothing), WARN_ONLY (log warning), or EXTEND (increase timeout proportionally).
+	#Allowed Values: VANILLA, WARN_ONLY, EXTEND
+	watchdogMode = "VANILLA"

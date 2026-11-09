@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 107,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: gun minigun",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "minigun",
+      "description": "gun minigun"
+    }
+  ]
+}

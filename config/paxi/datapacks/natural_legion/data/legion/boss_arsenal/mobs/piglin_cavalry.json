@@ -1,0 +1,58 @@
+{
+  "entity": "boss_arsenal:piglin_soldier",
+  "spawn_chance": 0,
+  "tier": 1,
+  "name": "炉心戍卫 · 骑手",
+  "health": 36,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:qbz951b",
+    "fire_mode": "auto",
+    "spread_degrees": 6,
+    "range": 28,
+    "preferred_range": 12,
+    "shot_interval_ticks": 3,
+    "infinite_ammo": true,
+    "drop_chance": 0.15,
+    "aim_ticks": 7,
+    "burst_shots": 4,
+    "burst_pause_ticks": 55,
+    "recoil_spread": 0.65,
+    "max_spread": 10.5,
+    "moving_spread": 1.8,
+    "headshot_chance": 0.03,
+    "damage_scale": 1
+  },
+  "armor_bonus": 2,
+  "mount": {
+    "entity": "boss_arsenal:ravager_mount",
+    "name": "军团坐骑"
+  },
+  "nbt": "{IsImmuneToZombification:1b}",
+  "equipment": {
+    "head": {
+      "item": "minecraft:iron_helmet",
+      "drop_chance": 0.075
+    },
+    "chest": {
+      "item": "zerocontact:armor_jpc_v2",
+      "drop_chance": 0.075
+    }
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:762x39",
+      "min": 8,
+      "max": 18,
+      "chance": 0.65
+    },
+    {
+      "item": "minecraft:gold_nugget",
+      "min": 3,
+      "max": 10,
+      "chance": 0.6
+    }
+  ]
+}

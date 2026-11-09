@@ -1,0 +1,283 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sc_b_collection"
+	group: ""
+	id: "100000000000017A"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000000120"]
+			id: "100000000000017B"
+			rewards: [{
+				id: "10000000000000DA"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "10000000000000D9"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000017B"]
+			id: "100000000000017C"
+			rewards: [{
+				id: "10000000000000E1"
+				type: "xp"
+				xp: 800
+			}]
+			tasks: [
+				{
+					id: "10000000000000DB"
+					item: { count: 1, id: "superbwarfare:common_blueprint_data_chip" }
+					type: "item"
+				}
+				{
+					id: "10000000000000DC"
+					item: { count: 1, id: "superbwarfare:rare_blueprint_data_chip" }
+					type: "item"
+				}
+				{
+					id: "10000000000000DD"
+					item: { count: 1, id: "superbwarfare:epic_blueprint_data_chip" }
+					type: "item"
+				}
+				{
+					id: "10000000000000DE"
+					item: { count: 1, id: "superbwarfare:legendary_blueprint_data_chip" }
+					type: "item"
+				}
+				{
+					id: "10000000000000DF"
+					item: { count: 1, id: "superbwarfare:superb_blueprint_data_chip" }
+					type: "item"
+				}
+				{
+					id: "10000000000000E0"
+					item: { count: 1, id: "superbwarfare:virtual_blueprint_data_chip" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000017C"]
+			id: "100000000000017D"
+			rewards: [{
+				id: "10000000000000E7"
+				type: "xp"
+				xp: 800
+			}]
+			tasks: [
+				{
+					id: "10000000000000E2"
+					item: { count: 1, id: "superbwarfare:ak_47" }
+					type: "item"
+				}
+				{
+					id: "10000000000000E3"
+					item: { count: 1, id: "superbwarfare:m_4" }
+					type: "item"
+				}
+				{
+					id: "10000000000000E4"
+					item: { count: 1, id: "superbwarfare:svd" }
+					type: "item"
+				}
+				{
+					id: "10000000000000E5"
+					item: { count: 1, id: "superbwarfare:m_870" }
+					type: "item"
+				}
+				{
+					id: "10000000000000E6"
+					item: { count: 1, id: "superbwarfare:minigun" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000017D"]
+			id: "100000000000017E"
+			rewards: [{
+				id: "10000000000000E9"
+				type: "xp"
+				xp: 600
+			}]
+			tasks: [{
+				count: 20L
+				id: "10000000000000E8"
+				item: { count: 1, id: "superbwarfare:dog_tag" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000017E"]
+			id: "100000000000017F"
+			rewards: [{
+				id: "10000000000000EE"
+				type: "xp"
+				xp: 600
+			}]
+			tasks: [
+				{
+					id: "10000000000000EA"
+					item: { count: 1, id: "mca:wedding_ring" }
+					type: "item"
+				}
+				{
+					id: "10000000000000EB"
+					item: { components: { "ftbquests:missing_item": "numismatics:black_card" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "10000000000000EC"
+					item: { count: 1, id: "endrem:lost_eye" }
+					type: "item"
+				}
+				{
+					id: "10000000000000ED"
+					item: { count: 1, id: "minecraft:lantern" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000017F"]
+			id: "1000000000000180"
+			rewards: [{
+				id: "10000000000000F5"
+				type: "xp"
+				xp: 700
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "10000000000000EF"
+					item: { count: 1, id: "cyber_ware_port:component_actuator" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "10000000000000F0"
+					item: { count: 1, id: "cyber_ware_port:component_fiberoptics" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "10000000000000F1"
+					item: { count: 1, id: "cyber_ware_port:component_plating" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "10000000000000F2"
+					item: { count: 1, id: "cyber_ware_port:component_microelectric" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "10000000000000F3"
+					item: { count: 1, id: "cyber_ware_port:component_ssc" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "10000000000000F4"
+					item: { count: 1, id: "cyber_ware_port:component_synthnerves" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000180"]
+			id: "1000000000000181"
+			rewards: [{
+				id: "10000000000000FC"
+				type: "xp"
+				xp: 700
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "10000000000000F6"
+					item: { count: 1, id: "minecraft:bread" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "10000000000000F7"
+					item: { count: 1, id: "minecraft:cooked_beef" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "10000000000000F8"
+					item: { count: 1, id: "farmersdelight:beef_stew" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "10000000000000F9"
+					item: { count: 1, id: "huaxiadelight:beef_noodle_soup" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "10000000000000FA"
+					item: { components: { "ftbquests:missing_item": "cookscollection:lemonade" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "10000000000000FB"
+					item: { count: 1, id: "farmersdelight:apple_cider" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000181"]
+			id: "1000000000000182"
+			rewards: [
+				{
+					id: "10000000000000FE"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 2
+					id: "10000000000000FF"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:backpack"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "10000000000000FD"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 103,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: gun uzi",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "uzi",
+      "description": "gun uzi"
+    }
+  ]
+}

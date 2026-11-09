@@ -1,0 +1,65 @@
+#Master switch. When false this mod performs no checks at all.
+enabled = true
+#How to treat a Create machine standing in unclaimed land, which has no owner.
+#WILDERNESS_ONLY: it may only modify unclaimed chunks (recommended).
+#ALLOW: no restriction.
+#DENY: it may not modify anything.
+#Allowed Values: WILDERNESS_ONLY, ALLOW, DENY
+unownedContraptionPolicy = "WILDERNESS_ONLY"
+#Treat unclaimed chunks as protected too. Mirrors FTB Chunks' no-wilderness mode.
+protectWilderness = false
+#Stop stationary Mechanical Drills and Saws from breaking blocks inside claims they may not edit.
+guardStationaryBlockBreakers = true
+#Apply claim permissions to Create's machine configuration packets (the wrench-scroll
+#and GUI settings on Creative Motors, Rotation Speed Controllers, Sequenced Gearshifts,
+#Display Links, Stations, Mechanical Arms, Weighted Ejectors and the rest).
+#These never reach FTB Chunks on their own, because Create does not send them as block
+#interactions. Checked against block_interact_mode.
+guardMachineConfiguration = true
+#Stop a Schematicannon from printing into claims it may not edit. It prints up to 256 blocks away.
+guardSchematicannon = true
+#Reject Super Glue that would span, or be torn off, chunks the player may not edit.
+guardSuperGlue = true
+#Stop items from being carried from one claim into another by belts, chutes, funnels,
+#Mechanical Arms, Weighted Ejectors, tunnels, chain conveyors, Frogports and the rest.
+#An item may cross from claim A into claim B only if A's owner may use blocks in B.
+#Pulling items out of a claim follows the same rule from the puller's side, and item
+#vaults and fluid tanks will not merge across claims that cannot both use each other.
+#Dropped items are never affected: they fall and fly across claims as usual.
+guardItemLogistics = true
+#Keep shafts, cogs and other rotating blocks from joining up across a claim border unless
+#both claims' owners have access to each other. Without this a neighbour can take power
+#from your network, overstress it, or break it by feeding it the opposite direction.
+#Unclaimed land counts as nobody's, so rotation does not cross from a claim into it either.
+guardKineticNetworks = true
+#Linked Controllers only activate receivers in chunks where the holding player may use
+#blocks, and cannot be bound to a Redstone Link inside a claim the player may not use.
+guardLinkedControllers = true
+#true: a Redstone Link only talks to links in chunks claimed by the same team, or to
+#other unclaimed links when it is unclaimed itself.
+#false: links communicate across claims as in plain Create.
+#Changing a link's frequency always needs permission to use it, whatever this is set to.
+guardRedstoneLinks = false
+#When a contraption comes apart over a claim it may not edit, nothing is placed or
+#destroyed there. true drops the blocks it was carrying as items at their target
+#position; false discards them, which some servers prefer over item spam in claims.
+dropBlocksOnBlockedDisassembly = true
+#Send the responsible player a chat message when an operation is blocked.
+notifyPlayers = true
+#Minimum delay between two block messages sent to the same player.
+# Default: 5000
+# Range: 250 ~ 600000
+notifyCooldownMillis = 5000
+#Message shown when an operation is blocked. A literal string is sent verbatim;
+#anything containing a '.' is treated as a translation key.
+blockedMessage = "createftbcompat.blocked"
+#How long a chunk permission answer stays cached. Claim changes invalidate the cache immediately.
+# Default: 40
+# Range: 1 ~ 1200
+permissionCacheTtlTicks = 40
+#Upper bound on cached chunk permission answers.
+# Default: 8192
+# Range: 256 ~ 1048576
+permissionCacheMaxEntries = 8192
+#Log every blocked operation with its position and responsible player.
+debugLogging = false

@@ -1,0 +1,95 @@
+{
+  "id": "champions:cataclysm_the_leviathan",
+  "weight": 100,
+  "tier_range": {
+    "min": 5,
+    "max": 5
+  },
+  "entity_filter": {
+    "type": "entity_type",
+    "types": [
+      "cataclysm:the_leviathan"
+    ]
+  },
+  "affix_pools": [
+    {
+      "tier_range": {
+        "min": 5,
+        "max": 5
+      },
+      "min_count": 2,
+      "max_count": 3,
+      "candidates": [
+        {
+          "affix": "champions:dampening",
+          "min_strength": 2,
+          "max_strength": 3,
+          "weight": 10
+        },
+        {
+          "affix": "champions:plagued",
+          "min_strength": 2,
+          "max_strength": 3,
+          "weight": 10
+        },
+        {
+          "affix": "champions:shielding",
+          "min_strength": 2,
+          "max_strength": 3,
+          "weight": 10
+        },
+        {
+          "affix": "champions:knocking",
+          "min_strength": 2,
+          "max_strength": 3,
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "tier_range": {
+        "min": 5,
+        "max": 5
+      },
+      "min_count": 1,
+      "max_count": 1,
+      "candidates": [
+        {
+          "affix": "champions:lively",
+          "min_strength": 2,
+          "max_strength": 3,
+          "weight": 10
+        }
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "id": "champions:cataclysm_the_leviathan_enrage",
+      "condition": {
+        "type": "health_percent",
+        "below": 0.5
+      },
+      "effects": [
+        {
+          "type": "add_attribute",
+          "attribute": "minecraft:generic.attack_damage",
+          "amount": 0.25,
+          "operation": "add_multiplied_total"
+        },
+        {
+          "type": "add_attribute",
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": 0.15,
+          "operation": "add_multiplied_total"
+        },
+        {
+          "type": "add_attribute",
+          "attribute": "minecraft:generic.armor",
+          "amount": 4,
+          "operation": "add_value"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "postapocalypse_structures:abandoned_brick_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 34,
+    "separation": 10,
+    "salt": 352970910
+  }
+}

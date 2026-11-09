@@ -1,0 +1,24 @@
+{
+  "ammo_id": "tacz:338",
+
+  "variant": "338_ap",
+
+  "life": 108,
+
+  "friction": 0.0085,
+
+  "gravity": 0.038,
+
+  "recoil_multiplier": 1.16,
+
+  "inaccuracy_multiplier": 1.1,
+
+
+  "penetration_class": 15,
+
+  "armor_damage": 0.6,
+
+  "flesh_damage": 18,
+
+  "stack_size": 8
+}

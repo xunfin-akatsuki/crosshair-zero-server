@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 113,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att sight_sro_dot",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "sight_sro_dot",
+      "description": "att sight_sro_dot"
+    }
+  ]
+}

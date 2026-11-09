@@ -1,0 +1,166 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch02_first_shot"
+	group: ""
+	id: "1000000000000131"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000000130"]
+			id: "1000000000000132"
+			rewards: [{
+				id: "1000000000000042"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1000000000000041"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000132"]
+			id: "1000000000000133"
+			rewards: [{
+				id: "1000000000000044"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "454DC12DB7CB134E"
+				item: { components: { "minecraft:custom_data": { GunCurrentAmmoCount: 7, GunFireMode: "SEMI", GunId: "tacz:m1911", HasBulletInBarrel: 1b } }, count: 1, id: "tacz:modern_kinetic_gun" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000133"]
+			id: "1000000000000134"
+			rewards: [{
+				id: "1000000000000046"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				count: 30L
+				id: "1000000000000045"
+				item: { count: 1, id: "superbwarfare:handgun_ammo" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000134"]
+			id: "1000000000000135"
+			rewards: [{
+				id: "1000000000000048"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "1000000000000047"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000135"]
+			id: "1000000000000136"
+			rewards: [{
+				id: "100000000000004A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "1000000000000049"
+				type: "kill"
+				value: 15L
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000136"]
+			id: "1000000000000137"
+			rewards: [{
+				id: "100000000000004C"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				count: 4L
+				id: "100000000000004B"
+				item: { count: 1, id: "superbwarfare:armor_plate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000137"]
+			id: "1000000000000138"
+			rewards: [{
+				id: "100000000000004E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "100000000000004D"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000138"]
+			id: "1000000000000139"
+			rewards: [{
+				id: "1000000000000050"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "100000000000004F"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000139"]
+			id: "100000000000013A"
+			rewards: [
+				{
+					id: "1000000000000052"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 32
+					id: "1000000000000053"
+					item: {
+						count: 1
+						id: "superbwarfare:handgun_ammo"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1000000000000051"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+	]
+}

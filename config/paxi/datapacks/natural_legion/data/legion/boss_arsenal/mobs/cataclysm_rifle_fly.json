@@ -1,0 +1,60 @@
+{
+  "entity": "boss_arsenal:skeleton_soldier",
+  "spawn_chance": 0,
+  "tier": 3,
+  "name": "灾变军团 · 步枪手（空骑）",
+  "health": 48,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:qbz191",
+    "fire_mode": "auto",
+    "spread_degrees": 2.6,
+    "range": 40,
+    "preferred_range": 18,
+    "shot_interval_ticks": 3,
+    "infinite_ammo": true,
+    "drop_chance": 0.2,
+    "aim_ticks": 4,
+    "burst_shots": 4,
+    "burst_pause_ticks": 45,
+    "recoil_spread": 0.4,
+    "max_spread": 5.5,
+    "moving_spread": 1,
+    "headshot_chance": 0.08,
+    "damage_scale": 1.15
+  },
+  "armor_bonus": 6,
+  "equipment": {
+    "head": {
+      "item": "zerocontact:helmet_airframe",
+      "drop_chance": 0.1
+    },
+    "chest": {
+      "item": "zerocontact:armor_iotv_gen4",
+      "drop_chance": 0.1
+    },
+    "legs": {
+      "item": "zerocontact:armor_iotv_gen4",
+      "drop_chance": 0.08
+    },
+    "feet": {
+      "item": "minecraft:netherite_boots",
+      "drop_chance": 0.05
+    }
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:556x45",
+      "min": 12,
+      "max": 28,
+      "chance": 0.7
+    }
+  ],
+  "spawn_mode": "air",
+  "mount": {
+    "entity": "alexsmobs:cosmaw",
+    "name": "虚空游鲟"
+  }
+}

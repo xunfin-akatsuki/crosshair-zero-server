@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 113,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att sight_rmr_dot",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "sight_rmr_dot",
+      "description": "att sight_rmr_dot"
+    }
+  ]
+}

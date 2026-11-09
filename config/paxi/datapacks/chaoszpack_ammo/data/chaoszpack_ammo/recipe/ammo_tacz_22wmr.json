@@ -1,0 +1,84 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tacz_c:case_22wmr"
+  },
+  "loops": 1,
+  "transitional_item": {
+    "id": "tacz_c:unfinished_22wmr"
+  },
+  "results": [
+    {
+      "id": "tacz:ammo",
+      "count": 12,
+      "components": {
+        "minecraft:custom_data": {
+          "AmmoId": "tacz:22wmr"
+        }
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_22wmr"
+        },
+        {
+          "item": "tacz_c:primer"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_22wmr"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_22wmr"
+        },
+        {
+          "item": "tacz_c:gunpowder_charge"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_22wmr"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_22wmr"
+        },
+        {
+          "item": "tacz_c:bullet_core"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_22wmr"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_22wmr"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_22wmr"
+        }
+      ]
+    }
+  ]
+}

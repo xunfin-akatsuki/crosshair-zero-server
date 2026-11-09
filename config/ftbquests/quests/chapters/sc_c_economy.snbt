@@ -1,0 +1,119 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sc_c_economy"
+	group: ""
+	id: "1000000000000183"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000000120"]
+			id: "1000000000000184"
+			rewards: [{
+				id: "1000000000000101"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "1000000000000100"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000184"]
+			id: "1000000000000185"
+			rewards: [{
+				id: "1000000000000103"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1000000000000102"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000185"]
+			id: "1000000000000186"
+			rewards: [{
+				id: "1000000000000105"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				count: 1000L
+				id: "1000000000000104"
+				item: { count: 1, id: "numismatic_overhaul:zero_coin" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000186"]
+			id: "1000000000000187"
+			rewards: [{
+				id: "1000000000000107"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "1000000000000106"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000187"]
+			id: "1000000000000188"
+			rewards: [{
+				id: "1000000000000109"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "1000000000000108"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000188"]
+			id: "1000000000000189"
+			rewards: [
+				{
+					id: "100000000000010B"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 8
+					id: "100000000000010C"
+					item: {
+						components: {
+							"ftbquests:missing_item": "numismatic_overhaul:gold_coin"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "100000000000010A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+}

@@ -1,0 +1,405 @@
+#========================================
+#CUSTOM REWARDS - Add any items as quest rewards!
+#Format: "modid:item@min-max#weight{NBT}"
+#
+#Components:
+#  modid:item = Item registry ID (required)
+#  @min-max   = Amount range, e.g., @2-5 or @3 for fixed (optional, default 1)
+#  #weight    = Selection weight, higher = more common (optional, default 1)
+#  {NBT}      = NBT data in Mojangson format (optional, must be last)
+#
+#Examples (uncomment and modify to use):
+#  "minecraft:diamond@2-5#10"           - 2-5 diamonds, weight 10
+#  "minecraft:golden_apple@1#3"         - 1 golden apple, weight 3
+#  "skilltree:wisdom_scroll@1-2#5"      - 1-2 wisdom scrolls (modded!), weight 5
+#  "minecraft:enchanted_book@1#2{StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:5s}]}"
+#
+#Note: Items from other mods work as long as the mod is installed!
+#========================================
+[customRewards]
+	#Enable custom rewards system (default: true)
+	enable = true
+	#If true, ONLY custom rewards will be given (disables all vanilla rewards).
+	#Use this for total control over quest loot (default: false)
+	customRewardsOnly = true
+	#Custom rewards available for ALL difficulties.
+	#Examples (uncomment to use):
+	#  # "minecraft:diamond@1-3#5"
+	#  # "minecraft:emerald@5-10#8"
+	#  # "skilltree:wisdom_scroll@1#3"
+	global = ["numismatic_overhaul:zero_coin@6-15#8"]
+	#Custom rewards for VERY_EASY difficulty bounties.
+	#Examples: "minecraft:apple@2-4#10", "minecraft:bread@1-3#8"
+	veryEasy = ["numismatic_overhaul:zero_coin@4-10#10", "minecraft:bread@2-4#5"]
+	#Custom rewards for EASY difficulty bounties.
+	#Examples: "minecraft:iron_ingot@2-4#10", "minecraft:coal@5-10#8"
+	easy = ["numismatic_overhaul:zero_coin@10-20#10", "immersiveengineering:ingot_steel@2-4#6", "farmersdelight:cabbage@2-4#4"]
+	#Custom rewards for MEDIUM difficulty bounties.
+	#Examples: "minecraft:gold_ingot@2-4#10", "minecraft:redstone@10-20#8"
+	medium = ["numismatic_overhaul:zero_coin@25-45#10", "immersiveengineering:circuit_board@1-3#6", "create:brass_ingot@4-8#5"]
+	#Custom rewards for HARD difficulty bounties.
+	#Examples: "minecraft:diamond@1-2#10", "minecraft:ender_pearl@2-4#8"
+	hard = ["numismatic_overhaul:zero_coin@60-100#10", "create:precision_mechanism@1-2#5", "immersiveengineering:electron_tube@2-4#5"]
+	#Custom rewards for VERY_HARD difficulty bounties.
+	#Examples: "minecraft:diamond@3-5#10", "minecraft:netherite_scrap@1#5"
+	veryHard = ["numismatic_overhaul:zero_coin@150-250#10", "superbwarfare:cemented_carbide_ingot@2-4#5", "create:precision_mechanism@2-3#4"]
+	#Custom rewards specifically for boss bounties.
+	#Examples: "minecraft:nether_star@1#2", "minecraft:totem_of_undying@1#1"
+	boss = ["numismatic_overhaul:zero_coin@400-800#10", "superbwarfare:ancient_cpu@1#3", "create:precision_mechanism@3-5#5"]
+	#Custom rewards specifically for structure clear bounties.
+	#Examples: "minecraft:diamond@3-5#10", "minecraft:emerald@5-10#8"
+	structure = ["numismatic_overhaul:zero_coin@80-160#10", "immersiveengineering:circuit_board@3-6#6"]
+	#How many custom reward rolls to attempt per bounty (default: 1)
+	#Range: 0 ~ 5
+	rolls = 2
+	#Custom reward rolls for boss bounties (overrides 'rolls' if >= 0, -1 uses default) (default: -1)
+	#Range: -1 ~ 10
+	rollsBoss = 3
+	#Custom reward rolls for structure bounties (overrides 'rolls' if >= 0, -1 uses default) (default: -1)
+	#Range: -1 ~ 10
+	rollsStructure = 2
+	#Minimum guaranteed custom rewards to add (in addition to random rolls) (default: 0)
+	#Range: 0 ~ 10
+	guaranteedMin = 1
+	#Maximum guaranteed custom rewards to add (in addition to random rolls) (default: 0)
+	#Range: 0 ~ 10
+	guaranteedMax = 2
+
+#========================================
+#BASIC REWARDS
+#Enable/disable standard reward types and configure amounts
+#========================================
+[rewards]
+	#Allow emeralds as rewards (default: true)
+	enableEmeraldRewards = true
+	#Allow iron ingots as rewards (default: true)
+	enableIronRewards = true
+	#Allow gold ingots as rewards (default: true)
+	enableGoldRewards = true
+	#Allow diamonds as rewards (default: true)
+	enableDiamondRewards = true
+	#Allow Bottle o' Enchanting as rewards (default: true)
+	enableXpBottleRewards = true
+	#Allow enchanted books as rewards (default: true)
+	enableEnchantedBookRewards = true
+	#Global multiplier for reward amounts (emeralds and item counts). 1.0 = default
+	#Range: 0.0 ~ 10.0
+	rewardGlobalMultiplier = 1.0
+	#Maximum emeralds for passive animal bounties (default: 3)
+	#Range: 0 ~ 64
+	passiveEmeraldCap = 3
+	#Passive animals: emeralds per X kills (default: 4 => ~1 per 4 kills)
+	#Range: 1 ~ 64
+	passiveEmeraldsPerKills = 4
+	#Allow emerald rewards on EASY difficulty (default: false)
+	emeraldsOnEasy = false
+	#Allow emerald rewards on MEDIUM difficulty (default: true)
+	emeraldsOnMedium = true
+	#Allow emerald rewards on HARD difficulty (default: true)
+	emeraldsOnHard = true
+	#Allow emerald rewards on VERY_HARD difficulty (default: true)
+	emeraldsOnVeryHard = true
+	#Minimum emeralds for boss bounties after difficulty scaling (default: 5)
+	#Range: 0 ~ 64
+	bossEmeraldsMin = 5
+	#Maximum emeralds for boss bounties after difficulty scaling (default: 15)
+	#Range: 0 ~ 64
+	bossEmeraldsMax = 15
+	#Minimum diamonds for VERY_HARD boss bounties (default: 2)
+	#Range: 0 ~ 64
+	bossDiamondMin = 2
+	#Maximum diamonds for VERY_HARD boss bounties (default: 3)
+	#Range: 0 ~ 64
+	bossDiamondMax = 3
+	#Minimum gold ingots for HARD+ boss bounties (default: 4)
+	#Range: 0 ~ 64
+	bossGoldMin = 4
+	#Maximum gold ingots for HARD+ boss bounties (default: 6)
+	#Range: 0 ~ 64
+	bossGoldMax = 6
+	#Minimum iron ingots for boss bounties (default: 5)
+	#Range: 0 ~ 64
+	bossIronMin = 5
+	#Maximum iron ingots for boss bounties (default: 7)
+	#Range: 0 ~ 64
+	bossIronMax = 7
+	#Minimum emeralds for structure bounties (default: 5)
+	#Range: 0 ~ 64
+	structureEmeraldsMin = 5
+	#Maximum emeralds for structure bounties (default: 10)
+	#Range: 0 ~ 64
+	structureEmeraldsMax = 10
+	#Minimum non-curse enchantments on enchanted book rewards (default: 1)
+	#Range: 1 ~ 10
+	enchantedBookMinEnchants = 1
+	#Maximum non-curse enchantments on enchanted book rewards (default: 2)
+	#Range: 1 ~ 10
+	enchantedBookMaxEnchants = 2
+
+#========================================
+#GENERAL QUEST SETTINGS
+#Core settings for quest generation and player limits
+#========================================
+[general]
+	#Maximum number of bounties a player can accept at once (default: 4)
+	#Range: 1 ~ 20
+	maxPlayerBounties = 4
+	#Number of quests generated in the daily pool (default: 6)
+	#Range: 1 ~ 20
+	dailyQuestPoolSize = 6
+	#Number of free quest refreshes per day (default: 1)
+	#Range: 0 ~ 100
+	dailyFreeRefreshes = 1
+	#Item required for quest refresh after free refreshes (default: minecraft:emerald)
+	refreshCostItem = "minecraft:emerald"
+	#Base cost for paid refreshes (default: 1)
+	#Range: 0 ~ 64
+	refreshBaseCost = 1
+	#Whether refresh cost increases with each refresh (default: true)
+	refreshCostScaling = true
+	#Whether all players share the same daily quest pool (default: false)
+	sharedDailyQuests = false
+
+#========================================
+#QUEST TYPES
+#Enable or disable specific quest types
+#========================================
+[questTypes]
+	#Allow Kill Mobs quest type to appear (default: true)
+	enableKillMobsQuests = true
+	#Allow Boss Hunt quest type to appear (default: true)
+	enableBossHuntQuests = true
+	#Allow Structure quests (Clear/Explore) to appear (default: true)
+	enableStructureQuests = true
+
+#========================================
+#CUSTOM CONTENT
+#Add custom mobs, structures, and quest definitions
+#========================================
+[customContent]
+	#ONE-CLICK TOGGLE: Disable ALL vanilla bounty generation (mobs & structures).
+	#When true, ONLY custom mobs/structures/bounties will be used for quest generation.
+	#Perfect for modpack authors who want complete control over quest content!
+	#Note: You still need to provide custom content (custom mobs, structures, or bounties).
+	#(default: false)
+	disableVanillaBounties = false
+	#Include modded mobs supplied via custom mob pools in random bounty generation (can be toggled at runtime).
+	includeModdedMobs = true
+	#Include modded structures supplied via custom structure pool in structure clear bounty generation (can be toggled at runtime).
+	includeModdedStructures = true
+	#Additional structure IDs/names eligible for structure clear bounties.
+	#Examples: "minecraft:ocean_monument", "dungeons_arise:heavenly_challenger"
+	structurePool = []
+	#Explicit custom bounty definitions. Format (WIP): type|target|count|difficulty|rewardspec ...
+	customBounties = []
+
+[customContent.mobPools]
+	#Additional VERY_EASY mob entity IDs (e.g., "minecraft:chicken", "farmersdelight:brown_mushroom")
+	veryEasy = []
+	#Additional EASY mob entity IDs (e.g., "minecraft:zombie", "alexsmobs:raccoon")
+	easy = ["undeadnights:horde_zombie", "mutantmonsters:mutant_snow_golem"]
+	#Additional MEDIUM mob entity IDs (e.g., "minecraft:skeleton", "alexsmobs:crocodile")
+	medium = ["undeadnights:elite_zombie", "mutantmonsters:mutant_zombie"]
+	#Additional HARD mob entity IDs (e.g., "minecraft:blaze", "alexsmobs:tiger")
+	hard = ["mutantmonsters:mutant_skeleton", "mutantmonsters:mutant_creeper", "undeadnights:demolition_zombie"]
+	#Additional VERY_HARD mob entity IDs (e.g., "minecraft:wither_skeleton", "alexsmobs:void_worm")
+	veryHard = ["mutantmonsters:mutant_enderman", "mutantmonsters:mutant_zombie"]
+	#Additional boss hunt mob entity IDs (appended regardless of difficulty weighting)
+	boss = ["mutantmonsters:mutant_zombie"]
+
+[customContent.blacklist]
+	#Blacklist mob entity IDs to exclude from ALL bounty generation.
+	#Format: "modid:entity" (e.g., "minecraft:creeper", "alexsmobs:fly")
+	mobs = []
+	#Blacklist structure names/IDs to exclude from structure bounty generation.
+	#Format: "modid:structure" or structure names
+	structures = []
+
+[customContent.rewardOverrides]
+	#Per-entity reward overrides.
+	#Format: modid:entity|emeralds=NUM;item=spec;item=spec
+	#Examples:
+	#  "minecraft:zombie|emeralds=3;item=minecraft:iron_ingot@2-4"
+	#  "modded:feral_boar|item=minecraft:gold_ingot@1-2;item=minecraft:carrot@2-5"
+	#Overrides are applied AFTER normal reward generation & global multiplier.
+	entities = ["undeadnights:horde_zombie|emeralds=0;item=numismatic_overhaul:zero_coin@8-18;item=immersiveengineering:ingot_steel@1-2", "undeadnights:elite_zombie|emeralds=0;item=numismatic_overhaul:zero_coin@30-60;item=immersiveengineering:circuit_board@1-2", "undeadnights:demolition_zombie|emeralds=0;item=numismatic_overhaul:zero_coin@45-90;item=create:precision_mechanism@1", "mutantmonsters:mutant_zombie|emeralds=0;item=numismatic_overhaul:zero_coin@250-450;item=superbwarfare:cemented_carbide_ingot@1-2", "mutantmonsters:mutant_skeleton|emeralds=0;item=numismatic_overhaul:zero_coin@220-400;item=immersiveengineering:electron_tube@2-3", "mutantmonsters:mutant_creeper|emeralds=0;item=numismatic_overhaul:zero_coin@200-380;item=create:precision_mechanism@1", "mutantmonsters:mutant_enderman|emeralds=0;item=numismatic_overhaul:zero_coin@400-700;item=superbwarfare:ancient_cpu@1"]
+
+[weights.questTypes]
+	#Relative weight for Kill Mob quests (default: 60)
+	#Range: 0 ~ 1000
+	killMobs = 60
+	#Relative weight for Boss Hunt quests (default: 25)
+	#Range: 0 ~ 1000
+	bossHunt = 25
+	#Relative weight for Structure Clear quests (default: 15)
+	#Range: 0 ~ 1000
+	clearStructure = 15
+
+[weights.source]
+	#Relative weight selecting vanilla source pool (default: 5)
+	#Range: 0 ~ 1000
+	vanilla = 5
+	#Relative weight selecting modded source pool (custom mob/structure entries) (default: 3)
+	#Range: 0 ~ 1000
+	modded = 3
+	#Relative weight selecting explicit custom bounty definitions (default: 2)
+	#Range: 0 ~ 1000
+	custom = 2
+
+[weights.custom]
+	#If true (default), ALL customBounties lines are injected first before weighted generation.
+	#If false, custom bounty definitions are only used when 'custom' source category is chosen by weighting.
+	includeAll = true
+	#Maximum number of custom bounty definitions that may appear in a single daily pool (default: 6)
+	#If includeAll is true, this caps the injected count; if false it caps selections when source=custom occurs.
+	#Range: 0 ~ 100
+	maxPerDay = 6
+
+#========================================
+#QUEST GENERATION WEIGHTS
+#Control quest type distribution and mob/structure selection weights
+#Higher weight = more likely to appear
+#========================================
+[weights]
+	#Optional structure weighting entries to adjust selection likelihood.
+	#Format: 'Structure Name|weight' (weight >= 1)
+	#Examples:
+	#  "Ocean Monument|3"
+	#  "Pillager Outpost|1"
+	#  "Ancient Library|5"
+	#Weights only affect random structure selection; blacklist still applies.
+	structures = []
+
+[weights.questCaps]
+	#Cap for kill mob quests per daily pool (-1 = unlimited, default: -1)
+	#Range: -1 ~ 100
+	killMobs = -1
+	#Cap for boss hunt quests per daily pool (-1 = unlimited, default: -1)
+	#Range: -1 ~ 100
+	bossHunt = -1
+	#Cap for structure clear quests per daily pool (-1 = unlimited, default: -1)
+	#Range: -1 ~ 100
+	clearStructure = -1
+
+[weights.mobs]
+	#Mob weighting entries for VERY_EASY difficulty.
+	#Format: 'modid:entity|weight' (e.g., "minecraft:chicken|10", "minecraft:cow|5")
+	veryEasy = []
+	#Mob weighting entries for EASY difficulty.
+	#Format: 'modid:entity|weight' (e.g., "minecraft:zombie|10", "minecraft:spider|5")
+	easy = []
+	#Mob weighting entries for MEDIUM difficulty.
+	#Format: 'modid:entity|weight' (e.g., "minecraft:skeleton|10", "minecraft:creeper|8")
+	medium = []
+	#Mob weighting entries for HARD difficulty.
+	#Format: 'modid:entity|weight' (e.g., "minecraft:blaze|10", "minecraft:witch|7")
+	hard = []
+	#Mob weighting entries for VERY_HARD difficulty.
+	#Format: 'modid:entity|weight' (e.g., "minecraft:wither_skeleton|10", "minecraft:enderman|8")
+	veryHard = []
+	#Mob weighting entries for boss hunt selection.
+	#Format: 'modid:entity|weight' (e.g., "minecraft:blaze|15", "minecraft:enderman|10")
+	boss = []
+
+[weights.sync]
+	#If true, the server sends its weighting info to clients on login.
+	weightsToClients = true
+
+[killCounts.veryEasy]
+	#Minimum kills for VERY_EASY kill quests (default: 1)
+	#Range: 1 ~ 1000
+	min = 1
+	#Maximum kills for VERY_EASY kill quests (default: 5)
+	#Range: 1 ~ 1000
+	max = 5
+
+[killCounts.easy]
+	#Minimum kills for EASY kill quests (default: 2)
+	#Range: 1 ~ 1000
+	min = 2
+	#Maximum kills for EASY kill quests (default: 8)
+	#Range: 1 ~ 1000
+	max = 8
+
+[killCounts.medium]
+	#Minimum kills for MEDIUM kill quests (default: 3)
+	#Range: 1 ~ 1000
+	min = 3
+	#Maximum kills for MEDIUM kill quests (default: 10)
+	#Range: 1 ~ 1000
+	max = 10
+
+[killCounts.hard]
+	#Minimum kills for HARD kill quests (default: 4)
+	#Range: 1 ~ 1000
+	min = 4
+	#Maximum kills for HARD kill quests (default: 12)
+	#Range: 1 ~ 1000
+	max = 12
+
+[killCounts.veryHard]
+	#Minimum kills for VERY_HARD kill quests (default: 5)
+	#Range: 1 ~ 1000
+	min = 5
+	#Maximum kills for VERY_HARD kill quests (default: 15)
+	#Range: 1 ~ 1000
+	max = 15
+
+#========================================
+#BOSS CUSTOMIZATION
+#Control boss scaling, pools, behavior, and rewards
+#========================================
+[boss]
+	#Visual scale applied to boss entities (default: 2.0)
+	#Range: 0.5 ~ 10.0
+	sizeScale = 2.0
+	#Multiplier applied to base max health (default: 2.0)
+	#Range: 0.1 ~ 100.0
+	healthMultiplier = 2.0
+	#Multiplier applied to attack damage attribute when present (default: 1.5)
+	#Range: 0.1 ~ 100.0
+	damageMultiplier = 1.5
+	#Damage/knockback multiplier applied to boss creeper explosions (default: 1.5)
+	#Range: 0.1 ~ 100.0
+	creeperExplosionMultiplier = 1.5
+	#Whitelist of entity IDs forcibly included in boss hunt selection.
+	#Ignored if present in mob blacklist.
+	#Format: "modid:entity" (e.g., "minecraft:ender_dragon", "alexsmobs:void_worm")
+	#Useful for adding modded mobs or vanilla exclusions as bosses.
+	mobWhitelist = []
+	#Convert passive animal bosses (cow,sheep,pig,chicken) to hostile targeting players (default: true)
+	passiveHostility = true
+	#Enable faster witch potion throwing cadence for boss witches (default: true)
+	witchFastPotions = true
+	#Interval in ticks between boss witch splash throws (default: 60)
+	#Range: 20 ~ 400
+	witchPotionIntervalTicks = 60
+	#Enable corrective short-range teleport for boss endermen when far from target (default: true)
+	endermanShortRangeTeleport = true
+	#Grant boss endermen water/rain mitigation (heal/ignore) (default: true)
+	endermanWaterImmunity = true
+	#Grant boss blazes water/rain mitigation (heal/ignore) (default: true)
+	blazeWaterImmunity = true
+	#Prevent sun burn for undead boss mobs (default: true)
+	undeadSunImmunity = true
+	#Limit daily quest pool to at most one passive animal boss (default: true)
+	limitOnePassiveBoss = true
+
+[boss.rewardAdjustments]
+	#Multiplier applied to emeralds for passive animal bosses after base halving (default: 0.3)
+	#Range: 0.0 ~ 10.0
+	passiveEmeraldFactor = 0.3
+	#Multiplier applied to slime boss emeralds after base halving (default: 0.7)
+	#Range: 0.0 ~ 10.0
+	slimeEmeraldFactor = 0.7
+	#Multiplier for enderman boss emeralds when difficulty not VERY_HARD (default: 0.9)
+	#Range: 0.0 ~ 10.0
+	endermanNonVeryHardEmeraldFactor = 0.9
+	#Bonus emeralds added for VERY_HARD enderman bosses (default: 2)
+	#Range: 0 ~ 64
+	endermanBonusEmeralds = 2
+	#Chance (0-1) to add extra blaze rod(s) to blaze boss rewards (default: 0.6)
+	#Range: 0.0 ~ 1.0
+	blazeRodChance = 0.6
+	#Apply base emerald halving to all boss rewards before per-mob adjustments (default: true)
+	baseEmeraldHalving = true

@@ -1,0 +1,700 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch01_alive"
+	group: ""
+	id: "100000000000011F"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "mcphone:phone"
+			}
+			id: "1000000000000120"
+			rewards: [{
+				id: "1000000000000002"
+				item: {
+					count: 1
+					id: "mcphone:phone"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1000000000000001"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000120"]
+			icon: {
+				id: "prefab:item_house"
+			}
+			id: "1000000000000121"
+			rewards: [
+				{
+					id: "3055DC45F022BE55"
+					item: {
+						count: 1
+						id: "contact:white_mailbox"
+					}
+					type: "item"
+				}
+				{
+					count: 100
+					id: "04223F89AB525571"
+					item: {
+						count: 1
+						id: "numismatic_overhaul:zero_coin"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "13B78DEB32F2E30E"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000121"]
+			icon: {
+				id: "contact:white_mailbox"
+			}
+			id: "1000000000000122"
+			rewards: [
+				{
+					id: "1D39C9FC39D7C307"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								MeleeWeaponId: "suffuse:knife_rambo"
+							}
+						}
+						count: 1
+						id: "lrtactical:melee"
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "78E29C75FB3B056A"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4477F47C4270A3B5"
+					item: { count: 1, id: "contact:white_mailbox" }
+					type: "item"
+				}
+				{
+					id: "353B93F08CEFBB73"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000122"]
+			icon: {
+				id: "touhou_little_maid:smart_slab_init"
+			}
+			id: "1000000000000123"
+			rewards: [
+				{
+					id: "197D8E4B38F3E109"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								GunCurrentAmmoCount: 17
+								GunFireMode: "SEMI"
+								GunId: "tacz:glock_17"
+								HasBulletInBarrel: 1b
+							}
+						}
+						count: 1
+						id: "tacz:modern_kinetic_gun"
+					}
+					type: "item"
+				}
+				{
+					id: "740D03576D7E8319"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								GunCurrentAmmoCount: 7
+								GunFireMode: "AUTO"
+								GunId: "suffuse:qba221"
+								HasBulletInBarrel: 1b
+							}
+						}
+						count: 1
+						id: "tacz:modern_kinetic_gun"
+					}
+					type: "item"
+				}
+				{
+					count: 60
+					id: "262E49769D231F9C"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								AmmoId: "tacz:9mm"
+							}
+							"minecraft:max_stack_size": 60
+						}
+						count: 1
+						id: "tacz:ammo"
+					}
+					type: "item"
+				}
+				{
+					count: 60
+					id: "15CF6D8A4C30B7EB"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								AmmoId: "tacz:12g"
+							}
+							"minecraft:max_stack_size": 36
+						}
+						count: 1
+						id: "tacz:ammo"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6389DAF25AF5C1B3"
+					item: { count: 1, id: "touhou_little_maid:smart_slab_empty" }
+					type: "item"
+				}
+				{
+					id: "5FF13B3A72804DA4"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000123"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:textures/misc/unknown_server.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1000000000000124"
+			rewards: [
+				{
+					count: 2
+					id: "1511619ECF87D71B"
+					item: {
+						count: 1
+						id: "legendarysurvivaloverhaul:bandage"
+					}
+					type: "item"
+				}
+				{
+					count: 200
+					id: "51D4E1CF0B0517D4"
+					item: {
+						count: 1
+						id: "numismatic_overhaul:zero_coin"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "656806EBBF43B19F"
+					item: {
+						count: 1
+						id: "legendarysurvivaloverhaul:purified_water_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "14D7030AEA5406E7"
+					item: {
+						count: 1
+						id: "shippingbin:shipping_bin"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "00A35CE3E90A674A"
+					type: "checkmark"
+				}
+				{
+					building: ""
+					id: "3BB24AC2C27399B8"
+					max_level: 10
+					metric: "BUILDING_VISITS"
+					min_level: 1
+					scope: "MEMBER_BEST"
+					type: "zeropoint_stats:progress"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000124"]
+			icon: {
+				id: "shippingbin:shipping_bin"
+			}
+			id: "1000000000000125"
+			rewards: [
+				{
+					id: "2B6DEEB67B748DED"
+					item: {
+						count: 1
+						id: "lc_ftb_hook:power_settlement"
+					}
+					type: "item"
+				}
+				{
+					id: "3666C6118C5B55C5"
+					item: {
+						count: 1
+						id: "lc_ftb_hook:stress_settlement"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				building: ""
+				id: "504853D63175F2BA"
+				max_level: 10
+				metric: "SALES_COINS"
+				min_level: 1
+				scope: "MEMBER_BEST"
+				type: "zeropoint_stats:progress"
+				value: 100L
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000125"]
+			icon: {
+				components: {
+					"sophisticatedcore:number_of_inventory_slots": 54
+					"sophisticatedcore:number_of_upgrade_slots": 2
+				}
+				id: "sophisticatedbackpacks:iron_backpack"
+			}
+			id: "1000000000000126"
+			rewards: [
+				{
+					id: "100000000000001F"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:stack_upgrade_starter_tier"
+					}
+					type: "item"
+				}
+				{
+					id: "4A8D88110F6EF3AF"
+					item: {
+						components: {
+							"sophisticatedcore:number_of_inventory_slots": 54
+							"sophisticatedcore:number_of_upgrade_slots": 2
+						}
+						count: 1
+						id: "sophisticatedbackpacks:iron_backpack"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "100000000000001E"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000126"]
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						zc_base_max: 96
+					}
+				}
+				id: "zerocontact:armor_c2r_lite"
+			}
+			id: "1000000000000127"
+			rewards: [
+				{
+					id: "6932877BAE2C0B6E"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								zc_base_max: 80
+							}
+						}
+						count: 1
+						id: "zerocontact:plate_slime"
+					}
+					type: "item"
+				}
+				{
+					id: "4521B66D19F9CA3B"
+					item: {
+						components: {
+							"geckolib:stack_animatable_id": 960L
+							"minecraft:custom_data": {
+								zc_base_max: 80
+							}
+						}
+						count: 1
+						id: "zerocontact:plate_slime"
+					}
+					type: "item"
+				}
+				{
+					id: "6AC3252AFD313039"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								zc_base_max: 96
+							}
+						}
+						count: 1
+						id: "zerocontact:armor_c2r_lite"
+					}
+					type: "item"
+				}
+				{
+					id: "7D5B161995FD9FB5"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								zc_base_max: 180
+							}
+						}
+						count: 1
+						id: "zerocontact:helmet_phonetalker_iiia"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "39F4F4DD0240F7FE"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000127"]
+			id: "1000000000000128"
+			rewards: [
+				{
+					count: 30
+					id: "1000000000000024"
+					item: {
+						count: 1
+						id: "numismatic_overhaul:zero_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "1000000000000025"
+					item: {
+						count: 1
+						id: "legendarysurvivaloverhaul:heating_coat_1"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1000000000000023"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000128"]
+			id: "1000000000000129"
+			rewards: [{
+				id: "1000000000000027"
+				item: {
+					count: 1
+					id: "legendarysurvivaloverhaul:canteen"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 100L
+				id: "1000000000000026"
+				item: { count: 1, id: "numismatic_overhaul:zero_coin" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000129"]
+			id: "100000000000012A"
+			rewards: [
+				{
+					count: 50
+					id: "1000000000000029"
+					item: {
+						count: 1
+						id: "numismatic_overhaul:zero_coin"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "100000000000002A"
+					item: {
+						count: 1
+						id: "legendarysurvivaloverhaul:bandage"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "100000000000002B"
+					item: {
+						count: 1
+						id: "legendarysurvivaloverhaul:healing_herbs"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1000000000000028"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["100000000000012A"]
+			id: "100000000000012B"
+			rewards: [
+				{
+					count: 4
+					id: "100000000000002D"
+					item: {
+						count: 1
+						id: "contact:wrapping_paper"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "100000000000002E"
+					item: {
+						count: 1
+						id: "contact:envelope"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "100000000000002F"
+					item: {
+						count: 1
+						id: "legendarysurvivaloverhaul:tonic"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "100000000000002C"
+				item: { count: 1, id: "contact:white_mailbox" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["100000000000012B"]
+			id: "100000000000012C"
+			rewards: [
+				{
+					id: "1000000000000031"
+					item: {
+						count: 1
+						id: "minecraft:iron_pickaxe"
+					}
+					type: "item"
+				}
+				{
+					id: "1000000000000032"
+					item: {
+						count: 1
+						id: "minecraft:iron_axe"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1000000000000030"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["100000000000012C"]
+			id: "100000000000012D"
+			rewards: [{
+				count: 4
+				id: "1000000000000035"
+				item: {
+					count: 1
+					id: "minecraft:beef"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1000000000000033"
+					item: { count: 1, id: "minecraft:furnace" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1000000000000034"
+					item: { count: 1, id: "minecraft:cooked_beef" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["100000000000012D"]
+			id: "100000000000012E"
+			rewards: [
+				{
+					count: 3
+					id: "1000000000000037"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "1000000000000038"
+					item: {
+						count: 1
+						id: "legendarysurvivaloverhaul:water_purifier"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1000000000000036"
+				item: { count: 1, id: "minecraft:bucket" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["100000000000012E"]
+			id: "100000000000012F"
+			rewards: [
+				{
+					count: 2
+					id: "100000000000003A"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "100000000000003B"
+					item: {
+						components: {
+							"minecraft:potion_contents": {
+								potion: "contagion:cure_potion"
+							}
+						}
+						count: 1
+						id: "minecraft:potion"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1000000000000039"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["100000000000012F"]
+			id: "1000000000000130"
+			rewards: [
+				{
+					count: 6
+					id: "100000000000003D"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 50
+					id: "100000000000003E"
+					item: {
+						count: 1
+						id: "numismatic_overhaul:zero_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "100000000000003F"
+					item: {
+						count: 1
+						id: "legendarysurvivaloverhaul:thermal_coat_1"
+					}
+					type: "item"
+				}
+				{
+					id: "1000000000000040"
+					item: {
+						count: 1
+						id: "minecraft:iron_sword"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "100000000000003C"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+}

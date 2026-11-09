@@ -1,0 +1,77 @@
+{
+  "name": "铬教元件",
+  "products": [
+    {
+      "id": "c_actuator",
+      "item": "cyber_ware_port:component_actuator",
+      "count": 4,
+      "price": 60
+    },
+    {
+      "id": "c_fiberoptics",
+      "item": "cyber_ware_port:component_fiberoptics",
+      "count": 4,
+      "price": 60
+    },
+    {
+      "id": "c_plating",
+      "item": "cyber_ware_port:component_plating",
+      "count": 4,
+      "price": 60
+    },
+    {
+      "id": "c_titanium",
+      "item": "cyber_ware_port:component_titanium",
+      "count": 2,
+      "price": 30
+    },
+    {
+      "id": "c_microelectric",
+      "item": "cyber_ware_port:component_microelectric",
+      "count": 4,
+      "price": 60
+    },
+    {
+      "id": "c_ssc",
+      "item": "cyber_ware_port:component_ssc",
+      "count": 2,
+      "price": 30
+    },
+    {
+      "id": "c_synthnerves",
+      "item": "cyber_ware_port:component_synthnerves",
+      "count": 2,
+      "price": 30
+    },
+    {
+      "id": "c_fullerene",
+      "item": "cyber_ware_port:component_fullerene",
+      "count": 1,
+      "price": 15
+    },
+    {
+      "id": "c_reactor",
+      "item": "cyber_ware_port:component_reactor",
+      "count": 1,
+      "price": 15
+    },
+    {
+      "id": "cw_blueprint",
+      "item": "cyber_ware_port:blueprint",
+      "count": 2,
+      "price": 16
+    },
+    {
+      "id": "bonebattery_scav",
+      "item": "cyber_ware_port:bone_upgrades_bonebattery",
+      "count": 1,
+      "price": 5000
+    },
+    {
+      "id": "bow_scav",
+      "item": "cyber_ware_port:arm_upgrades_bow",
+      "count": 1,
+      "price": 5000
+    }
+  ]
+}

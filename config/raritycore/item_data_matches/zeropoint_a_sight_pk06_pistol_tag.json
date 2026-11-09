@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 117,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att sight_pk06_pistol",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "sight_pk06_pistol",
+      "description": "att sight_pk06_pistol"
+    }
+  ]
+}

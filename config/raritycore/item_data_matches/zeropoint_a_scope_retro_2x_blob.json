@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 114,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att scope_retro_2x",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "scope_retro_2x",
+      "description": "att scope_retro_2x"
+    }
+  ]
+}

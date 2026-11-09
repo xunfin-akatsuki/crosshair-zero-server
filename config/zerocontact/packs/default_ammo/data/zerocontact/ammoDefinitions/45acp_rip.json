@@ -1,0 +1,24 @@
+{
+  "ammo_id": "tacz:45acp",
+
+  "variant": "45acp_rip",
+
+  "life": 34,
+
+  "friction": 0.045,
+
+  "gravity": 0.21,
+
+  "recoil_multiplier": 0.92,
+
+  "inaccuracy_multiplier": 0.94,
+
+
+  "penetration_class": 1,
+
+  "armor_damage": 0.06,
+
+  "flesh_damage": 12,
+
+  "stack_size": 60
+}

@@ -1,0 +1,56 @@
+{
+  "create:gearbox": {
+    "block_id": "create:gearbox",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "create:shaft": {
+    "block_id": "create:shaft",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "create:water_wheel_structure": {
+    "block_id": "create:water_wheel_structure",
+    "base_mass": "0.2",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "create:large_cogwheel": {
+    "block_id": "create:large_cogwheel",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "create:andesite_encased_shaft": {
+    "block_id": "create:andesite_encased_shaft",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "create:white_seat": {
+    "block_id": "create:white_seat",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "create:rotation_speed_controller": {
+    "block_id": "create:rotation_speed_controller",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "create:creative_motor": {
+    "block_id": "create:creative_motor",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "create:cogwheel": {
+    "block_id": "create:cogwheel",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  }
+}

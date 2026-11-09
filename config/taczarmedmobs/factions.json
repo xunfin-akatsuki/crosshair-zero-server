@@ -1,0 +1,211 @@
+{
+  "_version": 5,
+  "_readme": [
+    "Faction Wars factions. Reload in-game with /taczarmedmobs war reload.",
+    "members: single mobs ({\"entity\": \"modid:mob\"}) or entity tags ({\"tag\": \"#modid:tag\"}).",
+    "  A single mob always wins over a tag. If two factions list the same mob, the first one in this file gets it.",
+    "  Unknown mobs (mod not installed) are skipped with a warning.",
+    "  spawn_weight: how often the mob is picked when a war spawns this faction. 0 or missing = never spawned.",
+    "  role: fixed role shown on the nameplate (e.g. \"Brawler\"). Missing = picked from the weapon.",
+    "  guns: true/false = this mob may / may not get TaCZ guns in wars. Missing = automatic: humanoid mobs",
+    "  (zombies, skeletons, pillagers, vindicators, piglins, ...) and mobs from [extra_mobs] get guns.",
+    "  A mob can be spawned by a faction it doesn't belong to (e.g. skeletons for the Wither): in a war it fights",
+    "  for the faction that spawned it.",
+    "exclude: mobs that belong to one of the tags but should NOT be part of the faction.",
+    "hostile_to: enemy factions. One side is enough, enemies are always mutual.",
+    "allied_with: allied factions (mutual). Allies never attack each other. Killing one of them also costs",
+    "  reputation with its allies.",
+    "arch_enemies: like hostile_to, but killing them earns double reputation with their enemies.",
+    "neutral_to: explicitly neutral, overrides the family rule.",
+    "family: the main faction a sub-faction belongs to (default: itself). Same family = allied. Between families",
+    "  the entries of the two main factions count, unless the sub-factions have their own entries for each other.",
+    "build_block: what engineers of this faction build cover walls and stairs from (default cobblestone).",
+    "color: a Minecraft color name (red, dark_green, gold, ...) or a hex code like #FF8800."
+  ],
+  "factions": {
+    "villagers": {
+      "name": "Villagers",
+      "color": "aqua",
+      "build_block": "minecraft:oak_planks",
+      "hostile_to": ["illagers", "undead"],
+      "members": [
+        {"entity": "guardvillagers:guard", "spawn_weight": 10},
+        {"entity": "minecraft:iron_golem", "spawn_weight": 1},
+        {"entity": "minecraft:villager"},
+        {"entity": "minecraft:wandering_trader"}
+      ]
+    },
+    "illagers": {
+      "name": "Illagers",
+      "color": "red",
+      "build_block": "minecraft:dark_oak_planks",
+      "hostile_to": ["villagers", "undead"],
+      "members": [
+        {"entity": "minecraft:pillager", "spawn_weight": 10},
+        {"entity": "minecraft:vindicator", "spawn_weight": 5},
+        {"entity": "minecraft:evoker", "spawn_weight": 1},
+        {"entity": "minecraft:ravager", "spawn_weight": 1},
+        {"tag": "#minecraft:illager"},
+        {"tag": "#minecraft:raiders"}
+      ],
+      "exclude": ["minecraft:witch"]
+    },
+    "undead": {
+      "name": "Undead",
+      "color": "dark_green",
+      "build_block": "minecraft:mossy_cobblestone",
+      "hostile_to": ["villagers", "illagers"],
+      "allied_with": ["wither"],
+      "members": [
+        {"entity": "minecraft:zombie", "spawn_weight": 10},
+        {"entity": "minecraft:skeleton", "spawn_weight": 6},
+        {"entity": "minecraft:husk", "spawn_weight": 2},
+        {"entity": "minecraft:stray", "spawn_weight": 1},
+        {"tag": "#minecraft:undead"}
+      ],
+      "exclude": [
+        "minecraft:wither",
+        "minecraft:wither_skeleton",
+        "minecraft:phantom",
+        "minecraft:zombified_piglin",
+        "minecraft:zoglin",
+        "minecraft:skeleton_horse",
+        "minecraft:zombie_horse"
+      ]
+    },
+    "piglins": {
+      "name": "Piglins",
+      "color": "gold",
+      "build_block": "minecraft:blackstone",
+      "hostile_to": ["wither", "undead"],
+      "members": [
+        {"entity": "minecraft:piglin", "spawn_weight": 10},
+        {"entity": "minecraft:piglin_brute", "spawn_weight": 3},
+        {"entity": "minecraft:hoglin", "spawn_weight": 3, "role": "Brawler"}
+      ]
+    },
+    "wither": {
+      "name": "Wither",
+      "color": "dark_purple",
+      "build_block": "minecraft:nether_bricks",
+      "hostile_to": ["piglins", "villagers", "illagers"],
+      "allied_with": ["undead"],
+      "members": [
+        {"entity": "minecraft:wither_skeleton", "spawn_weight": 10},
+        {"entity": "minecraft:skeleton", "spawn_weight": 5},
+        {"entity": "minecraft:blaze", "spawn_weight": 3},
+        {"entity": "minecraft:ghast", "spawn_weight": 1, "role": "Brawler"}
+      ]
+    },
+    "brass_guild": {
+      "name": "Brass Guild",
+      "color": "#C9A13B",
+      "family": "villagers",
+      "build_block": "minecraft:spruce_planks",
+      "allied_with": ["gilded_syndicate"],
+      "members": [
+        {"entity": "guardvillagers:guard", "spawn_weight": 8},
+        {"entity": "minecraft:iron_golem", "spawn_weight": 2}
+      ]
+    },
+    "iron_watch": {
+      "name": "Iron Watch",
+      "color": "#6E8FB5",
+      "family": "villagers",
+      "build_block": "minecraft:stone_bricks",
+      "members": [
+        {"entity": "guardvillagers:guard", "spawn_weight": 10},
+        {"entity": "minecraft:iron_golem", "spawn_weight": 3}
+      ]
+    },
+    "woodland_covenant": {
+      "name": "Woodland Covenant",
+      "color": "#4F8A3C",
+      "family": "illagers",
+      "build_block": "minecraft:dark_oak_log",
+      "neutral_to": ["iron_watch"],
+      "members": [
+        {"entity": "minecraft:vindicator", "spawn_weight": 8},
+        {"entity": "minecraft:pillager", "spawn_weight": 4},
+        {"entity": "minecraft:evoker", "spawn_weight": 1}
+      ]
+    },
+    "raven_clan": {
+      "name": "Raven Clan",
+      "color": "#5A5A6E",
+      "family": "illagers",
+      "build_block": "minecraft:dark_oak_planks",
+      "hostile_to": ["gilded_syndicate", "brass_guild"],
+      "members": [
+        {"entity": "minecraft:pillager", "spawn_weight": 10},
+        {"entity": "minecraft:vindicator", "spawn_weight": 3},
+        {"entity": "minecraft:ravager", "spawn_weight": 1}
+      ]
+    },
+    "gilded_syndicate": {
+      "name": "Gilded Syndicate",
+      "color": "#FFD24A",
+      "family": "piglins",
+      "build_block": "minecraft:gilded_blackstone",
+      "members": [
+        {"entity": "minecraft:piglin", "spawn_weight": 10},
+        {"entity": "minecraft:piglin_brute", "spawn_weight": 1}
+      ]
+    },
+    "bastion_legion": {
+      "name": "Bastion Legion",
+      "color": "#B5652B",
+      "family": "piglins",
+      "build_block": "minecraft:polished_blackstone_bricks",
+      "members": [
+        {"entity": "minecraft:piglin_brute", "spawn_weight": 6},
+        {"entity": "minecraft:piglin", "spawn_weight": 6},
+        {"entity": "minecraft:hoglin", "spawn_weight": 3, "role": "Brawler"}
+      ]
+    },
+    "grave_legion": {
+      "name": "Grave Legion",
+      "color": "#3E7A5A",
+      "family": "undead",
+      "build_block": "minecraft:cobblestone",
+      "members": [
+        {"entity": "minecraft:skeleton", "spawn_weight": 8},
+        {"entity": "minecraft:zombie", "spawn_weight": 6},
+        {"entity": "minecraft:stray", "spawn_weight": 2}
+      ]
+    },
+    "plague_choir": {
+      "name": "Plague Choir",
+      "color": "#8A9A3A",
+      "family": "undead",
+      "build_block": "minecraft:mossy_cobblestone",
+      "members": [
+        {"entity": "minecraft:zombie", "spawn_weight": 8},
+        {"entity": "minecraft:husk", "spawn_weight": 4},
+        {"entity": "minecraft:zombie_villager", "spawn_weight": 4}
+      ]
+    },
+    "ashen_order": {
+      "name": "Ashen Order",
+      "color": "#9E9E9E",
+      "family": "wither",
+      "build_block": "minecraft:basalt",
+      "members": [
+        {"entity": "minecraft:wither_skeleton", "spawn_weight": 8},
+        {"entity": "minecraft:blaze", "spawn_weight": 4}
+      ]
+    },
+    "black_forge": {
+      "name": "Black Forge",
+      "color": "#4A3B5C",
+      "family": "wither",
+      "build_block": "minecraft:nether_bricks",
+      "arch_enemies": ["bastion_legion"],
+      "members": [
+        {"entity": "minecraft:wither_skeleton", "spawn_weight": 10},
+        {"entity": "minecraft:skeleton", "spawn_weight": 3},
+        {"entity": "minecraft:ghast", "spawn_weight": 1, "role": "Brawler"}
+      ]
+    }
+  }
+}

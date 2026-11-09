@@ -1,0 +1,68 @@
+[interact_key]
+	#These whitelist blocks can be interacted with when the interact key is pressed
+	InteractKeyWhitelistBlocks = []
+	#These whitelist entities can be interacted with when the interact key is pressed
+	InteractKeyWhitelistEntities = []
+	#These blacklist blocks can be interacted with when the interact key is pressed
+	InteractKeyBlacklistBlocks = []
+	#These blacklist entities can be interacted with when the interact key is pressed
+	InteractKeyBlacklistEntities = []
+
+[base_multiplier]
+	#All base damage number is multiplied by this factor
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	DamageBaseMultiplier = 1.0
+	#All armor ignore damage number is multiplied by this factor
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	ArmorIgnoreBaseMultiplier = 1.79
+	#All head shot damage number is multiplied by this factor
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	HeadShotBaseMultiplier = 1.0
+	#The movement speed will decrease per kg of weight. 0.015 means 1.5% speed decrease per kg. Set a negative value to disable this feature
+	# Default: 0.015
+	# Range: -1.0 ~ 1.7976931348623157E308
+	WeightSpeedMultiplier = 0.015
+
+[misc]
+	#The entity's head hitbox during the headshot
+	#Format: touhou_little_maid:maid [-0.5, 1.0, -0.5, 0.5, 1.5, 0.5]
+	HeadShotAABB = []
+	#The maximum stack size of ammo that the ammo box can hold
+	# Default: 3
+	# Range: > 1
+	AmmoBoxStackSize = 3
+	#Deprecated. Use vanilla server resource pack
+	ClientGunPackDownloadUrls = []
+	#Whether or not players are allowed to use the crawl feature
+	EnableCrawl = false
+	#Enable the recipe limit of default gunsmith table or not
+	EnableDefaultGunSmithTableFilter = true
+	#[Debug Option] Do server-side network check while shooting or not
+	ServerShootNetworkCheck = true
+	#[Debug Option] Do server-side shoot cooldown check or not. WARNING: Close this will disable the shoot cooldown check in server-side at all, which may lead to potential for cheating. Only consider to close this when you can't shoot at all sometimes.
+	ServerShootCooldownCheck = true
+	#Allow players to crawl without holding a TACZ gun. EnableCrawl must also be enabled
+	EnableCrawlWithoutGun = true
+	#Maximum upward look angle in degrees while crawling with a gun. Set both crawl angle limits to 90 for the full vanilla pitch range
+	# Default: 45.0
+	# Range: 0.0 ~ 90.0
+	CrawlMaxUpAngle = 45.0
+	#Maximum downward look angle in degrees while crawling with a gun
+	# Default: 30.0
+	# Range: 0.0 ~ 90.0
+	CrawlMaxDownAngle = 30.0
+	#Use only move or stand hip-fire inaccuracy while not on the ground, including jumping and falling. Ignore aiming, prone, and sneaking inaccuracy
+	UseHipFireInaccuracyWhileAirborne = false
+	#The farthest distance for the server to send bullet hit block effect packets, 0 means no limit
+	# Default: 128
+	# Range: > 0
+	BulletHitBlockEffectSendDistance = 128
+
+[gun_pegboard]
+	#Extra item ids allowed on the gun pegboard, in addition to TACZ guns, attachments, ammo, and ammo boxes
+	GunPegboardWhitelistItems = []
+	#Item ids denied on the gun pegboard. This list takes priority over the default allowed TACZ item types and whitelist
+	GunPegboardBlacklistItems = []

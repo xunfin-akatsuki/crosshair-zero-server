@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 123,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_refit_iron_spike",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "muzzle_refit_iron_spike",
+      "description": "att muzzle_refit_iron_spike"
+    }
+  ]
+}

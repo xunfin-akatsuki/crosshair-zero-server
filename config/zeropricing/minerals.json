@@ -1,0 +1,1507 @@
+{
+  "schemaVersion": 1,
+  "description": "Acquisition difficulty reference. Raw metals, crushed raw and dust are capped below one ingot by the refining reserve; raw blocks are nine raw units. Ore multi-yield references and quote safety audits remain active.",
+  "refiningReserve": 1,
+  "families": {
+    "netherite": {
+      "unitValue": 22680,
+      "difficulty": 6,
+      "rationale": "Four ancient debris/scraps plus four gold ingots; protected high-risk Nether material chain.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:netherite_ingot"
+          ],
+          "tags": [
+            "c:ingots/netherite"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "minecraft:netherite_block"
+          ],
+          "tags": [
+            "c:storage_blocks/netherite"
+          ]
+        }
+      ]
+    },
+    "netherite_scrap": {
+      "unitValue": 5400,
+      "difficulty": 6,
+      "rationale": "One scrap from one ancient debris; smelting does not remove the acquisition cost.",
+      "forms": [
+        {
+          "name": "scrap",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:netherite_scrap"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "black_steel": {
+      "unitValue": 720,
+      "difficulty": 4,
+      "rationale": "Frosted-prison encounters and 2.5% basic draugr ingot drops; reference includes encounter access.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "cataclysm:black_steel_ingot"
+          ],
+          "tags": []
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "cataclysm:black_steel_block"
+          ],
+          "tags": []
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [
+            "cataclysm:black_steel_nugget"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "ancient_metal": {
+      "unitValue": 360,
+      "difficulty": 3,
+      "rationale": "Desert-structure encounters and mob drops; intermediate exploration material.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "cataclysm:ancient_metal_ingot"
+          ],
+          "tags": []
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "cataclysm:ancient_metal_block"
+          ],
+          "tags": []
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [
+            "cataclysm:ancient_metal_nugget"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "witherite": {
+      "unitValue": 2700,
+      "difficulty": 5,
+      "rationale": "Harbinger encounter reward; high-risk source rather than generic chest contents.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "cataclysm:witherite_ingot"
+          ],
+          "tags": []
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "cataclysm:witherite_block"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "ignitium": {
+      "unitValue": 3600,
+      "difficulty": 5,
+      "rationale": "Ignis encounter reward; late combat access and limited boss supply.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "cataclysm:ignitium_ingot"
+          ],
+          "tags": []
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "cataclysm:ignitium_block"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "cursium": {
+      "unitValue": 5400,
+      "difficulty": 6,
+      "rationale": "Maledictus encounter reward; endgame combat acquisition.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "cataclysm:cursium_ingot"
+          ],
+          "tags": []
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "cataclysm:cursium_block"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "copper": {
+      "unitValue": 36,
+      "difficulty": 1,
+      "rationale": "Abundant overworld deposits; entry-level mining. Ore factor 12 covers the captured Create deepslate crushing yield including byproducts; this is a balance reference, not a measured mining cost.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:copper_ingot"
+          ],
+          "tags": [
+            "c:ingots/copper"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/copper"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/copper"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "minecraft:raw_copper"
+          ],
+          "tags": [
+            "c:raw_materials/copper"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 12,
+          "divisor": 1,
+          "items": [
+            "minecraft:copper_ore",
+            "minecraft:deepslate_copper_ore"
+          ],
+          "tags": [
+            "c:ores/copper"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/copper"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_copper"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_copper"
+          ],
+          "tags": []
+        },
+        {
+          "name": "ore_bearing_stone",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "create:veridium"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "iron": {
+      "unitValue": 90,
+      "difficulty": 2,
+      "rationale": "Underground extraction and smelting; core industrial resource.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:iron_ingot"
+          ],
+          "tags": [
+            "c:ingots/iron"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/iron"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/iron"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "minecraft:raw_iron"
+          ],
+          "tags": [
+            "c:raw_materials/iron"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "minecraft:iron_ore"
+          ],
+          "tags": [
+            "c:ores/iron"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/iron"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_iron"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_iron"
+          ],
+          "tags": []
+        },
+        {
+          "name": "ore_bearing_stone",
+          "factor": 0.6,
+          "divisor": 1,
+          "items": [
+            "create:crimsite"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "zinc": {
+      "unitValue": 108,
+      "difficulty": 2,
+      "rationale": "Dedicated Create deposits and industrial access.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "create:zinc_ingot"
+          ],
+          "tags": [
+            "c:ingots/zinc"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/zinc"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/zinc"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:raw_zinc"
+          ],
+          "tags": [
+            "c:raw_materials/zinc"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "create:zinc_ore"
+          ],
+          "tags": [
+            "c:ores/zinc"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/zinc"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_zinc"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_zinc"
+          ],
+          "tags": []
+        },
+        {
+          "name": "ore_bearing_stone",
+          "factor": 0.5,
+          "divisor": 1,
+          "items": [
+            "create:asurine"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "aluminum": {
+      "unitValue": 108,
+      "difficulty": 2,
+      "rationale": "Industrial ore processing and less common deposits.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ingot_aluminum"
+          ],
+          "tags": [
+            "c:ingots/aluminum"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/aluminum"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/aluminum"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:raw_aluminum"
+          ],
+          "tags": [
+            "c:raw_materials/aluminum"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ore_aluminum"
+          ],
+          "tags": [
+            "c:ores/aluminum"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/aluminum"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_aluminum"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_aluminum"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "lead": {
+      "unitValue": 144,
+      "difficulty": 2,
+      "rationale": "Less common industrial ore; underground mining.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ingot_lead"
+          ],
+          "tags": [
+            "c:ingots/lead"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/lead"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/lead"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:raw_lead"
+          ],
+          "tags": [
+            "c:raw_materials/lead"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ore_lead"
+          ],
+          "tags": [
+            "c:ores/lead"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/lead"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_lead"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_lead"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "nickel": {
+      "unitValue": 216,
+      "difficulty": 3,
+      "rationale": "Uncommon industrial metal and restricted deposit distribution.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ingot_nickel"
+          ],
+          "tags": [
+            "c:ingots/nickel"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/nickel"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/nickel"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:raw_nickel"
+          ],
+          "tags": [
+            "c:raw_materials/nickel"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ore_nickel"
+          ],
+          "tags": [
+            "c:ores/nickel"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/nickel"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_nickel"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_nickel"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "gold": {
+      "unitValue": 270,
+      "difficulty": 3,
+      "rationale": "Scarcer deposits and hazardous lower-world mining.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:gold_ingot"
+          ],
+          "tags": [
+            "c:ingots/gold"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/gold"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/gold"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "minecraft:raw_gold"
+          ],
+          "tags": [
+            "c:raw_materials/gold"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "minecraft:gold_ore"
+          ],
+          "tags": [
+            "c:ores/gold"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/gold"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_gold"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_gold"
+          ],
+          "tags": []
+        },
+        {
+          "name": "ore_bearing_stone",
+          "factor": 0.4,
+          "divisor": 1,
+          "items": [
+            "create:ochrum"
+          ],
+          "tags": []
+        },
+        {
+          "name": "nether_ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "minecraft:nether_gold_ore"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "silver": {
+      "unitValue": 360,
+      "difficulty": 3,
+      "rationale": "Scarce industrial deposits and processing access.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ingot_silver"
+          ],
+          "tags": [
+            "c:ingots/silver"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/silver"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/silver"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:raw_silver"
+          ],
+          "tags": [
+            "c:raw_materials/silver"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ore_silver"
+          ],
+          "tags": [
+            "c:ores/silver"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/silver"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_silver"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_silver"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "uranium": {
+      "unitValue": 720,
+      "difficulty": 4,
+      "rationale": "Rare deep industrial deposits; advanced acquisition stage.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ingot_uranium"
+          ],
+          "tags": [
+            "c:ingots/uranium"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/uranium"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/uranium"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:raw_uranium"
+          ],
+          "tags": [
+            "c:raw_materials/uranium"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "immersiveengineering:ore_uranium"
+          ],
+          "tags": [
+            "c:ores/uranium"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/uranium"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 13.5,
+          "divisor": 1,
+          "items": [],
+          "tags": [
+            "c:storage_blocks/raw_uranium"
+          ]
+        },
+        {
+          "name": "crushed_raw",
+          "factor": 1.5,
+          "divisor": 1,
+          "items": [
+            "create:crushed_raw_uranium"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    "coal": {
+      "unitValue": 18,
+      "difficulty": 1,
+      "rationale": "Common fuel; accessible surface and mountain veins.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:coal"
+          ],
+          "tags": [
+            "c:gems/coal"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "minecraft:coal_ore",
+            "minecraft:deepslate_coal_ore"
+          ],
+          "tags": [
+            "c:ores/coal"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "minecraft:coal_block"
+          ],
+          "tags": [
+            "c:storage_blocks/coal"
+          ]
+        }
+      ]
+    },
+    "redstone": {
+      "unitValue": 27,
+      "difficulty": 2,
+      "rationale": "Deep ore, iron-tier harvest requirement; high per-ore yield.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:redstone"
+          ],
+          "tags": [
+            "c:gems/redstone"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 8,
+          "divisor": 1,
+          "items": [
+            "minecraft:redstone_ore",
+            "minecraft:deepslate_redstone_ore"
+          ],
+          "tags": [
+            "c:ores/redstone"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "minecraft:redstone_block"
+          ],
+          "tags": [
+            "c:storage_blocks/redstone"
+          ]
+        }
+      ]
+    },
+    "lapis": {
+      "unitValue": 36,
+      "difficulty": 2,
+      "rationale": "Underground deposits; high per-ore yield offsets scarcity.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:lapis_lazuli"
+          ],
+          "tags": [
+            "c:gems/lapis"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 12,
+          "divisor": 1,
+          "items": [
+            "minecraft:lapis_ore",
+            "minecraft:deepslate_lapis_ore"
+          ],
+          "tags": [
+            "c:ores/lapis"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "minecraft:lapis_block"
+          ],
+          "tags": [
+            "c:storage_blocks/lapis"
+          ]
+        }
+      ]
+    },
+    "quartz": {
+      "unitValue": 54,
+      "difficulty": 3,
+      "rationale": "Nether access and environmental risk.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:quartz"
+          ],
+          "tags": [
+            "c:gems/quartz"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "minecraft:nether_quartz_ore"
+          ],
+          "tags": [
+            "c:ores/quartz"
+          ]
+        }
+      ]
+    },
+    "amethyst": {
+      "unitValue": 72,
+      "difficulty": 3,
+      "rationale": "Geode discovery and growth-time constraint.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:amethyst_shard"
+          ],
+          "tags": [
+            "c:gems/amethyst"
+          ]
+        }
+      ]
+    },
+    "emerald": {
+      "unitValue": 180,
+      "difficulty": 2,
+      "rationale": "Provisional multi-source balance value, not mountain mining alone. Renewable trade and structure access need economic calibration; trading quote safety remains separate.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:emerald"
+          ],
+          "tags": [
+            "c:gems/emerald"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "minecraft:emerald_ore",
+            "minecraft:deepslate_emerald_ore"
+          ],
+          "tags": [
+            "c:ores/emerald"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "minecraft:emerald_block"
+          ],
+          "tags": [
+            "c:storage_blocks/emerald"
+          ]
+        }
+      ]
+    },
+    "diamond": {
+      "unitValue": 540,
+      "difficulty": 4,
+      "rationale": "Provisional multi-source balance reference: deep mining, fortune and structure loot. Three times emerald rather than ten; not a measured universal acquisition ratio.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:diamond"
+          ],
+          "tags": [
+            "c:gems/diamond"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "divisor": 1,
+          "items": [
+            "minecraft:diamond_ore",
+            "minecraft:deepslate_diamond_ore"
+          ],
+          "tags": [
+            "c:ores/diamond"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "divisor": 1,
+          "items": [
+            "minecraft:diamond_block"
+          ],
+          "tags": [
+            "c:storage_blocks/diamond"
+          ]
+        }
+      ]
+    },
+    "ancient_debris": {
+      "unitValue": 5400,
+      "difficulty": 6,
+      "rationale": "Very rare Nether deposits, diamond-tier harvesting and hostile environment.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "divisor": 1,
+          "items": [
+            "minecraft:ancient_debris"
+          ],
+          "tags": [
+            "c:gems/ancient_debris"
+          ]
+        }
+      ]
+    },
+    "zirconia": {
+      "unitValue": 720,
+      "difficulty": 4,
+      "rationale": "Provisional exploration/archaeology reference: chest remolders and forge archaeology, not a mined ore. Reversible block recipes do not establish independent supply. Balance target, not measured global loot probability.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "items": [
+            "caverns_and_chasms:zirconia"
+          ],
+          "tags": [
+            "c:gems/zirconia"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "items": [
+            "caverns_and_chasms:zirconia_block"
+          ],
+          "tags": [
+            "c:storage_blocks/zirconia"
+          ]
+        }
+      ]
+    },
+    "spinel": {
+      "unitValue": 120,
+      "difficulty": 2,
+      "rationale": "Provisional underground gem reference: size-12 veins, ordinary and buried placements, 1-2 base drops before fortune; more accessible than treasure zirconia.",
+      "forms": [
+        {
+          "name": "resource",
+          "factor": 1,
+          "items": [
+            "caverns_and_chasms:spinel"
+          ],
+          "tags": [
+            "c:gems/spinel"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 3,
+          "items": [
+            "caverns_and_chasms:spinel_ore",
+            "caverns_and_chasms:deepslate_spinel_ore"
+          ],
+          "tags": [
+            "c:ores/spinel"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "items": [
+            "caverns_and_chasms:spinel_block"
+          ],
+          "tags": [
+            "c:storage_blocks/spinel"
+          ]
+        }
+      ]
+    },
+    "necromium": {
+      "unitValue": 23040,
+      "difficulty": 6,
+      "rationale": "Four netherite scraps and four silver ingots. Explicit equivalent family prevents nugget/block reverse recipes from pretending to be independent low-cost acquisition.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "items": [
+            "caverns_and_chasms:necromium_ingot"
+          ],
+          "tags": [
+            "c:ingots/necromium"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [
+            "caverns_and_chasms:necromium_nugget"
+          ],
+          "tags": [
+            "c:nuggets/necromium"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "items": [
+            "caverns_and_chasms:necromium_block"
+          ],
+          "tags": [
+            "c:storage_blocks/necromium"
+          ]
+        }
+      ]
+    },
+    "steel": {
+      "unitValue": 180,
+      "difficulty": 3,
+      "rationale": "Reviewed alloy reference: iron grinding, coke/carbon addition and blast-furnace refining, or equivalent IE steelmaking. Provisional alloy effort premium; not a natural ore or measured labor time. Shared effective tags prevent cheaper cross-mod steel from flattening steel products to iron.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "items": [
+            "superbwarfare:steel_ingot"
+          ],
+          "tags": [
+            "c:ingots/steel"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "items": [],
+          "tags": [
+            "c:dusts/steel"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/steel"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "items": [
+            "superbwarfare:steel_block"
+          ],
+          "tags": [
+            "c:storage_blocks/steel"
+          ]
+        }
+      ]
+    },
+    "tungsten": {
+      "unitValue": 360,
+      "difficulty": 4,
+      "rationale": "SBW scheelite acquisition: stone veins size 4, six placement attempts at Y1..48; deepslate veins size 8, seven attempts at Y-64..0, biome-conditional. One raw scheelite at fortune 0; blast furnace only, 100 ticks per ingot. Attempts are not guaranteed ores or global yield. Provisional price tier tungsten \u003e steel \u003e iron.",
+      "forms": [
+        {
+          "name": "ingot",
+          "factor": 1,
+          "items": [
+            "superbwarfare:tungsten_ingot"
+          ],
+          "tags": [
+            "c:ingots/tungsten",
+            "c:ingots/scheelite"
+          ]
+        },
+        {
+          "name": "raw",
+          "factor": 1,
+          "items": [
+            "superbwarfare:scheelite"
+          ],
+          "tags": [
+            "c:raw_materials/tungsten",
+            "c:raw_materials/scheelite"
+          ]
+        },
+        {
+          "name": "dust",
+          "factor": 1,
+          "items": [
+            "superbwarfare:tungsten_powder"
+          ],
+          "tags": [
+            "c:dusts/tungsten",
+            "c:dusts/scheelite"
+          ]
+        },
+        {
+          "name": "ore",
+          "factor": 1,
+          "items": [
+            "superbwarfare:scheelite_ore",
+            "superbwarfare:deepslate_scheelite_ore"
+          ],
+          "tags": [
+            "c:ores/tungsten",
+            "c:ores/scheelite"
+          ]
+        },
+        {
+          "name": "raw_storage_block",
+          "factor": 9,
+          "items": [
+            "superbwarfare:raw_scheelite_block"
+          ],
+          "tags": [
+            "c:storage_blocks/raw_tungsten",
+            "c:storage_blocks/raw_scheelite"
+          ]
+        },
+        {
+          "name": "nugget",
+          "factor": 1,
+          "divisor": 9,
+          "items": [],
+          "tags": [
+            "c:nuggets/tungsten"
+          ]
+        },
+        {
+          "name": "storage_block",
+          "factor": 9,
+          "items": [
+            "superbwarfare:tungsten_block"
+          ],
+          "tags": [
+            "c:storage_blocks/tungsten",
+            "c:storage_blocks/scheelite"
+          ]
+        }
+      ]
+    }
+  },
+  "mineralBalanceRevision": 2
+}

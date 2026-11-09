@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mutantmonsters:mutant_zombie",
+    "mutantszombies:crawler",
+    "mutantszombies:blister_zombie",
+    "mutantszombies:spitter",
+    "mutantszombies:split_head_zombie",
+    "mutantszombies:rotten_mutant",
+    "mutantszombies:zombie_brute",
+    "zoniex:tormented_zombie",
+    "cyber_ware_port:cyber_zombie",
+    "mca:male_zombie_villager",
+    "mca:female_zombie_villager",
+    "tide:cave_crawler"
+  ]
+}

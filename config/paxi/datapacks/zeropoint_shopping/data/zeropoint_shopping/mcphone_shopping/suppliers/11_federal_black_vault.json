@@ -1,0 +1,291 @@
+{
+  "name": "联邦特种仓库·禁运品",
+  "requires_mod": "tacz",
+  "products": [
+    {
+      "id": "g_scar_h",
+      "display_name": "SCAR-H",
+      "count": 1,
+      "price": 50600,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:scar_h"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_fnfal",
+      "display_name": "FN FAL",
+      "count": 1,
+      "price": 44600,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:fn_fal"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_hkg3",
+      "display_name": "HK G3",
+      "count": 1,
+      "price": 42400,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:hk_g3"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_p90",
+      "display_name": "FN P90",
+      "count": 1,
+      "price": 41400,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:p90"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_deagle",
+      "display_name": "沙漠之鹰",
+      "count": 1,
+      "price": 33200,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:deagle"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_spas12",
+      "display_name": "SPAS-12",
+      "count": 1,
+      "price": 56000,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:spas_12"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_m1014",
+      "display_name": "M1014",
+      "count": 1,
+      "price": 42400,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m1014"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_mk14b",
+      "display_name": "MK14 精配",
+      "count": 1,
+      "price": 44600,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:mk14"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "g_m107",
+      "display_name": "巴雷特 M107",
+      "count": 1,
+      "price": 128200,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m107"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_m95",
+      "display_name": "巴雷特 M95",
+      "count": 1,
+      "price": 121200,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m95"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "g_rpg7",
+      "display_name": "RPG-7",
+      "count": 1,
+      "price": 40600,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:rpg7"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "a_50bmg",
+      "display_name": ".50 BMG",
+      "count": 20,
+      "price": 5000,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:50bmg"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "a_338b",
+      "display_name": ".338 竞赛弹",
+      "count": 30,
+      "price": 2430,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:338"
+      },
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "a_40mm",
+      "display_name": "40mm 榴弹",
+      "count": 12,
+      "price": 15000,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:40mm"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "a_rpg",
+      "display_name": "RPG 火箭弹",
+      "count": 6,
+      "price": 15000,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:rpg_rocket"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "s_vudu",
+      "display_name": "Vudu 瞄具",
+      "count": 1,
+      "price": 15000,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:scope_vudu"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "s_sightt2",
+      "display_name": "T2 红点",
+      "count": 1,
+      "price": 15000,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:sight_t2"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "s_rmr",
+      "display_name": "RMR 微型红点",
+      "count": 1,
+      "price": 15000,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:sight_rmr_dot"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "s_peq15",
+      "display_name": "PEQ-15 激光",
+      "count": 1,
+      "price": 15000,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:laser_peq15"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    }
+  ]
+}

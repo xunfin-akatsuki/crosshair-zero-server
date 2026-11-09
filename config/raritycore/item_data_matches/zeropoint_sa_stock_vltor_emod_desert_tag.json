@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 4,
+  "enabled": true,
+  "description": "zeropoint: att stock_vltor_emod_desert",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "suffuse:stock_vltor_emod_desert",
+      "description": "zeropoint: att stock_vltor_emod_desert"
+    }
+  ]
+}

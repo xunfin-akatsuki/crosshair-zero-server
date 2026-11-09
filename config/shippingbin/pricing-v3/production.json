@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "maxProcessFeeFraction": 0.10,
+  "minimumProcessFeeAllowance": 1,
+  "sourcePremiumFraction": 0.10,
+  "description": "Manufactured items use an acyclic economic route, net materials plus bounded actual process fee, then integer ceiling. No automatic profit margin. Alternate routes and rounding remain auditable."
+}

@@ -1,0 +1,23 @@
+portals:
+  mainworld:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: Xunfin
+    location: ZeroPlot:-2.0,63.0,0.0:2.0,68.0,0.0
+    action-type: multiverse-destination
+    action: e:world:-910.0,71.0,262.0:0.0:0.0
+    check-destination-safety: true
+    version: 1.2
+  plotworld:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: Xunfin
+    location: world:-910.0,71.0,261.0:-910.0,74.0,264.0
+    action-type: multiverse-destination
+    action: e:ZeroPlot:0.0,63.0,0.0:0.0:0.0
+    check-destination-safety: true
+    version: 1.2

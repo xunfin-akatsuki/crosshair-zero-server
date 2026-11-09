@@ -1,0 +1,90 @@
+{
+  "levels": [
+    {
+      "name": "Unburdened",
+      "min_weight": 60.0,
+      "max_weight": 73.32333333333332,
+      "effects": []
+    },
+    {
+      "name": "Light Load",
+      "min_weight": 73.33333333333333,
+      "max_weight": 86.65666666666667,
+      "effects": [
+        {
+          "effect": "ezweight:light_encumbered",
+          "amplifier": 0,
+          "duration": 6000
+        }
+      ]
+    },
+    {
+      "name": "Moderate Load",
+      "min_weight": 86.66666666666667,
+      "max_weight": 99.99,
+      "effects": [
+        {
+          "effect": "ezweight:encumbered",
+          "amplifier": 0,
+          "duration": 6000
+        }
+      ]
+    },
+    {
+      "name": "Heavy Load",
+      "min_weight": 100.0,
+      "max_weight": 113.32333333333334,
+      "effects": [
+        {
+          "effect": "ezweight:heavily_encumbered",
+          "amplifier": 0,
+          "duration": 6000
+        }
+      ]
+    },
+    {
+      "name": "Very Heavy Load",
+      "min_weight": 113.33333333333334,
+      "max_weight": 126.65666666666667,
+      "effects": [
+        {
+          "effect": "ezweight:overburdened",
+          "amplifier": 0,
+          "duration": 6000
+        }
+      ]
+    },
+    {
+      "name": "Overburdened",
+      "min_weight": 126.66666666666667,
+      "max_weight": 139.99,
+      "effects": [
+        {
+          "effect": "ezweight:crushed",
+          "amplifier": 0,
+          "duration": 6000
+        }
+      ]
+    },
+    {
+      "name": "Crushed",
+      "min_weight": 140.0,
+      "max_weight": 1.7976931348623157E308,
+      "effects": [
+        {
+          "effect": "ezweight:crushed",
+          "amplifier": 0,
+          "duration": 6000
+        },
+        {
+          "effect": "minecraft:weakness",
+          "amplifier": 0,
+          "duration": 6000
+        }
+      ]
+    }
+  ],
+  "version": 1,
+  "base_weight": 60.0,
+  "max_weight": 140.0
+}

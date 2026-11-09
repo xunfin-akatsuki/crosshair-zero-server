@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 116,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: gun shotgun_db_stone",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "shotgun_db_stone",
+      "description": "gun shotgun_db_stone"
+    }
+  ]
+}

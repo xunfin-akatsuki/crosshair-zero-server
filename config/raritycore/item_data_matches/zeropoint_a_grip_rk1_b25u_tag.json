@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 113,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att grip_rk1_b25u",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "grip_rk1_b25u",
+      "description": "att grip_rk1_b25u"
+    }
+  ]
+}

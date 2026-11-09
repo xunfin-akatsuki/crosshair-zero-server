@@ -1,0 +1,7 @@
+["Configs for MCA Descendants"]
+	#MCA: Butchery automatically sets dropping villager/player corpses to false in Butchery's config for compatibility, enable/disable drops here
+	"Drop Vanilla Villagers" = true
+	"Drop Default Player Corpse" = false
+	#Desaturates eyes of MCA Villager corpses
+	"Fresh Corpse Grey Eyes" = false
+	"Closed Eyes" = false

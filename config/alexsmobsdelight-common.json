@@ -1,0 +1,32 @@
+{
+  "eternal_seagull": {
+    "eat_cooldown": 160,
+    "food_items": [
+      "alexsmobsdelight:eternal_cooked_seagull",
+      "alexsmobsdelight:enchanted_eternal_cooked_seagull",
+      "artifacts:eternal_steak",
+      "artifacts:everlasting_beef"
+    ],
+    "blacklist": [
+      "someassemblyrequired:sandwich"
+    ]
+  },
+  "crocodile_karambit": {
+    "looting_chance": 20,
+    "looting_health": 2.0,
+    "looting_all_items": false,
+    "blacklist": [
+      "alexsmobs:void_worm"
+    ]
+  },
+  "orcas_leap_stew": {
+    "give_chance": 30
+  },
+  "misc": {
+    "stackable_soup_items": true,
+    "pupfish_break_food_blocks": true
+  },
+  "tiger_cake_roll": {
+    "summon_range": 16
+  }
+}

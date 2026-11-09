@@ -1,0 +1,119 @@
+#Living wall siege traversal
+[living_wall]
+	#Master switch for the living wall bridge system.
+	#Build automatically when enough eligible mobs cluster near a wall or hazard.
+	enableLivingWall = true
+	#Enable bounded server-side diagnostics for structural members that fail to reach the bridge foundation.
+	#Logs movement/navigation samples and push requests; observations do not prove causation.
+	enableMotionDiagnostics = false
+	#Entity ids allowed to participate in the living wall.
+	#Use exact ids like 'minecraft:zombie' or namespace wildcards like 'minecraft:*'.
+	eligibleMobEntityIds = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned"]
+	#Maximum height of the living wall.
+	#The scan remains bounded even when this value is increased.
+	# Default: 12
+	# Range: 1 ~ 64
+	maxHeight = 12
+	#Maximum horizontal distance the living wall may cover.
+	#The wall scanner stops at this distance and never searches the wider world.
+	# Default: 12
+	# Range: 1 ~ 48
+	maxGap = 12
+	#Maximum mobs committed to one living wall.
+	# Default: 48
+	# Range: 3 ~ 128
+	maxBodies = 48
+	#Radius around the pivot used to generate broad assembly slots.
+	#These slots stay separate from the narrow intake staging cells.
+	# Default: 8
+	# Range: 2 ~ 24
+	assemblySlotRadius = 8
+	#Maximum number of broad assembly slots the allocator may keep per formation.
+	#The allocator is bounded so path probing stays predictable.
+	# Default: 16
+	# Range: 1 ~ 64
+	maxAssemblySlots = 16
+	#Maximum workers that may be actively pulled toward assembly slots at the same time.
+	#Higher values build faster but can increase clumping, collision pressure, and pathfinding cost.
+	#Default 2 preserves the old conservative behavior; 4 is a reasonable faster test value.
+	# Default: 2
+	# Range: 1 ~ 8
+	maxActiveAssemblyReleases = 2
+	#Maximum vertical drop between consecutive navigation nodes while a mob walks to a holding cell.
+	#A value of 5 permits short drops while still rejecting paths that approach deep cliffs.
+	#This does not override lava, hazard, unsupported-ground, or unsafe-intermediate-cell checks.
+	# Default: 5
+	# Range: 0 ~ 32
+	maxSafeHoldingDrop = 5
+	#Speed used while a recruited mob is raised into its construction slot.
+	#Measured in blocks per server tick; lower values look slower and reduce sudden pulls.
+	# Default: 0.18
+	# Range: 0.01 ~ 1.0
+	climbSpeedBlocksPerTick = 0.18
+	#Angular progress per tilt update while each layer shifts toward the bridge endpoint.
+	#Lower values make both ordinary tilts and drop bridges take longer.
+	# Default: 0.025
+	# Range: 0.001 ~ 0.25
+	tiltSpeedRadiansPerUpdate = 0.025
+	#Maximum three-dimensional length of a drop bridge when the lower side has no touching exit.
+	#Measured in blocks and bounded by the scanner maximum gap and height.
+	# Default: 16.0
+	# Range: 1.0 ~ 64.0
+	maxDropBridgeLength = 16.0
+	#Maximum length of a bridge that reaches a touching ledge or short drop exit.
+	#Measured in blocks and bounded by the scanner maximum gap.
+	# Default: 12.0
+	# Range: 1.0 ~ 64.0
+	maxRopeBridgeLength = 12.0
+	#Maximum distance from the committed bridge roster origin for recruitment.
+	#Captured when admission begins and not changed during execution.
+	# Default: 64.0
+	# Range: 1.0 ~ 128.0
+	maxRecruitmentDistance = 64.0
+	#Maximum horizontal distance in blocks from pivot to wall anchor for pillar tilt living wall construction.
+	#Mobs within this distance can initiate a pillar tilt living wall.
+	# Default: 6.25
+	# Range: 1.0 ~ 32.0
+	maxPillarTiltDistance = 6.25
+	#Allow living bridges to articulate and bend around obstacle corners instead of collapsing on collision.
+	enableArticulatedBridges = true
+	#Maximum number of articulated bends (elbow joints) permitted in a single living bridge.
+	# Default: 2
+	# Range: 1 ~ 6
+	maxBridgeBends = 2
+	#Minimum interior angle (in degrees) at a bridge bend to prevent sharp folds and self-intersection.
+	# Default: 75.0
+	# Range: 45.0 ~ 160.0
+	minBendAngleDegrees = 75.0
+	#Maximum block radius to search for a tangent clear air slot when deflecting around an obstacle.
+	# Default: 2
+	# Range: 1 ~ 4
+	obstacleDeflectionRadius = 2
+	#Horizontal distance in blocks used to link neighboring mobs into distinct spatial clusters.
+	# Default: 12.0
+	# Range: 4.0 ~ 32.0
+	clusterSpatialRadius = 12.0
+	#Maximum vertical elevation difference in blocks to group mobs into the same cluster.
+	#Separates cave mobs from ledge or cliff mobs above.
+	# Default: 5.0
+	# Range: 2.0 ~ 16.0
+	clusterVerticalDelta = 5.0
+	#Maximum candidate mobs sampled across players before spatial clustering partitioning.
+	# Default: 128
+	# Range: 32 ~ 256
+	maxCandidatesPerScan = 128
+	#Evacuate mobs from dead-end basins and caves when bridge admission repeatedly fails.
+	enableBasinEvacuation = true
+	#Consecutive failed bridge admission attempts before a basin is marked unviable.
+	# Default: 3
+	# Range: 1 ~ 10
+	basinFailureThreshold = 3
+	#Ticks a failed basin remains in evacuation cooldown before allowing new bridge attempts.
+	# Default: 400
+	# Range: 100 ~ 2400
+	basinCooldownTicks = 400
+	#Timeout in server ticks before an assembling bridge collapses if workers do not arrive in time.
+	#Default is 2400 ticks (120 seconds). Increase if mobs take longer to navigate over rough terrain.
+	# Default: 2400
+	# Range: 100 ~ 7200
+	assemblyTimeoutTicks = 2400

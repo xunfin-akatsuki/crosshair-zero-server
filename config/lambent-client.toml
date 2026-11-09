@@ -1,0 +1,19 @@
+#Lambent client settings, for every mod's lights.
+#Dust drifting in lamp and flashlight beams.
+lampDust = true
+
+#Performance
+[performance]
+	#Lit haze in the air of lamp and flashlight beams. Off is faster.
+	beamHaze = true
+	#Entities casting shadows in lamp and flashlight beams. Off is faster.
+	lampEntityShadows = true
+	#Grass, flowers, crops and other plants casting shadows in lamp and flashlight beams. Off is
+	#faster in fields and forests.
+	foliageShadows = true
+	#Point lights (flares and the like) stopped by blocks and entities between them and what
+	#they light. Off is faster.
+	pointShadows = true
+	#Size of each lamp's shadow map in pixels (256, 512, 1024 or 2048). Lower is faster,
+	#blockier. Takes effect after a restart.
+	shadowResolution = 1024

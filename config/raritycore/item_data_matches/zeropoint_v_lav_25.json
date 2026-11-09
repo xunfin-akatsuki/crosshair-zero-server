@@ -1,0 +1,16 @@
+{
+  "item_id": "superbwarfare:container",
+  "fuzzy_match": true,
+  "priority": 206,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: vehicle crate lav_25",
+  "conditions": [
+    {
+      "path": "components.minecraft:block_entity_data",
+      "type": "contains",
+      "substring": "lav_25",
+      "description": "vehicle lav_25"
+    }
+  ]
+}

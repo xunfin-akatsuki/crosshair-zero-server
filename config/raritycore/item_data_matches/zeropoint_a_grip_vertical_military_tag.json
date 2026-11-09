@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 122,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att grip_vertical_military",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "grip_vertical_military",
+      "description": "att grip_vertical_military"
+    }
+  ]
+}

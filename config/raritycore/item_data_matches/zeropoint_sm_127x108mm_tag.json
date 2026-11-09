@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:ammo",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: ammo 12.7x108mm",
+  "conditions": [
+    {
+      "path": "tag.AmmoId",
+      "type": "contains",
+      "substring": "suffuse:12.7x108mm",
+      "description": "zeropoint: ammo 12.7x108mm"
+    }
+  ]
+}

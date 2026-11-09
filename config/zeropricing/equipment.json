@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "description": "Independent equipment strength grading. Only missing prices may use explicit or strength rarity fallback; existing source and recipe values win. Future bands and drop weights remain proposals.",
+  "rarityFallbackEnabled": true,
+  "fallbackPrices": [
+    25,
+    100,
+    400,
+    1600,
+    6000,
+    24000
+  ],
+  "scoreThresholds": [
+    5,
+    8,
+    11,
+    16,
+    24
+  ],
+  "futureBalanceBands": [
+    {
+      "priceMin": 50,
+      "priceMax": 199,
+      "dropWeight": 1.0
+    },
+    {
+      "priceMin": 200,
+      "priceMax": 799,
+      "dropWeight": 0.6
+    },
+    {
+      "priceMin": 800,
+      "priceMax": 2999,
+      "dropWeight": 0.3
+    },
+    {
+      "priceMin": 3000,
+      "priceMax": 11999,
+      "dropWeight": 0.12
+    },
+    {
+      "priceMin": 12000,
+      "priceMax": 29999,
+      "dropWeight": 0.04
+    },
+    {
+      "priceMin": 30000,
+      "priceMax": 120000,
+      "dropWeight": 0.01
+    }
+  ],
+  "zeroContactArmorPricing": {
+    "enabled": true,
+    "minimumPrices": [
+      100,
+      300,
+      800,
+      1800,
+      3500,
+      6000
+    ],
+    "description": "Final whole coins, not scaled by economy.sourceScale. Only zerocontact armor and ballistic_armor, including protective plates. Final price is at least the grade minimum and admitted manufacturing cost; no global rarity-price mapping or supply authorization."
+  }
+}

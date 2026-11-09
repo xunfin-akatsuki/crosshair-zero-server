@@ -1,0 +1,466 @@
+{
+  "configVariant": 1,
+  "internalConfigVersion": 1,
+  "maxWaveSize": 30,
+  "dimension": "minecraft:overworld",
+  "defaultMobId": "undeadnights:horde_zombie",
+  "defaultMobTrackingRange": 128.0,
+  "extraSpawnInfo": "none",
+  "nbtTags": "",
+  "targetEntities": [],
+  "defaultHordeMob": {
+    "mobId": "undeadnights:horde_zombie",
+    "spawnChance": "100",
+    "mobTrackingRange": 128.0,
+    "extraSpawnInfo": "none",
+    "nbtTags": ""
+  },
+  "hordeMobs": [
+    {
+      "mobId": "undeadnights:elite_zombie",
+      "spawnChance": "8",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "undeadnights:demolition_zombie",
+      "spawnChance": "10",
+      "extraSpawnInfo": "tnt:5"
+    },
+    {
+      "mobId": "mutantszombies:crawler",
+      "spawnChance": "7",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mutantszombies:split_head_zombie",
+      "spawnChance": "5",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mutantszombies:zombie_brute",
+      "spawnChance": "4",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mutantszombies:blister_zombie",
+      "spawnChance": "4",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mutantszombies:spitter",
+      "spawnChance": "3",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mutantmonsters:mutant_zombie",
+      "spawnChance": "2",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mutantszombies:mutant_brute",
+      "spawnChance": "1",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "zoniex:tormented_zombie",
+      "spawnChance": "5",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "cyber_ware_port:cyber_zombie",
+      "spawnChance": "6",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mca:male_zombie_villager",
+      "spawnChance": "4",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mca:female_zombie_villager",
+      "spawnChance": "4",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "tide:cave_crawler",
+      "spawnChance": "3",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:cyst",
+      "spawnChance": "8",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:alpha_clot",
+      "spawnChance": "6",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:gorefiend",
+      "spawnChance": "5",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:crawler",
+      "spawnChance": "4",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:stalker",
+      "spawnChance": "3",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:bloat",
+      "spawnChance": "3",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:husk",
+      "spawnChance": "3",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:siren",
+      "spawnChance": "2",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:spitter",
+      "spawnChance": "2",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:scrake",
+      "spawnChance": "2",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "outbreak_kf:fleshpound",
+      "spawnChance": "1",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "zoniex:skin_crawler",
+      "spawnChance": "4",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "zoniex:brutaliser",
+      "spawnChance": "3",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "zoniex:spine_wrencher",
+      "spawnChance": "2",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "zoniex:disemboweler",
+      "spawnChance": "3",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "zoniex:blood_eagle",
+      "spawnChance": "1",
+      "extraSpawnInfo": "none"
+    },
+    {
+      "mobId": "mutantszombies:rotten_mutant",
+      "spawnChance": "3",
+      "extraSpawnInfo": "none"
+    }
+  ],
+  "numberOfHordes": 1,
+  "defaultHorde": "准星零点尸潮",
+  "defaultHordeId": 1,
+  "hordes": [
+    {
+      "hordeId": 1,
+      "hordeName": "准星零点尸潮",
+      "dimension": "minecraft:overworld",
+      "hordeMobs": [
+        {
+          "mobId": "undeadnights:horde_zombie",
+          "chance": 100,
+          "countMin": 4,
+          "countMax": 10,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "undeadnights:elite_zombie",
+          "chance": 55,
+          "countMin": 1,
+          "countMax": 3,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "undeadnights:demolition_zombie",
+          "chance": 35,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "tnt:5",
+          "nbt": ""
+        },
+        {
+          "mobId": "mutantszombies:crawler",
+          "chance": 45,
+          "countMin": 1,
+          "countMax": 3,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mutantszombies:split_head_zombie",
+          "chance": 35,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mutantszombies:zombie_brute",
+          "chance": 25,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mutantszombies:blister_zombie",
+          "chance": 25,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mutantszombies:spitter",
+          "chance": 20,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mutantszombies:rotten_mutant",
+          "chance": 15,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mutantmonsters:mutant_zombie",
+          "chance": 10,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mutantszombies:mutant_brute",
+          "chance": 6,
+          "countMin": 0,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "zoniex:tormented_zombie",
+          "chance": 35,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "cyber_ware_port:cyber_zombie",
+          "chance": 40,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mca:male_zombie_villager",
+          "chance": 25,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "mca:female_zombie_villager",
+          "chance": 25,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "tide:cave_crawler",
+          "chance": 20,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "minecraft:zombie",
+          "chance": 60,
+          "countMin": 2,
+          "countMax": 6,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "minecraft:husk",
+          "chance": 40,
+          "countMin": 1,
+          "countMax": 4,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "minecraft:drowned",
+          "chance": 25,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "minecraft:zombie_villager",
+          "chance": 20,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:cyst",
+          "chance": 100,
+          "countMin": 4,
+          "countMax": 10,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:alpha_clot",
+          "chance": 70,
+          "countMin": 2,
+          "countMax": 5,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:gorefiend",
+          "chance": 55,
+          "countMin": 1,
+          "countMax": 4,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:crawler",
+          "chance": 45,
+          "countMin": 1,
+          "countMax": 4,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:stalker",
+          "chance": 35,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:bloat",
+          "chance": 30,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:husk",
+          "chance": 25,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:siren",
+          "chance": 20,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:spitter",
+          "chance": 20,
+          "countMin": 1,
+          "countMax": 2,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:scrake",
+          "chance": 15,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        },
+        {
+          "mobId": "outbreak_kf:fleshpound",
+          "chance": 10,
+          "countMin": 1,
+          "countMax": 1,
+          "trackingRange": 128.0,
+          "extra": "none",
+          "nbt": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 120,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att grip_vertical_ranger",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "grip_vertical_ranger",
+      "description": "att grip_vertical_ranger"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+#The light every shot gives off at the muzzle.
+[muzzleFlash]
+	enabled = true
+	#Color of the flash light, as hex RGB.
+	color = "FFB35C"
+	#How bright the flash is.
+	# Default: 7.0
+	# Range: 0.0 ~ 50.0
+	strength = 7.0
+	#How far the flash reaches, in blocks.
+	# Default: 11.0
+	# Range: 1.0 ~ 32.0
+	reach = 11.0
+	#How far (squared blocks) the flash holds full strength before falling away.
+	# Default: 4.0
+	# Range: 0.1 ~ 64.0
+	near = 4.0
+	#How long one flash lasts, in milliseconds.
+	# Default: 70
+	# Range: 10 ~ 500
+	durationMs = 70
+	#Flash strength through a suppressor, as a share of the full flash.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	silencedScale = 0.2
+	#Keep a flash's light inside the room it is fired in. Costs a flood fill of the room each time a gun
+	#fires from a new block; off, walls still block it through Lambent's point shadows.
+	keepInRoom = false
+	#How far forward of the muzzle the flash's light stretches, in blocks (0 for a point).
+	# Default: 0.8
+	# Range: 0.0 ~ 4.0
+	jet = 0.8
+	#How much the flash lights the air round it, as a share of Lambent's full haze.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	haze = 0.3
+
+#The light a tracer round gives off as it flies.
+[tracers]
+	enabled = true
+	#How bright a tracer is.
+	# Default: 3.0
+	# Range: 0.0 ~ 50.0
+	strength = 3.0
+	#How far a tracer lights, in blocks.
+	# Default: 5.0
+	# Range: 1.0 ~ 16.0
+	reach = 5.0
+	#How far (squared blocks) a tracer holds full strength before falling away.
+	# Default: 1.5
+	# Range: 0.1 ~ 32.0
+	near = 1.5
+	#Stop a tracer's light at the first block in its path. One block trace per tracer per tick.
+	stopAtWalls = true
+	#Flash where a tracer strikes a block or a mob.
+	impactFlash = true
+	# Default: 4.0
+	# Range: 0.0 ~ 50.0
+	impactStrength = 4.0
+	# Default: 120
+	# Range: 10 ~ 1000
+	impactDurationMs = 120
+	#How long the streak of light a tracer trails is, in blocks.
+	# Default: 4.0
+	# Range: 0.0 ~ 16.0
+	length = 4.0
+	#How much a tracer lights the air round it, as a share of Lambent's full haze. 0 lights only what it passes.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	haze = 0.0
+
+#How many lights gunfire may use at once. Lambent has room for six point lights in a frame, shared by every mod.
+[budget]
+	#Most point lights gunfire hands to Lambent per frame. The rest merge into the nearest or are left out.
+	# Default: 4
+	# Range: 1 ~ 6
+	maxLights = 4
+	#Gun lights further than this from the camera are skipped, in blocks.
+	# Default: 96.0
+	# Range: 8.0 ~ 512.0
+	maxDistance = 96.0
+	#Lights closer together than this become one light, in blocks (further off it grows with distance).
+	# Default: 2.0
+	# Range: 0.0 ~ 16.0
+	mergeDistance = 2.0
+	#How much gun light shows in full daylight, as a share of its strength in the dark.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	daylight = 0.3
+	#Whether players and mobs block gun light. Blocks always do. Off is faster.
+	entityShadows = false

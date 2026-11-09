@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 128,
+  "rarity": 4,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_refit_brass_retractor",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "muzzle_refit_brass_retractor",
+      "description": "att muzzle_refit_brass_retractor"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "maxProcessFeeFraction": 0.10,
+  "minimumProcessFeeAllowance": 1,
+  "sourcePremiumFraction": 0.10,
+  "description": "Manufactured items use an acyclic economic route, net materials plus bounded actual process fee, then integer ceiling. No automatic profit margin. Alternate routes and rounding remain auditable.",
+  "cooking": {
+    "handlingFee": 0.625,
+    "passiveFeePerSecond": 0.025,
+    "referenceFuels": [
+      "minecraft:charcoal",
+      "minecraft:coal"
+    ]
+  },
+  "industrial": {
+    "handlingFee": 0.625,
+    "passiveFeePerSecond": 0.025,
+    "stageWearFee": 0.125
+  },
+  "agriculture": {
+    "handlingFee": 10,
+    "landCycleFee": 40,
+    "seedSetupFee": 4,
+    "discoveryPerEligibleChunk": 0.6,
+    "setupAmortizationHarvests": 64,
+    "qualification": "Provisional labor/land/discovery budgets, not measured growth seconds. Placement chance is conditional on eligible biomes. Replant stock is reserved."
+  }
+}

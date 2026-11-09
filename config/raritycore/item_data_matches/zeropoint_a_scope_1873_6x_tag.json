@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 113,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att scope_1873_6x",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "scope_1873_6x",
+      "description": "att scope_1873_6x"
+    }
+  ]
+}

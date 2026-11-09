@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 126,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_compensator_trident",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "muzzle_compensator_trident",
+      "description": "att muzzle_compensator_trident"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "name": "军阀黑市",
+  "products": [
+    {
+      "id": "homemade_shotgun",
+      "item": "superbwarfare:homemade_shotgun",
+      "count": 1,
+      "price": 225,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "glock_17",
+      "item": "superbwarfare:glock_17",
+      "count": 1,
+      "price": 225,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "m_870",
+      "item": "superbwarfare:m_870",
+      "count": 1,
+      "price": 225,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "marlin",
+      "item": "superbwarfare:marlin",
+      "count": 1,
+      "price": 688,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "mp_5",
+      "item": "superbwarfare:mp_5",
+      "count": 1,
+      "price": 688,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "sks",
+      "item": "superbwarfare:sks",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "ak_47",
+      "item": "superbwarfare:ak_47",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "m_4",
+      "item": "superbwarfare:m_4",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "m_1911",
+      "item": "superbwarfare:m_1911",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rpk",
+      "item": "superbwarfare:rpk",
+      "count": 1,
+      "price": 688,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "svd",
+      "item": "superbwarfare:svd",
+      "count": 1,
+      "price": 688,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "handgun_ammo",
+      "item": "superbwarfare:handgun_ammo",
+      "count": 30,
+      "price": 300,
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "rifle_ammo",
+      "item": "superbwarfare:rifle_ammo",
+      "count": 30,
+      "price": 840,
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "shotgun_ammo",
+      "item": "superbwarfare:shotgun_ammo",
+      "count": 20,
+      "price": 560,
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sniper_ammo",
+      "item": "superbwarfare:sniper_ammo",
+      "count": 10,
+      "price": 810,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "hand_grenade",
+      "item": "superbwarfare:hand_grenade",
+      "count": 4,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "armor_plate",
+      "item": "superbwarfare:armor_plate",
+      "count": 8,
+      "price": 64
+    },
+    {
+      "id": "handgun_ammo_box",
+      "item": "superbwarfare:handgun_ammo_box",
+      "count": 1,
+      "price": 550,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rifle_ammo_box",
+      "item": "superbwarfare:rifle_ammo_box",
+      "count": 1,
+      "price": 550,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    }
+  ]
+}

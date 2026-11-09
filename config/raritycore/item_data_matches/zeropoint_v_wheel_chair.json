@@ -1,0 +1,16 @@
+{
+  "item_id": "superbwarfare:container",
+  "fuzzy_match": true,
+  "priority": 211,
+  "rarity": 1,
+  "enabled": true,
+  "description": "zeropoint: vehicle crate wheel_chair",
+  "conditions": [
+    {
+      "path": "components.minecraft:block_entity_data",
+      "type": "contains",
+      "substring": "wheel_chair",
+      "description": "vehicle wheel_chair"
+    }
+  ]
+}

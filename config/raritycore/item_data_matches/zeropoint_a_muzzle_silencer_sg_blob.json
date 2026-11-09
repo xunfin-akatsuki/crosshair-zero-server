@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 118,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_silencer_sg",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "muzzle_silencer_sg",
+      "description": "att muzzle_silencer_sg"
+    }
+  ]
+}

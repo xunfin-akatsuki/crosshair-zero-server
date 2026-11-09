@@ -1,0 +1,36 @@
+{
+  "entity": "boss_arsenal:pillager_soldier",
+  "spawn_chance": 0,
+  "tier": 0,
+  "name": "锈带劫掠者",
+  "health": 24,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:tt33",
+    "fire_mode": "semi",
+    "spread_degrees": 9,
+    "range": 24,
+    "preferred_range": 10,
+    "shot_interval_ticks": 6,
+    "infinite_ammo": true,
+    "drop_chance": 0.1,
+    "aim_ticks": 10,
+    "burst_shots": 3,
+    "burst_pause_ticks": 60,
+    "recoil_spread": 0.9,
+    "max_spread": 13,
+    "moving_spread": 2.5,
+    "headshot_chance": 0,
+    "damage_scale": 0.85
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:45acp",
+      "min": 4,
+      "max": 10,
+      "chance": 0.55
+    }
+  ]
+}

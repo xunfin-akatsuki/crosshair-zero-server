@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "rarityVersion": "category-evidence-v3",
+  "description": "Provisional category-local acquisition/process/capability gates. Never derived from prices; no global six-star price floor. Override exact ItemKeys only with a reason. All thresholds require gameplay calibration.",
+  "estimateMinimumSamples": 5,
+  "ammoGunMaxFraction": 0.10,
+  "capabilityCostReviewFraction": 0.25,
+  "ammoExceptions": {},
+  "overrides": {},
+  "capabilityThresholds": {
+    "armor": [
+      5,
+      8,
+      11,
+      16,
+      24
+    ],
+    "ballistic_armor": [
+      5,
+      8,
+      11,
+      16,
+      24
+    ],
+    "weapon": [
+      5,
+      9,
+      15,
+      23,
+      34
+    ],
+    "tool": [
+      5,
+      8,
+      12,
+      18,
+      26
+    ],
+    "ranged_weapon": [
+      8,
+      12,
+      18,
+      26,
+      38
+    ]
+  },
+  "processTiers": {
+    "minecraft:crafting_shaped": 1,
+    "minecraft:crafting_shapeless": 1,
+    "minecraft:smelting": 1,
+    "minecraft:blasting": 1,
+    "minecraft:smoking": 1,
+    "minecraft:campfire_cooking": 1,
+    "minecraft:stonecutting": 1,
+    "minecraft:smithing_transform": 3,
+    "kubejs:shaped": 1,
+    "kubejs:shapeless": 1,
+    "create:mechanical_crafting": 2,
+    "create:pressing": 2,
+    "create:cutting": 2,
+    "create:milling": 2,
+    "create:crushing": 2,
+    "create:mixing": 2,
+    "create:compacting": 2,
+    "create:filling": 2,
+    "create:emptying": 1,
+    "create:deploying": 2,
+    "create:sandpaper_polishing": 1,
+    "create:splashing": 2,
+    "create:haunting": 3,
+    "create:sequenced_assembly": 4,
+    "immersiveengineering:crusher": 3,
+    "immersiveengineering:blueprint": 3,
+    "immersiveengineering:sawmill": 3,
+    "immersiveengineering:hammer_crushing": 1,
+    "immersiveengineering:turn_and_copy": 1,
+    "immersiveengineering:metal_press": 3,
+    "immersiveengineering:blast_furnace": 3,
+    "immersiveengineering:coke_oven": 2,
+    "immersiveengineering:alloy": 2,
+    "immersiveengineering:squeezer": 3,
+    "immersiveengineering:fermenter": 3,
+    "immersiveengineering:refinery": 4,
+    "immersiveengineering:mixer": 3,
+    "immersiveengineering:arc_furnace": 4,
+    "immersiveengineering:bottling_machine": 2,
+    "createaddition:rolling": 2,
+    "createaddition:charging": 3,
+    "tacz:gun_smith_table_crafting": 3,
+    "superbwarfare:vehicle_assembling": 5,
+    "farmersdelight:cutting": 1,
+    "farmersdelight:cooking": 2,
+    "cookscollection:baking": 2,
+    "huaxiadelight:processing": 2
+  },
+  "sourceTiers": {
+    "entity_loot:": 3,
+    "structure_access:": 3,
+    "city_catalog_access:": 3,
+    "natural_plant": 1,
+    "agriculture:": 1,
+    "twilight_encounter:tier1:": 1,
+    "twilight_encounter:tier2:": 2,
+    "twilight_encounter:tier3:": 3,
+    "twilight_encounter:tier4:": 4,
+    "twilight_encounter:tier5:": 5,
+    "twilight_encounter:tier6:": 6,
+    "twilight_structure:tier2:": 2,
+    "twilight_structure:tier3:": 3,
+    "twilight_structure:tier4:": 4,
+    "twilight_structure:tier5:": 5,
+    "twilight_structure:tier6:": 6,
+    "structure_access:joint_budget:provisional:superbwarfare:chests/blue_print_epic": 5
+  },
+  "specializedWorkThresholds": [
+    2,
+    4,
+    7,
+    11
+  ],
+  "gunPerformancePrimary": true,
+  "foodNutritionPrimary": true,
+  "gunRelativeThresholds": [
+    0.6,
+    0.8,
+    1.0,
+    1.25,
+    1.65
+  ],
+  "foodScoreThresholds": [
+    3,
+    6,
+    10,
+    14,
+    18
+  ],
+  "batteryCapacityThresholds": [
+    100000,
+    500000,
+    5000000,
+    20000000,
+    100000000
+  ],
+  "technicalFamilies": {
+    "superbwarfare:motor": {
+      "category": "industrial_component",
+      "tier": 2,
+      "reason": "Basic motor; nugget and ingot circuit assembly."
+    },
+    "superbwarfare:large_motor": {
+      "category": "industrial_component",
+      "tier": 4,
+      "reason": "Heavy motor; storage-block winding/core assembly, distinct rated industrial role."
+    },
+    "superbwarfare:propeller": {
+      "category": "industrial_component",
+      "tier": 2,
+      "reason": "Basic propulsion component."
+    },
+    "superbwarfare:large_propeller": {
+      "category": "industrial_component",
+      "tier": 4,
+      "reason": "Heavy propulsion assembly rather than a cosmetic variant."
+    },
+    "superbwarfare:light_armament_module": {
+      "category": "industrial_component",
+      "tier": 2,
+      "reason": "Light armament integration gate."
+    },
+    "superbwarfare:medium_armament_module": {
+      "category": "industrial_component",
+      "tier": 4,
+      "reason": "Medium armament integration gate."
+    },
+    "superbwarfare:heavy_armament_module": {
+      "category": "industrial_component",
+      "tier": 5,
+      "reason": "Heavy armament integration gate; harder materials may still raise acquisition tier."
+    },
+    "superbwarfare:common_material_pack": {
+      "category": "material_pack",
+      "tier": 1,
+      "reason": "Native COMMON supply package grade; manufacturing gate retained."
+    },
+    "superbwarfare:rare_material_pack": {
+      "category": "material_pack",
+      "tier": 3,
+      "reason": "Native RARE supply package grade."
+    },
+    "superbwarfare:epic_material_pack": {
+      "category": "material_pack",
+      "tier": 4,
+      "reason": "Native EPIC supply package grade."
+    },
+    "superbwarfare:legendary_material_pack": {
+      "category": "material_pack",
+      "tier": 5,
+      "reason": "Native LEGENDARY supply package grade."
+    },
+    "superbwarfare:superb_material_pack": {
+      "category": "material_pack",
+      "tier": 6,
+      "reason": "Native SUPERB supply package grade."
+    },
+    "superbwarfare:virtual_material_pack": {
+      "category": "material_pack",
+      "tier": 6,
+      "reason": "Native VIRTUAL end-stage supply package grade."
+    },
+    "superbwarfare:common_blueprint_data_chip": {
+      "category": "blueprint",
+      "tier": 2,
+      "reason": "Basic blueprint research grade."
+    },
+    "superbwarfare:rare_blueprint_data_chip": {
+      "category": "blueprint",
+      "tier": 3,
+      "reason": "Rare blueprint research grade."
+    },
+    "superbwarfare:epic_blueprint_data_chip": {
+      "category": "blueprint",
+      "tier": 4,
+      "reason": "Epic blueprint research grade."
+    },
+    "superbwarfare:legendary_blueprint_data_chip": {
+      "category": "blueprint",
+      "tier": 5,
+      "reason": "Legendary blueprint research grade."
+    },
+    "superbwarfare:superb_blueprint_data_chip": {
+      "category": "blueprint",
+      "tier": 6,
+      "reason": "Superb blueprint research grade."
+    },
+    "superbwarfare:virtual_blueprint_data_chip": {
+      "category": "blueprint",
+      "tier": 6,
+      "reason": "Virtual end-stage blueprint research grade."
+    }
+  }
+}

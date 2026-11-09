@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 106,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: gun fn_fal",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "fn_fal",
+      "description": "gun fn_fal"
+    }
+  ]
+}

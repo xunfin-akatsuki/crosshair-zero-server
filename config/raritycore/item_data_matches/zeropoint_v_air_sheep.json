@@ -1,0 +1,16 @@
+{
+  "item_id": "superbwarfare:container",
+  "fuzzy_match": true,
+  "priority": 209,
+  "rarity": 2,
+  "enabled": true,
+  "description": "zeropoint: vehicle crate air_sheep",
+  "conditions": [
+    {
+      "path": "components.minecraft:block_entity_data",
+      "type": "contains",
+      "substring": "air_sheep",
+      "description": "vehicle air_sheep"
+    }
+  ]
+}

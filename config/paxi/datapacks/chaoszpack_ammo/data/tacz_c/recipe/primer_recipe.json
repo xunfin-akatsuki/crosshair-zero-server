@@ -1,0 +1,63 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tacz_c:empty_primer_cups"
+  },
+  "loops": 2,
+  "transitional_item": {
+    "id": "tacz_c:unfinished_primers"
+  },
+  "results": [
+    {
+      "id": "tacz_c:primer",
+      "count": 1
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_primers"
+        },
+        {
+          "item": "tacz_c:primer_mix"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_primers"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_primers"
+        },
+        {
+          "item": "tacz_c:primer_anvils"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_primers"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_primers"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_primers"
+        }
+      ]
+    }
+  ]
+}

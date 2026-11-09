@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 117,
+  "rarity": 4,
+  "enabled": true,
+  "description": "zeropoint: att grip_magpul_afg_2",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "grip_magpul_afg_2",
+      "description": "att grip_magpul_afg_2"
+    }
+  ]
+}

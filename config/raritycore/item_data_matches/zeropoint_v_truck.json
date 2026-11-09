@@ -1,0 +1,16 @@
+{
+  "item_id": "superbwarfare:container",
+  "fuzzy_match": true,
+  "priority": 205,
+  "rarity": 2,
+  "enabled": true,
+  "description": "zeropoint: vehicle crate truck",
+  "conditions": [
+    {
+      "path": "components.minecraft:block_entity_data",
+      "type": "contains",
+      "substring": "truck",
+      "description": "vehicle truck"
+    }
+  ]
+}

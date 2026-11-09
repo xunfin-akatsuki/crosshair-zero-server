@@ -1,0 +1,139 @@
+#Route selection. Zombies plan several different routes and may pick a longer one.
+[routing]
+	#Chance (0..1) that a zombie deliberately takes an alternative route instead of its own preferred one.
+	#0 = never take alternatives, 1 = always take an alternative when one exists.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	alternativeRouteChance = 0.5
+	#How many different routes are searched per plan (1 = no alternatives). Higher = more variety, more CPU.
+	# Default: 4
+	# Range: 1 ~ 8
+	routeCandidates = 4
+	#An alternative route is allowed if its cost is at most (cheapest route cost * this value + extraCost).
+	# Default: 2.5
+	# Range: 1.0 ~ 10.0
+	alternativeMaxCostRatio = 2.5
+	#Flat extra cost allowed for alternative routes (see alternativeMaxCostRatio).
+	# Default: 20.0
+	# Range: 0.0 ~ 200.0
+	alternativeExtraCost = 20.0
+	#Cost penalty per cell that was already used by a previously found route. Higher = more different alternatives.
+	# Default: 5.0
+	# Range: 0.0 ~ 30.0
+	avoidPenalty = 5.0
+	#Per-zombie 'style': how strongly each zombie prefers or dislikes each kind of trick (0 = identical, 1 = very different).
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	styleVariation = 0.7
+	#A zombie keeps its route decision (alternative or not) for this many ticks before rolling again.
+	# Default: 600
+	# Range: 20 ~ 12000
+	decisionHoldTicks = 600
+	#Time budget in milliseconds for each alternative route search.
+	# Default: 4.0
+	# Range: 0.5 ~ 30.0
+	alternativeSearchBudgetMs = 4.0
+	#If the first route search took longer than this (ms), alternatives are skipped to save server time.
+	# Default: 9.0
+	# Range: 1.0 ~ 50.0
+	skipAlternativesIfSlowMs = 9.0
+
+#Optional tricks and general trick costs.
+[tricks]
+	#Allow wall runs. Disabled by default.
+	wallRunEnabled = false
+	#Allow wall-to-wall bouncing up narrow shafts. Disabled by default.
+	shaftBounceEnabled = false
+	#Multiplier for the route cost of jumps and long jumps. Higher = zombies jump only when there is really no easy way around.
+	# Default: 1.0
+	# Range: 0.5 ~ 5.0
+	jumpCostMultiplier = 1.0
+
+#Run-up lengths in blocks. A zombie must run this far in a straight line before the trick. 0 = no run-up needed.
+[runUp]
+	#Slide (passing a 1-block-high gap). The zombie only slides if it has run up first, otherwise it crawls/sneaks.
+	# Default: 3
+	# Range: 0 ~ 8
+	slide = 3
+	#Long jump (gaps of about 5-8 blocks).
+	# Default: 5
+	# Range: 0 ~ 10
+	longJump = 5
+	#Wall climb (walls 4-5 blocks high).
+	# Default: 5
+	# Range: 0 ~ 10
+	climb = 5
+	#Wall run.
+	# Default: 4
+	# Range: 0 ~ 10
+	wallRun = 4
+	#Run-up for HIGH vaults (obstacle height >= vaultHighThreshold). Low vaults never need a run-up.
+	# Default: 2
+	# Range: 0 ~ 8
+	highVault = 2
+	#Obstacle height (blocks) from which a vault counts as 'high' and needs the highVault run-up.
+	#Default 1.9: fences (1.5) are vaulted from a standstill, 2-block walls need a run-up.
+	# Default: 1.9
+	# Range: 1.0 ~ 2.1
+	vaultHighThreshold = 1.9
+	#Minimum horizontal speed (blocks/tick) required at take-off for tricks that need a run-up.
+	# Default: 0.24
+	# Range: 0.05 ~ 0.34
+	minTakeoffSpeed = 0.24
+	#Max ticks a zombie may spend positioning for a run-up. After that the trick is given up for a while
+	#and the zombie takes another way (e.g. crawls instead of sliding).
+	# Default: 45
+	# Range: 10 ~ 400
+	prepTimeoutTicks = 45
+	#After a trick failed during run-up, the zombie will not plan that trick type again for this many ticks.
+	# Default: 100
+	# Range: 0 ~ 2400
+	failedTrickCooldownTicks = 100
+
+#Behaviour near the target.
+[target]
+	#If the target is close and reachable by simply walking, the zombie stops preparing/running a trick and attacks.
+	abortRunUpWhenTargetClose = true
+	#Distance (blocks) at which the target counts as 'close' for the option above.
+	# Default: 2.6
+	# Range: 1.0 ~ 6.0
+	closeTargetDistance = 2.6
+
+#Grabbing ledges (full blocks, slabs, stairs).
+[grab]
+	#Zombies may jump up to a ledge, hang on it and pull themselves up. Works with slabs and stairs (grabbed from the lower step side).
+	enabled = true
+	#Max height (blocks above the feet) of a ledge edge that can be grabbed from the ground.
+	# Default: 3.1
+	# Range: 2.0 ~ 4.0
+	maxReach = 3.1
+	#Long jump ending in a ledge grab: with a run-up, zombies jump over a gap and catch the far ledge.
+	longJumpGrab = true
+	#Max horizontal distance (blocks) of a long-jump grab.
+	# Default: 6.0
+	# Range: 3.7 ~ 7.0
+	longJumpGrabMaxDistance = 6.0
+	#Zombies may jump into a chasm to catch a ledge that is lower than their feet and climb back up.
+	grabLowerLedges = true
+	#Max depth (blocks below the feet) of such a ledge.
+	# Default: 3.0
+	# Range: 0.0 ~ 4.0
+	lowerLedgeMaxDrop = 3.0
+	#While hanging, zombies may jump from one ledge to another (sideways, up, down, or across a gap to the opposite wall).
+	hangHopsEnabled = true
+	#Max number of ledge-to-ledge jumps in one climb.
+	# Default: 3
+	# Range: 0 ~ 6
+	maxHangHops = 3
+	#Max horizontal distance (blocks) of one ledge-to-ledge jump.
+	# Default: 3.0
+	# Range: 1.0 ~ 4.5
+	hangHopMaxDistance = 3.0
+	#Max height gain (blocks) of one ledge-to-ledge jump.
+	# Default: 1.5
+	# Range: 0.0 ~ 2.5
+	hangHopMaxRise = 1.5
+	#Ticks a zombie hangs before the next ledge-to-ledge jump.
+	# Default: 6
+	# Range: 1 ~ 40
+	hangHopDelayTicks = 6

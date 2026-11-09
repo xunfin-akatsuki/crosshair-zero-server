@@ -1,0 +1,36 @@
+ragdollOnDeath = false
+ragdollOnOwnerAttack = false
+ragdollOnBox = false
+ragdollOnSpecialDamage = false
+ragdollOnBroom = false
+maidKnockback = true
+maidEat = true
+
+[items]
+enableDollTab = false
+cheatDeathBauble = true
+playerCheatDeathItem = true
+maidMace = true
+tntCake = true
+sonicWave = true
+spawnEggs = true
+mobCannon = true
+
+[loveAndLoathe]
+moreAIFunction = true
+drop = true
+
+[playerRagdoll]
+attackToRagDoll = false
+
+[laoWuWineFox]
+dance = true
+
+[sounds]
+metalPipe = false
+hungry = false
+drop = false
+bigDog = false
+GCJCry = false
+watermelonHurt = false
+broomMan = false

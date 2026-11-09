@@ -1,0 +1,1026 @@
+{
+  "name": "黑烟枪械·Suffuse 展柜",
+  "requires_mod": "tacz",
+  "products": [
+    {
+      "id": "sg_ptrd41",
+      "display_name": "PTRD-41 反坦克步枪",
+      "count": 1,
+      "price": 56000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:ptrd41"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_aw50",
+      "display_name": "精密国际 AW-50 反器材狙击步枪",
+      "count": 1,
+      "price": 56000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:aw50"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_gm6",
+      "display_name": "GM6 Lynx “山猫” 反器材狙击步枪",
+      "count": 1,
+      "price": 56000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:gm6"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_axsr",
+      "display_name": "精密国际 AXSR 狙击步枪",
+      "count": 1,
+      "price": 39000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:axsr"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_gen12",
+      "display_name": "TTI Gen-12 全自动霰弹枪",
+      "count": 1,
+      "price": 36600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:gen12"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_axmc",
+      "display_name": "精密国际 AXMC 狙击步枪",
+      "count": 1,
+      "price": 39000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:axmc"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qba221",
+      "display_name": "QBA-221式 全自动霰弹枪",
+      "count": 1,
+      "price": 15925,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qba221"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qjz171",
+      "display_name": "QJZ-171式 重机枪",
+      "count": 1,
+      "price": 55200,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qjz171"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_l115a3",
+      "display_name": "L115A3 狙击枪",
+      "count": 1,
+      "price": 39000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:l115a3"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_m200",
+      "display_name": "CheyTac M200 “干预” 狙击步枪",
+      "count": 1,
+      "price": 56000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:m200"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_pf98a",
+      "display_name": "PF-98A 120毫米 火箭发射器",
+      "count": 1,
+      "price": 56000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:pf98a"
+      },
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_mg338",
+      "display_name": "SIG MG-338 通用机枪",
+      "count": 1,
+      "price": 36600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:mg338"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_spas12",
+      "display_name": "弗兰基 SPAS-12 多用途霰弹枪",
+      "count": 1,
+      "price": 53200,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:spas12"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_pkp",
+      "display_name": "PKP “佩切涅格” 轻机枪",
+      "count": 1,
+      "price": 46200,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:pkp"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_ks23m",
+      "display_name": "KS-23M 霰弹枪",
+      "count": 1,
+      "price": 62000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:ks23m"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_ash12",
+      "display_name": "ASH12 突击步枪",
+      "count": 1,
+      "price": 53200,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:ash12"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_xm7",
+      "display_name": "SIG XM7 突击步枪",
+      "count": 1,
+      "price": 45800,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:xm7"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qlu11",
+      "display_name": "QLU-11 狙击榴弹发射器",
+      "count": 1,
+      "price": 35000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qlu11"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qlz87",
+      "display_name": "QLZ-87式 自动榴弹发射器",
+      "count": 1,
+      "price": 35000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qlz87"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_aiyasinrpg",
+      "display_name": "RPG-7 亚辛 105毫米 火箭发射器",
+      "count": 1,
+      "price": 51600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:aiyasinrpg"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_m32a1",
+      "display_name": "米尔科 M32A1 转轮连发式榴弹发射器",
+      "count": 1,
+      "price": 35000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:m32a1"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_m1895",
+      "display_name": "马林 M1895 杠杆步枪",
+      "count": 1,
+      "price": 25525,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:m1895"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_svd",
+      "display_name": "德拉贡诺夫 SVD 狙击步枪",
+      "count": 1,
+      "price": 27000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:svd"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_dvl10",
+      "display_name": "DVL-10 狙击步枪",
+      "count": 1,
+      "price": 35800,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:dvl10"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_cslr4",
+      "display_name": "CS/LR4型 狙击步枪",
+      "count": 1,
+      "price": 35800,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:cslr4"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_rm277",
+      "display_name": "RM277 突击步枪",
+      "count": 1,
+      "price": 45400,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:rm277"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qbu88",
+      "display_name": "QBU-88式 狙击步枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qbu88"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qjb_201",
+      "display_name": "QJB-201式 班用机枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qjb_201"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_type81_lmg",
+      "display_name": "81式 班用机枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:type81_lmg"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qjb951",
+      "display_name": "QJB-95-1 班用机枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qjb951"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_mk3",
+      "display_name": "FN 米尼米 MK3 班用机枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:mk3"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qbz192",
+      "display_name": "QBZ-192 短突击步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qbz192"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qbu191",
+      "display_name": "QBU-191 精确射手步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qbu191"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qbz191",
+      "display_name": "QBZ-191 突击步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qbz191"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qbz951s",
+      "display_name": "QBZ-95-1 赤霄战术改件 突击步枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qbz951s"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_mk47",
+      "display_name": "CMMG Mk47 Mutant 突击步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:mk47"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_saddam_golden_ak",
+      "display_name": "萨达姆的§e§l黄金AK§r",
+      "count": 1,
+      "price": 35000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:saddam_golden_ak"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qbz951",
+      "display_name": "QBZ-95-1 突击步枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qbz951"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qbz951b",
+      "display_name": "QBZ-95B-1 短突击步枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qbz951b"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_famas",
+      "display_name": "FAMAS 自动步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:famas"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_n4",
+      "display_name": "Noveske N4 突击步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:n4"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_l119a2",
+      "display_name": "L119A2 突击步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:l119a2"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_mpdr",
+      "display_name": "马盖普 PDR 个人防卫武器",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:mpdr"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_m203",
+      "display_name": "M203 榴弹发射器",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:m203"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_m79",
+      "display_name": "M79 40毫米 榴弹发射器",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:m79"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_kacpdw",
+      "display_name": "KAC PDW 个人防卫武器",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:kacpdw"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_aks74u",
+      "display_name": "AKs74u 突击步枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:aks74u"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_an94",
+      "display_name": "AN94 突击步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:an94"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_ar57",
+      "display_name": "AR57 ULT 卡宾步枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:ar57"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_ump45",
+      "display_name": "UMP45 冲锋枪",
+      "count": 1,
+      "price": 35000,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:ump45"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_desert",
+      "display_name": "Desert Eagle Mk XIX 大威力半自动手枪",
+      "count": 1,
+      "price": 45400,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:desert"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_sw_686",
+      "display_name": "史密斯威森 686 左轮",
+      "count": 1,
+      "price": 45400,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:sw_686"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_pp19",
+      "display_name": "PP19 “野牛” 冲锋枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:pp19"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_webley1913",
+      "display_name": "Webley Mk. 1 自动装填手枪",
+      "count": 1,
+      "price": 6850,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:webley1913"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_gepardpdw",
+      "display_name": "Gepard “猎豹” PDW 个人防卫武器",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:gepardpdw"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qcq171",
+      "display_name": "QCQ-171型 冲锋枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qcq171"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_usp45",
+      "display_name": "HK USP45 手枪 沙色款",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:usp45"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_usp45_black",
+      "display_name": "HK USP45 手枪 黑色款",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:usp45_black"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_python",
+      "display_name": "Python Colt “蟒蛇” 左轮手枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:python"
+      },
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_mas38",
+      "display_name": "MAS-38型 冲锋枪",
+      "count": 1,
+      "price": 6850,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:mas38"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_tti2011",
+      "display_name": "TTI Pit Viper “蝮蛇” 手枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:tti2011"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_qsz92g",
+      "display_name": "QSZ-92G 手枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:qsz92g"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_viper2011",
+      "display_name": "Viper 2011 “蝰蛇” 手枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:viper2011"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_tec9",
+      "display_name": "Tec9 冲锋手枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:tec9"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_np762",
+      "display_name": "北方工业 NP762型 自动手枪",
+      "count": 1,
+      "price": 14325,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:np762"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_tt33",
+      "display_name": "TT-33 手枪",
+      "count": 1,
+      "price": 6850,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:tt33"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_trapper50cal",
+      "display_name": "Traditions Trapper 50口径 火帽枪",
+      "count": 1,
+      "price": 24600,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:trapper50cal"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sg_lifecard",
+      "display_name": "LifeCard 单发折叠手枪",
+      "count": 1,
+      "price": 32250,
+      "tacz": {
+        "type": "gun",
+        "id": "suffuse:lifecard"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    }
+  ]
+}

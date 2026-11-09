@@ -1,0 +1,24 @@
+{
+  "ammo_id": "tacz:556x45",
+
+  "variant": "556x45m855",
+
+  "life": 64,
+
+  "friction": 0.015,
+
+  "gravity": 0.065,
+
+  "recoil_multiplier": 0.98,
+
+  "inaccuracy_multiplier": 1,
+
+
+  "penetration_class": 4,
+
+  "armor_damage": 0.02,
+
+  "flesh_damage": 4,
+
+  "stack_size": 60
+}

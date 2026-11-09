@@ -1,0 +1,165 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch03_ammo"
+	group: ""
+	id: "100000000000013B"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["100000000000013A"]
+			id: "100000000000013C"
+			rewards: [{
+				id: "1000000000000055"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "1000000000000054"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000013C"]
+			id: "100000000000013D"
+			rewards: [{
+				id: "1000000000000057"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				count: 16L
+				id: "1000000000000056"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000013D"]
+			id: "100000000000013E"
+			rewards: [{
+				id: "1000000000000059"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "1000000000000058"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000013E"]
+			id: "100000000000013F"
+			rewards: [{
+				id: "100000000000005B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 12L
+				id: "100000000000005A"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000013F"]
+			id: "1000000000000140"
+			rewards: [{
+				id: "100000000000005D"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "100000000000005C"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000140"]
+			id: "1000000000000141"
+			rewards: [{
+				id: "100000000000005F"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "100000000000005E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000141"]
+			id: "1000000000000142"
+			rewards: [{
+				id: "1000000000000061"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1000000000000060"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000142"]
+			id: "1000000000000143"
+			rewards: [{
+				id: "1000000000000063"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				count: 60L
+				id: "1000000000000062"
+				item: { count: 1, id: "superbwarfare:rifle_ammo" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000143"]
+			id: "1000000000000144"
+			rewards: [
+				{
+					id: "1000000000000065"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 64
+					id: "1000000000000066"
+					item: {
+						count: 1
+						id: "superbwarfare:rifle_ammo"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1000000000000064"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+	]
+}

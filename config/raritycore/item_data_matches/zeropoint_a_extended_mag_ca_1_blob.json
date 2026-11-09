@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 117,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att extended_mag_ca_1",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "extended_mag_ca_1",
+      "description": "att extended_mag_ca_1"
+    }
+  ]
+}

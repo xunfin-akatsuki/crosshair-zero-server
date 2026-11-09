@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 110,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att stock_ak12",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "stock_ak12",
+      "description": "att stock_ak12"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 110,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att laser_peq6",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "laser_peq6",
+      "description": "att laser_peq6"
+    }
+  ]
+}

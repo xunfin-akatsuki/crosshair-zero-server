@@ -1,0 +1,6 @@
+[railways]
+	#Convert captured Lost Cities rail routes into Create tracks.
+	#Each converted chunk writes dozens of rails, which is the most expensive
+	#part of city post-generation. Disable to keep vanilla rails and skip it.
+	#Existing converted chunks are not reverted.
+	enabled = true

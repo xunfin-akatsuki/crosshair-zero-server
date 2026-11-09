@@ -1,0 +1,8 @@
+{
+  "maxCacheSize": 10000,
+  "dynamicCapacityEnabled": true,
+  "dynamicCapacityMultiplier": 20.0,
+  "dynamicCapacityMin": 1000,
+  "dynamicCapacityMax": 20000,
+  "cleanupThreshold": 0.9
+}

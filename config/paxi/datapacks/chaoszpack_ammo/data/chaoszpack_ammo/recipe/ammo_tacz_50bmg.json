@@ -1,0 +1,84 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tacz_c:case_50bmg"
+  },
+  "loops": 1,
+  "transitional_item": {
+    "id": "tacz_c:unfinished_50bmg"
+  },
+  "results": [
+    {
+      "id": "tacz:ammo",
+      "count": 12,
+      "components": {
+        "minecraft:custom_data": {
+          "AmmoId": "tacz:50bmg"
+        }
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_50bmg"
+        },
+        {
+          "item": "tacz_c:primer"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_50bmg"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_50bmg"
+        },
+        {
+          "item": "tacz_c:gunpowder_charge"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_50bmg"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_50bmg"
+        },
+        {
+          "item": "tacz_c:bullet_core"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_50bmg"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_50bmg"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_50bmg"
+        }
+      ]
+    }
+  ]
+}

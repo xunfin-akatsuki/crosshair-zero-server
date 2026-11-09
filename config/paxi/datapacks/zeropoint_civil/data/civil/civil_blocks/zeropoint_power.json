@@ -1,0 +1,45 @@
+{
+  "_comment": [
+    "准星：零点 —— 只有电力设施与终局奇观才算「文明」。",
+    "其余方块权重全部清零（见同目录清空文件）。"
+  ],
+  "replace": true,
+  "entries": [
+    {
+      "block": "create:fluid_tank",
+      "weight": 0.5
+    },
+    {
+      "block": "immersiveengineering:dynamo",
+      "weight": 0.8
+    },
+    {
+      "block": "superbwarfare:dps_generator_deployer",
+      "weight": 1.0
+    },
+    {
+      "block": "create:blaze_burner",
+      "weight": 1.2
+    },
+    {
+      "block": "immersiveengineering:generator",
+      "weight": 1.5
+    },
+    {
+      "block": "superbwarfare:biogas_generator",
+      "weight": 1.8
+    },
+    {
+      "block": "immersiveengineering:thermoelectric_generator",
+      "weight": 2.5
+    },
+    {
+      "block": "minecraft:beacon",
+      "weight": 5.0
+    },
+    {
+      "block": "minecraft:conduit",
+      "weight": 5.0
+    }
+  ]
+}

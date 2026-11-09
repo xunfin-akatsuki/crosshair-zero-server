@@ -1,0 +1,50 @@
+[rendering]
+	#If true, mob/player armor, held items, and Sound Attract camo layers are hidden while the entity has invisibility.
+	#If false, those layers render normally through invisibility.
+	#Server-authoritative: connected clients use this value regardless of their local setting.
+	hideWornGearWhileInvisible = true
+
+[player_action_sounds]
+	#Enable/disable virtual sound generation from player movements.
+	#Read on the client before sending footstep messages; server-authoritative so admins control it.
+	enablePlayerActionSounds = true
+	#Base detection ranges for player actions. Format: 'ACTION;range'
+	playerActionRanges = ["CRAWLING;3", "SNEAKING;5", "WALKING;10", "SPRINTING;16", "SPRINT_JUMPING;20"]
+	#Weights for player action sounds. Format: 'ACTION;weight'
+	playerActionWeights = ["CRAWLING;1.0", "SNEAKING;1.0", "WALKING;1.0", "SPRINTING;1.0", "SPRINT_JUMPING;1.0"]
+	#Radius within which to check for players to generate sounds.
+	# Default: 24.0
+	# Range: 0.0 ~ 512.0
+	playerActionCheckRadius = 24.0
+
+[integrations]
+	#Enable Point Blank gun integration.
+	enablePointBlankIntegration = true
+	#Enable Tacz gun integration.
+	enableTaczIntegration = true
+	#Enable Simple Voice Chat integration.
+	enableVoiceChatIntegration = true
+
+[safety]
+	#Caps the final resolved range (blocks) for any wire-received sound.
+	#Applies after server-side resolution; server-local gun/vanilla sounds are unaffected.
+	# Default: 256.0
+	# Range: 1.0 ~ 256.0
+	maxClientSoundRange = 256.0
+
+[voice_chat]
+	#Base range used when the speaker is whispering.
+	# Default: 16
+	# Range: 1 ~ 64
+	voiceChatWhisperRange = 16
+	#Base range used for normal speaking.
+	# Default: 32
+	# Range: 1 ~ 128
+	voiceChatNormalRange = 32
+	#Weight assigned to the generated voice chat sound event.
+	# Default: 9.0
+	# Range: 0.0 ~ 10.0
+	voiceChatWeight = 9.0
+	#Normalized dB thresholds to range multipliers. Format: 'threshold:multiplier'.
+	#Threshold is based on current peak volume level (usually 0-127).
+	voiceChatDbThresholdMap = ["110:2.0", "90:1.8", "75:1.5", "50:1.0", "30:0.7", "10:0.3", "0:0.05"]

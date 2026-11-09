@@ -1,0 +1,49 @@
+#MCphone 的服务端开关。改完重进世界（或重启服务器）生效。
+#Server-side switches for MCphone.
+[gameplay]
+	#允不允许玩家用美西螈里的传送键传到好友身边。
+	#关掉之后：那个图标不再显示，服务端也会拒绝传送请求。
+	#已经建立的好友关系与聊天不受影响。
+	#Allow teleporting to a friend from the Axolotl app.
+	#When off, the icon is hidden and the server rejects the request.
+	allowFriendTeleport = true
+	#允不允许玩家在美西螈里把相册里的照片发给好友。
+	#关掉之后：输入栏左边那个图片键不再显示，服务端也会拒收上传的图。
+	#已经发过的图不会被删，仍然看得见——关掉的是「再发新的」。
+	#为什么会想关：图片是存进存档目录的（mcphone/chat-images/），
+	#一张的上限见下面的 chatImageMaxKb，每对会话最多留 20 张。
+	#人多的服务器请自行算一下硬盘。
+	#Allow sending photos from the Gallery to friends in the Axolotl app.
+	#When off, the image button is hidden and the server rejects uploads.
+	#Images already sent stay readable; they are stored under the world folder.
+	allowChatImages = true
+	#一张图最多多少 KB。客户端按这个数压缩，服务端按这个数收。
+	#这个数直接决定硬盘：每对会话最多留 20 张不同的图，
+	#所以每对好友的上限是 这个数 × 20。默认 512 KB 就是每对 10 MB。
+	#实际远小于上限：Minecraft 的截图大片是天空与地形，压出来常常只有几 KB；
+	#这个数卡的是最坏情况——满屏噪点的截图、以及动图（所有帧拼成一张）。
+	#调小会怎样：客户端自动降一档尺寸重压，图变糊；动图会掉帧、再不行退成一张静态图。
+	#调大会怎样：图更清楚、动图更流畅，硬盘与带宽跟着涨。
+	#上限 768 KB 是硬的：再往上就顶到原版「服务端发给客户端」那 1 MB 的包上限了。
+	#Max size of one chat image in KB. Clients compress to this; the server enforces it.
+	#Disk per friend pair is this times 20 (the per-conversation image cap).
+	#Capped at 768 KB by vanilla's 1 MB clientbound payload limit.
+	# Default: 512
+	# Range: 64 ~ 768
+	chatImageMaxKb = 512
+	#装在手机卡槽里的那台终端，要不要由手机替它供电（用的时候一直是满的）。
+	#开着（默认）：打开终端的那一刻补满，之后只要还有界面开着就每秒补一次，
+	#  于是它不会没电、也不用取出来充。界面全关着时不补——那时候电量本来就不会变。
+	#关掉：卡槽里的终端和拿在手上一样自己耗电，没电了就打不开——
+	#  要充电得先从卡槽里取出来，充完再装回去。
+	#为什么会想关：这等于给了那台终端无限电量，介意的整合包请关掉。
+	#注意这只改「电」这一件事。范围、维度、绑没绑网络仍然全由 AE2 / RS 自己说了算。
+	#对 Tom's Simple Storage 无效——它的终端本来就不用电。
+	#充进去的电取不回来：AE2 与 RS 的终端都不允许外部抽电（canExtract 恒为 false），
+	#所以这不是一台无限发电机。
+	#Keep the terminal installed in the phone's terminal slot topped up (the phone powers it).
+	#On by default: topped up when you open it, then once a second while a screen is open.
+	#It never runs out and never has to be taken out to charge.
+	#Off: it drains like it would in your hand, exactly as before 1.10.0.
+	#Only affects energy. Range, dimension and network binding stay AE2's / RS's call.
+	terminalKeepPowered = true

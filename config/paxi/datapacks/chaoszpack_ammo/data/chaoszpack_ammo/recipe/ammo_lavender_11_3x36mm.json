@@ -1,0 +1,116 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tacz_c:case_4570"
+  },
+  "loops": 1,
+  "transitional_item": {
+    "id": "tacz_c:unfinished_4570"
+  },
+  "results": [
+    {
+      "id": "tacz:ammo",
+      "count": 5,
+      "components": {
+        "minecraft:custom_data": {
+          "AmmoId": "lavender:11.3x36mm"
+        }
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_4570"
+        },
+        {
+          "item": "zeropoint_ammo:casing_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_4570"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_4570"
+        },
+        {
+          "item": "zeropoint_ammo:primer_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_4570"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_4570"
+        },
+        {
+          "item": "zeropoint_ammo:powder_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_4570"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_4570"
+        },
+        {
+          "item": "tacz_c:wad"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_4570"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_4570"
+        },
+        {
+          "item": "tacz_c:bullet_core"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_4570"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_4570"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_4570"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+["Search System Configuration"]
+	#Enable the tactical search system
+	enableSearchSystem = true
+	#Maximum search time in ticks (20 ticks = 1 second)
+	# Default: 200
+	# Range: 1 ~ 1000
+	maxSearchTimeTicks = 200
+	#Multiplier for search speed (higher values = faster search)
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	searchSpeedMultiplier = 1.0
+	#Search time configuration for each rarity level.
+	#Format: rarity:baseTime:randomTime[:soundId]
+	#  rarity: The rarity level (integer >= 1)
+	#  baseTime: Base search time in ticks (integer >= 1)
+	#  randomTime: Random time range in ticks (integer >= 0)
+	#    Actual search time = baseTime +/- random(0, randomTime)
+	#  soundId: (Optional) Sound event ID to play on completion.
+	#    Format: namespace:path, e.g. 'minecraft:entity.player.levelup'
+	#    Can reference any registered sound (vanilla, mod, or resource pack).
+	#    If omitted or invalid, rarity is auto-mapped to the built-in completion sounds (1-7).
+	#Examples:
+	#  '1:10:10:searchcarefully:search_completion_rarity_1' - Rarity 1 with custom sound
+	#  '8:200:20:minecraft:block.note_block.chime'       - Rarity 8 with vanilla sound
+	#  '10:400:50'                                        - Rarity 10 with auto-mapped sound
+	#
+	#Default values (rarity 1-7 with their built-in completion sounds):
+	raritySearchTimes = ["1:10:10:searchcarefully:search_completion_rarity_1", "2:30:10:searchcarefully:search_completion_rarity_2", "3:55:10:searchcarefully:search_completion_rarity_3", "4:85:10:searchcarefully:search_completion_rarity_4", "5:110:10:searchcarefully:search_completion_rarity_5", "6:130:10:searchcarefully:search_completion_rarity_6", "7:140:10:searchcarefully:search_completion_rarity_7"]
+	#Additional loot table paths to apply search times to (one path per line)
+	#Example: ['modid:special_chest', 'anothermod:treasure_box']
+	#Note: These are full resource locations, not just path prefixes
+	customLootTablePaths = []
+	#Path segments that indicate chest-type loot tables for middle-path matching
+	#Example: ['chest', 'chests', 'treasure']
+	#Used to match paths like 'structures/village/chest' or 'modid/special/chests'
+	chestPathSegments = ["chest", "chests"]
+	#Enable search system for hotbar slots (items in hotbar will be searched automatically)
+	#Default: false
+	enableHotbarSearch = false
+	#Enable single slot search mode (search items one by one in order)
+	#When enabled, items will be searched one by one starting from the first slot
+	#Default: false
+	enableSingleSlotSearch = false
+	#Apply 3x time multiplier when single slot search mode is enabled
+	#Default: true
+	singleSlotSearchTimeMultiplier = true
+
+	["Search System Configuration"."Mouse Target Search"]
+		#Enable mouse-targeted search mode
+		#When enabled, mouse cursor will target specific items for search
+		#If mouse is not pointing at any item, automatic search continues
+		#Default: true
+		enableMouseTargetSearch = true
+		#Delay before switching to mouse target (in ticks)
+		#Higher values prevent rapid switching when moving mouse quickly
+		#Default: 3.0 ticks
+		# Default: 3.0
+		# Range: 0.0 ~ 20.0
+		mouseTargetSwitchDelay = 3.0
+
+	["Search System Configuration"."Search Progress Sound"]
+		#Enable playing sound during search progress
+		#When enabled, a looping search progress sound will play while items are being searched
+		#Default: true
+		enableSearchProgressSound = true
+
+	["Search System Configuration"."Mask Rendering"]
+		#Render search mask at the highest rendering layer
+		#When enabled, the search mask will render on top of ALL screen elements including tooltips
+		#This improves compatibility with mods that render custom elements between items and tooltips
+		#Default: false
+		maskRenderOnTop = false

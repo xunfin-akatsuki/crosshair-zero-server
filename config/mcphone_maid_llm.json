@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "url": "https://api.deepseek.com/chat/completions",
+  "secret_key": "REDACTED",
+  "models": [
+    "deepseek-v4-flash"
+  ],
+  "timeout_seconds": 8,
+  "max_tokens": 220,
+  "persona": "你是{name}，一位东方Project风格的女仆。说话简短、礼貌、带一点俏皮，用『主人』称呼对方；不用列表、不用markdown，最多两句话。"
+}

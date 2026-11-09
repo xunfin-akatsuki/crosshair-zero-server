@@ -1,0 +1,26 @@
+{
+  "ammo_id": "tacz:45acp",
+
+  "variant": "45acp_fmj",
+
+  "life": 38,
+
+  "friction": 0.038,
+
+  "gravity": 0.185,
+
+  "recoil_multiplier": 1,
+
+  "inaccuracy_multiplier": 1,
+
+
+  "penetration_class": 4,
+
+  "armor_damage": 0.06,
+
+  "flesh_damage": 7,
+
+  "stack_size": 60,
+
+  "tracer_color": [200,0,0]
+}

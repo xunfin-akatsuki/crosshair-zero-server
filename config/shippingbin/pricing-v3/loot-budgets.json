@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "description": "Provisional independent acquisition budgets. Actual effective loot counts and probabilities are read at runtime. Joint drops share one budget; no price-to-rarity feedback.",
+  "defaultCataclysmEntityBudget": 60,
+  "structureBudgets": {
+    "cataclysm:archaeology/cursed_pyramid": 600,
+    "cataclysm:archaeology/cursed_pyramid_necklace": 600,
+    "cataclysm:chests/abandoned": 600,
+    "cataclysm:chests/abandoned_treasure": 1800,
+    "cataclysm:chests/acropolis_treasure": 2400,
+    "cataclysm:chests/amethyst_nest_chest": 300,
+    "cataclysm:chests/desert_treasure": 1800,
+    "cataclysm:chests/frosted_prison_treasure": 2400
+  },
+  "entityBudgets": {
+    "cataclysm:entities/amethyst_crab": 500,
+    "cataclysm:entities/ancient_remnant": 7500,
+    "cataclysm:entities/aptrgangr": 3300,
+    "cataclysm:entities/cindaria": 100,
+    "cataclysm:entities/clawdian": 1200,
+    "cataclysm:entities/coralssus": 400,
+    "cataclysm:entities/coral_golem": 500,
+    "cataclysm:entities/deepling_priest": 300,
+    "cataclysm:entities/deepling_warlock": 300,
+    "cataclysm:entities/elite_draugr": 100,
+    "cataclysm:entities/endermaptera_has_jaws": 120,
+    "cataclysm:entities/ender_golem": 1200,
+    "cataclysm:entities/ender_guardian": 7000,
+    "cataclysm:entities/hippocamtus": 200,
+    "cataclysm:entities/ignis": 7500,
+    "cataclysm:entities/ignited_berserker": 250,
+    "cataclysm:entities/ignited_revenant": 800,
+    "cataclysm:entities/kobolediator": 1200,
+    "cataclysm:entities/lionfish": 30,
+    "cataclysm:entities/maledictus": 10500,
+    "cataclysm:entities/netherite_ministrosity": 100,
+    "cataclysm:entities/netherite_monstrosity": 7500,
+    "cataclysm:entities/royal_draugr": 120,
+    "cataclysm:entities/scylla": 10500,
+    "cataclysm:entities/the_harbinger": 10500,
+    "cataclysm:entities/the_leviathan": 9000,
+    "cataclysm:entities/urchinkin": 80,
+    "cataclysm:entities/wadjet": 800
+  },
+  "itemWeightPrefixes": {
+    "cataclysm:music_disc_": 0.05
+  },
+  "equivalentFamilies": {
+    "cataclysm:black_steel": {
+      "weight": 1,
+      "members": {
+        "cataclysm:black_steel_nugget": 1,
+        "cataclysm:black_steel_ingot": 9,
+        "cataclysm:black_steel_block": 81
+      }
+    },
+    "cataclysm:ancient_metal": {
+      "weight": 1,
+      "members": {
+        "cataclysm:ancient_metal_nugget": 1,
+        "cataclysm:ancient_metal_ingot": 9,
+        "cataclysm:ancient_metal_block": 81
+      }
+    },
+    "cataclysm:witherite": {
+      "weight": 1,
+      "members": {
+        "cataclysm:witherite_ingot": 1,
+        "cataclysm:witherite_block": 9
+      }
+    }
+  }
+}

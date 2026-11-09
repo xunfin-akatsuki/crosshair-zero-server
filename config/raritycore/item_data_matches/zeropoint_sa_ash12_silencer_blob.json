@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att ash12_silencer",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "suffuse:ash12_silencer",
+      "description": "zeropoint: att ash12_silencer"
+    }
+  ]
+}

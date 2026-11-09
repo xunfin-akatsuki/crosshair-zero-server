@@ -1,0 +1,30 @@
+{
+  "ambush:cast_iron_frigate": {
+    "configHash": "7feb2fd5",
+    "axes": {
+      "8,8,21": false
+    }
+  },
+  "ambush:piglin_overworld_gunship": {
+    "configHash": "15e8e413",
+    "axes": {
+      "8,17,18": true,
+      "9,17,18": false
+    }
+  },
+  "ambush:piglinaautoaimhoverplatform": {
+    "configHash": "801c8f29",
+    "axes": {
+      "8,4,8": false,
+      "6,4,8": true,
+      "7,16,9": false,
+      "5,17,7": false
+    }
+  },
+  "ambush:redsail_medium": {
+    "configHash": "v4:barrel:a6fcb27c",
+    "axes": {
+      "13,8,9": true
+    }
+  }
+}

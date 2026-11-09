@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "description": "Provisional access budgets, not measured drop rates or system supply permissions. Integer item prices; precise internal fluid and batch accounting.",
+  "structureAccessBudget": 120,
+  "cityAccessBudget": 180,
+  "aptrgangrBlackSteelBudget": 2970,
+  "brewingBatchFee": 0
+}

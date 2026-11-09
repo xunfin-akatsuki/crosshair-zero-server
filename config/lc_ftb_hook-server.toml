@@ -1,0 +1,159 @@
+#LC FTB Hook server configuration
+#
+#"Copper" means the smallest coin of the active currency mod:
+#  Lightman's Currency: the copper coin (iron = 10, gold = 100, emerald = 1000,
+#                       diamond = 10000, netherite = 100000 copper)
+#  Create: Numismatics:  the spur (bevel = 8, sprocket = 16, cog = 64,
+#                       crown = 512, sun = 4096 spurs)
+#The same number therefore buys more in Lightman's coins than in Numismatics'
+#coins: 10000 copper is 1 diamond coin, but 2 suns and change. Every default
+#below is written out in both currencies.
+#
+#Every price value below (claim prices, force-load upkeep, and the protection
+#prices in lc_ftb_hook-protection-prices.toml) is denominated in TENTHS of a
+#copper - a value of 10 means 1 copper (1 Lightman's copper coin / 1 Numismatics
+#spur), a value of 8 means 0.8 copper. This lets a price be a fraction of a
+#copper without needing decimals; the actual bill is always rounded DOWN to
+#the nearest whole copper. Protection prices are additionally PER CHUNK that
+#has the protection active - multiplied by the chunk count BEFORE dividing by
+#10 and rounding down, e.g. a value of 8 (0.8 copper/chunk) on 3 such chunks
+#bills floor(0.8 * 3) = floor(2.4) = 2 copper, not floor(0.8) * 3 = 0. Claim
+#prices and force-load upkeep are flat amounts - just divide by 10.
+[general]
+	#Only used when claimPricingMode = CONSTANT. Cost to claim one chunk, the
+	#same for every claim regardless of how many the team already has.
+	#Default: 100000 (= 10000 copper; Lightman's Currency: 1 diamond, Numismatics: 2 sun 3 crown 4 cog 1 sprocket).
+	# Default: 50000
+	# Range: 0 ~ 9223372036854775807
+	claimPrice = 50000
+	#How the price of a team's NEXT chunk claim scales with how many chunks they already have.
+	#The team's currently claimed chunk count (excluding any free-allowance chunks - see freeChunks
+	#below) determines which "increment" (price tier) the next claim falls into; unclaiming lowers
+	#the count and therefore the tier again, so the price a team pays always reflects their CURRENT
+	#chunk count, not a running total. Every increment always starts counting from 0.
+	#  CONSTANT    - flat price for every claim: price = claimPrice.
+	#  LINEAR      - price grows by a fixed amount every claimIncrementSize claims:
+	#                increment = floor(chunksAlreadyClaimed / claimIncrementSize)
+	#                price = claimBasePrice + increment * claimIncrementPrice
+	#  EXPONENTIAL - price grows by a fixed PERCENTAGE every claimIncrementSize claims:
+	#                increment = floor(chunksAlreadyClaimed / claimIncrementSize)
+	#                price = claimBasePrice * (1 + claimPriceGrowthPercent) ^ increment
+	#All of the above is computed in tenths of a copper (see the note at the top of this
+	#file); the result is always rounded DOWN to the nearest whole copper before being charged.
+	#Allowed Values: CONSTANT, LINEAR, EXPONENTIAL
+	claimPricingMode = "CONSTANT"
+	#Used by claimPricingMode = LINEAR and EXPONENTIAL only: the price of a claim at increment 0
+	#(a team's first claimIncrementSize chunks). Ignored under CONSTANT (see claimPrice instead).
+	#Default: 100000 (= 10000 copper; Lightman's Currency: 1 diamond, Numismatics: 2 sun 3 crown 4 cog 1 sprocket).
+	# Default: 100000
+	# Range: 0 ~ 9223372036854775807
+	claimBasePrice = 100000
+	#Used by claimPricingMode = LINEAR and EXPONENTIAL only: how many chunks make up one price tier
+	#("increment"). Ignored under CONSTANT. Default: 20 (matches the default EXPONENTIAL 5% step).
+	# Default: 20
+	# Range: > 1
+	claimIncrementSize = 20
+	#Used by claimPricingMode = LINEAR only: how much the price goes up by per increment
+	#(every claimIncrementSize claims). Ignored by CONSTANT and EXPONENTIAL.
+	#Default: 10000 (= 1000 copper; Lightman's Currency: 1 emerald, Numismatics: 1 crown 7 cog 2 sprocket 1 bevel).
+	# Default: 10000
+	# Range: 0 ~ 9223372036854775807
+	claimIncrementPrice = 10000
+	#Used by claimPricingMode = EXPONENTIAL only: the fractional price increase per increment
+	#(every claimIncrementSize claims), e.g. 0.05 = +5% per increment, compounding. Ignored by
+	#CONSTANT and LINEAR. Default: 0.05 (5% every 20 claims).
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	claimPriceGrowthPercent = 0.05
+	#The first N claimed chunks per team or player are free to claim and exempt from protection upkeep
+	# Default: 0
+	# Range: > 0
+	freeChunks = 0
+	#In-game days of protection included in the purchase price of a chunk.
+	#A newly claimed chunk is protected IMMEDIATELY, without the old delay of
+	#waiting for the next upkeep settlement, and its protection upkeep is not
+	#charged until this many in-game days have passed since the claim. After that
+	#the normal upkeep period bills it again, exactly like any older chunk.
+	#0 disables the free window (old behaviour: protection only starts after the
+	#first paid settlement).
+	#Default: 30
+	# Default: 30
+	# Range: 0 ~ 3650
+	claimGraceDays = 0
+	#Fraction of the claim price refunded when unclaiming a chunk (0 = none, 1 = full refund, 0.8 = 80%)
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	unclaimRefundRatio = 0.8
+	#Upkeep cost per force-loaded chunk per upkeep period (force-loading itself is free).
+	#Default: 1000000 (= 100000 copper; Lightman's Currency: 1 netherite, Numismatics: 24 sun 3 crown 2 cog 2 sprocket).
+	# Default: 1000000
+	# Range: 0 ~ 9223372036854775807
+	forceLoadUpkeepPrice = 1000000
+	#How often upkeep is charged, in real-time minutes.
+	#Default 60 = once per hour.
+	# Default: 60
+	# Range: 1 ~ 10080
+	upkeepPeriodMinutes = 5
+	#Whether a team's claim_visibility (FTB Chunks' own native setting for who can see a team's
+	#claims on the map) is force-locked to Public and can't be changed. When true (default), any
+	#attempt to change it is reverted and the control is disabled in FTB's team settings screen -
+	#matches the original design intent of always making claims visible (e.g. so wars/marketplace
+	#targeting can't be dodged by hiding). Set to false to let teams set their own claim visibility
+	#(Public/Allies/Team) freely again, same as vanilla FTB Chunks.
+	lockClaimVisibilityPublic = true
+	#When force-load upkeep is actually charged for a period:
+	#ALWAYS = charged every period regardless of who is online.
+	#DEFAULT = charged only when at least one of the team's own members is online.
+	#Allowed Values: ALWAYS, DEFAULT
+	forceLoadUpkeepMode = "DEFAULT"
+	#When protection upkeep is actually charged (and can therefore be dismantled for non-payment) for a period:
+	#HEAVY = charged even when nobody is online at all (not recommended).
+	#DEFAULT = charged when at least one player is online anywhere on the server.
+	#LIGHT = charged only when at least one of the team's own members is online.
+	#Allowed Values: HEAVY, DEFAULT, LIGHT
+	protectionUpkeepMode = "DEFAULT"
+	#每装备 1 件饰品（Artifacts / Relics / Reliquified）造成的移动速度惩罚。
+	#0.04 = -4% 移速。饰品机制本身不变，只是背包越「重」走得越慢。
+	# Default: 0.04
+	# Range: 0.0 ~ 0.5
+	trinketSpeedPenaltyPerItem = 0.04
+	#不产生「追加」惩罚的饰品件数。基础惩罚仍按每件计算。
+	# Default: 2
+	# Range: 0 ~ 32
+	trinketFreeItems = 2
+	#超过 trinketFreeItems 之后，每多 1 件追加的惩罚（在基础惩罚之上叠加）。
+	# Default: 0.02
+	# Range: 0.0 ~ 0.5
+	trinketExtraPenaltyPerItem = 0.02
+	#饰品移速惩罚总上限。0.24 = 最多 -24%。
+	# Default: 0.24
+	# Range: 0.0 ~ 0.9
+	trinketSpeedPenaltyCap = 0.24
+
+#Which mod backs each of this hook's pluggable systems. AUTO (default) picks the
+#highest-priority one that's actually installed - if only one candidate for a given
+#system is installed, that one is always used regardless of this setting. Set an
+#explicit value to force a specific backend even when a higher-priority one is also
+#installed (e.g. to run OPAC on a server that has FTB Chunks installed only for an
+#unrelated reason). An unknown or not-installed explicit value falls back to AUTO
+#with a startup warning, it never fails to start.
+[backends]
+	#Backend for team/chunk-claim management. Priority order under AUTO: FTB (FTB Teams +
+	#FTB Chunks) first, then OPAC (Open Parties and Claims). Valid values: AUTO, FTB, OPAC.
+	claimBackend = "AUTO"
+	#Backend for money/banking. Priority order under AUTO: LIGHTMANS_CURRENCY first, then
+	#NUMISMATICS. Valid values: AUTO, LIGHTMANS_CURRENCY, NUMISMATICS.
+	currencyBackend = "AUTO"
+
+#War declarations between claim teams (teams or solo players with claimed chunks)
+[war]
+	#Enable the war system. When false, war costs are ignored, war actions are blocked, and the war button is hidden on clients.
+	warEnabled = true
+	#Flat multiplier x for outgoing war cost. Declaring war on a team costs x * their base upkeep per period, regardless of how many wars you have declared.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	warOutgoingCostMultiplier = 2.0
+	#Incoming war exponent l. With base upkeep b and k incoming wars, the incoming surcharge is b * sum(l^n for n=0..k-1). First incoming war uses l^0 = 1.
+	# Default: 1.2
+	# Range: 1.0 ~ 100.0
+	warCostMultiplier = 1.2

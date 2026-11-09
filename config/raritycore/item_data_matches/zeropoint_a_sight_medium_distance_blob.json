@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 121,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att sight_medium_distance",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "sight_medium_distance",
+      "description": "att sight_medium_distance"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "item_id": "superbwarfare:container",
+  "fuzzy_match": true,
+  "priority": 204,
+  "rarity": 4,
+  "enabled": true,
+  "description": "zeropoint: vehicle crate ah_6",
+  "conditions": [
+    {
+      "path": "components.minecraft:block_entity_data",
+      "type": "contains",
+      "substring": "ah_6",
+      "description": "vehicle ah_6"
+    }
+  ]
+}

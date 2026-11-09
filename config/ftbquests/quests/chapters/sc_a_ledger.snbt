@@ -1,0 +1,164 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sc_a_ledger"
+	group: ""
+	id: "1000000000000170"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000000120"]
+			id: "1000000000000171"
+			rewards: [{
+				id: "10000000000000C8"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "10000000000000C7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000171"]
+			id: "1000000000000172"
+			rewards: [{
+				id: "10000000000000CA"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "10000000000000C9"
+				stat: "minecraft:walk_one_cm"
+				type: "stat"
+				value: 2000000
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000172"]
+			id: "1000000000000173"
+			rewards: [{
+				id: "10000000000000CC"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "10000000000000CB"
+				stat: "minecraft:sprint_one_cm"
+				type: "stat"
+				value: 3000000
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000173"]
+			id: "1000000000000174"
+			rewards: [{
+				id: "10000000000000CE"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [{
+				id: "10000000000000CD"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 500
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000174"]
+			id: "1000000000000175"
+			rewards: [{
+				id: "10000000000000D0"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "10000000000000CF"
+				stat: "minecraft:damage_taken"
+				type: "stat"
+				value: 5000
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000175"]
+			id: "1000000000000176"
+			rewards: [{
+				id: "10000000000000D2"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				id: "10000000000000D1"
+				stat: "minecraft:damage_dealt"
+				type: "stat"
+				value: 20000
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000176"]
+			id: "1000000000000177"
+			rewards: [{
+				id: "10000000000000D4"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "10000000000000D3"
+				stat: "minecraft:sleep_in_bed"
+				type: "stat"
+				value: 50
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000177"]
+			id: "1000000000000178"
+			rewards: [{
+				id: "10000000000000D6"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [{
+				id: "10000000000000D5"
+				stat: "minecraft:traded_with_villager"
+				type: "stat"
+				value: 100
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000178"]
+			id: "1000000000000179"
+			rewards: [{
+				id: "10000000000000D8"
+				type: "xp"
+				xp: 600
+			}]
+			tasks: [{
+				id: "10000000000000D7"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 3600000
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+	]
+}

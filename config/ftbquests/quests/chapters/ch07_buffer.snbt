@@ -1,0 +1,147 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch07_buffer"
+	group: ""
+	id: "1000000000000161"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000000160"]
+			id: "1000000000000162"
+			rewards: [{
+				id: "10000000000000A9"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "10000000000000A8"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000162"]
+			id: "1000000000000163"
+			rewards: [{
+				id: "10000000000000AB"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "10000000000000AA"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000163"]
+			id: "1000000000000164"
+			rewards: [{
+				id: "10000000000000AD"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				entity: "mutantmonsters:mutant_enderman"
+				id: "10000000000000AC"
+				type: "kill"
+				value: 3L
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000164"]
+			id: "1000000000000165"
+			rewards: [
+				{
+					id: "10000000000000AF"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "10000000000000B0"
+					item: {
+						count: 1
+						id: "superbwarfare:ancient_cpu"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "10000000000000AE"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000165"]
+			id: "1000000000000166"
+			rewards: [
+				{
+					id: "10000000000000B2"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "10000000000000B3"
+					item: {
+						count: 1
+						id: "alexsmobs:void_worm_mandible"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				id: "10000000000000B1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000166"]
+			id: "1000000000000167"
+			rewards: [{
+				id: "10000000000000B5"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "10000000000000B4"
+				item: { count: 1, id: "superbwarfare:ancient_cpu" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000167"]
+			id: "1000000000000168"
+			rewards: [{
+				id: "10000000000000B7"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [{
+				id: "10000000000000B6"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+	]
+}

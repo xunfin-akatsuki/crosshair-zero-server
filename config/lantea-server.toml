@@ -1,0 +1,116 @@
+[dialing]
+	# Default: 20
+	# Range: 1 ~ 6000
+	symbolTicks = 20
+	# Default: 10
+	# Range: 1 ~ 6000
+	lockTicks = 10
+	# Default: 100
+	# Range: 1 ~ 6000
+	establishTimeoutTicks = 100
+	# Default: 40
+	# Range: 1 ~ 6000
+	resetTicks = 40
+	# Default: 20
+	# Range: 1 ~ 6000
+	dhdChevronTicks = 20
+	# Default: 900
+	# Range: 20 ~ 24000
+	dhdIdleTicks = 900
+	failsafeReroute = true
+
+[connection]
+	# Default: 20
+	# Range: 1 ~ 6000
+	establishTicks = 20
+	# Default: 200
+	# Range: 1 ~ 24000
+	incomingTimeoutTicks = 200
+	# Default: 40
+	# Range: 1 ~ 6000
+	closeTicks = 40
+	# Default: 45600
+	# Range: 20 ~ 1728000
+	maxDurationTicks = 45600
+	# Default: 8
+	# Range: 1 ~ 256
+	maxConcurrent = 8
+
+[chunkLoading]
+	# Default: 3
+	# Range: 3 ~ 64
+	radiusBlocks = 3
+
+[dhd]
+	# Default: 16
+	# Range: 1 ~ 64
+	linkRange = 16
+
+[transit]
+	# Default: 40
+	# Range: 0 ~ 6000
+	cooldownTicks = 40
+	# Default: 65
+	# Range: 1 ~ 1200
+	travelTicks = 65
+	instantTravel = false
+	# Default: 8
+	# Range: 0 ~ 600
+	autoCloseSeconds = 8
+	# Default: 8.0
+	# Range: 2.0 ~ 32.0
+	radarRadiusBlocks = 8.0
+
+[kawoosh]
+	# Default: 40
+	# Range: 5 ~ 200
+	durationTicks = 40
+	# Default: 7.5
+	# Range: 1.0 ~ 16.0
+	lengthBlocks = 7.5
+	destroysBlocks = true
+	killsEntities = true
+
+[energy]
+	required = true
+	# Default: 2000000
+	# Range: 0 ~ 9223372036854775807
+	openingCost = 2000000
+	# Default: 4
+	# Range: 1 ~ 1000000
+	crossDimensionMultiplier = 4
+	# Default: 11
+	# Range: 1 ~ 1000000
+	intergalacticMultiplier = 11
+	# Default: 4
+	# Range: 1 ~ 1000
+	fePerEu = 4
+
+[ancient]
+	outpostGenerates = true
+	outpostDimensions = ["minecraft:overworld"]
+	# Default: 97.0
+	# Range: 0.0 ~ 100.0
+	outpostZpmEntropyMin = 97.0
+	# Default: 98.5
+	# Range: 0.0 ~ 100.0
+	outpostZpmEntropyMax = 98.5
+	dronesEnabled = true
+	dronesAutoTarget = false
+	# Default: 4
+	# Range: 0 ~ 100
+	naturalGenePercent = 4
+	everyoneCarriesGene = false
+	chairKnowsAllGates = true
+	lifeSignsSeeUndead = false
+
+[jumper]
+	battery = true
+
+[earthGate]
+	generates = true
+	dimensions = ["minecraft:overworld"]
+
+[planets]
+	randomAddresses = false
+	disabled = []

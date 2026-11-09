@@ -1,0 +1,120 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "773da0c07c306398"
+	group: ""
+	id: "773DA0C07C306398"
+	images: [ ]
+	order_index: 12
+	quest_links: [ ]
+	quests: [{
+		id: "7A9074CA6B5398D6"
+		rewards: [
+			{
+				id: "24604F2CE6BD6927"
+				item: {
+					count: 1
+					id: "lc_ftb_hook:power_settlement"
+				}
+				type: "item"
+			}
+			{
+				count: 4
+				id: "31FABAB324C2D3CF"
+				item: {
+					count: 1
+					id: "waystones:waystone"
+				}
+				type: "item"
+			}
+			{
+				count: 300
+				id: "4650F2ABA639FC0E"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							AmmoId: "tacz:9mm"
+						}
+						"minecraft:max_stack_size": 60
+					}
+					count: 1
+					id: "tacz:ammo"
+				}
+				type: "item"
+			}
+			{
+				id: "797480FF3530BAAB"
+				item: {
+					count: 1
+					id: "lc_ftb_hook:sales_station"
+				}
+				type: "item"
+			}
+			{
+				id: "3675187C8D0C0BF0"
+				item: {
+					count: 1
+					id: "lc_ftb_hook:purchase_station"
+				}
+				type: "item"
+			}
+			{
+				id: "26760A3EEA22C217"
+				item: {
+					count: 1
+					id: "superbwarfare:charging_station"
+				}
+				type: "item"
+			}
+			{
+				id: "5B3BBF4A4467120F"
+				item: {
+					count: 1
+					id: "createaddition:alternator"
+				}
+				type: "item"
+			}
+			{
+				id: "502D2FD2FE64DB60"
+				item: {
+					count: 1
+					id: "immersiveengineering:capacitor_mv"
+				}
+				type: "item"
+			}
+			{
+				count: 2
+				id: "0396EC361D016E29"
+				item: {
+					count: 1
+					id: "immersiveengineering:wirecoil_electrum"
+				}
+				type: "item"
+			}
+			{
+				count: 2
+				id: "37EC24F6EA58406A"
+				item: {
+					count: 1
+					id: "immersiveengineering:connector_mv"
+				}
+				type: "item"
+			}
+			{
+				count: 500
+				id: "1FC7C35ADB1A7E5C"
+				item: {
+					count: 1
+					id: "numismatic_overhaul:zero_coin"
+				}
+				type: "item"
+			}
+		]
+		tasks: [{
+			id: "1CFC7E4AD4C44F41"
+			type: "checkmark"
+		}]
+		x: -1.5d
+		y: -1.5d
+	}]
+}

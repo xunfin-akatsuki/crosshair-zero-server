@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 2,
+  "smallFeeRate": 0.05,
+  "mediumFeeRate": 0.08,
+  "largeFeeRate": 0.10,
+  "description": "Gross = sum(base * count * state). Progressive shipment fee: first 1000 at smallFeeRate, next 9000 at mediumFeeRate, excess at largeFeeRate. Net = floor(gross - fee). No recovery coefficient, market pressure, recipe cap or per-slot penalty. State eligibility and durability remain enforced."
+}

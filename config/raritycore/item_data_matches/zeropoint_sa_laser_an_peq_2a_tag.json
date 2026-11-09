@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 4,
+  "enabled": true,
+  "description": "zeropoint: att laser_an_peq_2a",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "suffuse:laser_an_peq_2a",
+      "description": "zeropoint: att laser_an_peq_2a"
+    }
+  ]
+}

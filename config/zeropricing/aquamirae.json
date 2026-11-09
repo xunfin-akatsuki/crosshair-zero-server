@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "description": "Provisional independent source budgets for Aquamirae 7.2.12. Conditional shipbreaker drops are not ordinary kill probabilities. Stashes consume their actual pouch through a separate expected-output route.",
+  "defaultEntityBudget": 180,
+  "entityBudgets": {
+    "aquamirae:entities/abyssal_scyphoid": 360,
+    "aquamirae:entities/anglerfish": 450,
+    "aquamirae:entities/captain_cornelia": 12000,
+    "aquamirae:entities/eel": 2400,
+    "aquamirae:entities/maw": 360,
+    "aquamirae:entities/maze_captain": 1800,
+    "aquamirae:entities/maze_mother": 6000,
+    "aquamirae:entities/maze_pillager": 900,
+    "aquamirae:entities/maze_vindicator": 1200,
+    "aquamirae:entities/scuttler": 120,
+    "aquamirae:entities/spinefish": 100
+  },
+  "structureBudgets": {
+    "aquamirae:chests/camp_barrel": 300,
+    "aquamirae:chests/maze_camp_chest": 300,
+    "aquamirae:chests/frozen_chest": 8000,
+    "aquamirae:chests/ship_1": 600,
+    "aquamirae:chests/ship_2": 1200
+  },
+  "blockBudgets": {
+    "aquamirae:blocks/wisteria_niveis": 36
+  },
+  "capture": {
+    "goldenMothEffort": 240,
+    "evidence": "GoldenMoth.mobInteract consumes one glass bottle and yields one golden_moth_jar; entity is discarded. Effort is provisional."
+  },
+  "itemWeightPrefixes": { "aquamirae:music_disc_": 0.05 }
+}

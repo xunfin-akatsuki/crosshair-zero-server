@@ -1,0 +1,53 @@
+{
+  "entity": "boss_arsenal:skeleton_soldier",
+  "spawn_chance": 0,
+  "tier": 1,
+  "name": "零点军团 · 步战兵",
+  "health": 32,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:aks74u",
+    "fire_mode": "auto",
+    "spread_degrees": 6,
+    "range": 32,
+    "preferred_range": 14,
+    "shot_interval_ticks": 3,
+    "infinite_ammo": true,
+    "drop_chance": 0.12,
+    "aim_ticks": 7,
+    "burst_shots": 4,
+    "burst_pause_ticks": 55,
+    "recoil_spread": 0.65,
+    "max_spread": 10.5,
+    "moving_spread": 1.8,
+    "headshot_chance": 0.03,
+    "damage_scale": 1
+  },
+  "armor_bonus": 2,
+  "equipment": {
+    "head": {
+      "item": "minecraft:iron_helmet",
+      "drop_chance": 0.075
+    },
+    "chest": {
+      "item": "zerocontact:armor_jpc_v2",
+      "drop_chance": 0.075
+    }
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:556x45",
+      "min": 8,
+      "max": 20,
+      "chance": 0.7
+    },
+    {
+      "item": "superbwarfare:dog_tag",
+      "min": 1,
+      "max": 1,
+      "chance": 0.05
+    }
+  ]
+}

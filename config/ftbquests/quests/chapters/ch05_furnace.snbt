@@ -1,0 +1,175 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch05_furnace"
+	group: ""
+	id: "100000000000014F"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["100000000000014E"]
+			id: "1000000000000150"
+			rewards: [{
+				id: "100000000000007C"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "100000000000007B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000150"]
+			id: "1000000000000151"
+			rewards: [{
+				id: "100000000000007E"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "100000000000007D"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000151"]
+			id: "1000000000000152"
+			rewards: [{
+				id: "1000000000000080"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "100000000000007F"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000152"]
+			id: "1000000000000153"
+			rewards: [
+				{
+					id: "1000000000000082"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 2
+					id: "1000000000000083"
+					item: {
+						count: 1
+						id: "alexsmobs:bone_serpent_tooth"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "alexsmobs:bone_serpent"
+				id: "1000000000000081"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000153"]
+			id: "1000000000000154"
+			rewards: [
+				{
+					id: "1000000000000085"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "1000000000000086"
+					item: {
+						count: 1
+						id: "alexsmobs:soul_heart"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "alexsmobs:laviathan"
+				id: "1000000000000084"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000000154"]
+			id: "1000000000000155"
+			rewards: [{
+				id: "1000000000000088"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				id: "1000000000000087"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000155"]
+			id: "1000000000000156"
+			rewards: [{
+				id: "100000000000008A"
+				type: "xp"
+				xp: 120
+			}]
+			tasks: [{
+				id: "1000000000000089"
+				item: { count: 1, id: "endrem:nether_eye" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000156"]
+			id: "1000000000000157"
+			rewards: [{
+				id: "100000000000008C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "100000000000008B"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000157"]
+			id: "1000000000000158"
+			rewards: [{
+				id: "100000000000008E"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				id: "100000000000008D"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+	]
+}

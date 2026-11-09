@@ -1,0 +1,56 @@
+{
+  "entity": "boss_arsenal:skeleton_soldier",
+  "spawn_chance": 0,
+  "spawn_mode": "air",
+  "tier": 2,
+  "name": "零点空骑 · 清场手",
+  "health": 38,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:gen12",
+    "fire_mode": "auto",
+    "spread_degrees": 4.2,
+    "range": 18,
+    "preferred_range": 8,
+    "shot_interval_ticks": 4,
+    "infinite_ammo": true,
+    "drop_chance": 0.1,
+    "aim_ticks": 5,
+    "burst_shots": 5,
+    "burst_pause_ticks": 50,
+    "recoil_spread": 0.55,
+    "max_spread": 8.5,
+    "moving_spread": 1.4,
+    "headshot_chance": 0.05,
+    "damage_scale": 1.1
+  },
+  "armor_bonus": 4,
+  "mount": {
+    "entity": "alexsmobs:cosmaw",
+    "name": "虚空游鲟"
+  },
+  "equipment": {
+    "head": {
+      "item": "zerocontact:helmet_fast_mt",
+      "drop_chance": 0.09
+    },
+    "chest": {
+      "item": "zerocontact:armor_jpc_v2",
+      "drop_chance": 0.09
+    },
+    "legs": {
+      "item": "zerocontact:armor_jpc_v2",
+      "drop_chance": 0.08
+    }
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:12g",
+      "min": 10,
+      "max": 20,
+      "chance": 0.7
+    }
+  ]
+}

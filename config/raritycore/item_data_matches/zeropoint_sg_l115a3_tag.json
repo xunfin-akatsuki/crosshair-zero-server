@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: gun l115a3",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "suffuse:l115a3",
+      "description": "zeropoint: gun l115a3"
+    }
+  ]
+}

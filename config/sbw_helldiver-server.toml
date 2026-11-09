@@ -1,0 +1,1317 @@
+#信标显示的呼叫倒计时，实际撞地在归零后 20 tick（1 秒）；20 tick = 1 秒。
+#空投仓出现后固定下落 95 tick（4.75 秒）；默认仍显示四秒倒计时，归零后一秒撞地。
+# Default: 80
+# Range: 0 ~ 1200
+dropDelayTicks = 80
+#舱体底面在落点上方的生成高度（格）。
+#战备信标的计时空投至少使用 720 格，旧存档的低值也会采用此下限。
+# Default: 720
+# Range: 16 ~ 2048
+spawnHeight = 720
+#旧版本速度选项，保留供兼容；新版所有空投仓统一采用 4.75 秒下落路径。
+# Default: 2.0
+# Range: 0.1 ~ 20.0
+fallSpeed = 2.0
+#距离最终落点多少格开始喷射减速，三块外板在此阶段打开。
+#战备信标的计时空投至少在 336 格开始制动；喷射制动约 2.2 秒。
+# Default: 336.0
+# Range: 2.0 ~ 2048.0
+brakeHeight = 336.0
+#钻头尖端埋入地面的深度（格）；新版模型原点到尖端为 5.5456 格。
+#默认 5.45 留下约 0.10 格顶沿；设为 0 可检查完整舱体。
+#旧版默认 5.3 / 5.37 会按新版模型校准到 5.45。
+#不改变地形方块；开仓后的内部通过舱口局部深度渲染显示。
+# Default: 5.45
+# Range: 0.0 ~ 6.5
+burialDepth = 5.45
+#战备弹药耗尽或工作时限到达后是否自动缩回空投仓；不影响被摧毁的效果或玩家投送出仓。
+#Automatically retract deployed stratagems when ammunition or operating time runs out.
+autoRetract = true
+#炮台与人员操作型炮位不消耗弹药或燃料；火箭仍需装填，激光过热与工作时限不受影响。
+#Unlimited turret ammunition/fuel. Rocket reloads, laser heat and autonomous sentry lifetimes still apply.
+infiniteTurretAmmo = false
+#独立控制战备爆炸是否破坏方块，不受 SBW 爆炸总开关影响；关闭后保留生物伤害、击退、音效与粒子。不改变本来不破坏地形的战备。
+#Independently allow terrain-damaging stratagem explosions to destroy blocks, regardless of the SBW global setting. Disabling this preserves entity damage, knockback, sounds and particles.
+stratagemExplosionBlockDamage = false
+#工作时限（tick），默认 150 秒；0 表示只按弹药耗尽回收。
+# Default: 3000
+# Range: 0 ~ 240000
+sentryLifetimeTicks = 3000
+#弹出的独立盖板落地后保留多久（tick），默认 600 = 30 秒。
+# Default: 600
+# Range: 20 ~ 12000
+capLifetimeTicks = 600
+#兼容旧存档的选项；当前炮台始终不对玩家索敌，但子弹和爆炸可以误伤玩家。
+attackPlayers = false
+#是否攻击其他 Mob。默认只攻击 Enemy；始终排除已驯服宠物。
+attackNeutralMobs = false
+
+#各炮台独立属性；修改后退出并重新进入存档/重启服务器。 / Per-turret settings; reopen the world or restart the server after editing.
+[turrets]
+
+	[turrets.machine_gun_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 8.0
+		# Range: 0.0 ~ 100000.0
+		damage = 8.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 700
+		# Range: 1 ~ 4800
+		rpm = 700
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 263
+		# Range: 0 ~ 100000
+		ammunition = 263
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 75.0
+		# Range: 0.0 ~ 256.0
+		range = 75.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 0.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 0.0
+
+	[turrets.gatling_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 8.0
+		# Range: 0.0 ~ 100000.0
+		damage = 8.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 1600
+		# Range: 1 ~ 4800
+		rpm = 1600
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 750
+		# Range: 0 ~ 100000
+		ammunition = 750
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 75.0
+		# Range: 0.0 ~ 256.0
+		range = 75.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 0.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 0.0
+
+	[turrets.rocket_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 80.0
+		# Range: 0.0 ~ 100000.0
+		damage = 80.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 90
+		# Range: 1 ~ 4800
+		rpm = 90
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 48
+		# Range: 0 ~ 100000
+		ammunition = 48
+		#火箭单次装填容量，受总弹药量限制；其余弹药作为备用弹药。 / Rocket magazine capacity; remaining rounds are reserves.
+		# Default: 16
+		# Range: 1 ~ 100000
+		magazineSize = 16
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 100.0
+		# Range: 0.0 ~ 256.0
+		range = 100.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 10.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 10.0
+		#爆炸伤害，独立于直击伤害。 / Blast damage, separate from direct damage.
+		# Default: 20.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 20.0
+		#爆炸外半径；0 关闭范围伤害。 / Outer blast radius; 0 disables area damage.
+		# Default: 4.0
+		# Range: 0.0 ~ 128.0
+		explosionOuterRadius = 4.0
+		#爆炸满伤内半径，实际不超过外半径。 / Full-damage inner radius, clamped to the outer radius.
+		# Default: 1.0
+		# Range: 0.0 ~ 128.0
+		explosionInnerRadius = 1.0
+
+	[turrets.autocannon_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 70.0
+		# Range: 0.0 ~ 100000.0
+		damage = 70.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 90
+		# Range: 1 ~ 900
+		rpm = 90
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 36
+		# Range: 0 ~ 100000
+		ammunition = 36
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 100.0
+		# Range: 0.0 ~ 256.0
+		range = 100.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 0.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 0.0
+		#爆炸伤害，独立于直击伤害。 / Blast damage, separate from direct damage.
+		# Default: 20.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 20.0
+		#爆炸外半径；0 关闭范围伤害。 / Outer blast radius; 0 disables area damage.
+		# Default: 5.0
+		# Range: 0.0 ~ 128.0
+		explosionOuterRadius = 5.0
+		#爆炸满伤内半径，实际不超过外半径。 / Full-damage inner radius, clamped to the outer radius.
+		# Default: 2.0
+		# Range: 0.0 ~ 128.0
+		explosionInnerRadius = 2.0
+
+	[turrets.mortar_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 2.0
+		# Range: 0.0 ~ 100000.0
+		damage = 2.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 32
+		# Range: 1 ~ 480
+		rpm = 32
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 54
+		# Range: 0 ~ 100000
+		ammunition = 54
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 125.0
+		# Range: 0.0 ~ 256.0
+		range = 125.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 10.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 10.0
+		#爆炸伤害，独立于直击伤害。 / Blast damage, separate from direct damage.
+		# Default: 64.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 64.0
+		#爆炸外半径；0 关闭范围伤害。 / Outer blast radius; 0 disables area damage.
+		# Default: 9.0
+		# Range: 0.0 ~ 128.0
+		explosionOuterRadius = 9.0
+		#爆炸满伤内半径，实际不超过外半径。 / Full-damage inner radius, clamped to the outer radius.
+		# Default: 3.0
+		# Range: 0.0 ~ 128.0
+		explosionInnerRadius = 3.0
+		#迫击炮落点散布半径。 / Mortar impact scatter radius.
+		# Default: 10.0
+		# Range: 0.0 ~ 64.0
+		scatterRadius = 10.0
+
+	[turrets.gas_mortar_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 2.0
+		# Range: 0.0 ~ 100000.0
+		damage = 2.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 15
+		# Range: 1 ~ 1200
+		rpm = 15
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 23
+		# Range: 0 ~ 100000
+		ammunition = 23
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 125.0
+		# Range: 0.0 ~ 256.0
+		range = 125.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 10.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 10.0
+		#迫击炮落点散布半径。 / Mortar impact scatter radius.
+		# Default: 5.0
+		# Range: 0.0 ~ 64.0
+		scatterRadius = 5.0
+
+	[turrets.ems_mortar_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 2.0
+		# Range: 0.0 ~ 100000.0
+		damage = 2.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 10
+		# Range: 1 ~ 1200
+		rpm = 10
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 23
+		# Range: 0 ~ 100000
+		ammunition = 23
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 125.0
+		# Range: 0.0 ~ 256.0
+		range = 125.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 10.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 10.0
+		#爆炸伤害，独立于直击伤害。 / Blast damage, separate from direct damage.
+		# Default: 15.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 15.0
+		#爆炸外半径；0 关闭范围伤害。 / Outer blast radius; 0 disables area damage.
+		# Default: 2.0
+		# Range: 0.0 ~ 128.0
+		explosionOuterRadius = 2.0
+		#爆炸满伤内半径，实际不超过外半径。 / Full-damage inner radius, clamped to the outer radius.
+		# Default: 1.0
+		# Range: 0.0 ~ 128.0
+		explosionInnerRadius = 1.0
+		#迫击炮落点散布半径。 / Mortar impact scatter radius.
+		# Default: 5.0
+		# Range: 0.0 ~ 64.0
+		scatterRadius = 5.0
+
+	[turrets.flame_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 6.25
+		# Range: 0.0 ~ 100000.0
+		damage = 6.25
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 240
+		# Range: 1 ~ 1200
+		rpm = 240
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 900
+		# Range: 0 ~ 100000
+		ammunition = 900
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 35.0
+		# Range: 0.0 ~ 256.0
+		range = 35.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 0.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 0.0
+
+	[turrets.laser_sentry]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 7.5
+		# Range: 0.0 ~ 100000.0
+		damage = 7.5
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 240
+		# Range: 1 ~ 1200
+		rpm = 240
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 50.0
+		# Range: 0.0 ~ 256.0
+		range = 50.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 0.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 0.0
+		#激光光束与已锁定目标的最大距离，不能小于索敌距离。 / Beam reach and locked-target range, at least acquisition range.
+		# Default: 200.0
+		# Range: 0.0 ~ 512.0
+		beamRange = 200.0
+		#激光过热自爆阈值。 / Laser overload heat threshold.
+		# Default: 250.0
+		# Range: 1.0 ~ 100000.0
+		maxHeat = 250.0
+		#激光开火每秒累积热量。 / Laser heat gained per second.
+		# Default: 8.0
+		# Range: 0.0 ~ 100000.0
+		heatPerSecond = 8.0
+
+	[turrets.tesla_tower]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 150.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 150.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: -1
+		# Range: -1 ~ 240000
+		lifetimeTicks = -1
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 80.0
+		# Range: 0.0 ~ 100000.0
+		damage = 80.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 30
+		# Range: 1 ~ 600
+		rpm = 30
+		#自动索敌最大距离，单位为格。火焰也使用此射流长度。 / Acquisition range in blocks; also sets flame reach.
+		# Default: 20.0
+		# Range: 0.0 ~ 256.0
+		range = 20.0
+		#最小索敌距离；超过最大射程时按最大射程处理。 / Minimum acquisition range, clamped to maximum range.
+		# Default: 0.0
+		# Range: 0.0 ~ 256.0
+		minimumRange = 0.0
+		#电弧相邻目标间的最大跳跃距离。 / Maximum chain-lightning jump distance.
+		# Default: 30.0
+		# Range: 0.0 ~ 128.0
+		jumpRange = 30.0
+		#每次放电最多命中的生物数。 / Maximum victims per discharge.
+		# Default: 3
+		# Range: 1 ~ 32
+		maxVictims = 3
+
+	[turrets.hmg_emplacement]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 120.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 120.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: 0
+		# Range: -1 ~ 240000
+		lifetimeTicks = 0
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 15.0
+		# Range: 0.0 ~ 100000.0
+		damage = 15.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 600
+		# Range: 1 ~ 1200
+		rpm = 600
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 300
+		# Range: 0 ~ 100000
+		ammunition = 300
+
+	[turrets.anti_tank_emplacement]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 50.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 50.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: 0
+		# Range: -1 ~ 240000
+		lifetimeTicks = 0
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 200.0
+		# Range: 0.0 ~ 100000.0
+		damage = 200.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 60
+		# Range: 1 ~ 1200
+		rpm = 60
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 30
+		# Range: 0 ~ 100000
+		ammunition = 30
+		#爆炸伤害，独立于直击伤害。 / Blast damage, separate from direct damage.
+		# Default: 20.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 20.0
+		#爆炸外半径；0 关闭范围伤害。 / Outer blast radius; 0 disables area damage.
+		# Default: 7.0
+		# Range: 0.0 ~ 128.0
+		explosionOuterRadius = 7.0
+		#爆炸满伤内半径，实际不超过外半径。 / Full-damage inner radius, clamped to the outer radius.
+		# Default: 3.0
+		# Range: 0.0 ~ 128.0
+		explosionInnerRadius = 3.0
+
+	[turrets.grenadier_battlement]
+		#本体最大生命值。已部署炮台不会因提高上限而自动回血。 / Maximum hull health; raising it does not heal existing turrets.
+		# Default: 500.0
+		# Range: 1.0 ~ 100000.0
+		maxHealth = 500.0
+		#爆炸减伤比例；0 为不减伤，1 为免疫爆炸。 / Explosion resistance: 0 = none, 1 = immune.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		explosionResistance = 0.5
+		#工作时限，20 tick = 1 秒；-1 使用全局 sentryLifetimeTicks，0 不按时间回收；人员操作型炮位忽略此项。 / Lifetime: -1 = global, 0 = unlimited; ignored by manned emplacements.
+		# Default: 0
+		# Range: -1 ~ 240000
+		lifetimeTicks = 0
+		#每发直击伤害；火焰为每次射流、激光为每次结算、电塔为每次放电对每个目标的伤害，不含持续燃烧。 / Direct damage per shot/pulse, excluding burning.
+		# Default: 5.0
+		# Range: 0.0 ~ 100000.0
+		damage = 5.0
+		#每分钟发射/伤害结算次数。连发炮台同比缩放连发间隔和组间停顿；火焰燃料消耗随射流次数变化。 / Rounds or damage pulses per minute; scales burst timing.
+		# Default: 160
+		# Range: 1 ~ 1200
+		rpm = 160
+		#总弹药/燃料。只决定新部署容量，不会给已有炮台补弹。 / Total ammunition/fuel; does not refill deployed turrets.
+		# Default: 60
+		# Range: 0 ~ 100000
+		ammunition = 60
+		#爆炸伤害，独立于直击伤害。 / Blast damage, separate from direct damage.
+		# Default: 60.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 60.0
+		#爆炸外半径；0 关闭范围伤害。 / Outer blast radius; 0 disables area damage.
+		# Default: 7.5
+		# Range: 0.0 ~ 128.0
+		explosionOuterRadius = 7.5
+		#爆炸满伤内半径，实际不超过外半径。 / Full-damage inner radius, clamped to the outer radius.
+		# Default: 3.5
+		# Range: 0.0 ~ 128.0
+		explosionInnerRadius = 3.5
+
+#战备冷却（秒），默认采用满舰船升级。Cooldowns in seconds, fully upgraded defaults.
+[stratagems]
+
+	[stratagems.orbital_120mm_he_barrage]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 153.9
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 153.9
+
+	[stratagems.orbital_380mm_he_barrage]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 205.2
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 205.2
+
+	[stratagems.orbital_walking_barrage]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 205.2
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 205.2
+
+	[stratagems.orbital_gas_strike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 64.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 64.125
+
+	[stratagems.orbital_ems_strike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 64.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 64.125
+
+	[stratagems.orbital_smoke_strike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 64.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 64.125
+
+	[stratagems.orbital_napalm_barrage]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 205.2
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 205.2
+
+	[stratagems.orbital_airburst_strike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 85.5
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 85.5
+
+	[stratagems.orbital_gatling_barrage]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 59.85
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 59.85
+
+	[stratagems.orbital_precision_strike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 68.4
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 68.4
+
+	[stratagems.orbital_railcannon_strike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 179.54999999999998
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 179.54999999999998
+
+	[stratagems.orbital_laser]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 256.5
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 256.5
+		#每位玩家的持久使用次数；关闭冷却可恢复次数。Persistent uses per player; disabling cooldown restores uses.
+		# Default: 3
+		# Range: 1 ~ 1000
+		uses = 3
+
+	[stratagems.machine_gun_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 76.95
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 76.95
+
+	[stratagems.gatling_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 128.25
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 128.25
+
+	[stratagems.rocket_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 128.25
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 128.25
+
+	[stratagems.autocannon_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 128.25
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 128.25
+
+	[stratagems.mortar_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 153.9
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 153.9
+
+	[stratagems.gas_mortar_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 153.9
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 153.9
+
+	[stratagems.ems_mortar_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 153.9
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 153.9
+
+	[stratagems.flame_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 85.5
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 85.5
+
+	[stratagems.laser_sentry]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 128.25
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 128.25
+
+	[stratagems.tesla_tower]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 102.6
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 102.6
+
+	[stratagems.hmg_emplacement]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 153.9
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 153.9
+
+	[stratagems.anti_tank_emplacement]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 153.9
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 153.9
+
+	[stratagems.grenadier_battlement]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 102.6
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 102.6
+
+	[stratagems.shield_generator]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 76.95
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 76.95
+
+	[stratagems.anti_personnel_minefield]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 102.6
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 102.6
+
+	[stratagems.anti_tank_minefield]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 102.6
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 102.6
+
+	[stratagems.incendiary_minefield]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 102.6
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 102.6
+
+	[stratagems.gas_minefield]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 102.6
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 102.6
+
+	[stratagems.eagle_airstrike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 7.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 7.125
+		#独立使用次数；一次重新武装补满所有飞鹰。Uses per rearm, independent for each Eagle stratagem.
+		# Default: 3
+		# Range: 1 ~ 1000
+		uses = 3
+
+	[stratagems.eagle_strafing_run]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 7.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 7.125
+		#独立使用次数；一次重新武装补满所有飞鹰。Uses per rearm, independent for each Eagle stratagem.
+		# Default: 5
+		# Range: 1 ~ 1000
+		uses = 5
+
+	[stratagems.eagle_cluster_bomb]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 7.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 7.125
+		#独立使用次数；一次重新武装补满所有飞鹰。Uses per rearm, independent for each Eagle stratagem.
+		# Default: 5
+		# Range: 1 ~ 1000
+		uses = 5
+
+	[stratagems.eagle_110mm_rocket_pods]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 7.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 7.125
+		#独立使用次数；一次重新武装补满所有飞鹰。Uses per rearm, independent for each Eagle stratagem.
+		# Default: 4
+		# Range: 1 ~ 1000
+		uses = 4
+
+	[stratagems.eagle_500kg_bomb]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 7.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 7.125
+		#独立使用次数；一次重新武装补满所有飞鹰。Uses per rearm, independent for each Eagle stratagem.
+		# Default: 2
+		# Range: 1 ~ 1000
+		uses = 2
+
+	[stratagems.eagle_smoke_strike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 7.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 7.125
+		#独立使用次数；一次重新武装补满所有飞鹰。Uses per rearm, independent for each Eagle stratagem.
+		# Default: 3
+		# Range: 1 ~ 1000
+		uses = 3
+
+	[stratagems.eagle_gas_strike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 7.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 7.125
+		#独立使用次数；一次重新武装补满所有飞鹰。Uses per rearm, independent for each Eagle stratagem.
+		# Default: 3
+		# Range: 1 ~ 1000
+		uses = 3
+
+	[stratagems.eagle_napalm_airstrike]
+		#抵达后开始冷却；飞鹰之间共享周转，采用刚使用战备的冷却时间。
+		#Cooldown starts on arrival; Eagle turnaround is shared. Zero disables the wait.
+		# Default: 7.125
+		# Range: 0.0 ~ 86400.0
+		cooldownSeconds = 7.125
+		#独立使用次数；一次重新武装补满所有飞鹰。Uses per rearm, independent for each Eagle stratagem.
+		# Default: 3
+		# Range: 1 ~ 1000
+		uses = 3
+
+	[stratagems.eagle_rearm]
+		#全部次数耗尽时自动补给，满升级 114 秒。Fully upgraded automatic rearm.
+		# Default: 114.0
+		# Range: 0.0 ~ 86400.0
+		automaticSeconds = 114.0
+		#仍有余弹时手动补给，满升级 102.6 秒。Manual rearm with remaining ordnance.
+		# Default: 102.6
+		# Range: 0.0 ~ 86400.0
+		manualSeconds = 102.6
+
+[eagle]
+	#集束母弹分裂延时（秒）；暂定0.35，可在试射后调整。Cluster separation delay, seconds.
+	# Default: 0.35
+	# Range: 0.05 ~ 5.0
+	clusterSplitSeconds = 0.35
+	#500kg落地后引信延迟（秒）。500kg impact fuse delay, seconds.
+	# Default: 0.8
+	# Range: 0.0 ~ 10.0
+	heavyBombFuseSeconds = 0.8
+
+#超级驱逐舰与轨道火力。Super Destroyer and orbital support.
+[orbital]
+	#以呼叫时地面位置为圆心的水平支援半径。Horizontal coverage around the call position.
+	# Default: 1024.0
+	# Range: 32.0 ~ 16384.0
+	supportRadius = 1024.0
+	#舰船相对呼叫者的高度。Height above the caller.
+	# Default: 900.0
+	# Range: 256.0 ~ 8192.0
+	shipAltitude = 900.0
+	#舰船向所选方位偏移的距离。Ship offset toward the chosen cardinal direction.
+	# Default: 700.0
+	# Range: 128.0 ~ 8192.0
+	shipOffset = 700.0
+
+	[orbital.precisionStrike]
+		#抵达倒计时结束后才开炮，不包含炮弹飞行。Delay before the ship fires; excludes shell flight.
+		# Default: 3.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 3.0
+		#开炮至命中之间的飞行时间。Shell travel time after firing.
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+		# Default: 640.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 640.0
+		# Default: 240.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 240.0
+		# Default: 4.0
+		# Range: 0.0 ~ 128.0
+		innerRadius = 4.0
+		# Default: 12.0
+		# Range: 0.1 ~ 256.0
+		outerRadius = 12.0
+
+	#轨道加特林火力网；连续发射，轮次间无停顿。Continuous Orbital Gatling Barrage.
+	[orbital.gatlingBarrage]
+		# Default: 5
+		# Range: 1 ~ 20
+		rounds = 5
+		# Default: 60
+		# Range: 1 ~ 200
+		shotsPerRound = 60
+		# Default: 0.045
+		# Range: 0.01 ~ 1.0
+		shotIntervalSeconds = 0.045
+		# Default: 2.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 2.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+		# Default: 30.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 30.0
+		# Default: 60.0
+		# Range: 0.0 ~ 100000.0
+		highExplosiveDamage = 60.0
+		# Default: 1.5
+		# Range: 0.0 ~ 128.0
+		innerRadius = 1.5
+		# Default: 4.5
+		# Range: 0.1 ~ 256.0
+		outerRadius = 4.5
+		#原生 area_size；MC 中作为游走半径。Native area_size, adapted as walk radius in Minecraft.
+		# Default: 7.0
+		# Range: 1.0 ~ 64.0
+		wanderRadius = 7.0
+		# Default: 1.0
+		# Range: 0.0 ~ 64.0
+		wanderStartRadius = 1.0
+		# Default: 1.0
+		# Range: 0.1 ~ 16.0
+		wanderStepMin = 1.0
+		# Default: 2.0
+		# Range: 0.1 ~ 16.0
+		wanderStepMax = 2.0
+
+	#轨道空爆攻击。Orbital Airburst Strike.
+	[orbital.airburstStrike]
+		# Default: 4
+		# Range: 1 ~ 20
+		rounds = 4
+		# Default: 4.0
+		# Range: 0.05 ~ 60.0
+		salvoIntervalSeconds = 4.0
+		# Default: 2.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 2.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+		#MC 空爆高度，以信标地面为基准；原版引信时序的适配值。Minecraft burst height above the beacon; an adaptation, not a decoded fixed native height.
+		# Default: 20.0
+		# Range: 2.0 ~ 128.0
+		burstHeight = 20.0
+		#原版空爆母弹分裂锥角，沿入射方向。Native airburst fragmentation cone, along the incoming direction.
+		# Default: 35.0
+		# Range: 1.0 ~ 60.0
+		spreadAngleDegrees = 35.0
+		# Default: 12
+		# Range: 1 ~ 48
+		bombletsPerShell = 12
+		#子弹速度，格/秒；原版为300m/s。Bomblet speed in blocks/second; native 300 m/s.
+		# Default: 300.0
+		# Range: 10.0 ~ 640.0
+		bombletSpeed = 300.0
+		# Default: 50.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 50.0
+		# Default: 60.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 60.0
+		# Default: 0.2
+		# Range: 0.0 ~ 128.0
+		innerRadius = 0.2
+		# Default: 0.5
+		# Range: 0.1 ~ 256.0
+		outerRadius = 0.5
+		# Default: 50.0
+		# Range: 0.0 ~ 100000.0
+		bombletDirectDamage = 50.0
+		# Default: 60.0
+		# Range: 0.0 ~ 100000.0
+		bombletExplosionDamage = 60.0
+		# Default: 3.0
+		# Range: 0.0 ~ 128.0
+		bombletInnerRadius = 3.0
+		# Default: 6.0
+		# Range: 0.1 ~ 256.0
+		bombletOuterRadius = 6.0
+
+	#轨道炮击；380mm与徐进共用precisionStrike弹药伤害。380mm and Walking Barrage share precisionStrike ammunition damage.
+	[orbital.he120mmBarrage]
+		# Default: 5
+		# Range: 1 ~ 20
+		rounds = 5
+		# Default: 3
+		# Range: 1 ~ 20
+		shotsPerRound = 3
+		# Default: 0.75
+		# Range: 0.05 ~ 60.0
+		shotIntervalSeconds = 0.75
+		#上一轮末发至下一轮首发的停顿。Pause from the last shell of a salvo to the first of the next.
+		# Default: 2.0
+		# Range: 0.0 ~ 60.0
+		roundPauseSeconds = 2.0
+		# Default: 27.0
+		# Range: 0.0 ~ 128.0
+		spreadRadius = 27.0
+		# Default: 5.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 5.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+		# Default: 560.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 560.0
+		# Default: 200.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 200.0
+		# Default: 3.3
+		# Range: 0.0 ~ 128.0
+		innerRadius = 3.3
+		# Default: 10.0
+		# Range: 0.1 ~ 256.0
+		outerRadius = 10.0
+
+	#轨道炮击；380mm与徐进共用precisionStrike弹药伤害。380mm and Walking Barrage share precisionStrike ammunition damage.
+	[orbital.he380mmBarrage]
+		# Default: 5
+		# Range: 1 ~ 20
+		rounds = 5
+		# Default: 3
+		# Range: 1 ~ 20
+		shotsPerRound = 3
+		# Default: 1.5
+		# Range: 0.05 ~ 60.0
+		shotIntervalSeconds = 1.5
+		#上一轮末发至下一轮首发的停顿。Pause from the last shell of a salvo to the first of the next.
+		# Default: 3.0
+		# Range: 0.0 ~ 60.0
+		roundPauseSeconds = 3.0
+		# Default: 36.0
+		# Range: 0.0 ~ 128.0
+		spreadRadius = 36.0
+		# Default: 6.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 6.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+
+	#轨道炮击；380mm与徐进共用precisionStrike弹药伤害。380mm and Walking Barrage share precisionStrike ammunition damage.
+	[orbital.walkingBarrage]
+		# Default: 5
+		# Range: 1 ~ 20
+		rounds = 5
+		# Default: 3
+		# Range: 1 ~ 20
+		shotsPerRound = 3
+		# Default: 1.5
+		# Range: 0.05 ~ 60.0
+		shotIntervalSeconds = 1.5
+		#上一轮末发至下一轮首发的停顿。Pause from the last shell of a salvo to the first of the next.
+		# Default: 3.0
+		# Range: 0.0 ~ 60.0
+		roundPauseSeconds = 3.0
+		# Default: 25.0
+		# Range: 0.0 ~ 128.0
+		spreadRadius = 25.0
+		#原版 BombardmentComponentData.speed=3；沿投掷点至落点方向。Native speed=3, along the throw-to-beacon direction.
+		# Default: 3.0
+		# Range: 0.0 ~ 20.0
+		advanceSpeed = 3.0
+		# Default: 3.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 3.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+
+	#轨道炮击；380mm与徐进共用precisionStrike弹药伤害。380mm and Walking Barrage share precisionStrike ammunition damage.
+	[orbital.napalmBarrage]
+		# Default: 6
+		# Range: 1 ~ 20
+		rounds = 6
+		# Default: 5
+		# Range: 1 ~ 20
+		shotsPerRound = 5
+		# Default: 0.5
+		# Range: 0.05 ~ 60.0
+		shotIntervalSeconds = 0.5
+		#上一轮末发至下一轮首发的停顿。Pause from the last shell of a salvo to the first of the next.
+		# Default: 2.0
+		# Range: 0.0 ~ 60.0
+		roundPauseSeconds = 2.0
+		# Default: 25.0
+		# Range: 0.0 ~ 128.0
+		spreadRadius = 25.0
+		# Default: 5.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 5.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+		# Default: 80.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 80.0
+		# Default: 60.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 60.0
+		# Default: 3.3
+		# Range: 0.0 ~ 128.0
+		innerRadius = 3.3
+		# Default: 10.0
+		# Range: 0.1 ~ 256.0
+		outerRadius = 10.0
+		#贴地火焰外半径，内外圈分批熄灭。Ground-fire outer radius; rings extinguish from outside inward.
+		# Default: 10.0
+		# Range: 0.1 ~ 16.0
+		groundFireRadius = 10.0
+		#内圈最长燃烧时间；外圈更短。Maximum inner-ring lifetime; outer rings burn for less time.
+		# Default: 13.2
+		# Range: 0.05 ~ 3600.0
+		groundFireSeconds = 13.2
+
+	#轨道炮攻击。Orbital Railcannon Strike.
+	[orbital.railcannonStrike]
+		#红光启动前的等待时间。Delay before the targeting beam starts.
+		# Default: 1.0
+		# Range: 0.05 ~ 60.0
+		callDelaySeconds = 1.0
+		#红光启动至发射；原版1.7秒。Beam start to firing; native 1.7 seconds.
+		# Default: 1.7
+		# Range: 0.05 ~ 60.0
+		lockSeconds = 1.7
+		#原版指示光束持续2秒。Native pointer duration: 2 seconds.
+		# Default: 2.0
+		# Range: 0.05 ~ 60.0
+		beamSeconds = 2.0
+		#MC炮弹飞行时间适配值。Minecraft shell travel time adaptation.
+		# Default: 0.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 0.5
+		#原版搜索半径，按最大生命值优先。Native search radius; highest maximum health first.
+		# Default: 30.0
+		# Range: 1.0 ~ 128.0
+		searchRadius = 30.0
+		# Default: 160.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 160.0
+		# Default: 160.0
+		# Range: 0.0 ~ 100000.0
+		explosionDamage = 160.0
+		# Default: 2.5
+		# Range: 0.0 ~ 128.0
+		innerRadius = 2.5
+		# Default: 2.5
+		# Range: 0.1 ~ 256.0
+		outerRadius = 2.5
+
+	#轨道激光。Orbital Laser.
+	[orbital.laser]
+		#原版抵达等待2秒。Native call-in delay: 2 seconds.
+		# Default: 2.0
+		# Range: 0.05 ~ 60.0
+		callDelaySeconds = 2.0
+		#解包组件持续25秒。Decoded component duration: 25 seconds.
+		# Default: 25.0
+		# Range: 0.05 ~ 600.0
+		durationSeconds = 25.0
+		#以信标为中心的搜索半径。Search radius around the beacon.
+		# Default: 50.0
+		# Range: 1.0 ~ 128.0
+		searchRadius = 50.0
+		#光斑移动速度，格/秒。Impact movement speed, blocks per second.
+		# Default: 10.0
+		# Range: 0.1 ~ 100.0
+		movementSpeed = 10.0
+		#目标列表刷新间隔，刻。Target-list refresh interval in ticks.
+		# Default: 20
+		# Range: 1 ~ 200
+		targetRefreshTicks = 20
+		#光斑球形伤害半径。Impact damage sphere radius.
+		# Default: 1.0
+		# Range: 0.1 ~ 8.0
+		damageRadius = 1.0
+		# Default: 25.0
+		# Range: 0.0 ~ 100000.0
+		damagePerPulse = 25.0
+		# Default: 5
+		# Range: 1 ~ 200
+		damageIntervalTicks = 5
+
+	[orbital.gasStrike]
+		#命中后的区域半径。Radius of each impact field.
+		# Default: 15.0
+		# Range: 0.1 ~ 16.0
+		fieldRadius = 15.0
+		#区域持续时间；不会修改其它来源的区域。Field duration, independent of other field sources.
+		# Default: 15.0
+		# Range: 0.05 ~ 3600.0
+		fieldSeconds = 15.0
+		#持续刷新异常状态的时间。Refreshed status duration.
+		# Default: 6.0
+		# Range: 0.05 ~ 60.0
+		effectSeconds = 6.0
+		# Default: 1
+		# Range: 1 ~ 20
+		shells = 1
+		#落点围绕信标随机分布的半径。Random impact radius around the beacon.
+		# Default: 0.0
+		# Range: 0.0 ~ 128.0
+		spreadRadius = 0.0
+		# Default: 2.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 2.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+		# Default: 50.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 50.0
+
+	[orbital.emsStrike]
+		#命中后的区域半径。Radius of each impact field.
+		# Default: 13.0
+		# Range: 0.1 ~ 16.0
+		fieldRadius = 13.0
+		#区域持续时间；不会修改其它来源的区域。Field duration, independent of other field sources.
+		# Default: 15.0
+		# Range: 0.05 ~ 3600.0
+		fieldSeconds = 15.0
+		#持续刷新异常状态的时间。Refreshed status duration.
+		# Default: 3.0
+		# Range: 0.05 ~ 60.0
+		effectSeconds = 3.0
+		# Default: 1
+		# Range: 1 ~ 20
+		shells = 1
+		#落点围绕信标随机分布的半径。Random impact radius around the beacon.
+		# Default: 0.0
+		# Range: 0.0 ~ 128.0
+		spreadRadius = 0.0
+		# Default: 2.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 2.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+		# Default: 50.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 50.0
+
+	[orbital.smokeStrike]
+		#命中后的区域半径。Radius of each impact field.
+		# Default: 12.0
+		# Range: 0.1 ~ 16.0
+		fieldRadius = 12.0
+		#区域持续时间；不会修改其它来源的区域。Field duration, independent of other field sources.
+		# Default: 30.0
+		# Range: 0.05 ~ 3600.0
+		fieldSeconds = 30.0
+		# Default: 6
+		# Range: 1 ~ 20
+		shells = 6
+		#落点围绕信标随机分布的半径。Random impact radius around the beacon.
+		# Default: 15.0
+		# Range: 0.0 ~ 128.0
+		spreadRadius = 15.0
+		# Default: 2.0
+		# Range: 0.5 ~ 60.0
+		firingDelaySeconds = 2.0
+		# Default: 1.5
+		# Range: 0.5 ~ 10.0
+		flightSeconds = 1.5
+		# Default: 50.0
+		# Range: 0.0 ~ 100000.0
+		directDamage = 50.0

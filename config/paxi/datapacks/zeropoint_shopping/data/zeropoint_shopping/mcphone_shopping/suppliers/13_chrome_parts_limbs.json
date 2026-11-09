@@ -1,0 +1,214 @@
+{
+  "name": "铬教残件·肢体与外壳",
+  "products": [
+    {
+      "id": "c01",
+      "item": "cyber_ware_port:arm_upgrades_bow_scavenged",
+      "count": 1,
+      "price": 320,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c02",
+      "item": "cyber_ware_port:bone_upgrades_bonebattery_scavenged",
+      "count": 1,
+      "price": 320,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c03",
+      "item": "cyber_ware_port:bone_upgrades_boneflex_scavenged",
+      "count": 1,
+      "price": 320,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c04",
+      "item": "cyber_ware_port:bone_upgrades_bonelacing_scavenged",
+      "count": 1,
+      "price": 320,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c05",
+      "item": "cyber_ware_port:hand_upgrades_claws_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c06",
+      "item": "cyber_ware_port:hand_upgrades_craft_hands_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c07",
+      "item": "cyber_ware_port:hand_upgrades_mining_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c08",
+      "item": "cyber_ware_port:leg_upgrades_fall_damage_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c09",
+      "item": "cyber_ware_port:leg_upgrades_jump_boost_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c10",
+      "item": "cyber_ware_port:foot_upgrades_aqua_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c11",
+      "item": "cyber_ware_port:foot_upgrades_wheels_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c12",
+      "item": "cyber_ware_port:skin_upgrades_fake_skin_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c13",
+      "item": "cyber_ware_port:skin_upgrades_immuno_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c14",
+      "item": "cyber_ware_port:skin_upgrades_subdermal_spikes_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c15",
+      "item": "cyber_ware_port:skin_upgrades_solar_skin_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c16",
+      "item": "cyber_ware_port:skin_upgrades_immuno",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    },
+    {
+      "id": "c17",
+      "item": "cyber_ware_port:skin_upgrades_fake_skin",
+      "count": 1,
+      "price": 15000,
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    },
+    {
+      "id": "c18",
+      "item": "cyber_ware_port:leg_upgrades_jump_boost",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    },
+    {
+      "id": "c19",
+      "item": "cyber_ware_port:hand_upgrades_claws",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    }
+  ]
+}

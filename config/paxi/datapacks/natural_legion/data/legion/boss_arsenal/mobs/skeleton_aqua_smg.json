@@ -1,0 +1,56 @@
+{
+  "entity": "boss_arsenal:skeleton_soldier",
+  "spawn_chance": 0,
+  "tier": 3,
+  "name": "深潜军团 · 突击手",
+  "health": 34,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:pp19",
+    "fire_mode": "auto",
+    "spread_degrees": 2.6,
+    "range": 28,
+    "preferred_range": 12,
+    "shot_interval_ticks": 2,
+    "infinite_ammo": true,
+    "drop_chance": 0.2,
+    "aim_ticks": 4,
+    "burst_shots": 4,
+    "burst_pause_ticks": 45,
+    "recoil_spread": 0.4,
+    "max_spread": 5.5,
+    "moving_spread": 1,
+    "headshot_chance": 0.08,
+    "damage_scale": 1.2
+  },
+  "armor_bonus": 6,
+  "equipment": {
+    "head": {
+      "item": "zerocontact:helmet_airframe",
+      "drop_chance": 0.105
+    },
+    "chest": {
+      "item": "zerocontact:armor_iotv_gen4",
+      "drop_chance": 0.105
+    },
+    "legs": {
+      "item": "zerocontact:armor_iotv_gen4",
+      "drop_chance": 0.08
+    },
+    "feet": {
+      "item": "minecraft:netherite_boots",
+      "drop_chance": 0.05
+    }
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:57x28",
+      "min": 12,
+      "max": 28,
+      "chance": 0.7
+    }
+  ],
+  "nbt": "{active_effects:[{id:\"minecraft:water_breathing\",duration:2000000,amplifier:0b,show_particles:0b,show_icon:0b},{id:\"minecraft:dolphins_grace\",duration:2000000,amplifier:0b,show_particles:0b,show_icon:0b}]}"
+}

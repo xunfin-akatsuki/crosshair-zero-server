@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 110,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att ammo_mod_i",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "ammo_mod_i",
+      "description": "att ammo_mod_i"
+    }
+  ]
+}

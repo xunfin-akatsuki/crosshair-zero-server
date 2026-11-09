@@ -1,0 +1,25 @@
+[armed_piglins]
+	#Percent chance (0-100) that a spawning piglin is given a gun.
+	# Default: 100
+	# Range: 0 ~ 100
+	spawnChance = 100
+	#Percent chance (0-100) that a piglin drops its gun when it dies.
+	# Default: 2
+	# Range: 0 ~ 100
+	dropChance = 2
+	#Percent chance (0-100) that a piglin drops ammo for its gun when it dies.
+	#Independent of the gun drop. Set to 0 to disable ammo drops.
+	# Default: 0
+	# Range: 0 ~ 100
+	ammoDropChance = 0
+	#How many rounds to drop when the ammo drop above triggers.
+	#A single number (e.g. "16") or a range (e.g. "12-16") picked at random.
+	ammoDropAmount = "16"
+	#Aim inaccuracy in degrees applied to every shot. 0 = perfect aim, higher = worse.
+	# Default: 15.0
+	# Range: 0.0 ~ 180.0
+	spreadDegrees = 28.0
+	#Gun IDs piglins can spawn with, e.g. ["tacz:ak47", "tacz:m4a1"].
+	#A random entry is chosen per piglin.
+	#Leave empty ([]) to use ALL registered TACZ guns.
+	guns = ["tacz:glock_17", "tacz:m9a4", "tacz:taurus943", "tacz:m870"]

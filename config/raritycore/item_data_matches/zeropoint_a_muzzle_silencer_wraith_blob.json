@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 122,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_silencer_wraith",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "muzzle_silencer_wraith",
+      "description": "att muzzle_silencer_wraith"
+    }
+  ]
+}

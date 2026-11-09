@@ -1,0 +1,50 @@
+[caliber_resolution]
+	#Enable tier 4 fuzzy caliber matching fallback.
+	enableFuzzyCaliberMatch = true
+
+[ballistics]
+	#Ammo speed conversion multiplier.
+	# Default: 0.5
+	# Range: 0.0 ~ 100.0
+	bulletSpeedScale = 0.5
+	#Ballistic coefficient multiplier x.
+	# Default: 2000.0
+	# Range: 1.0E-4 ~ 1000000.0
+	ballisticCoefficientScale = 2000.0
+	#Beyond-effective-range decay multiplier y; zero disables it.
+	# Default: 1.25
+	# Range: 0.0 ~ 1000000.0
+	rangeDecayRate = 1.25
+	#Enable per-ammo in-flight speed decay.
+	enableSpeedDecay = true
+	#Per-block speed-loss coefficient k.
+	# Default: 5.5E-4
+	# Range: 0.0 ~ 1.0
+	speedDecayScale = 5.5E-4
+	#Reference speed for slow-projectile lifetime extension.
+	# Default: 40.0
+	# Range: 0.0 ~ 100000.0
+	speedDecayLifeRefSpeed = 40.0
+	#Maximum slow-projectile lifetime multiplier.
+	# Default: 16.0
+	# Range: 1.0 ~ 1000.0
+	speedDecayLifeMaxMult = 16.0
+
+[ammo_effects]
+	#Enable declarative and Lua per-ammo effects.
+	enableAmmoEffects = true
+	#Maximum requested explosion radius in blocks.
+	# Default: 8.0
+	# Range: 0.0 ~ 64.0
+	maxExplosionRadius = 8.0
+	#Maximum scripted mob-effect duration in seconds.
+	# Default: 60
+	# Range: 0 ~ 100000
+	maxEffectSeconds = 60
+
+[display]
+	#Ammo icon abbreviation display mode.
+	#Allowed Values: DEFAULT, ALWAYS, NEVER
+	ammoCodeDisplay = "DEFAULT"
+	#Show first-round gun stats without holding Shift.
+	alwaysShowFirstRoundStats = false

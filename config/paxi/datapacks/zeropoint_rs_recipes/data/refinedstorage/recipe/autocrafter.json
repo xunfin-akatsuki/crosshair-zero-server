@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QCE",
+    "AMA",
+    "EDE"
+  ],
+  "key": {
+    "Q": {
+      "item": "create:precision_mechanism"
+    },
+    "E": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "A": {
+      "item": "refinedstorage:advanced_processor"
+    },
+    "M": {
+      "item": "refinedstorage:machine_casing"
+    },
+    "D": {
+      "item": "refinedstorage:destruction_core"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:autocrafter"
+  }
+}

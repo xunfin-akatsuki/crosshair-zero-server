@@ -1,0 +1,24 @@
+{
+  "ammo_id": "tacz:762x54",
+
+  "variant": "762x54lps",
+
+  "life": 78,
+
+  "friction": 0.013,
+
+  "gravity": 0.058,
+
+  "recoil_multiplier": 1.03,
+
+  "inaccuracy_multiplier": 1.03,
+
+
+  "penetration_class": 7,
+
+  "armor_damage": 0.12,
+
+  "flesh_damage": 6,
+
+  "stack_size": 60
+}

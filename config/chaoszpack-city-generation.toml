@@ -1,0 +1,14 @@
+[settlements]
+	#Horizontal buffer in blocks between the complete settlement bounding box and LC city chunks.
+	#Applies to vanilla villages and tagged Towny settlements in dimensions with an LC profile.
+	#Chunk boundaries are conservative. Existing structures are not moved or removed.
+	#Larger distances reject more candidates and require more city-planning queries.
+	# Default: 64
+	# Range: 0 ~ 1024
+	minimumCityDistanceBlocks = 64
+	#Extra horizontal padding used while /locate searches for a settlement.
+	#This reserves room for village pieces so a located chunk is not later invalidated
+	#when the complete village bounding box is checked during generation.
+	# Default: 96
+	# Range: 0 ~ 512
+	locateStructurePaddingBlocks = 96

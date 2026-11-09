@@ -1,0 +1,356 @@
+#Global relative humidity (% RH), ordinary TACZ kinetic bullets only; fixed per shot, no biome queries.
+#HUD follows rangefinder/ADS eligibility. Disabled hides its HUD row and leaves air friction unchanged.
+#No effect in water or dimensions without skylight. Restart world/server after edits.
+[humidity]
+	enabled = true
+	weatherEffects = true
+	# Default: 0
+	# Range: -9223372036854775808 ~ 9223372036854775807
+	seedSalt = 0
+	#Random interval within each phase. The last interval may be shorter.
+	# Default: 4000
+	# Range: 20 ~ 24000
+	periodTicks = 4000
+	#Smoothstep transition at slot/phase and weather changes; zero gives immediate changes.
+	# Default: 200
+	# Range: 0 ~ 24000
+	transitionTicks = 200
+	#TRIANGULAR favors the mean; UNIFORM gives equal probability across the interval.
+	#Allowed Values: TRIANGULAR, UNIFORM
+	distribution = "TRIANGULAR"
+	# Default: 5.0
+	# Range: 0.0 ~ 100.0
+	minimumRH = 5.0
+	# Default: 99.0
+	# Range: 0.0 ~ 100.0
+	maximumRH = 99.0
+	#Base gun friction is calibrated at this RH. No correction at this value.
+	# Default: 50.0
+	# Range: 0.0 ~ 100.0
+	referenceRH = 50.0
+	#Density factor k=(1-c*RH/100)/(1-c*referenceRH/100); corrected friction=1-(1-base)^k.
+	#Default 0.0087264 models the small moisture-only effect in fixed reference air. Larger values amplify it.
+	#No temperature/pressure simulation. Zero removes drag correction while retaining the humidity readout.
+	# Default: 0.0087264
+	# Range: 0.0 ~ 0.1
+	densityCoefficient = 0.0087264
+	#Ordered startTick|endTick|clearMeanRH, start inclusive/end exclusive; cover 0..24000 exactly.
+	#0 is 06:00, 6000 noon, 12000 18:00, 18000 midnight. Means must be inside RH limits.
+	phases = ["0|6000|65", "6000|10000|45", "10000|16000|60", "16000|20000|70", "20000|24000|80"]
+
+	[humidity.clear]
+		#Mean += bias*(100-mean), then bounded to RH limits.
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		saturationBias = 0.0
+		#Plus/minus percentage points; reduced symmetrically near RH limits to preserve the bounded mean.
+		# Default: 8.0
+		# Range: 0.0 ~ 100.0
+		amplitude = 8.0
+
+	[humidity.rain]
+		#Mean += bias*(100-mean), then bounded to RH limits.
+		# Default: 0.65
+		# Range: 0.0 ~ 1.0
+		saturationBias = 0.65
+		#Plus/minus percentage points; reduced symmetrically near RH limits to preserve the bounded mean.
+		# Default: 5.0
+		# Range: 0.0 ~ 100.0
+		amplitude = 5.0
+
+	[humidity.thunder]
+		#Mean += bias*(100-mean), then bounded to RH limits.
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		saturationBias = 0.8
+		#Plus/minus percentage points; reduced symmetrically near RH limits to preserve the bounded mean.
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		amplitude = 3.0
+
+#Shared temporary visual section masks. Missing initial coverage defers remote drawing; simulation continues.
+[occlusion]
+	enabled = true
+	#Target-side coverage distance, clipped to the entity's 5x5 chunk neighbourhood; reads resident terrain only.
+	# Default: 96
+	# Range: 16 ~ 128
+	radius = 96
+	# Default: 32768
+	# Range: 256 ~ 262144
+	maxCellsPerPlayer = 32768
+	# Default: 131072
+	# Range: 256 ~ 1048576
+	maxCellsPerTick = 131072
+	# Default: 128
+	# Range: 8 ~ 128
+	maxSectionsPerPlayer = 128
+	#GPU mask face budget; exceeding it defers drawing instead of dropping cover.
+	# Default: 100000
+	# Range: 4096 ~ 200000
+	maxFacesPerFrame = 100000
+	# Default: 10
+	# Range: 1 ~ 100
+	refreshTicks = 10
+	# Default: 4
+	# Range: 1 ~ 8
+	maxSectionsPerPacket = 4
+	#All-direction preparation margin in blocks; unfinished preparation never hides an entity.
+	# Default: 8
+	# Range: 2 ~ 32
+	prefetchMargin = 8
+	#Maximum all-direction preparation margin for fast movers; existing scan/section limits still apply.
+	# Default: 24
+	# Range: 2 ~ 48
+	maxPrefetchMargin = 24
+	#Observed speed times this many ticks sizes preparation; does not predict direction or teleport paths.
+	# Default: 12
+	# Range: 1 ~ 40
+	prefetchTicks = 12
+	#Keep unused visual sections briefly for reversals, within the same section budget; no chunk tickets.
+	# Default: 60
+	# Range: 0 ~ 200
+	retentionTicks = 60
+
+#Delayed distant gunfire for accepted AoS shots only. Nearby TACZ audio remains native.
+#Distance/delay/volume use listener position at firing; no terrain occlusion or extra chunk loading.
+#Both clients and server need this version. Restart the world/server after edits.
+[distantGunshots]
+	enabled = true
+	#Blocks per second, assuming 20 server ticks per second. 343 models temperate air.
+	# Default: 343.0
+	# Range: 100.0 ~ 2000.0
+	speedOfSound = 343.0
+	#Below this distance, keep TACZ's immediate nearby gunfire.
+	# Default: 128
+	# Range: 16 ~ 16384
+	minDistance = 128
+	#Audible radius. Zero follows the configured maximum sniping distance.
+	# Default: 0
+	# Range: 0 ~ 16384
+	maxDistance = 0
+	#Overall gain before distance attenuation. Suppressed shots use another 0.2 multiplier.
+	# Default: 0.65
+	# Range: 0.0 ~ 1.0
+	volume = 0.65
+
+#Global crosswind for ordinary TACZ kinetic bullets. HUD still requires an eligible scoped player near a rangefinder.
+#Wind is shared per dimension, fixed per shot, absent in dimensions without skylight and ignored under water.
+#Restart the world/server after edits so clients receive the same configuration.
+[wind]
+	enabled = true
+	#Rain/thunder use their own speed distribution and interval; weather transitions may change wind immediately.
+	weatherEffects = true
+	#Salt combined with world seed, game day, time slot and weather. Reopening scopes does not reroll wind.
+	# Default: 0
+	# Range: -9223372036854775808 ~ 9223372036854775807
+	seedSalt = 0
+
+	[wind.clear]
+		#Ticks per time slot within each 24000-tick game day; the final slot may be shorter.
+		# Default: 4000
+		# Range: 20 ~ 24000
+		periodTicks = 4000
+		#Rayleigh mean before truncation, in blocks/second. Must not exceed maxSpeed. Zero means calm.
+		# Default: 4.0
+		# Range: 0.0 ~ 30.0
+		meanSpeed = 4.0
+		#Hard speed cap, in blocks/second; direction is uniform over 360 degrees.
+		# Default: 5.0
+		# Range: 0.0 ~ 30.0
+		maxSpeed = 5.0
+
+	[wind.rain]
+		#Ticks per time slot within each 24000-tick game day; the final slot may be shorter.
+		# Default: 2000
+		# Range: 20 ~ 24000
+		periodTicks = 2000
+		#Rayleigh mean before truncation, in blocks/second. Must not exceed maxSpeed. Zero means calm.
+		# Default: 8.0
+		# Range: 0.0 ~ 30.0
+		meanSpeed = 8.0
+		#Hard speed cap, in blocks/second; direction is uniform over 360 degrees.
+		# Default: 9.0
+		# Range: 0.0 ~ 30.0
+		maxSpeed = 9.0
+
+	[wind.thunder]
+		#Ticks per time slot within each 24000-tick game day; the final slot may be shorter.
+		# Default: 1000
+		# Range: 20 ~ 24000
+		periodTicks = 1000
+		#Rayleigh mean before truncation, in blocks/second. Must not exceed maxSpeed. Zero means calm.
+		# Default: 12.0
+		# Range: 0.0 ~ 30.0
+		meanSpeed = 12.0
+		#Hard speed cap, in blocks/second; direction is uniform over 360 degrees.
+		# Default: 14.0
+		# Range: 0.0 ~ 30.0
+		maxSpeed = 14.0
+
+#Global TACZ projectile physics, independent of rangefinder, aiming and sniping whitelist.
+#Restart the world/server after editing. Native TACZ spawn packets synchronize actual bullet physics.
+[gunOverrides]
+	enabled = true
+	#gun_id|speed=meters/second|friction=fraction lost per tick at humidity.referenceRH.
+	#Ordinary kinetic gravity is always 9.80665 blocks/s^2, with no gravity override or toggle.
+	#Any TACZ gun-pack namespace is accepted. Omitted speed/friction keep their native base values.
+	#Disabling this list does not disable fixed gravity or separately configured wind/humidity.
+	#Speed is final muzzle speed, overriding TACZ's global speed multiplier and attachment speed changes.
+	#Limits: speed (0,5120], friction [0,1); at most 1024 unique gun IDs.
+	#Empty entries disables all overrides. Invalid entries reject the entire override list.
+	entries = ["tacz:ai_awp|speed=905|friction=0.023833333", "tacz:m95|speed=858|friction=0.014333333", "tacz:m107|speed=858|friction=0.014333333", "tacz:m700|speed=822.96|friction=0.030666667", "tacz:kar98|speed=780|friction=0.0275"]
+
+[eligibility]
+	#Allow qualified shots to use the enabled sniping features.
+	enabled = true
+	#Allowed TACZ gun IDs (namespace:path). Empty means no guns are allowed.
+	#Also grants zero spread while TACZ or optional ParCool crawling, without needing a scope, ADS or rangefinder.
+	#Prone zero spread follows eligibility.enabled; standing and non-player shots retain native spread.
+	guns = ["tacz:ai_awp", "tacz:m95", "tacz:m700", "tacz:m107", "tacz:kar98", "tacz:springfield1873"]
+	#Scope ID whitelist. Every aiming magnification is allowed within 3 blocks of a placed rangefinder.
+	#Entries: scope_id or scope_id|ordered zoom levels (optional server fallback projection metadata).
+	#Legacy scope_id|ordered zoom levels|allowed zooms entries remain readable; the last field is ignored.
+	#Client rendering uses the actual gun-pack zoom/view data. Empty means no scopes are allowed.
+	scopeRules = ["tacz:scope_mk5hd|5,25,1.25", "tacz:scope_vudu|6.5,1.35", "tacz:scope_lpvo_1_6|6.25,1.25", "tacz:scope_standard_8x|4.5,10", "tacz:scope_1873_6x|6", "tacz:scope_98k|4.25"]
+
+#Shared limits. Entity budget applies per scoped player.
+[limits]
+	# Default: 1024
+	# Range: 16 ~ 16384
+	maxDistance = 1024
+	# Default: 32
+	# Range: 1 ~ 256
+	maxTrackedEntities = 32
+
+#Scoped kinetic bullets collide only in retained target cores. Terrain/entities outside them are ignored.
+#No corridor chunk loading or collision snapshots.
+[ballistics]
+	#Take over eligible ordinary kinetic bullets. Does not spawn native tracer entities.
+	enabled = true
+	#Maximum traveled path length. Zero follows limits.maxDistance; a positive value can only lower it.
+	# Default: 0
+	# Range: 0 ~ 16384
+	maxDistance = 0
+	#Maximum active bullets per dimension. Excess shots retain native TACZ behavior.
+	# Default: 128
+	# Range: 1 ~ 1024
+	maxActiveBullets = 128
+	#Hard flight duration cap. In-flight target-region leases use this same bounded deadline.
+	# Default: 600
+	# Range: 1 ~ 2400
+	maxFlightTicks = 600
+	#Allow eligible bullets to outlive TACZ's native lifetime up to maxFlightTicks.
+	#Speed, gravity, drag, damage falloff and the traveled-distance limit remain in force.
+	extendLifetime = true
+
+#Additional entity tracking/rendering while near a rangefinder with an allowed gun/scope and aiming, at every zoom.
+#All entity types may be displayed; activity controls bounded server-side target loading.
+[scopeRendering]
+	enabled = true
+	#Refresh subscriptions every N ticks; losing eligibility revokes them each tick.
+	# Default: 4
+	# Range: 2 ~ 20
+	intervalTicks = 4
+	#Maximum entity candidates inspected per refresh and player.
+	# Default: 256
+	# Range: 16 ~ 2048
+	maxCandidates = 256
+	#Maximum collision cells inspected per local impact prediction.
+	# Default: 65536
+	# Range: 1024 ~ 1048576
+	maxTraceCells = 65536
+
+#Temporary real simulation around known scope targets; shared server-wide budgets.
+#Sight line and target loading halo must consist of fully generated chunks; only generation metadata is read.
+[activity]
+	enabled = true
+	#Entity-ticking core radius in chunks; 1 means 3x3 core and 7x7 FULL footprint.
+	# Default: 1
+	# Range: 0 ~ 2
+	radius = 1
+	#Consecutive slow-aim server ticks before requesting terrain; 20 ticks = 1 second at normal TPS.
+	# Default: 3
+	# Range: 2 ~ 100
+	stableTicks = 3
+	#Scope release grace. Accepted in-flight bullets can retain their target regions beyond this grace.
+	# Default: 60
+	# Range: 1 ~ 200
+	retentionTicks = 60
+	#Union of reserved FULL chunk footprints, including loading regions, release grace and in-flight shots.
+	# Default: 196
+	# Range: 25 ~ 2048
+	maxFullChunks = 196
+	#Additional conservative budget for the entire ticket dependency footprint (including FULL chunks).
+	# Default: 4096
+	# Range: 256 ~ 16384
+	maxDependencyChunks = 4096
+	#Server-wide region limit, including release grace and in-flight shots.
+	# Default: 4
+	# Range: 1 ~ 32
+	maxRegions = 4
+	#Per-player region limit, including shared regions, release grace and in-flight shots. Global budgets still apply.
+	# Default: 2
+	# Range: 1 ~ 32
+	maxRegionsPerPlayer = 2
+	#Maximum new regions admitted in any rolling 20 server ticks.
+	# Default: 2
+	# Range: 1 ~ 20
+	startsPerSecond = 2
+	#Release tickets if the entire core does not become entity-ticking before this deadline.
+	# Default: 100
+	# Range: 20 ~ 600
+	loadTimeoutTicks = 100
+	#Server-wide ballistic impact predictions per tick, in addition to the entity visibility budget.
+	# Default: 2
+	# Range: 1 ~ 16
+	maxQueriesPerTick = 2
+
+#TACZ mean-trajectory prediction renews existing target regions on local impact.
+#Only retained target cores participate in collision. Unsupported firing scripts skip prediction.
+[prediction]
+	#Minimum ticks between predictions per player, rounded up to a subscription refresh.
+	# Default: 8
+	# Range: 2 ~ 20
+	intervalTicks = 8
+	#Soft server-wide prediction budget per tick; checked every 64 collision lookups.
+	#Exhausted predictions do not admit targets. Actual bullet simulation has its own budgets.
+	# Default: 4.0
+	# Range: 0.25 ~ 10.0
+	maxMillisPerTick = 4.0
+	# Default: 8192
+	# Range: 256 ~ 65536
+	maxEntityChecks = 8192
+
+#Stable reticle requests and asynchronous generated-chunk metadata checks. No block snapshots.
+[targeting]
+	#Smoothed angular speed threshold in degrees/second; stable aim has 25% hysteresis.
+	# Default: 10.0
+	# Range: 0.1 ~ 180.0
+	stableDegreesPerSecond = 10.0
+	#Minimum ticks between all target checks per player, including unknown paths and rejected requests.
+	#Persists across unscoping. Only the latest current aim is checked; no old target queue.
+	# Default: 5
+	# Range: 2 ~ 40
+	requestIntervalTicks = 5
+	#Minimum ticks between successfully starting new regions per player; 10 ticks = 0.5 seconds at normal TPS.
+	#First request has no extra delay. Renewing or sharing an existing region bypasses this interval.
+	#Persists across unscoping and dimension changes. Zero disables only this additional cooldown.
+	# Default: 10
+	# Range: 0 ~ 200
+	newRegionIntervalTicks = 10
+	# Default: 512
+	# Range: 16 ~ 4096
+	checksPerSecond = 512
+	# Default: 32
+	# Range: 1 ~ 128
+	concurrentChecks = 32
+	# Default: 4096
+	# Range: 256 ~ 16384
+	maxQueuedChecks = 4096
+	# Default: 131072
+	# Range: 1024 ~ 1048576
+	maxIndexedChunks = 131072
+
+[diagnostics]
+	#Log eligibility changes, bullet parameters, takeover and termination reasons.
+	enabled = false

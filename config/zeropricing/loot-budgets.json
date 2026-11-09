@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "description": "Provisional independent acquisition budgets. Actual effective loot counts and probabilities are read at runtime. Joint drops share one budget; no price-to-rarity feedback.",
+  "defaultCataclysmEntityBudget": 60,
+  "structureBudgets": {
+    "cataclysm:archaeology/cursed_pyramid": 600,
+    "cataclysm:archaeology/cursed_pyramid_necklace": 600,
+    "cataclysm:chests/abandoned": 600,
+    "cataclysm:chests/abandoned_treasure": 1800,
+    "cataclysm:chests/acropolis_treasure": 2400,
+    "cataclysm:chests/amethyst_nest_chest": 300,
+    "cataclysm:chests/desert_treasure": 1800,
+    "cataclysm:chests/frosted_prison_treasure": 2400
+  },
+  "entityBudgets": {
+    "cataclysm:entities/amethyst_crab": 500,
+    "cataclysm:entities/ancient_remnant": 7500,
+    "cataclysm:entities/aptrgangr": 3300,
+    "cataclysm:entities/cindaria": 100,
+    "cataclysm:entities/clawdian": 1200,
+    "cataclysm:entities/coralssus": 400,
+    "cataclysm:entities/coral_golem": 500,
+    "cataclysm:entities/deepling_priest": 300,
+    "cataclysm:entities/deepling_warlock": 300,
+    "cataclysm:entities/elite_draugr": 100,
+    "cataclysm:entities/endermaptera_has_jaws": 120,
+    "cataclysm:entities/ender_golem": 1200,
+    "cataclysm:entities/ender_guardian": 7000,
+    "cataclysm:entities/hippocamtus": 200,
+    "cataclysm:entities/ignis": 7500,
+    "cataclysm:entities/ignited_berserker": 250,
+    "cataclysm:entities/ignited_revenant": 800,
+    "cataclysm:entities/kobolediator": 1200,
+    "cataclysm:entities/lionfish": 30,
+    "cataclysm:entities/maledictus": 10500,
+    "cataclysm:entities/netherite_ministrosity": 100,
+    "cataclysm:entities/netherite_monstrosity": 7500,
+    "cataclysm:entities/royal_draugr": 120,
+    "cataclysm:entities/scylla": 10500,
+    "cataclysm:entities/the_harbinger": 10500,
+    "cataclysm:entities/the_leviathan": 9000,
+    "cataclysm:entities/urchinkin": 80,
+    "cataclysm:entities/wadjet": 800
+  },
+  "itemWeightPrefixes": {
+    "cataclysm:music_disc_": 0.05,
+    "twilightforest:hydra_chop": 0.20,
+    "twilightforest:experiment_115": 0.20
+  },
+  "equivalentFamilies": {
+    "cataclysm:black_steel": {
+      "weight": 1,
+      "members": {
+        "cataclysm:black_steel_nugget": 1,
+        "cataclysm:black_steel_ingot": 9,
+        "cataclysm:black_steel_block": 81
+      }
+    },
+    "cataclysm:ancient_metal": {
+      "weight": 1,
+      "members": {
+        "cataclysm:ancient_metal_nugget": 1,
+        "cataclysm:ancient_metal_ingot": 9,
+        "cataclysm:ancient_metal_block": 81
+      }
+    },
+    "cataclysm:witherite": {
+      "weight": 1,
+      "members": {
+        "cataclysm:witherite_ingot": 1,
+        "cataclysm:witherite_block": 9
+      }
+    }
+  },
+  "twilight": {
+    "description": "Provisional progression/combat budgets before economy scaling; effective Boss Arsenal waves add expected support effort, never a price-derived star floor.",
+    "supportThreatBudget": 70,
+    "supportTierThreshold": 14,
+    "encounters": {
+      "twilightforest:naga": {
+        "tier": 3,
+        "budget": 1100
+      },
+      "twilightforest:lich": {
+        "tier": 4,
+        "budget": 1700
+      },
+      "twilightforest:minoshroom": {
+        "tier": 4,
+        "budget": 1600
+      },
+      "twilightforest:hydra": {
+        "tier": 5,
+        "budget": 3200
+      },
+      "twilightforest:knight_phantom": {
+        "tier": 4,
+        "budget": 2200,
+        "bossCount": 6
+      },
+      "twilightforest:ur_ghast": {
+        "tier": 5,
+        "budget": 3800
+      },
+      "twilightforest:alpha_yeti": {
+        "tier": 4,
+        "budget": 2400
+      },
+      "twilightforest:snow_queen": {
+        "tier": 5,
+        "budget": 4000
+      }
+    },
+    "bossTables": {
+      "twilightforest:darktower_boss": "twilightforest:ur_ghast",
+      "twilightforest:entities/knight_phantom_defeated": "twilightforest:knight_phantom"
+    },
+    "tableTiers": {
+      "twilightforest:hill_1": 2,
+      "twilightforest:hill_2": 3,
+      "twilightforest:hill_3": 4,
+      "twilightforest:hedge_maze": 2,
+      "twilightforest:tree_cache": 2,
+      "twilightforest:labyrinth_room": 4,
+      "twilightforest:labyrinth_dead_end": 4,
+      "twilightforest:labyrinth_vault": 4,
+      "twilightforest:labyrinth_vault_jackpot": 4,
+      "twilightforest:stronghold_room": 4,
+      "twilightforest:stronghold_cache": 4,
+      "twilightforest:darktower_cache": 5,
+      "twilightforest:darktower_key": 5,
+      "twilightforest:aurora_cache": 5,
+      "twilightforest:aurora_room": 5,
+      "twilightforest:troll_vault": 6,
+      "twilightforest:troll_vault_with_lamp": 6,
+      "twilightforest:troll_garden": 6
+    },
+    "cataclysmBenchmarks": {
+      "twilightforest:naga": {
+        "table": "cataclysm:entities/aptrgangr",
+        "fraction": 1
+      },
+      "twilightforest:lich": {
+        "table": "cataclysm:entities/ender_guardian",
+        "fraction": 1
+      },
+      "twilightforest:minoshroom": {
+        "table": "cataclysm:entities/netherite_monstrosity",
+        "fraction": 0.75
+      },
+      "twilightforest:hydra": {
+        "table": "cataclysm:entities/ignis",
+        "fraction": 1
+      },
+      "twilightforest:knight_phantom": {
+        "table": "cataclysm:entities/ender_guardian",
+        "fraction": 1
+      },
+      "twilightforest:ur_ghast": {
+        "table": "cataclysm:entities/the_harbinger",
+        "fraction": 0.9
+      },
+      "twilightforest:alpha_yeti": {
+        "table": "cataclysm:entities/aptrgangr",
+        "fraction": 1.5
+      },
+      "twilightforest:snow_queen": {
+        "table": "cataclysm:entities/maledictus",
+        "fraction": 0.9
+      }
+    }
+  }
+}

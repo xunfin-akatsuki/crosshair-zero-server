@@ -1,0 +1,136 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch08_one_point_seven"
+	group: ""
+	id: "1000000000000169"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000000168"]
+			id: "100000000000016A"
+			rewards: [{
+				id: "10000000000000B9"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "10000000000000B8"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000016A"]
+			id: "100000000000016B"
+			rewards: [{
+				id: "10000000000000BB"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "10000000000000BA"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000016B"]
+			id: "100000000000016C"
+			rewards: [{
+				id: "10000000000000BD"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [{
+				id: "10000000000000BC"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000016C"]
+			id: "100000000000016D"
+			rewards: [
+				{
+					id: "10000000000000BF"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 2
+					id: "10000000000000C0"
+					item: {
+						count: 1
+						id: "superbwarfare:ancient_cpu"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "cyber_ware_port:cyber_wither"
+				id: "10000000000000BE"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000016D"]
+			id: "100000000000016E"
+			rewards: [
+				{
+					id: "10000000000000C2"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "10000000000000C3"
+					item: {
+						count: 1
+						id: "zoniex:deathly_heart"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "10000000000000C1"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000016E"]
+			id: "100000000000016F"
+			rewards: [
+				{
+					id: "10000000000000C5"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "10000000000000C6"
+					item: {
+						count: 1
+						id: "superbwarfare:virtual_blueprint_data_chip"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "10000000000000C4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+}

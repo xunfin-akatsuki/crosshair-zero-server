@@ -1,0 +1,389 @@
+{
+  "name": "终端商·精炼存储",
+  "products": [
+    {
+      "id": "rs01",
+      "item": "refinedstorage:silicon",
+      "count": 1,
+      "price": 45,
+      "display_name": "硅",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs02",
+      "item": "refinedstorage:quartz_enriched_iron",
+      "count": 1,
+      "price": 45,
+      "display_name": "富石英铁",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs03",
+      "item": "refinedstorage:machine_casing",
+      "count": 1,
+      "price": 45,
+      "display_name": "机器外壳",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs04",
+      "item": "refinedstorage:basic_processor",
+      "count": 1,
+      "price": 140,
+      "display_name": "基础处理器",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs05",
+      "item": "refinedstorage:improved_processor",
+      "count": 1,
+      "price": 690,
+      "display_name": "进阶处理器",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs06",
+      "item": "refinedstorage:advanced_processor",
+      "count": 1,
+      "price": 2875,
+      "display_name": "高级处理器",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "rs07",
+      "item": "refinedstorage:grid",
+      "count": 1,
+      "price": 140,
+      "display_name": "终端",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs08",
+      "item": "refinedstorage:crafting_grid",
+      "count": 1,
+      "price": 140,
+      "display_name": "合成终端",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs09",
+      "item": "refinedstorage:pattern_grid",
+      "count": 1,
+      "price": 690,
+      "display_name": "样板终端",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs10",
+      "item": "refinedstorage:portable_grid",
+      "count": 1,
+      "price": 2875,
+      "display_name": "便携终端",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "rs11",
+      "item": "refinedstorage:wireless_grid",
+      "count": 1,
+      "price": 2875,
+      "display_name": "无线终端",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "rs12",
+      "item": "refinedstorage:disk_drive",
+      "count": 1,
+      "price": 140,
+      "display_name": "磁盘驱动器",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs13",
+      "item": "refinedstorage:1k_storage_disk",
+      "count": 1,
+      "price": 140,
+      "display_name": "1K 存储磁盘",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs14",
+      "item": "refinedstorage:4k_storage_disk",
+      "count": 1,
+      "price": 690,
+      "display_name": "4K 存储磁盘",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs15",
+      "item": "refinedstorage:16k_storage_disk",
+      "count": 1,
+      "price": 2875,
+      "display_name": "16K 存储磁盘",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "rs16",
+      "item": "refinedstorage:64k_storage_disk",
+      "count": 1,
+      "price": 10350,
+      "display_name": "64K 存储磁盘",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "rs17",
+      "item": "refinedstorage:1024b_fluid_storage_disk",
+      "count": 1,
+      "price": 2875,
+      "display_name": "1024B 流体磁盘",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "rs18",
+      "item": "refinedstorage:importer",
+      "count": 1,
+      "price": 140,
+      "display_name": "输入器",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs19",
+      "item": "refinedstorage:exporter",
+      "count": 1,
+      "price": 140,
+      "display_name": "输出器",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs20",
+      "item": "refinedstorage:external_storage",
+      "count": 1,
+      "price": 140,
+      "display_name": "外部存储总线",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "rs21",
+      "item": "refinedstorage:interface",
+      "count": 1,
+      "price": 690,
+      "display_name": "接口",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs22",
+      "item": "refinedstorage:disk_interface",
+      "count": 1,
+      "price": 690,
+      "display_name": "磁盘接口",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs23",
+      "item": "refinedstorage:autocrafter",
+      "count": 1,
+      "price": 690,
+      "display_name": "自动合成器",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs24",
+      "item": "refinedstorage:autocrafting_monitor",
+      "count": 1,
+      "price": 690,
+      "display_name": "自动合成监视器",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs25",
+      "item": "refinedstorage:autocrafter_manager",
+      "count": 1,
+      "price": 690,
+      "display_name": "自动合成管理器",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs26",
+      "item": "refinedstorage:autocrafting_upgrade",
+      "count": 1,
+      "price": 2875,
+      "display_name": "自动合成升级",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "rs27",
+      "item": "refinedstorage:wireless_transmitter",
+      "count": 1,
+      "price": 690,
+      "display_name": "无线发射器",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs28",
+      "item": "refinedstorage:security_manager",
+      "count": 1,
+      "price": 2875,
+      "display_name": "安全管理器",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "rs29",
+      "item": "refinedstorage:speed_upgrade",
+      "count": 1,
+      "price": 690,
+      "display_name": "速度升级",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs30",
+      "item": "refinedstorage:stack_upgrade",
+      "count": 1,
+      "price": 690,
+      "display_name": "堆叠升级",
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rs31",
+      "item": "refinedstorage:range_upgrade",
+      "count": 1,
+      "price": 2875,
+      "display_name": "范围升级",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "rs32",
+      "item": "refinedstorage:fortune_3_upgrade",
+      "count": 1,
+      "price": 2875,
+      "display_name": "时运 III 升级",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    }
+  ]
+}

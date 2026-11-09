@@ -1,0 +1,84 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tacz_c:case_357mag"
+  },
+  "loops": 1,
+  "transitional_item": {
+    "id": "tacz_c:unfinished_357mag"
+  },
+  "results": [
+    {
+      "id": "tacz:ammo",
+      "count": 12,
+      "components": {
+        "minecraft:custom_data": {
+          "AmmoId": "tacz:357mag"
+        }
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_357mag"
+        },
+        {
+          "item": "tacz_c:primer"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_357mag"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_357mag"
+        },
+        {
+          "item": "tacz_c:gunpowder_charge"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_357mag"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_357mag"
+        },
+        {
+          "item": "tacz_c:bullet_core"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_357mag"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_357mag"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_357mag"
+        }
+      ]
+    }
+  ]
+}

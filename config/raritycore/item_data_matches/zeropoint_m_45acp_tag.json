@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:ammo",
+  "fuzzy_match": true,
+  "priority": 105,
+  "rarity": 2,
+  "enabled": true,
+  "description": "zeropoint: ammo 45acp",
+  "conditions": [
+    {
+      "path": "tag.AmmoId",
+      "type": "contains",
+      "substring": "45acp",
+      "description": "ammo 45acp"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 114,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: gun smg_auto_crank",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "smg_auto_crank",
+      "description": "gun smg_auto_crank"
+    }
+  ]
+}

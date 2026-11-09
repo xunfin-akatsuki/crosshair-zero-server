@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "entries": [
+    "zeropoint_loot:ammo_skeleton_skeleton",
+    "zeropoint_loot:ammo_skeleton_stray",
+    "zeropoint_loot:ammo_pillager_pillager"
+  ]
+}

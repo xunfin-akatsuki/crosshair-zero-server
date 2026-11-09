@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:ammo",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: ammo 35x32mm",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "suffuse:35x32mm",
+      "description": "zeropoint: ammo 35x32mm"
+    }
+  ]
+}

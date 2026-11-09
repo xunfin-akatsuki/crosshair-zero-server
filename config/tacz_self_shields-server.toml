@@ -1,0 +1,14 @@
+#Ballistic body plating balance
+[ballistic]
+	#Maximum number of ballistic plate partitions a player can install.
+	# Default: 4
+	# Range: 1 ~ 16
+	max_partitions = 4
+	#Ballistic protection points granted by each installed plate.
+	# Default: 10.0
+	# Range: 0.1 ~ 1000.0
+	ballistic_points_per_plate = 10.0
+	#Fraction of incoming gun/fire damage negated before the pool is consumed (0.10 = 10%).
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	damage_reduction = 0.1

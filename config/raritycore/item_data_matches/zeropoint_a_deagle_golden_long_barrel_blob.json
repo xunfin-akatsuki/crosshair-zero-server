@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 125,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att deagle_golden_long_barrel",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "deagle_golden_long_barrel",
+      "description": "att deagle_golden_long_barrel"
+    }
+  ]
+}

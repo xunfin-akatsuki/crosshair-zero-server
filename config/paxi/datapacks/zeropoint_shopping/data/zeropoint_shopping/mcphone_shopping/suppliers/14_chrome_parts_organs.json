@@ -1,0 +1,313 @@
+{
+  "name": "铬教残件·神经与内脏",
+  "products": [
+    {
+      "id": "c01",
+      "item": "cyber_ware_port:brain_upgrades_consciousness_transmitter_scavenged",
+      "count": 1,
+      "price": 320,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c02",
+      "item": "cyber_ware_port:brain_upgrades_cortical_stack_scavenged",
+      "count": 1,
+      "price": 320,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c03",
+      "item": "cyber_ware_port:brain_upgrades_matrix_scavenged",
+      "count": 1,
+      "price": 320,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c04",
+      "item": "cyber_ware_port:brain_upgrades_ender_jammer_scavenged",
+      "count": 1,
+      "price": 560,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c05",
+      "item": "cyber_ware_port:brain_upgrades_neural_contextualizer_scavenged",
+      "count": 1,
+      "price": 560,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c06",
+      "item": "cyber_ware_port:brain_upgrades_radio_scavenged",
+      "count": 1,
+      "price": 560,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c07",
+      "item": "cyber_ware_port:cybereye_upgrades_hudjack_scavenged",
+      "count": 1,
+      "price": 560,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c08",
+      "item": "cyber_ware_port:cybereye_upgrades_night_vision_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c09",
+      "item": "cyber_ware_port:cybereye_upgrades_targeting_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c10",
+      "item": "cyber_ware_port:cybereye_upgrades_zoom_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c11",
+      "item": "cyber_ware_port:cybereye_upgrades_underwater_vision_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c12",
+      "item": "cyber_ware_port:heart_upgrades_platelets_scavenged",
+      "count": 1,
+      "price": 320,
+      "purchase_limit": {
+        "max": 5,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "c13",
+      "item": "cyber_ware_port:heart_upgrades_coupler_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c14",
+      "item": "cyber_ware_port:heart_upgrades_defibrillator_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c15",
+      "item": "cyber_ware_port:heart_upgrades_medkit_scavenged",
+      "count": 1,
+      "price": 950,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 4
+      }
+    },
+    {
+      "id": "c16",
+      "item": "cyber_ware_port:lungs_upgrades_oxygen_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c17",
+      "item": "cyber_ware_port:lungs_upgrades_hyperoxygenation_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c18",
+      "item": "cyber_ware_port:lower_organs_upgrades_adrenaline_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c19",
+      "item": "cyber_ware_port:lower_organs_upgrades_battery_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c20",
+      "item": "cyber_ware_port:lower_organs_upgrades_metabolic_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c21",
+      "item": "cyber_ware_port:lower_organs_upgrades_liver_filter_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c22",
+      "item": "cyber_ware_port:muscle_upgrades_muscle_replacements_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c23",
+      "item": "cyber_ware_port:muscle_upgrades_wired_reflexes_scavenged",
+      "count": 1,
+      "price": 1700,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 6
+      }
+    },
+    {
+      "id": "c24",
+      "item": "cyber_ware_port:brain_upgrades_cortical_stack",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    },
+    {
+      "id": "c25",
+      "item": "cyber_ware_port:cybereye_upgrades_targeting",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    },
+    {
+      "id": "c26",
+      "item": "cyber_ware_port:heart_upgrades_medkit",
+      "count": 1,
+      "price": 15000,
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    },
+    {
+      "id": "c27",
+      "item": "cyber_ware_port:lungs_upgrades_oxygen",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    },
+    {
+      "id": "c28",
+      "item": "cyber_ware_port:muscle_upgrades_wired_reflexes",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    }
+  ]
+}

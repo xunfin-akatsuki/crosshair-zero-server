@@ -1,0 +1,44 @@
+{
+  "List": [
+    {
+      "Type": "superbwarfare:air_sheep",
+      "Weight": 30
+    },
+    {
+      "Type": "superbwarfare:tom_6",
+      "Weight": 30
+    },
+    {
+      "Type": "superbwarfare:kv_16",
+      "Weight": 20
+    },
+    {
+      "Type": "superbwarfare:ju_87",
+      "Weight": 10
+    },
+    {
+      "Type": "superbwarfare:ah_6",
+      "Weight": 10
+    },
+    {
+      "Type": "superbwarfare:happiest_ghast",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:mi_28",
+      "Weight": 3
+    },
+    {
+      "Type": "superbwarfare:a_10a",
+      "Weight": 3
+    },
+    {
+      "Type": "superbwarfare:ac_130h",
+      "Weight": 1
+    },
+    {
+      "Type": "superbwarfare:kirov",
+      "Weight": 1
+    }
+  ]
+}

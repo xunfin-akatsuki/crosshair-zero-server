@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 114,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att scope_elcan_4x",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "scope_elcan_4x",
+      "description": "att scope_elcan_4x"
+    }
+  ]
+}

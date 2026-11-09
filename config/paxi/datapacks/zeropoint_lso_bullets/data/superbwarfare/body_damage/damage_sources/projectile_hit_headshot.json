@@ -1,0 +1,6 @@
+{
+  "damage_distribution": "ONE_OF",
+  "body_parts": [
+    "HEAD"
+  ]
+}

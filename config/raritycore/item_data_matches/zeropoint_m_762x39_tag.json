@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:ammo",
+  "fuzzy_match": true,
+  "priority": 106,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: ammo 762x39",
+  "conditions": [
+    {
+      "path": "tag.AmmoId",
+      "type": "contains",
+      "substring": "762x39",
+      "description": "ammo 762x39"
+    }
+  ]
+}

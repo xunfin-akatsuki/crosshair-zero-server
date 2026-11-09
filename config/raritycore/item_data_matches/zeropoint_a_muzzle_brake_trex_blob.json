@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 117,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_brake_trex",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "muzzle_brake_trex",
+      "description": "att muzzle_brake_trex"
+    }
+  ]
+}

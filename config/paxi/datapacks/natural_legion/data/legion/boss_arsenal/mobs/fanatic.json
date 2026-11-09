@@ -1,0 +1,57 @@
+{
+  "entity": "boss_arsenal:pillager_soldier",
+  "spawn_chance": 0,
+  "tier": 2,
+  "name": "零号狂信者",
+  "health": 36,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:ump45",
+    "fire_mode": "auto",
+    "spread_degrees": 4.2,
+    "range": 28,
+    "preferred_range": 12,
+    "shot_interval_ticks": 3,
+    "infinite_ammo": true,
+    "drop_chance": 0.18,
+    "aim_ticks": 5,
+    "burst_shots": 5,
+    "burst_pause_ticks": 50,
+    "recoil_spread": 0.55,
+    "max_spread": 8.5,
+    "moving_spread": 1.4,
+    "headshot_chance": 0.05,
+    "damage_scale": 1.1
+  },
+  "armor_bonus": 4,
+  "equipment": {
+    "head": {
+      "item": "zerocontact:helmet_fast_mt",
+      "drop_chance": 0.09
+    },
+    "chest": {
+      "item": "zerocontact:armor_jpc_v2",
+      "drop_chance": 0.09
+    },
+    "legs": {
+      "item": "zerocontact:armor_jpc_v2",
+      "drop_chance": 0.08
+    }
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:45acp",
+      "min": 10,
+      "max": 24,
+      "chance": 0.7
+    },
+    {
+      "item": "cyber_ware_port:component_plating",
+      "min": 0,
+      "max": 1,
+      "chance": 0.15
+    }
+  ]
+}

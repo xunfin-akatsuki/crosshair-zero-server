@@ -1,0 +1,93 @@
+[kinetics]
+	#Minimum absolute Create RPM required before Transit Charge can build.
+	# Default: 32
+	# Range: 0 ~ 1024
+	minimumRPM = 32
+	#Real Create stress impact of the Kinetic Waypoint, in SU per RPM.
+	# Default: 16.0
+	# Range: 0.0 ~ 1024.0
+	stressImpact = 16.0
+	#Transit Charge generated per tick at 64 RPM.
+	# Default: 5.0
+	# Range: 0.0 ~ 1000.0
+	chargePerTickAt64RPM = 5.0
+	#Maximum absolute RPM used for Transit Charge generation.
+	# Default: 256
+	# Range: 1 ~ 4096
+	maximumChargeRPM = 256
+	#Maximum stored Transit Charge in TC.
+	# Default: 5000
+	# Range: 1 ~ 1000000
+	maximumTransitCharge = 5000
+
+[travelCost]
+	#Base same-dimension travel cost in TC.
+	# Default: 100
+	# Range: 0 ~ 1000000
+	baseSameDimensionCost = 100
+	#Additional same-dimension travel cost in TC per block.
+	# Default: 0.75
+	# Range: 0.0 ~ 10000.0
+	costPerBlock = 0.75
+	#Base cross-dimension travel cost in TC.
+	# Default: 750
+	# Range: 0 ~ 1000000
+	baseCrossDimensionCost = 750
+	#Allow travel between dimensions.
+	enableCrossDimensionTravel = true
+	#Maximum same-dimension travel distance in blocks. 0 means unlimited.
+	# Default: 0
+	# Range: 0 ~ 30000000
+	maximumTravelDistance = 0
+	#Minimum final travel cost in TC.
+	# Default: 0
+	# Range: 0 ~ 1000000
+	minimumTravelCost = 0
+	#Maximum final travel cost in TC. 0 means unlimited.
+	# Default: 0
+	# Range: 0 ~ 1000000
+	maximumTravelCost = 0
+
+[teleport]
+	#Warmup ticks before travel. The first implementation validates immediately when this is 0.
+	# Default: 0
+	# Range: 0 ~ 1200
+	warmupTicks = 0
+	#Cooldown after successful travel.
+	# Default: 100
+	# Range: 0 ~ 1200
+	cooldownTicks = 100
+	movementCancelsWarmup = true
+	# Default: 0.35
+	# Range: 0.0 ~ 16.0
+	movementTolerance = 0.35
+	damageCancelsWarmup = true
+	recentCombatPreventsTravel = false
+	# Default: 200
+	# Range: 0 ~ 6000
+	combatTimeoutTicks = 200
+	#Bounded radius used to find a safe arrival position near the destination waypoint.
+	# Default: 4
+	# Range: 1 ~ 16
+	safeLandingSearchRadius = 4
+	#Reserved for temporary destination loading; this build synchronously loads only the destination chunk for validation.
+	# Default: 100
+	# Range: 1 ~ 1200
+	temporaryChunkTicketTicks = 100
+
+[network]
+	#Default visibility for newly placed waypoints.
+	#Allowed Values: PERSONAL, SHARED, GLOBAL
+	defaultVisibility = "PERSONAL"
+	allowSurvivalGlobalWaypoints = false
+	requireDestinationPower = false
+	preserveDiscoveriesAfterDeath = true
+	# Default: 32
+	# Range: 1 ~ 80
+	maximumWaypointNameLength = 32
+	# Default: 256
+	# Range: 1 ~ 10000
+	maximumPersonalWaypoints = 256
+	# Default: 128
+	# Range: 0 ~ 10000
+	maximumGlobalWaypoints = 128

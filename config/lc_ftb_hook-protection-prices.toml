@@ -1,0 +1,70 @@
+#Protection prices per claim backend, added to upkeep PER CHUNK that has the protection active.
+#Denominated in tenths of a copper per chunk: total for a region =
+#floor(price * billableChunksWithThisProtectionActive / 10) copper.
+#Copper = the active currency mod's smallest coin: a Lightman's Currency copper coin
+#(iron = 10, gold = 100 copper) or a Numismatics spur (bevel = 8, sprocket = 16, cog = 64 spurs).
+#Every default below is written out in both currencies.
+#Only the section of the claim mod actually in use applies.
+#Protections of FTB Chunks
+[ftb]
+	#Who may interact with living entities (villagers, animals, ...).
+	#Default: 1000 (= 100 copper per chunk; Lightman's Currency: 1 gold, Numismatics: 1 cog 2 sprocket 4 spur).
+	# Default: 1000
+	# Range: 0 ~ 9223372036854775807
+	entity_interact_mode = 10
+	#Who may attack/break non-living entities (item frames, armor stands, paintings, ...).
+	#Default: 1000 (= 100 copper per chunk; Lightman's Currency: 1 gold, Numismatics: 1 cog 2 sprocket 4 spur).
+	# Default: 1000
+	# Range: 0 ~ 9223372036854775807
+	nonliving_entity_attack_mode = 10
+	#Who may place or break blocks.
+	#Default: 1000 (= 100 copper per chunk; Lightman's Currency: 1 gold, Numismatics: 1 cog 2 sprocket 4 spur).
+	# Default: 1000
+	# Range: 0 ~ 9223372036854775807
+	block_edit_mode = 10
+	#Who may right-click blocks (doors, chests, levers, ...).
+	#Default: 1000 (= 100 copper per chunk; Lightman's Currency: 1 gold, Numismatics: 1 cog 2 sprocket 4 spur).
+	# Default: 1000
+	# Range: 0 ~ 9223372036854775807
+	block_interact_mode = 10
+	#Mob griefing protection.
+	#Default: 800 (= 80 copper per chunk; Lightman's Currency: 8 iron, Numismatics: 1 cog 1 sprocket).
+	# Default: 800
+	# Range: 0 ~ 9223372036854775807
+	allow_mob_griefing = 8
+	#Explosion protection.
+	#Default: 700 (= 70 copper per chunk; Lightman's Currency: 7 iron, Numismatics: 1 cog 6 spur).
+	# Default: 700
+	# Range: 0 ~ 9223372036854775807
+	allow_explosions = 7
+	#PvP protection.
+	#Default: 500 (= 50 copper per chunk; Lightman's Currency: 5 iron, Numismatics: 3 sprocket 2 spur).
+	# Default: 500
+	# Range: 0 ~ 9223372036854775807
+	allow_pvp = 5
+	#Blocks fake players (machines like deployers) that aren't otherwise allowed.
+	#Default: 500 (= 50 copper per chunk; Lightman's Currency: 5 iron, Numismatics: 3 sprocket 2 spur).
+	# Default: 500
+	# Range: 0 ~ 9223372036854775807
+	allow_fake_players = 5
+	#Also blocks fake players acting under the UUID of a player who would have access.
+	#Default: 300 (= 30 copper per chunk; Lightman's Currency: 3 iron, Numismatics: 1 sprocket 1 bevel 6 spur).
+	# Default: 300
+	# Range: 0 ~ 9223372036854775807
+	allow_fake_players_by_id = 3
+	#Which protections are switched off first when a team can't pay its upkeep.
+	#
+	#At every upkeep period a team pays for the protections its regions have active. If its
+	#account can't cover the bill, protections are switched off one step at a time until the
+	#rest is affordable again:
+	#  1. Regions are handled in the team's region-list order - the TOP region loses its
+	#     protections first (teams drag their least important region to the top).
+	#  2. Inside a region, protections are switched off in the order of this list - the FIRST
+	#     entry is dropped first, the LAST one is kept the longest.
+	#Once the team can pay again, protections come back in exactly the reverse order.
+	#
+	#Entries are the protection keys of this section (e.g. "entity_interact_mode"). Protections
+	#missing from the list are dropped after the listed ones, in the order of this section;
+	#unknown entries are ignored. The default drops the advanced protections first, then the
+	#main ones, keeping PvP protection the longest.
+	dismantleOrder = ["nonliving_entity_attack_mode", "allow_fake_players", "allow_fake_players_by_id", "entity_interact_mode", "block_edit_mode", "block_interact_mode", "allow_mob_griefing", "allow_explosions", "allow_pvp"]

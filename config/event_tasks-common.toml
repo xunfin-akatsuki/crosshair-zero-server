@@ -1,0 +1,39 @@
+[schedule]
+	#Global interval for randomly publishing capture or escort, independent of task completion. At most two active events; a full slot skips this interval.
+	# Default: 1800
+	# Range: 1 ~ 86400
+	eventIntervalSeconds = 1800
+	#Cancel an event if nobody accepts it within this time. Capture duration is configured separately.
+	# Default: 600
+	# Range: 1 ~ 86400
+	acceptTimeoutSeconds = 600
+	#Retry delay when no suitable city building was found.
+	# Default: 60
+	# Range: 1 ~ 86400
+	retryIntervalSeconds = 60
+	#Time allowed to kill all capture enemies, counted from acceptance.
+	# Default: 1800
+	# Range: 1 ~ 3600
+	captureTimeoutSeconds = 1800
+
+[escort]
+	#Escort time limit from acceptance, including destination lookup. Expiry removes the villager.
+	# Default: 1800
+	# Range: 1 ~ 3600
+	escortTimeoutSeconds = 1800
+	#Delay before the first escort ambush after navigation is ready.
+	# Default: 30
+	# Range: 5 ~ 3600
+	ambushInitialDelaySeconds = 30
+	#Rest time after all enemies from an ambush wave are cleared. Waves never overlap.
+	# Default: 90
+	# Range: 10 ~ 3600
+	ambushIntervalSeconds = 90
+	#Minimum delay between small batches within an ambush wave. Paused while fleeing or stuck.
+	# Default: 5
+	# Range: 1 ~ 120
+	ambushBatchIntervalSeconds = 5
+	#Maximum enemies spawned per escort ambush batch.
+	# Default: 2
+	# Range: 1 ~ 4
+	ambushBatchSize = 2

@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:entities/pillager"
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:pillager"
+      }
+    }
+  ],
+  "table": "zeropoint_loot:ammo_pillager"
+}

@@ -1,0 +1,55 @@
+{
+  "entity": "boss_arsenal:skeleton_soldier",
+  "spawn_chance": 0,
+  "tier": 4,
+  "name": "零点军团 · 重狙手",
+  "health": 28,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:aw50",
+    "fire_mode": "semi",
+    "spread_degrees": 1.5,
+    "range": 60,
+    "preferred_range": 36,
+    "shot_interval_ticks": 34,
+    "infinite_ammo": true,
+    "drop_chance": 0.18,
+    "aim_ticks": 5,
+    "burst_shots": 0,
+    "burst_pause_ticks": 0,
+    "recoil_spread": 0.28,
+    "max_spread": 3.8,
+    "moving_spread": 0.7,
+    "headshot_chance": 0.12,
+    "damage_scale": 1.35
+  },
+  "armor_bonus": 8,
+  "equipment": {
+    "head": {
+      "item": "zerocontact:helmet_airframe",
+      "drop_chance": 0.12
+    },
+    "chest": {
+      "item": "zerocontact:armor_iotv_gen4",
+      "drop_chance": 0.12
+    },
+    "legs": {
+      "item": "zerocontact:armor_iotv_gen4",
+      "drop_chance": 0.08
+    },
+    "feet": {
+      "item": "minecraft:netherite_boots",
+      "drop_chance": 0.05
+    }
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:338",
+      "min": 3,
+      "max": 8,
+      "chance": 0.5
+    }
+  ]
+}

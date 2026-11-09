@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 110,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att sight_okp7",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "sight_okp7",
+      "description": "att sight_okp7"
+    }
+  ]
+}

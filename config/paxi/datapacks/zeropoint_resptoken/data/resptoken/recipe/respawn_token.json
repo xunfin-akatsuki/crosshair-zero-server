@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "GTG",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "G": {
+      "item": "resptoken:binding_glue"
+    },
+    "T": {
+      "item": "resptoken:token_part"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "resptoken:respawn_token"
+  }
+}

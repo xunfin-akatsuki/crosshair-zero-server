@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 117,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att stock_militech_b5",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "stock_militech_b5",
+      "description": "att stock_militech_b5"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att stock_colt",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "suffuse:stock_colt",
+      "description": "zeropoint: att stock_colt"
+    }
+  ]
+}

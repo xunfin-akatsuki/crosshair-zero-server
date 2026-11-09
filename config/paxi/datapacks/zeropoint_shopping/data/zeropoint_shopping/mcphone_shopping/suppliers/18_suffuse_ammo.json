@@ -1,0 +1,216 @@
+{
+  "name": "黑烟枪械·弹药补给",
+  "requires_mod": "tacz",
+  "products": [
+    {
+      "id": "sa_12_7x108mm",
+      "display_name": "§b12.7x108mm 机枪弹",
+      "count": 60,
+      "price": 9000,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:12.7x108mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_12_7x55",
+      "display_name": "§b12.7x55mm 步枪弹",
+      "count": 60,
+      "price": 3200,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:12.7x55"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_120mm",
+      "display_name": "§d120mm PF-98A多用途火箭弹",
+      "count": 60,
+      "price": 40000,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:120mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_14_5x114mm",
+      "display_name": "§b14.5x114mm 机枪弹",
+      "count": 60,
+      "price": 12000,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:14.5x114mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_23mm",
+      "display_name": "§923x75mm Shrapnel-10 霰弹",
+      "count": 60,
+      "price": 12000,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:23mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_30x29vog",
+      "display_name": "§d30x29mm 榴弹",
+      "count": 60,
+      "price": 6000,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:30x29vog"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_338nm",
+      "display_name": "§c.338 Norma Magnum 机枪弹",
+      "count": 60,
+      "price": 2600,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:338nm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_35x32mm",
+      "display_name": "§d35x32mm 榴弹",
+      "count": 60,
+      "price": 3600,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:35x32mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_4_73x33mm",
+      "display_name": "§d4.73x33mm 无壳弹",
+      "count": 60,
+      "price": 600,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:4.73x33mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_545x39",
+      "display_name": "§b5.45x39mm 步枪弹",
+      "count": 60,
+      "price": 1680,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:545x39"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_6_8tvcm",
+      "display_name": "§b6.8 TVCM 步枪弹",
+      "count": 60,
+      "price": 2200,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:6.8tvcm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_6x35mm",
+      "display_name": "§d6x35mm 穿甲弹",
+      "count": 60,
+      "price": 1680,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:6x35mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_7_65x20mm",
+      "display_name": "§a7.65x20mm 手枪弹",
+      "count": 60,
+      "price": 600,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:7.65x20mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "sa_boomstickshot",
+      "display_name": "§a.50 纸壳定装弹",
+      "count": 60,
+      "price": 1200,
+      "tacz": {
+        "type": "ammo",
+        "id": "suffuse:boomstickshot"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    }
+  ]
+}

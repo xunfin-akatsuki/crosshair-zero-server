@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 134,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_refit_lava_perfusion_bottle",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "muzzle_refit_lava_perfusion_bottle",
+      "description": "att muzzle_refit_lava_perfusion_bottle"
+    }
+  ]
+}

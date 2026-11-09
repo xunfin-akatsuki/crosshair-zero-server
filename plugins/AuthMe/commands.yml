@@ -1,0 +1,48 @@
+# 本配置文件用于在各种事件发生时执行命令。
+# 命令中支持的占位符：
+#   %p 会被替换为玩家名称。
+#   %nick 会被替换为玩家的昵称。
+#   %ip 会被替换为玩家的 IP 地址。
+#   %country 会被替换为玩家所在的国家。
+#
+# 例如，如果您想给刚刚注册的玩家发送一条欢迎消息：
+# onRegister:
+#   welcome:
+#     command: 'msg %p 欢迎来到本服务器！'
+#     executor: CONSOLE
+#
+# 这样控制台就会以控制台的身份，向该玩家发送一条私聊消息。
+# 每个事件下的命令名称可以随意取（例如上面的 'welcome'），
+# 名称之后必须有一个 'command' 字段来定义要执行的命令，
+# 以及一个 'executor' 字段来定义由谁执行该命令（PLAYER 或 CONSOLE）。
+#
+# 您还可以为命令添加延迟，它会在指定的 tick 之后执行。例如：
+# onLogin:
+#   rules:
+#     command: 'rules'
+#     executor: PLAYER
+#     delay: 200
+#
+# 支持的命令事件：onLogin、onSessionLogin、onFirstLogin、onJoin、onLogout、onRegister、onUnregister
+#
+# 对于 onLogin 和 onFirstLogin，您可以使用 'ifNumberOfAccountsLessThan' 和
+# 'ifNumberOfAccountsAtLeast' 来限制玩家（按 IP 匹配）拥有的账号数量，
+# 只有满足条件时才会执行该命令：
+# onLogin:
+#   warnOnManyAccounts:
+#     command: 'say 注意！%p 拥有大量小号！'
+#     executor: CONSOLE
+#     ifNumberOfAccountsAtLeast: 5
+# 当玩家登录且其「上次登录时间」为空时执行这些命令
+onFirstLogin: {}
+onJoin: {}
+onLogin: {}
+# 当已登录的玩家使用 /logout 或退出游戏时执行这些命令。
+# 如果退出游戏的玩家并未登录，则不会执行这些命令。
+# 注意：如果服务器崩溃，这些命令不会被执行，因此请不要依赖它们来撤销
+# 'onLogin' 中那些对未登录玩家来说很危险的操作！
+onLogout: {}
+onRegister: {}
+onSessionLogin: {}
+# 当玩家被注销时执行这些命令（包括玩家自行注销或由管理员注销）
+onUnregister: {}

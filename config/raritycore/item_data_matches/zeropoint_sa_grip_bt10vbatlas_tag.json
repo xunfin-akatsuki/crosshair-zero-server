@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att grip_bt10vbatlas",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "suffuse:grip_bt10vbatlas",
+      "description": "zeropoint: att grip_bt10vbatlas"
+    }
+  ]
+}

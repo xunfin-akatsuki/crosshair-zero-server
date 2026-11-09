@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 105,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: gun hk_g3",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "hk_g3",
+      "description": "gun hk_g3"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "item": "tacz_c:brass_cylinder"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "tacz_c:bullet_core"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "item": "immersiveengineering:ingot_steel"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "item": "createimmersivetacz:gun_barrel"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "item": "createimmersivetacz:firing_mechanism"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "mutantmonsters:endersoul_hand"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "aquamirae:abyssal_amethyst"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "cataclysm:ancient_metal_ingot"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "suffuse:lifecard",
+    "count": 1
+  }
+}

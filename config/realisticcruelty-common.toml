@@ -1,0 +1,9 @@
+gore_blacklist = []
+gore_use_whitelist = false
+# Default: 10034975
+# Range: > 0
+gore_color_default = 10034975
+gore_colors = ["slime,0x70cc52", "magma_cube,0x99471f", "enderman,0x4d1f4d", "endermite,0x4d1f4d", "warden,0x144b66", "glow_squid,0x33ffcc", "wither_skeleton,0x262626"]
+gore_texture_items = ["skeleton,bone", "skeleton_horse,bone", "wither_skeleton,bone", "stray,bone", "bogged,bone", "blaze,blaze_rod", "breeze,breeze_rod", "shulker,shulker_shell", "iron_golem,iron_nugget", "snow_golem,snowball"]
+gore_general_damage_types = ["#neoforge:is_physical", "#minecraft:is_explosion"]
+gore_explosion_damage_types = ["#minecraft:is_explosion"]

@@ -1,0 +1,103 @@
+# Default: 1.0
+# Range: 0.0 ~ Infinity
+blood_amount_factor = 1.0
+# Default: -0.5
+# Range: -Infinity ~ Infinity
+blood_amount_addition = -0.5
+# Default: 16.0
+# Range: 0.0 ~ Infinity
+blood_amount_max = 16.0
+# Default: 0.3
+# Range: 0.0 ~ Infinity
+blood_speed_factor = 0.3
+# Default: 0.0
+# Range: -Infinity ~ Infinity
+blood_speed_addition = 0.0
+# Default: 1.5
+# Range: 0.0 ~ Infinity
+blood_speed_max = 1.5
+# Default: 0.2
+# Range: 0.0 ~ Infinity
+blood_general_speed_min_multiplier = 0.2
+# Default: 0.5
+# Range: 0.0 ~ Infinity
+blood_general_speed_max_multiplier = 0.5
+# Default: 90.0
+# Range: 0.0 ~ Infinity
+blood_general_spread_degrees = 90.0
+blood_general_fog_enabled = true
+# Default: 0.2
+# Range: 0.0 ~ Infinity
+blood_melee_speed_min_multiplier = 0.2
+# Default: 0.5
+# Range: 0.0 ~ Infinity
+blood_melee_speed_max_multiplier = 0.5
+# Default: 90.0
+# Range: 0.0 ~ Infinity
+blood_melee_spread_degrees = 90.0
+blood_melee_fog_enabled = true
+# Default: 0.5
+# Range: 0.0 ~ Infinity
+blood_projectile_speed_min_multiplier = 0.5
+# Default: 1.0
+# Range: 0.0 ~ Infinity
+blood_projectile_speed_max_multiplier = 1.0
+# Default: 60.0
+# Range: 0.0 ~ Infinity
+blood_projectile_spread_degrees = 60.0
+blood_projectile_fog_enabled = true
+# Default: 0.5
+# Range: 0.0 ~ Infinity
+blood_explosion_speed_min_multiplier = 0.5
+# Default: 1.0
+# Range: 0.0 ~ Infinity
+blood_explosion_speed_max_multiplier = 1.0
+# Default: 75.0
+# Range: 0.0 ~ Infinity
+blood_explosion_spread_degrees = 75.0
+blood_explosion_fog_enabled = true
+# Default: 0.125
+# Range: -Infinity ~ Infinity
+blood_depth_offset = 0.125
+# Default: 0.25
+# Range: -Infinity ~ Infinity
+blood_fog_depth_offset = 0.25
+blood_splat_enabled = true
+# Default: 100
+# Range: > 0
+blood_splat_lifetime = 100
+# Default: 0.2
+# Range: 0.0 ~ Infinity
+blood_fog_size_factor = 0.2
+# Default: 0.0
+# Range: -Infinity ~ Infinity
+blood_fog_size_addition = 0.0
+# Default: 1.0
+# Range: 0.0 ~ Infinity
+blood_fog_size_max = 1.0
+# Default: 2
+# Range: > 0
+blood_splash_count_min = 2
+# Default: 3
+# Range: > 0
+blood_splash_count_max = 3
+blood_sound = "block.beehive.drip"
+# Default: 0.3
+# Range: 0.0 ~ Infinity
+blood_volume_multiplier_min = 0.3
+# Default: 1.0
+# Range: 0.0 ~ Infinity
+blood_volume_multiplier_max = 1.0
+fragment_sound = "block.dripstone_block.fall"
+# Default: 0.3
+# Range: 0.0 ~ Infinity
+fragment_volume_multiplier_min = 0.3
+# Default: 1.0
+# Range: 0.0 ~ Infinity
+fragment_volume_multiplier_max = 1.0
+# Default: 4.0
+# Range: 0.0 ~ Infinity
+client_gore_amount_min = 4.0
+# Default: 8.0
+# Range: 0.0 ~ Infinity
+client_gore_amount_max = 8.0

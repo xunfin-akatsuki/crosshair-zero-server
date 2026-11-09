@@ -1,0 +1,61 @@
+{
+  "entity": "boss_arsenal:skeleton_soldier",
+  "spawn_chance": 0,
+  "tier": 3,
+  "name": "零点军团 · 狙击手",
+  "health": 28,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:axmc",
+    "fire_mode": "semi",
+    "spread_degrees": 2.6,
+    "range": 64,
+    "preferred_range": 40,
+    "shot_interval_ticks": 20,
+    "infinite_ammo": true,
+    "drop_chance": 0.18,
+    "aim_ticks": 6,
+    "burst_shots": 0,
+    "burst_pause_ticks": 0,
+    "recoil_spread": 0.4,
+    "max_spread": 5.5,
+    "moving_spread": 1,
+    "headshot_chance": 0.08,
+    "damage_scale": 1.2
+  },
+  "armor_bonus": 6,
+  "equipment": {
+    "head": {
+      "item": "zerocontact:helmet_airframe",
+      "drop_chance": 0.105
+    },
+    "chest": {
+      "item": "zerocontact:armor_iotv_gen4",
+      "drop_chance": 0.105
+    },
+    "legs": {
+      "item": "zerocontact:armor_iotv_gen4",
+      "drop_chance": 0.08
+    },
+    "feet": {
+      "item": "minecraft:netherite_boots",
+      "drop_chance": 0.05
+    }
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:50bmg",
+      "min": 3,
+      "max": 8,
+      "chance": 0.5
+    },
+    {
+      "item": "superbwarfare:dog_tag",
+      "min": 1,
+      "max": 1,
+      "chance": 0.08
+    }
+  ]
+}

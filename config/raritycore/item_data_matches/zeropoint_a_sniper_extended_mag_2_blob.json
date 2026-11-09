@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 121,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: att sniper_extended_mag_2",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "sniper_extended_mag_2",
+      "description": "att sniper_extended_mag_2"
+    }
+  ]
+}

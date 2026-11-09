@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tacz_c:gunpowder_charge"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "results": [
+    {
+      "id": "tacz:ammo",
+      "count": 8,
+      "components": {
+        "minecraft:custom_data": {
+          "AmmoId": "lavender:oil"
+        }
+      }
+    }
+  ],
+  "heat_requirement": "heated"
+}

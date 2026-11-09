@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 110,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att grip_cobra",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "grip_cobra",
+      "description": "att grip_cobra"
+    }
+  ]
+}

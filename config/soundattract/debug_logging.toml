@@ -1,0 +1,46 @@
+	[debug_logging.ai]
+		soundAttraction = false
+		mobGroups = false
+		blockBreaking = false
+		raids = false
+
+	[debug_logging.livingWall]
+		admission = false
+		construction = false
+		routing = false
+		formation = false
+		recovery = false
+
+	[debug_logging.perception]
+		stealthDetection = false
+		scent = false
+		soundTracking = false
+		camouflage = false
+		arrowInvestigation = false
+		floorCreeks = false
+
+	[debug_logging.navigation]
+		pathfinding = false
+
+	[debug_logging.runtime]
+		workers = false
+		configReload = false
+		modLifecycle = false
+
+	[debug_logging.integrations]
+		customNpcs = false
+		tacz = false
+		pointBlank = false
+		spore = false
+		smartBrainLib = false
+		hotBath = false
+		toughAsNails = false
+		voiceChat = false
+		immersiveMelodies = false
+		weather2Wind = false
+		spoiled = false
+		taczNpcs = false
+		vanilla = false
+
+	[debug_logging.data]
+		datapackReload = false

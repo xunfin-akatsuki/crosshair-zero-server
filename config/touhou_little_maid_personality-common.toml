@@ -1,0 +1,182 @@
+[personality]
+	#Whether naturally spawned yandere maids are allowed
+	naturalYandere = false
+	#Soul-slab maid starts with no personality: when enabled, the first maid a player tames is fixed to "no personality" (the soul slab is the only thing in the normal flow that hands a player an already-tamed maid, so the first tamed maid being personality-less is enough to reach this).
+	startSoulMaidNoPersonality = true
+
+	[personality.weights]
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		loyal = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		glutton = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		mischievous = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		lazy = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		lovestruck = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		battleFanatic = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		masochist = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		luckyStar = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		lonely = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		carnivore = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		vegetarian = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		tsundere = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		afraidOfDark = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		afraidOfBugs = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		pickyEater = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		greedy = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		inferior = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		coward = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		vigilant = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		caring = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		cruel = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		focused = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		discriminating = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		clumsy = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		arrogant = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		solitary = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		social = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		noble = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		calm = 1
+		#Personality pool weight; 0 means this personality will not spawn
+		# Default: 1
+		# Range: 0 ~ 20
+		kuudere = 1
+
+[ai]
+	#Whether the AI prefix built from personality and emotion is automatically written into the hidden section of the maid chat settings
+	promptInject = true
+
+[maid]
+	#Maid "follow / go home" decision distance: while not in Home (following) mode, the maid is only considered to need to return to her owner once the distance exceeds this value.The base mod uses about 7 blocks; this overrides it with a larger value for a better experience.
+	# Default: 14
+	# Range: 3 ~ 128
+	maidReturnDistance = 14
+
+[altar]
+	#Altar-summoned maids start with no personality (server side).When enabled, a maid freshly spawned by a Touhou Little Maid altar recipe (the recipes whose output entity is a maid,including the box recipe) is fixed to "no personality" instead of receiving a random one.Only that one path is affected: soul slabs, structure presets, taming and every other route keep their behaviour.Default off.
+	altarSummonNoPersonality = false
+
+[vow]
+	#After an Eternal Vow is sealed, can the owner no longer tame new maids: when enabled, right-clicking a stray maid while you own a vow maid is blocked (the original behaviour);when disabled the block is gone and new maids can still be tamed as usual.
+	blockNewMaidTame = true
+	#Vow UUID lock: when enabled, the vow maid's entity is back-filled with the UUID recorded in the archive when she enters the world,so that her entity UUID never changes for the rest of her life.Note: cross-dimension teleporting, soul-slab storage and battle-device storage all go through a saveWithoutId -> load NBT round trip,so the UUID is carried along with it anyway (Entity#saveWithoutId writes "UUID", Entity#load reads it back),and this switch normally makes no extra difference for those paths;the case where "normally" does not hold is "the EntityUuid recorded in the archive differs from the entity's current entity UUID"(old save / externally edited save / record not refreshed yet) - there this switch rewrites the new entity's entity UUID tothe value recorded in the archive (it does not rewrite when the record and the entity already agree).One more distinction: a maid walking through a portal never changes dimension at all (the base mod rewrites EntityMaid#changeDimension and makes it always return null), so the only paths that truly cross dimensions are of the Entity#teleportTo(ServerLevel, ...) kind(this mod's cross-dimension follow / vanilla tp / third-party teleport mods).What this switch really affects is"an entity newly created by a rebuild path that explicitly strips "UUID"" (this mod's guard / patrol rebuild)and "an entity revived through readAdditionalSaveData (altar, or film resurrection)".Identity continuity itself is guaranteed by the vow archive ID / binding token,and this switch only affects the lifetime of the "UUID-type identity anchor" (the EntityUuid record in the archive).Default off, keeping vanilla's behaviour of "a new entity keeps a vanilla random UUID".
+	lockMaidUuid = false
+
+[carry]
+	#Carry the bound vow maid to other worlds (client side).When enabled, the first soul-slab maid a player obtains in a world is replaced by the vow maid recorded in the local companion file (see carry.fileLocation), instead of becoming a fresh starter maid.The maid herself is carried over (name / personality / model / affection / emotions / vow archive id + binding token),but her inventory, equipment and items are NOT.Default off: the starter maid behaves exactly as before.
+	replaceStarterMaid = false
+	#Where this mod stores its local data files (client side): the companion archive (vow_companion.json, vow_selected.json) and the local identity key pair (identity.json). GAME_DIR = the root of the game directory of this instance (the default): <game dir>/vow_companion.json, <game dir>/vow_selected.json, <game dir>/identity.json. This is the default because a mod that writes into the user profile (%USERPROFILE%) can be flagged as a virus by CurseForge review and by some antivirus tools. USER_HOME = the legacy location on the C: drive: %USERPROFILE%/.tlmp/vow_companion.json, %USERPROFILE%/.tlmp/vow_selected.json, %USERPROFILE%/.tlmp/identity/identity.json. Switching this never migrates, copies or deletes any file: files that are already at the other location simply stay there. Reading follows this setting: the companion archive only looks at the configured location (turn on carry.extendedSearch to also look at the old C: drive location), while the identity file always falls back to the old location so that an existing verified identity is never lost.
+	#Allowed Values: GAME_DIR, USER_HOME
+	fileLocation = "GAME_DIR"
+	#Extended search (client side): when enabled, the companion archive list also reads %USERPROFILE%/.tlmp/vow_companion.json and %USERPROFILE%/.tlmp/vow_selected.json (the old C: drive location), in addition to the location chosen by carry.fileLocation. Default off: after upgrading, archives that are already in the user profile are intentionally invisible until the player turns this on; nothing is migrated and no old file is ever deleted or modified. Writing is not affected: a new record always goes to the configured location only. The local identity file is not affected either: it always falls back to the old location regardless of this switch.
+	extendedSearch = false
+	#Whether the server accepts a player bringing a carried vow maid into this world (server side).The server is the only authority: the client only displays what the server reports.Even when enabled, the import is rejected when the player already has a vow maid in this world(otherwise the existing twin-maid cleanup would strip one of them), and when the recorded personality is aspell-mod linked personality (50-54) while touhou_little_maid_spell and/or irons_spellbooks are missing.Every rejection silently falls back to a normal starter soul-slab maid.
+	acceptCarriedVowMaid = true
+
+[emotion]
+	#Imprisonment peace: when a player triggers the imprisonment event at 100 obsession, should the game difficulty be temporarily switched to Peaceful (restored automatically when the event ends);when disabled the global difficulty is no longer touched for the duration of the imprisonment.
+	imprisonPeace = true
+	#Imprisonment effect (server side): whether the 100-obsession confinement event applies its Imprisonment effect to the player. Default false (it was true before 1.4.4). When disabled, the confinement event itself still runs exactly as before (room, obsession -30, difficulty restore, ...): only the effect is no longer applied, and a player who still carries it loses it (it is simply removed on the next tick). Note that this effect is also what keeps the player in Survival mode and blocks every command while it lasts (see MaidEvents#tickPlayer and MaidEvents#onCommand), so turning this off also drops those two behaviours. This is NOT the same switch as emotion.imprisonPeace, which only switches the server difficulty to Peaceful during the event.
+	imprison = false
+
+[identity]
+	#Identity verification policy (only meaningful on offline-mode servers, where the player UUID is derived from the name so two players with the same name share one UUID and can impersonate each other).OFF = completely ignore the verification result, i.e. exactly the behaviour of previous versions (default, compatibility red line);STRICT = a player who has not been verified by the Ed25519 challenge-response handshake is not treated as the maid's owner, so he cannot gift items to her, recall the vow maid into a soul slab, open/modify her settings, ...;he is never kicked and can always play normally (his own maids are unaffected).Switching this to STRICT requires the players to run a client with this mod so they can answer the challenge.
+	#Allowed Values: OFF, STRICT
+	identityPolicy = "OFF"
+	#Trust on first use: when a player UUID connects for the very first time, accept and register the public key it presents, and mark that player as verified immediately.This leaves a small window on the very first connection (nothing can prove who was first on an offline-mode server);afterwards the same UUID is only accepted when it presents exactly the same public key, so impersonation is rejected.When disabled, an unregistered player is never registered automatically and stays unverified,so an operator has to prepare the registry (or leave the policy OFF).
+	identityTofu = true
+
+[dialogue]
+	#Automatic dialogue: the maid says one ambient line on her own every so often (chat bubble).OFF = off, never speaks on her own; NORMAL = once every 5-10 minutes (the original rate); FREQUENT = once every 3-6 minutes.The /tlmp talk test command is unaffected by this switch and can always be triggered manually.
+	#Allowed Values: OFF, NORMAL, FREQUENT
+	autoDialogue = "NORMAL"
+
+[hoyi]
+	#How many trades a Hoyi (the calamity merchant) offers when her offer list is first rolled (server side).The trade table has at most 26 rows; a partial Fisher-Yates shuffle picks this many distinct rows,and the rolled offers are then stored in the entity NBT as they are (Hoyi that already exist keep their list).0 means she offers nothing at all: right-clicking such a Hoyi does not open the trading screen(HoyiEntity refuses to open it when the offer list is empty), so she simply cannot be traded with.Default 6, which is the original hard-coded behaviour.
+	# Default: 6
+	# Range: 0 ~ 26
+	offerCount = 6

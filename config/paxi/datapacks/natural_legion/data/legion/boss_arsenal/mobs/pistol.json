@@ -1,0 +1,42 @@
+{
+  "entity": "boss_arsenal:skeleton_soldier",
+  "spawn_chance": 0,
+  "tier": 0,
+  "name": "零点军团 · 巡逻兵",
+  "health": 24,
+  "attack_players": true,
+  "persistent": true,
+  "gun": {
+    "id": "suffuse:qsz92g",
+    "fire_mode": "semi",
+    "spread_degrees": 9,
+    "range": 24,
+    "preferred_range": 10,
+    "shot_interval_ticks": 6,
+    "infinite_ammo": true,
+    "drop_chance": 0.1,
+    "aim_ticks": 10,
+    "burst_shots": 3,
+    "burst_pause_ticks": 60,
+    "recoil_spread": 0.9,
+    "max_spread": 13,
+    "moving_spread": 2.5,
+    "headshot_chance": 0,
+    "damage_scale": 0.85
+  },
+  "replace_drops": true,
+  "drops": [
+    {
+      "ammo": "tacz:9mm",
+      "min": 6,
+      "max": 12,
+      "chance": 0.6
+    },
+    {
+      "item": "minecraft:arrow",
+      "min": 0,
+      "max": 2,
+      "chance": 0.2
+    }
+  ]
+}

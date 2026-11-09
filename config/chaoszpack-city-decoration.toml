@@ -1,0 +1,45 @@
+[decoration]
+	#Prevent these mods' natural configured features from entering LC city chunks.
+	#LC building palettes and player placements are not intercepted.
+	guardEnabled = true
+	featureNamespaces = ["projectvibrantjourneys", "waystones", "horror_element_mod"]
+	#Also reject feature origins within this many blocks of a city.
+	#A write guard still protects city blocks from longer cross-boundary features.
+	# Default: 16
+	# Range: 0 ~ 64
+	cityBufferBlocks = 16
+	#Check vanilla/PVJ vines once in newly generated city chunks after decoration and ruins.
+	#Only unsupported vines are removed. Old chunks and player-edited pending chunks are skipped.
+	removeUnsupportedVines = true
+	#Skip LC procedural rubble, ruins, debris and random vegetation for the regional city style.
+	#Blocks authored into building and road templates are preserved.
+	templateOnlyTerrain = true
+	#Reject immersive_weathering:ivy placement and regrowth in LC street/park chunks.
+	#Also remove it during pending new-city finalization; existing saves are not mass-scanned.
+	preventStreetIvy = true
+
+[waystones]
+	#Place at most one generated Waystone per named regional city, after generation finishes.
+	#The city-wide quota is persisted per dimension; roads and buildings share it.
+	enabled = true
+	#Legacy compatibility setting; no longer gates the first safe site in an unserved city.
+	#The persistent one-per-city quota replaces per-road random placement.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	roadChance = 0.08
+	#Minimum horizontal distance to another waypoint at a similar height.
+	# Default: 96
+	# Range: 16 ~ 512
+	roadMinimumDistanceBlocks = 96
+	#Smaller exclusion radius for high-rise/special-building nodes than road nodes.
+	# Default: 12
+	# Range: 0 ~ 128
+	buildingMinimumDistanceBlocks = 12
+	#LC additional-floor count used to identify high-rise buildings.
+	# Default: 7
+	# Range: 3 ~ 32
+	highRiseMinimumFloors = 7
+	#Try an upper interior floor only as a fallback if the ground site is unsafe.
+	#This never grants an additional node; all floors share the one-per-city quota.
+	upperFloorWaystone = true
+	specialBuildingKeywords = ["hospital", "clinic", "medical", "police", "military", "laboratory", "observatory", "airport", "aircraftcarrier", "factory", "warehouse", "mall", "walmart", "school", "station", "tv_tower", "radiotower", "radio_tower"]

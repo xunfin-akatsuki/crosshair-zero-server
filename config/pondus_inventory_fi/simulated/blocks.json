@@ -1,0 +1,14 @@
+{
+  "simulated:steering_wheel": {
+    "block_id": "simulated:steering_wheel",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  },
+  "simulated:swivel_bearing": {
+    "block_id": "simulated:swivel_bearing",
+    "base_mass": "0.05",
+    "inventory_multiplier": 1.0,
+    "include_container_mass": true
+  }
+}

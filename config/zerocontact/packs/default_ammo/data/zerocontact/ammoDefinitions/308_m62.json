@@ -1,0 +1,26 @@
+{
+  "ammo_id": "tacz:308",
+
+  "variant": "308_m62",
+
+  "life": 76,
+
+  "friction": 0.014,
+
+  "gravity": 0.062,
+
+  "recoil_multiplier": 1,
+
+  "inaccuracy_multiplier": 1.01,
+
+
+  "penetration_class": 5,
+
+  "armor_damage": 0.1,
+
+  "flesh_damage": 8,
+
+  "stack_size": 60,
+
+  "tracer_color": [0,200,0]
+}

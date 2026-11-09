@@ -1,0 +1,116 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tacz_c:case_792x57"
+  },
+  "loops": 1,
+  "transitional_item": {
+    "id": "tacz_c:unfinished_792x57"
+  },
+  "results": [
+    {
+      "id": "tacz:ammo",
+      "count": 10,
+      "components": {
+        "minecraft:custom_data": {
+          "AmmoId": "lavender:10.4x47mm"
+        }
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_792x57"
+        },
+        {
+          "item": "zeropoint_ammo:casing_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_792x57"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_792x57"
+        },
+        {
+          "item": "zeropoint_ammo:primer_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_792x57"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_792x57"
+        },
+        {
+          "item": "zeropoint_ammo:powder_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_792x57"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_792x57"
+        },
+        {
+          "item": "tacz_c:wad"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_792x57"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_792x57"
+        },
+        {
+          "item": "tacz_c:bullet_core"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_792x57"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_792x57"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_792x57"
+        }
+      ]
+    }
+  ]
+}

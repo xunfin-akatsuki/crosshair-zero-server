@@ -1,0 +1,73 @@
+{
+  "name": "联邦残部军需",
+  "products": [
+    {
+      "id": "helmet_fast_mt",
+      "item": "zerocontact:mask_zk",
+      "count": 1,
+      "price": 32
+    },
+    {
+      "id": "helmet_bastion_black",
+      "item": "zerocontact:helmet_bastion_black",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "headset_amp",
+      "item": "zerocontact:headset_c2r",
+      "count": 1,
+      "price": 138
+    },
+    {
+      "id": "armor_iotv_gen4",
+      "item": "zerocontact:armor_iotv_gen4",
+      "count": 1,
+      "price": 138
+    },
+    {
+      "id": "armor_jpc_v2",
+      "item": "zerocontact:armor_jpc_v2",
+      "count": 1,
+      "price": 8
+    },
+    {
+      "id": "armor_6b23_1",
+      "item": "zerocontact:armor_6b23_1",
+      "count": 1,
+      "price": 600,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "plate_steel",
+      "item": "zerocontact:plate_steel",
+      "count": 1,
+      "price": 600,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "kit_armor",
+      "item": "zerocontact:armor_iba_otv",
+      "count": 1,
+      "price": 600,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    }
+  ]
+}

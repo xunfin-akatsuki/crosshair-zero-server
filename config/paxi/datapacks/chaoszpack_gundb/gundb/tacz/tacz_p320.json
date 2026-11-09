@@ -1,0 +1,19 @@
+{
+  "RepairItem": "minecraft:iron_ingot",
+  "MaxDurability": 600,
+  "Jam": true,
+  "RepairCost": 6,
+  "XpCost": 1,
+  "Stats": [
+    {
+      "Type": [
+        "Damage",
+        "Recoil"
+      ],
+      "ReductionThreshold": 0.8,
+      "MaxReduction": 0.6
+    }
+  ],
+  "JamThreshold": 25,
+  "JamChance": 0.03
+}

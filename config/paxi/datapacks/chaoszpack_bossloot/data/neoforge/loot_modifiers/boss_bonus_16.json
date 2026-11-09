@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table": "twilightforest:entities/alpha_yeti"
+    }
+  ],
+  "table": "chaoszpack_bossloot:boss_bonus"
+}

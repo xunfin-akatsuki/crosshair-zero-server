@@ -1,0 +1,39 @@
+{
+  "installed": [
+    "mcphone:settings",
+    "mcphone:app_store",
+    "mcphone:chat",
+    "mcphone:camera",
+    "mcphone:gallery",
+    "mcphone:music",
+    "mcphone:notes",
+    "mcphone:clock",
+    "mcphone:weather",
+    "mcphone:reader",
+    "mcphone:quests",
+    "mcphone:market",
+    "mcphone:shopping",
+    "mcphone:profile",
+    "mcphone:html_example"
+  ],
+  "known": [
+    "mcphone:settings",
+    "mcphone:app_store",
+    "mcphone:chat",
+    "mcphone:camera",
+    "mcphone:gallery",
+    "mcphone:music",
+    "mcphone:ender_chest",
+    "mcphone:notes",
+    "mcphone:waystone",
+    "mcphone:clock",
+    "mcphone:weather",
+    "mcphone:reader",
+    "mcphone:quests",
+    "mcphone:terminal",
+    "mcphone:market",
+    "mcphone:shopping",
+    "mcphone:profile",
+    "mcphone:html_example"
+  ]
+}

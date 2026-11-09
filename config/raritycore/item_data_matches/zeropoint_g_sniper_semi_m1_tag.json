@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 114,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: gun sniper_semi_m1",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "sniper_semi_m1",
+      "description": "gun sniper_semi_m1"
+    }
+  ]
+}

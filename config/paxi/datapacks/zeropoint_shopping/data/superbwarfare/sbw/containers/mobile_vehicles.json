@@ -1,0 +1,128 @@
+{
+  "List": [
+    {
+      "Type": "superbwarfare:wheel_chair",
+      "Weight": 40
+    },
+    {
+      "Type": "superbwarfare:truck",
+      "Weight": 30
+    },
+    {
+      "Type": "superbwarfare:sodayo_pick_up",
+      "Weight": 30
+    },
+    {
+      "Type": "superbwarfare:tiny_speedboat",
+      "Weight": 30
+    },
+    {
+      "Type": "superbwarfare:tom_6",
+      "Weight": 30
+    },
+    {
+      "Type": "superbwarfare:air_sheep",
+      "Weight": 30
+    },
+    {
+      "Type": "superbwarfare:speedboat",
+      "Weight": 20
+    },
+    {
+      "Type": "superbwarfare:sodayo_pick_up_hmg",
+      "Weight": 20
+    },
+    {
+      "Type": "superbwarfare:kv_16",
+      "Weight": 20
+    },
+    {
+      "Type": "superbwarfare:lav_150",
+      "Weight": 10
+    },
+    {
+      "Type": "superbwarfare:tow",
+      "Weight": 10
+    },
+    {
+      "Type": "superbwarfare:sodayo_pick_up_rocket",
+      "Weight": 10
+    },
+    {
+      "Type": "superbwarfare:sodayo_pick_up_tow",
+      "Weight": 10
+    },
+    {
+      "Type": "superbwarfare:ah_6",
+      "Weight": 10
+    },
+    {
+      "Type": "superbwarfare:ju_87",
+      "Weight": 10
+    },
+    {
+      "Type": "superbwarfare:bmp_2",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:lav_25",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:lav_ad",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:bradley",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:fh_77bw",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:prism_tank",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:plz_05",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:happiest_ghast",
+      "Weight": 5
+    },
+    {
+      "Type": "superbwarfare:t_90a",
+      "Weight": 3
+    },
+    {
+      "Type": "superbwarfare:m_1a_2",
+      "Weight": 3
+    },
+    {
+      "Type": "superbwarfare:ztz_99a",
+      "Weight": 3
+    },
+    {
+      "Type": "superbwarfare:yx_100",
+      "Weight": 1
+    },
+    {
+      "Type": "superbwarfare:mi_28",
+      "Weight": 3
+    },
+    {
+      "Type": "superbwarfare:a_10a",
+      "Weight": 3
+    },
+    {
+      "Type": "superbwarfare:ac_130h",
+      "Weight": 1
+    },
+    {
+      "Type": "superbwarfare:kirov",
+      "Weight": 1
+    }
+  ]
+}

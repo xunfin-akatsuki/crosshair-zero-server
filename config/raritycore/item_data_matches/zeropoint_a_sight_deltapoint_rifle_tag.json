@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 122,
+  "rarity": 4,
+  "enabled": true,
+  "description": "zeropoint: att sight_deltapoint_rifle",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "sight_deltapoint_rifle",
+      "description": "att sight_deltapoint_rifle"
+    }
+  ]
+}

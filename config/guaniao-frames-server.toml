@@ -1,0 +1,10 @@
+[frameWorkbench]
+	#Minimum width and height shown in the editor, in blocks. Zero is an editable draft only.
+	# Default: 0.0
+	# Range: 0.0 ~ 32.0
+	minSizeBlocks = 0.0
+	#Maximum crafted frame width and height, in blocks. Does not resize existing frames.
+	#Values are rounded inward to a 1/16-block grid. Reversed endpoints are automatically sorted.
+	# Default: 10.0
+	# Range: 0.0 ~ 32.0
+	maxSizeBlocks = 10.0

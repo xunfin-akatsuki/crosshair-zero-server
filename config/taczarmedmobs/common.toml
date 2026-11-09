@@ -1,0 +1,1336 @@
+[guards]
+	#Equip naturally spawned / summoned Guard Villagers guards with a random TaCZ gun.
+	#Guards converted from villagers by a player keep the item the player gave them.
+	enabled = true
+	#Chance (0.0 - 1.0) that a guard gets a gun. Otherwise it keeps its normal sword/crossbow loadout.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	gun_chance = 0.75
+	#Chance (0.01 - 0.5) that a guard armed by this mod drops its gun on death, and separately its ammo
+	#(offhand and pouch). Kept low so guards are no easy gun and ammo farm.
+	# Default: 0.25
+	# Range: 0.01 ~ 0.5
+	drop_chance = 0.25
+
+[extra_mobs]
+	#Additional entity IDs that may spawn with a random TaCZ gun.
+	#With [extra_mobs] ai_enabled = true they also get this mod's gun AI and actually shoot.
+	entities = ["minecraft:zombie", "minecraft:pillager"]
+	#Chance (0.0 - 1.0) that a mob from 'entities' gets a gun.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	gun_chance = 0.05
+	#Chance (0.01 - 0.5) that such a mob drops its gun and ammo on death. Also used for Faction Wars mobs.
+	# Default: 0.25
+	# Range: 0.01 ~ 0.5
+	drop_chance = 0.25
+	#Give mobs from 'entities' this mod's gun AI, so they aim, shoot and reload.
+	#They keep their own target selection (zombies hunt players and villagers, pillagers raid villages).
+	#Requires [ai] enabled = true.
+	ai_enabled = true
+	#Mobs from 'entities' that get a gun but NOT this mod's AI.
+	#Use this for mobs whose own mod already makes them shoot TaCZ guns.
+	ai_excluded = []
+	#Extra aim spread in degrees for these mobs, ON TOP of their combat profile's spread_degrees.
+	#Makes monsters a bit less accurate than guards. 0 = exactly as accurate as the profile.
+	# Default: 2.0
+	# Range: 0.0 ~ 30.0
+	extra_spread_degrees = 2.0
+
+[weapons]
+	#Gun types (the 'type' field of a gunpack index) that may be picked. Empty list = all types.
+	#Types: pistol, smg, rifle, shotgun, sniper, mg, rpg ('Heavy Weapon' in the creative menu).
+	#'rpg' is excluded by default: it contains launchers, cannons and some melee weapons.
+	allowed_types = ["pistol", "smg", "rifle", "shotgun", "sniper", "mg"]
+	#If not empty, ONLY these guns may be picked.
+	#Entries: full gun id ("tacz:ak47"), a whole pack ("create_armorer:*") or a sub folder ("destiny:sword/*").
+	#The type filter above still applies.
+	whitelist = []
+	#These guns are never picked. Same format as the whitelist.
+	blacklist = []
+
+[ammo]
+	#Minimum number of full magazines of matching ammo put into the off hand on spawn.
+	#The amount is capped at the ammo's max stack size.
+	# Default: 2
+	# Range: 0 ~ 64
+	min_magazines = 2
+	#Maximum number of full magazines of matching ammo put into the off hand on spawn.
+	# Default: 4
+	# Range: 0 ~ 64
+	max_magazines = 4
+
+[ai]
+	#Use this mod's own gun AI (guards, plus mobs from [extra_mobs] if enabled there).
+	#Set to false if you prefer Guard Villagers TACZ Support. Do NOT run both AIs at the same time.
+	#Changes apply to mobs that are loaded after the change (rejoin the world).
+	enabled = true
+	#Chance (0.0 - 1.0) that a shot aims at the head instead of the body center.
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	headshot_chance = 0.15
+	#Multiplier for the gun's own reload time. 1.0 = same as a player.
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	reload_time_multiplier = 1.0
+	#Base width in blocks of the corridor checked for friendlies before every shot.
+	#It widens automatically with distance and aim spread.
+	# Default: 1.0
+	# Range: 0.0 ~ 5.0
+	friendly_fire_width = 1.0
+	#What a mob does when it has no ammo left at all (gun, off hand and pouch empty).
+	#MELEE = charge in and fight with the gun. KEEP_DISTANCE = back off and wait for resupply.
+	#Allowed Values: MELEE, KEEP_DISTANCE
+	out_of_ammo = "KEEP_DISTANCE"
+	#Guards: extra aim spread in degrees, ON TOP of their combat profile's spread_degrees. 0 = as the profile.
+	# Default: 0.0
+	# Range: 0.0 ~ 30.0
+	extra_spread_degrees = 0.0
+	#Endermen dodge TaCZ bullets like arrows: they teleport away and take no damage.
+	#TaCZ melee weapons (blades, wrench ...) still hit them. Armed mobs then only attack endermen in melee.
+	endermen_dodge_bullets = false
+
+	#Smart fire: mobs fire like a sensible player instead of as fast as the gun allows.
+	#Without it, a mob pulls the trigger every tick the gun is ready. Semi-auto guns with a high fire rate in
+	#their gunpack (some snipers) then fire like machine guns, because a player would have to click each shot.
+	#The gun's own fire rate still applies on top: the mob never fires faster than the gun can.
+	#Applies to all armed mobs of this mod (guards, extra mobs, Faction Wars).
+	[ai.smart_fire]
+		enabled = true
+		#Full-auto and burst guns (MGs, SMGs, assault rifles): at most this many shots per second.
+		# Default: 5.0
+		# Range: 0.5 ~ 20.0
+		auto_shots_per_second = 5.0
+		#Full-auto: after this many shots in a row a short pause (burst fire). 0 = no pauses.
+		# Default: 6
+		# Range: 0 ~ 100
+		burst_shots = 6
+		#Length of the pause between two bursts, in seconds.
+		# Default: 0.8
+		# Range: 0.05 ~ 10.0
+		burst_pause_seconds = 0.8
+		#Semi-auto guns (pistols, shotguns, rifles in semi mode): at most this many shots per second.
+		# Default: 2.5
+		# Range: 0.2 ~ 20.0
+		semi_shots_per_second = 2.5
+		#Smart sniper: guns with the sniper combat profile, at most this many shots per second
+		#(1.0 = one shot per second), no matter how fast the gun could fire.
+		# Default: 1.0
+		# Range: 0.1 ~ 10.0
+		sniper_shots_per_second = 1.0
+
+#Combat profiles. Each gun type belongs to one profile, which decides range and distance keeping.
+#Melee weapons (bullet range below melee_bullet_range) and explosive weapons are detected automatically.
+[profiles]
+	#Profile for gun types that are not listed in any profile. One of: sniper, rifle, pistol, heavy.
+	fallback = "rifle"
+	#Put single guns into a different profile than their type would. Format: "gun=profile".
+	#The gun part works like the whitelist: "eos:eos_riku_t2", "eos:*" or "destiny:sword/*".
+	#Example: ["eos:eos_riku_t2=rifle"] makes a bow filed as pistol fight at rifle range.
+	gun_overrides = []
+	#Guns whose bullet flies less than this many blocks are treated as melee weapons (e.g. swords).
+	# Default: 8.0
+	# Range: 0.0 ~ 64.0
+	melee_bullet_range = 8.0
+
+	#Long range, keeps its distance.
+	[profiles.sniper]
+		#Gun types (lowercase, as in the gunpack index) that use this profile.
+		types = ["sniper"]
+		#Maximum engagement distance in blocks. Also capped by how far the gun's bullet actually flies.
+		# Default: 64.0
+		# Range: 2.0 ~ 128.0
+		max_range = 64.0
+		#Distance the mob tries to keep to its target. It walks closer if further away.
+		# Default: 40.0
+		# Range: 1.0 ~ 128.0
+		preferred_distance = 40.0
+		#If the target comes closer than this, the mob backs off while shooting. 0 = never back off.
+		# Default: 20.0
+		# Range: 0.0 ~ 128.0
+		retreat_distance = 20.0
+		#Movement speed multiplier while approaching, retreating or repositioning.
+		# Default: 0.8
+		# Range: 0.1 ~ 2.0
+		move_speed = 0.8
+		#Accuracy: random aim spread in degrees, on top of the gun's own spread. 0 = perfect aim.
+		#Applies to every armed mob with this profile (guards, extra mobs, Faction Wars).
+		# Default: 0.5
+		# Range: 0.0 ~ 30.0
+		spread_degrees = 0.5
+
+	#Mid range: rifles, SMGs and machine guns.
+	[profiles.rifle]
+		#Gun types (lowercase, as in the gunpack index) that use this profile.
+		types = ["rifle", "smg", "mg"]
+		#Maximum engagement distance in blocks. Also capped by how far the gun's bullet actually flies.
+		# Default: 32.0
+		# Range: 2.0 ~ 128.0
+		max_range = 32.0
+		#Distance the mob tries to keep to its target. It walks closer if further away.
+		# Default: 20.0
+		# Range: 1.0 ~ 128.0
+		preferred_distance = 20.0
+		#If the target comes closer than this, the mob backs off while shooting. 0 = never back off.
+		# Default: 8.0
+		# Range: 0.0 ~ 128.0
+		retreat_distance = 8.0
+		#Movement speed multiplier while approaching, retreating or repositioning.
+		# Default: 0.8
+		# Range: 0.1 ~ 2.0
+		move_speed = 0.8
+		#Accuracy: random aim spread in degrees, on top of the gun's own spread. 0 = perfect aim.
+		#Applies to every armed mob with this profile (guards, extra mobs, Faction Wars).
+		# Default: 2.0
+		# Range: 0.0 ~ 30.0
+		spread_degrees = 2.0
+
+	#Short range: pistols and shotguns.
+	[profiles.pistol]
+		#Gun types (lowercase, as in the gunpack index) that use this profile.
+		types = ["pistol", "shotgun"]
+		#Maximum engagement distance in blocks. Also capped by how far the gun's bullet actually flies.
+		# Default: 16.0
+		# Range: 2.0 ~ 128.0
+		max_range = 16.0
+		#Distance the mob tries to keep to its target. It walks closer if further away.
+		# Default: 10.0
+		# Range: 1.0 ~ 128.0
+		preferred_distance = 10.0
+		#If the target comes closer than this, the mob backs off while shooting. 0 = never back off.
+		# Default: 4.0
+		# Range: 0.0 ~ 128.0
+		retreat_distance = 4.0
+		#Movement speed multiplier while approaching, retreating or repositioning.
+		# Default: 0.9
+		# Range: 0.1 ~ 2.0
+		move_speed = 0.9
+		#Accuracy: random aim spread in degrees, on top of the gun's own spread. 0 = perfect aim.
+		#Applies to every armed mob with this profile (guards, extra mobs, Faction Wars).
+		# Default: 3.0
+		# Range: 0.0 ~ 30.0
+		spread_degrees = 3.0
+
+	#'Heavy Weapon' in the creative menu: launchers and cannons. Moves slower.
+	[profiles.heavy]
+		#Gun types (lowercase, as in the gunpack index) that use this profile.
+		types = ["rpg"]
+		#Maximum engagement distance in blocks. Also capped by how far the gun's bullet actually flies.
+		# Default: 48.0
+		# Range: 2.0 ~ 128.0
+		max_range = 48.0
+		#Distance the mob tries to keep to its target. It walks closer if further away.
+		# Default: 24.0
+		# Range: 1.0 ~ 128.0
+		preferred_distance = 24.0
+		#If the target comes closer than this, the mob backs off while shooting. 0 = never back off.
+		# Default: 12.0
+		# Range: 0.0 ~ 128.0
+		retreat_distance = 12.0
+		#Movement speed multiplier while approaching, retreating or repositioning.
+		# Default: 0.6
+		# Range: 0.1 ~ 2.0
+		move_speed = 0.6
+		#Accuracy: random aim spread in degrees, on top of the gun's own spread. 0 = perfect aim.
+		#Applies to every armed mob with this profile (guards, extra mobs, Faction Wars).
+		# Default: 4.0
+		# Range: 0.0 ~ 30.0
+		spread_degrees = 4.0
+
+[suppression]
+	#Suppressive fire: bullets from these gun types fired by armed mobs slow down everyone they hit
+	#or fly close past (near misses count too). Under sustained fire the slowness builds up to max_level.
+	#Allies of the shooter are not affected.
+	enabled = true
+	#Gun types that cause suppression (as in the gunpack index: pistol, smg, rifle, shotgun, sniper, mg, rpg).
+	types = ["mg"]
+	#Who gets slowed: PLAYERS, MOBS or BOTH.
+	#Allowed Values: PLAYERS, MOBS, BOTH
+	targets = "BOTH"
+	#How long the slowness lasts after the last bullet, in seconds.
+	# Default: 2.0
+	# Range: 0.1 ~ 30.0
+	duration_seconds = 1.5
+	#Slowness level of the first bullet (1 = Slowness I).
+	# Default: 1
+	# Range: 1 ~ 5
+	level = 1
+	#Highest slowness level under sustained fire (one level more every half second of fire).
+	# Default: 3
+	# Range: 1 ~ 5
+	max_level = 3
+	#How close (in blocks) a bullet has to fly past to suppress.
+	# Default: 2.5
+	# Range: 0.5 ~ 8.0
+	radius = 2.5
+
+[diplomacy]
+	#Guards talk to players (warnings, truce, disguise).
+	messages = true
+	#Where messages appear: CHAT or ACTION_BAR (above the hotbar).
+	#Allowed Values: CHAT, ACTION_BAR
+	message_display = "CHAT"
+	#Guards aim at a player for this many seconds before opening fire, and warn them. 0 = no warning.
+	# Default: 3.0
+	# Range: 0.0 ~ 30.0
+	warning_seconds = 3.0
+	#If a warned player puts their weapon away during the warning, the guards stand down.
+	#Swords, axes, bows, crossbows, tridents, maces and TaCZ guns count as weapons.
+	lower_weapon_stands_down = true
+	#After standing down, guards leave an unarmed player alone for this many seconds.
+	#Attacking a guard, villager or iron golem ends this immediately.
+	# Default: 60
+	# Range: 0 ~ 3600
+	stand_down_seconds = 60
+	#How long guards remember attacks on a guard, villager or iron golem (strikes), and how long
+	#an aggressor stays an aggressor. Aggressors are shot without a warning, lowering the weapon doesn't help.
+	#0 = disabled (every attack only causes a normal warning).
+	# Default: 30
+	# Range: 0 ~ 3600
+	aggression_memory_seconds = 30
+	#Number of attacks within aggression_memory_seconds after which a player counts as aggressor.
+	#With 2, the first hit still gets a warning (e.g. an accident), the second one doesn't.
+	# Default: 2
+	# Range: 1 ~ 10
+	strikes_before_aggression = 2
+
+	#White flag: guards don't attack players holding one of these items in either hand.
+	[diplomacy.truce]
+		enabled = true
+		#Items that count as a white flag. The ominous banner never counts, even though it is a white banner.
+		items = ["minecraft:white_wool", "minecraft:white_banner"]
+		#Attacking a guard, villager or iron golem under a white flag voids the truce for this many seconds.
+		# Default: 60
+		# Range: 0 ~ 3600
+		break_cooldown_seconds = 60
+		#Faction Wars events: raising the white flag surrenders to the side that is after you.
+		#Hunt, ambush and caravan raid: they take all your TaCZ guns, ammo and attachments and let you go
+		#(a caravan escort counts as failed). Siege (the player it was declared on): you capitulate, the attackers
+		#plunder containers in your base and leave. Battle: you are a spectator again. The loot is gone for good.
+		surrender_in_events = true
+		#The flag only counts if you haven't hit anyone of that event for this many seconds.
+		# Default: 3
+		# Range: 0 ~ 60
+		surrender_grace_seconds = 3
+		#Siege surrender: share of all filled container slots in your base that gets plundered.
+		#Base = your team's FTB Chunks claims around the commander, otherwise base.radius around your /base set
+		#(or around the commander without a base).
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		plunder_share = 0.25
+		#Siege surrender: never more than this many stacks are taken.
+		# Default: 27
+		# Range: 0 ~ 1000
+		plunder_max_stacks = 27
+		#Siege surrender: this share of the plundered stacks is TaCZ items (guns, ammo, attachments) if there are
+		#enough, the rest is random other items.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		plunder_tacz_share = 0.5
+
+	#Disguise: players holding or wearing an ominous banner are ignored by illagers.
+	[diplomacy.disguise]
+		enabled = true
+		#Armed guards treat disguised players as enemies.
+		guards_attack_disguised = true
+		#Attacking an illager while disguised blows the cover for this many seconds.
+		# Default: 60
+		# Range: 0 ~ 3600
+		break_cooldown_seconds = 60
+
+	#Faction Wars reputation per player and faction (-1000 to 1000). Shown above the gear score in the inventory.
+	#Tiers: Hated <= -500, Hostile <= -100, Neutral, Friendly >= 100, Allied >= 500.
+	#Hostile/Hated: that faction's event mobs always attack you and its caravans don't trade with you.
+	#Hated factions also hunt and ambush you more often. Friendly/Allied: caravan discount.
+	#Allied: in a siege they send help in the last wave (if they are enemies of the attackers).
+	#Plain vanilla mobs never count, only faction mobs from events.
+	[diplomacy.reputation]
+		enabled = true
+		#Reputation lost with a faction for killing one of its event mobs.
+		# Default: 5
+		# Range: 0 ~ 1000
+		kill_loss = 5
+		#Reputation gained in total by the enemies of that faction for the same kill, split evenly
+		#(at least 1 each). 6 with 3 enemies = 2 each, with 9 enemies = 1 each. Arch enemies get their share x arch_enemy_multiplier.
+		# Default: 6
+		# Range: 0 ~ 1000
+		kill_bonus_enemies_total = 6
+		#Reputation lost with every ally of that faction (allied_with, same family) for the same kill.
+		# Default: 2
+		# Range: 0 ~ 1000
+		kill_loss_allies = 2
+		#Arch enemies (arch_enemies in factions.json): the bonus with them counts this many times.
+		# Default: 2.0
+		# Range: 1.0 ~ 10.0
+		arch_enemy_multiplier = 2.0
+		#Gained with the caravan's faction for escorting it to its destination.
+		# Default: 50
+		# Range: 0 ~ 1000
+		caravan_escorted = 50
+		#Lost with the caravan's faction when you helped the raiders and the trader died.
+		# Default: 100
+		# Range: 0 ~ 1000
+		caravan_robbed_loss = 100
+		#Gained with the raiders' faction in that case (not for bandits).
+		# Default: 30
+		# Range: 0 ~ 1000
+		caravan_robbed_bonus = 30
+		#Lost with the caravan's faction when you surrender with the white flag while escorting it.
+		# Default: 25
+		# Range: 0 ~ 1000
+		escort_surrender_loss = 25
+		#Gained with the caravan's faction per trade.
+		# Default: 2
+		# Range: 0 ~ 1000
+		caravan_trade = 2
+		#Gained with every enemy of the attackers when you win a siege.
+		# Default: 20
+		# Range: 0 ~ 1000
+		siege_won = 20
+		#Caravan discount at Friendly (0.2 = 20 % cheaper).
+		# Default: 0.2
+		# Range: 0.0 ~ 0.9
+		discount_friendly = 0.2
+		#Caravan discount at Allied.
+		# Default: 0.4
+		# Range: 0.0 ~ 0.9
+		discount_allied = 0.4
+		#Wanted poster: the fixer buys your reputation back up to this value, never higher.
+		#Price = the faction's "fine" in caravan_trades.json x every started 100 below this value.
+		# Default: -200
+		# Range: -1000 ~ 0
+		buyout_limit = -200
+		#How long the fixer from a wanted poster stays.
+		# Default: 60
+		# Range: 10 ~ 600
+		fixer_seconds = 60
+		#Siege, last wave: soldiers an Allied faction sends to help you. 0 = none.
+		# Default: 4
+		# Range: 0 ~ 32
+		ally_reinforcements = 4
+
+	#Mercenaries: faction soldiers that follow you until they die. Hired with a mercenary contract
+	#(right-click a block). You need at least Friendly reputation with the contract's faction.
+	#Contracts: rare reward for escorting a caravan or winning a siege, or bought from a caravan at Friendly.
+	#Right-click your mercenary: equipment, ammo pouch, follow / wait / guard, rename, dismiss.
+	#They only shoot with ammo from their own pouch or off hand. Death is final.
+	[diplomacy.mercenaries]
+		enabled = true
+		#Mercenaries per player at the same time.
+		# Default: 15
+		# Range: 1 ~ 100
+		max_per_player = 15
+		#Chance for a contract as reward: per escort when a caravan arrives, and for the owner of a won siege
+		#(then from a faction that is hostile to the attackers and Friendly with you).
+		# Default: 0.01
+		# Range: 0.0 ~ 1.0
+		contract_reward_chance = 0.01
+		#Full magazines a new mercenary brings along (only if he spawns with a gun).
+		# Default: 3
+		# Range: 0 ~ 64
+		start_magazines = 3
+		#Following mercenaries teleport to you when they are further away than this (blocks).
+		# Default: 24
+		# Range: 8 ~ 128
+		teleport_distance = 24
+		#Guard mode: radius around the guard point they patrol and defend.
+		# Default: 32
+		# Range: 4 ~ 128
+		guard_radius = 32
+		#Work mode: radius around the work point (fields, animals, chests with ammo).
+		#Wait and guard mode also take ammo from chests within this radius.
+		# Default: 32
+		# Range: 4 ~ 128
+		work_radius = 32
+		#Off duty (schedule day only / night only): they look for a free bed this far from their guard or work point.
+		# Default: 32
+		# Range: 4 ~ 128
+		rest_radius = 32
+		#Mercenaries with a gun take on enemies up to this far away (blocks). Without a gun: at most 24.
+		# Default: 68
+		# Range: 16 ~ 128
+		engage_radius = 68
+		#Animal breeding: default breeding stock, the number of adult animals per kind they keep (can be changed per mercenary).
+		#They keep breeding up to twice that number (calves included) and slaughter grown-up adults above the stock.
+		#Named, leashed and tamed animals are never touched.
+		# Default: 6
+		# Range: 2 ~ 64
+		animal_target = 6
+		#Barrels/chests a mercenary can be linked to for his work. Linking a linked one again unlinks it.
+		# Default: 5
+		# Range: 1 ~ 16
+		max_containers = 5
+		#Crafting task: seconds per craft at the crafting table. Lower = faster, but more server work
+		#on servers with many crafting mercenaries. He only checks his barrels every few seconds.
+		# Default: 2.0
+		# Range: 0.25 ~ 60.0
+		craft_seconds = 2.0
+		#Kills of your mercenaries change your reputation like your own kills.
+		kills_count_for_reputation = true
+
+[pouch]
+	#Give armed guards an extra hidden pouch for reserve ammo and food.
+	#Players who may open the guard's inventory can open the pouch with sneak + right-click.
+	#The pouch contents drop when the guard dies.
+	enabled = true
+	#Pouch size in rows of 9 slots. Only affects newly created pouches.
+	# Default: 1
+	# Range: 1 ~ 3
+	rows = 1
+	#Full magazines of reserve ammo put into the pouch on spawn.
+	# Default: 2
+	# Range: 0 ~ 64
+	start_magazines = 2
+	#Food item put into the pouch on spawn. Empty = no food.
+	food_item = "minecraft:bread"
+	#Amount of food put into the pouch on spawn.
+	# Default: 4
+	# Range: 0 ~ 64
+	food_count = 4
+	#Guards eat food from the pouch when out of combat and below this fraction of max health.
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	eat_below_health = 0.6
+
+[resupply]
+	#Periodically give armed mobs matching ammo, so they don't run dry over time.
+	#Guards with a pouch receive it in the pouch, other mobs in the off hand.
+	#If the off hand holds something else (shield, food), nothing is put there.
+	enabled = true
+	#Seconds between resupplies for each mob.
+	# Default: 300
+	# Range: 10 ~ 86400
+	interval_seconds = 300
+	#Full magazines added per resupply.
+	# Default: 1
+	# Range: 1 ~ 64
+	magazines_per_resupply = 1
+	#Resupply stops once the mob carries this many full magazines in total (off hand + pouch).
+	# Default: 6
+	# Range: 1 ~ 64
+	max_magazines = 6
+	#Which guards get resupplied.
+	#MOD_EQUIPPED = only guards that got their gun from this mod.
+	#ALL = every guard holding a TaCZ gun, including guards equipped by players.
+	#Allowed Values: MOD_EQUIPPED, ALL
+	guard_scope = "MOD_EQUIPPED"
+	#Also resupply mobs from [extra_mobs] that got their gun from this mod (e.g. pillagers).
+	include_extra_mobs = true
+	#If true, mobs are resupplied everywhere and the location settings below are ignored.
+	anywhere = false
+	#Structures in which mobs get resupplied. Structure IDs or structure tags (prefixed with #).
+	#Defaults: all villages, pillager outposts and woodland mansions.
+	structures = ["#minecraft:village", "minecraft:pillager_outpost", "minecraft:mansion"]
+	#Mobs within this many blocks of a village bell also get resupplied.
+	#This covers player-built villages, which are not real structures. 0 = disabled.
+	# Default: 48
+	# Range: 0 ~ 256
+	bell_radius = 48
+	#Guards low on ammo walk to the nearest village bell, inside the village or outside,
+	#refill there right away and then return to their patrol point or where they came from.
+	#Completely out of ammo, they also fall back to the bell in the middle of a fight.
+	#Guards following a player never do this.
+	walk_to_bell = true
+	#Guards walk to the bell once they carry fewer than this many full magazines in total.
+	# Default: 2
+	# Range: 1 ~ 64
+	walk_below_magazines = 2
+	#How far (in blocks) guards look for a bell to walk to.
+	# Default: 128
+	# Range: 16 ~ 256
+	bell_search_radius = 128
+
+#Faction Wars: factions that fight each other, and wars you can watch or join.
+#Factions themselves are defined in config/taczarmedmobs/factions.json.
+[faction_wars]
+	#Master switch (on by default since 2.10.1). false = everything in this section is off and the mod behaves like before.
+	enabled = true
+	#Internal, don't change. Used once to switch Faction Wars on when updating from an older version.
+	# Default: 1
+	# Range: 1 ~ 1000
+	config_version = 2
+	#Chance that a mob spawned by Faction Wars (battles, sieges, reinforcements) gets a TaCZ gun. Mobs with hands get one (zombies, skeletons, pillagers,
+	#vindicators, piglins, wither skeletons ...) plus everything in [extra_mobs] entities.
+	#Per mob in factions.json: "guns": false / true. Guards use [guards] gun_chance as usual.
+	#With [faction_wars.rules.adaptive] this is the chance at normal_score (score 100): lower for weak players, every
+	#mob armed from gun_chance_full_score on.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	gun_chance = 0.5
+	#Damage that Faction Wars mobs deal to players is multiplied by this (0.01 - 1.0).
+	#1.0 = normal, 0.25 = a quarter (default: full-auto guns kill players in seconds otherwise). Their accuracy is set per combat profile under [ai.profiles] (spread_degrees).
+	#With [faction_wars.rules.adaptive] this is the value at normal_score (score 100), see player_damage_at_zero / _at_max.
+	# Default: 0.25
+	# Range: 0.01 ~ 1.0
+	player_damage_multiplier = 0.25
+
+	[faction_wars.factions]
+		#Factions also apply to normal mobs, outside of wars:
+		#enemy factions attack each other (e.g. pillagers vs. zombies), allies never attack each other.
+		#false = factions only matter for mobs spawned by a war.
+		relations_outside_events = true
+		#If false, allies can't hurt each other (stray bullets, arrows, explosions from allied mobs).
+		friendly_fire = false
+		#Show role and faction above mobs spawned by a war, e.g. "Rifleman | Illagers".
+		nameplates = true
+
+	#Rules for ALL Faction Wars events (battles, sieges, hunts, ambushes; natural or by command).
+	[faction_wars.rules]
+		#Never more than this many mobs alive per side at once (keeps the server fast). Applies to battles, sieges,
+		#hunts and ambushes: bigger groups (adaptive strength, siege reinforcements) follow when others die.
+		# Default: 30
+		# Range: 1 ~ 200
+		max_alive_per_side = 30
+		#After a war ended, the survivors stay this many seconds, then they leave (are removed).
+		# Default: 30
+		# Range: 0 ~ 3600
+		cleanup_seconds = 30
+		#Map reset: everything a war changed (blocks dug out, walls built, explosions, fire) is put back
+		#after it ended, including chest contents. While on, blocks broken by war mobs drop nothing (no duplication).
+		#Blocks a player placed in the meantime are never overwritten.
+		restore_world = true
+		#Seconds after the end of a war until the map is reset.
+		# Default: 10
+		# Range: 0 ~ 3600
+		restore_delay_seconds = 10
+		#If false, war mobs can't set blocks on fire (blaze fireballs, ghast explosions). Burning mobs still burn.
+		event_fire = true
+		#Undead spawned by a war don't burn in sunlight.
+		sun_protection = true
+		#Extra max health for every mob spawned by a war, so battles last longer.
+		#Added on top of the mob's normal health (zombie 20 -> 120 with the default).
+		#Note: vanilla Minecraft caps max health at 1024; mods like AttributeFix lift that cap.
+		#With [faction_wars.rules.adaptive] this is the value at normal_score (score 100).
+		# Default: 100.0
+		# Range: 0.0 ~ 10000.0
+		bonus_health = 100.0
+		#Extra armor points for every mob spawned by a war (a full diamond set is 20, Minecraft caps armor at 30).
+		#With [faction_wars.rules.adaptive] this is the value at normal_score (score 100), see bonus_armor_at_zero / _at_max.
+		#Note: many TaCZ guns ignore part of the armor, health helps more against guns.
+		# Default: 15.0
+		# Range: 0.0 ~ 30.0
+		bonus_armor = 15.0
+		#Extra armor toughness for every mob spawned by a war (diamond armor has 8 in total).
+		# Default: 0.0
+		# Range: 0.0 ~ 20.0
+		bonus_armor_toughness = 0.0
+		#Damage that war mobs deal to each other is multiplied by this. 0.5 = battles last about twice as long.
+		#Damage to and from players is not changed.
+		# Default: 0.75
+		# Range: 0.05 ~ 5.0
+		mob_damage_multiplier = 0.75
+		#War supply: every this many seconds every war mob with a gun gets ammo, also in combat and anywhere
+		#(not while fleeing, not after the war). 0 = off. Guards and normal mobs use [resupply] as before.
+		# Default: 20
+		# Range: 0 ~ 3600
+		resupply_seconds = 20
+		#Magazines per war supply.
+		# Default: 1
+		# Range: 1 ~ 64
+		resupply_magazines = 1
+		#War supply stops at this many magazines carried (off hand or pouch).
+		# Default: 3
+		# Range: 1 ~ 64
+		resupply_max_magazines = 3
+		#Mobs spawn in small squads of this size instead of one big pile, so a single burst can't hit them all.
+		# Default: 3
+		# Range: 1 ~ 48
+		squad_size = 3
+		#How wide (in blocks) the squads of one group are spread out. Used for battles, hunts and siege waves.
+		# Default: 36
+		# Range: 0 ~ 128
+		spread_width = 36
+
+		#Natural events: battles, hunts, ambushes and (optional) sieges that start on their own near players.
+		#They never start inside bases (see [faction_wars.rules.base]). For testing: /taczarmedmobs event trigger <type>.
+		[faction_wars.rules.events]
+			#Master switch for natural events. false = only the commands start wars.
+			enabled = true
+			#Seconds between two checks per player. Every check rolls the chance of each event.
+			# Default: 60
+			# Range: 10 ~ 3600
+			check_interval_seconds = 60
+			#Minutes after a natural event near a player before the next one can start for him.
+			# Default: 15
+			# Range: 0 ~ 1440
+			min_minutes_between_events = 15
+			#Natural events running at the same time on the whole server.
+			# Default: 3
+			# Range: 1 ~ 32
+			max_active_events = 3
+			#Dimensions where natural events happen.
+			dimensions = ["minecraft:overworld"]
+			#No natural events for players in creative or spectator mode.
+			skip_creative = true
+			#Battles, hunts and sieges never spawn closer than this to ANY player (so nobody sees them pop up).
+			#Ambushes only keep this distance to other players, not to the one they ambush.
+			# Default: 32
+			# Range: 0 ~ 256
+			min_distance_from_players = 32
+			#A natural battle or siege with no player within this many blocks for a minute is called off (and cleaned up).
+			#Hunters and ambushers give up when their prey gets this far away.
+			# Default: 160
+			# Range: 48 ~ 1024
+			despawn_distance = 160
+			#Hunters give up after this many seconds.
+			# Default: 300
+			# Range: 30 ~ 3600
+			hunt_max_seconds = 300
+			#Ambushers give up after this many seconds.
+			# Default: 180
+			# Range: 30 ~ 3600
+			ambush_max_seconds = 180
+
+			#Two hostile factions fight each other somewhere near a player. Players are spectators until they join in.
+			[faction_wars.rules.events.battle]
+				enabled = true
+				#Chance per check (every check_interval_seconds) and player. 0.05 = on average every 20 checks.
+				# Default: 0.1
+				# Range: 0.0 ~ 1.0
+				chance = 0.1
+				#Mobs (per side for battles).
+				# Default: 6
+				# Range: 1 ~ 48
+				size = 6
+				#Spawns at least this many blocks away from the player.
+				# Default: 48
+				# Range: 0 ~ 256
+				min_distance = 48
+				#Spawns at most this many blocks away from the player (must be in loaded chunks).
+				# Default: 96
+				# Range: 8 ~ 256
+				max_distance = 96
+				#Factions that can take part. Empty = all (only pairs that are hostile to each other).
+				factions = []
+				#Only starts on its own when the (group) gear score is at least this (see [faction_wars.rules.adaptive]).
+				#0 = always. Ignored when adaptive is off and by /taczarmedmobs event trigger.
+				# Default: 0
+				# Range: 0 ~ 100000
+				min_gear_score = 0
+
+			#A hunting party of a faction tracks a player down. They always know where he is. Kill them or get away.
+			[faction_wars.rules.events.hunt]
+				enabled = true
+				#Chance per check (every check_interval_seconds) and player. 0.05 = on average every 20 checks.
+				# Default: 0.05
+				# Range: 0.0 ~ 1.0
+				chance = 0.05
+				#Mobs (per side for battles).
+				# Default: 5
+				# Range: 1 ~ 48
+				size = 5
+				#Spawns at least this many blocks away from the player.
+				# Default: 48
+				# Range: 0 ~ 256
+				min_distance = 48
+				#Spawns at most this many blocks away from the player (must be in loaded chunks).
+				# Default: 72
+				# Range: 8 ~ 256
+				max_distance = 72
+				#Factions that hunt players.
+				factions = ["illagers", "woodland_covenant", "raven_clan", "undead", "grave_legion", "plague_choir", "piglins", "gilded_syndicate", "bastion_legion", "wither", "ashen_order", "black_forge"]
+				#Only starts on its own when the (group) gear score is at least this (see [faction_wars.rules.adaptive]).
+				#0 = always. Ignored when adaptive is off and by /taczarmedmobs event trigger.
+				# Default: 20
+				# Range: 0 ~ 100000
+				min_gear_score = 20
+
+			#A small group appears close by (out of the player's sight) and attacks at once. Silent by default, see [notice.ambush].
+			[faction_wars.rules.events.ambush]
+				enabled = true
+				#Chance per check (every check_interval_seconds) and player. 0.05 = on average every 20 checks.
+				# Default: 0.05
+				# Range: 0.0 ~ 1.0
+				chance = 0.05
+				#Mobs (per side for battles).
+				# Default: 4
+				# Range: 1 ~ 48
+				size = 4
+				#Spawns at least this many blocks away from the player.
+				# Default: 16
+				# Range: 0 ~ 256
+				min_distance = 16
+				#Spawns at most this many blocks away from the player (must be in loaded chunks).
+				# Default: 24
+				# Range: 8 ~ 256
+				max_distance = 24
+				#Factions that set up ambushes.
+				factions = ["illagers", "woodland_covenant", "raven_clan", "undead", "grave_legion", "plague_choir", "piglins", "gilded_syndicate", "bastion_legion", "wither", "ashen_order", "black_forge"]
+				#Only starts on its own when the (group) gear score is at least this (see [faction_wars.rules.adaptive]).
+				#0 = always. Ignored when adaptive is off and by /taczarmedmobs event trigger.
+				# Default: 20
+				# Range: 0 ~ 100000
+				min_gear_score = 20
+
+			#A faction besieges a player's base while he is at home: his /base set, or (with FTB Chunks) his team's claim he stands in.
+			[faction_wars.rules.events.siege]
+				enabled = false
+				#Chance per check (every check_interval_seconds) and player. 0.05 = on average every 20 checks.
+				# Default: 0.02
+				# Range: 0.0 ~ 1.0
+				chance = 0.02
+				#Mobs (per side for battles).
+				# Default: 1
+				# Range: 1 ~ 48
+				size = 1
+				#Spawns at least this many blocks away from the player.
+				# Default: 0
+				# Range: 0 ~ 256
+				min_distance = 0
+				#Spawns at most this many blocks away from the player (must be in loaded chunks).
+				# Default: 0
+				# Range: 8 ~ 256
+				max_distance = 8
+				#Factions that besiege bases.
+				factions = ["illagers", "woodland_covenant", "raven_clan", "undead", "grave_legion", "plague_choir", "piglins", "gilded_syndicate", "bastion_legion", "wither", "ashen_order", "black_forge"]
+				#Only starts on its own when the (group) gear score is at least this (see [faction_wars.rules.adaptive]).
+				#0 = always. Ignored when adaptive is off and by /taczarmedmobs event trigger.
+				# Default: 50
+				# Range: 0 ~ 100000
+				min_gear_score = 50
+
+			#A caravan (trader, guards, pack animals) travels past a player and gets raided on the way. Pick a side in the chat: defend it (escort it to the end for a reward), help the raiders, or stay out. Smugglers (time = night in [faction_wars.caravan] types) only travel at night.
+			[faction_wars.rules.events.caravan]
+				enabled = true
+				#Chance per check (every check_interval_seconds) and player. 0.05 = on average every 20 checks.
+				# Default: 0.05
+				# Range: 0.0 ~ 1.0
+				chance = 0.05
+				#Mobs (per side for battles).
+				# Default: 2
+				# Range: 1 ~ 48
+				size = 2
+				#Spawns at least this many blocks away from the player.
+				# Default: 64
+				# Range: 0 ~ 256
+				min_distance = 64
+				#Spawns at most this many blocks away from the player (must be in loaded chunks).
+				# Default: 96
+				# Range: 8 ~ 256
+				max_distance = 96
+				#Factions that send caravans (each needs an entry in [faction_wars.caravan] types). Empty = all with an entry. Picked by family: every family equally often, the main faction half of the time. size = guards.
+				factions = []
+				#Only starts on its own when the (group) gear score is at least this (see [faction_wars.rules.adaptive]).
+				#0 = always. Ignored when adaptive is off and by /taczarmedmobs event trigger.
+				# Default: 0
+				# Range: 0 ~ 100000
+				min_gear_score = 0
+
+		#Bases: natural events never start inside them (plus their radius). A base is any of the following.
+		[faction_wars.rules.base]
+			#Protected radius in blocks around a base set with /base set.
+			# Default: 64
+			# Range: 8 ~ 512
+			radius = 64
+			#If FTB Chunks is installed: claimed chunks count as base, and a player's own team claims are his home for
+			#natural sieges (no /base set needed). Ignored without FTB Chunks.
+			ftb_chunks = true
+
+		#Adaptive strength: Faction Wars events adapt to the players they happen to.
+		#Every player gets a gear score from armor, melee weapon and gun (see [faction_wars.rules.adaptive.ranged_ratings]).
+		#The scores of all players within group_radius are ADDED UP (a group gets stronger enemies), up to max_score.
+		#Every value below goes in straight lines from score 0 over normal_score to max_score. At normal_score the values from
+		#[faction_wars] (gun_chance, player_damage_multiplier) and [faction_wars.rules] (bonus_health, bonus_armor) apply.
+		#Check a player with /taczarmedmobs event score [player], or hover the gear score in the inventory.
+		[faction_wars.rules.adaptive]
+			#Natural events adapt to the players' gear.
+			enabled = true
+			#Also adapt wars and sieges started by command (/taczarmedmobs war ...) to the player who started them.
+			apply_to_commands = false
+			#Players within this many blocks of the target count as his group: their scores are added up.
+			# Default: 48
+			# Range: 0 ~ 256
+			group_radius = 48
+			#Highest (group) score. The *_at_max values are reached here.
+			# Default: 1000
+			# Range: 100 ~ 100000
+			max_score = 1000
+			#Score at which everything is exactly as set up in the other sections (mob count x1, gun_chance,
+			#player_damage_multiplier, [rules] bonus_health and bonus_armor). About 105 = full iron armor, iron sword and an AKM.
+			# Default: 100
+			# Range: 1 ~ 100000
+			normal_score = 100
+
+			#Gear score of one player: armor + best melee weapon + best ranged weapon in the inventory.
+			[faction_wars.rules.adaptive.scoring]
+				#Points per armor point and per armor toughness point worn. Netherite (20 + 12) x 2.85 = 91.
+				# Default: 2.85
+				# Range: 0.0 ~ 100.0
+				armor_per_point = 2.85
+				#Points per level of Protection and Blast Protection on the armor (Projectile Protection does not work
+				#against TaCZ bullets and does not count). 4 x Protection IV = 36.
+				# Default: 2.25
+				# Range: 0.0 ~ 100.0
+				protection_per_level = 2.25
+				#Points per extra heart above 10.
+				# Default: 1.5
+				# Range: 0.0 ~ 100.0
+				health_per_heart = 1.5
+				#Points per attack damage of the best melee weapon (incl. Sharpness). Iron sword 6 x 2.5 = 15.
+				#TaCZ melee weapons (blades, wrench ...) count here with their damage, not as guns.
+				# Default: 2.5
+				# Range: 0.0 ~ 100.0
+				melee_per_damage = 2.5
+
+			#Points of ranged weapons. Only the best ranged weapon in the inventory counts.
+			#The column "rating" in config/taczarmedmobs/guns.txt shows the result for every gun.
+			[faction_wars.rules.adaptive.ranged_ratings]
+				#Rating per gun type as "type:base:spread". Within its type a gun gets up to +/- spread depending on its
+				#damage per second compared to the other guns of that type. "other" is used for types not listed.
+				type_ratings = ["pistol:20:6", "smg:30:6", "shotgun:30:6", "rifle:50:10", "mg:100:10", "sniper:100:10", "rpg:90:30", "other:40:10"]
+				#Fine tuning per gun: "namespace:gun:value" sets the rating, "namespace:gun:+5" or ":-5" changes the
+				#automatic rating. Gun ids are in guns.txt.
+				gun_ratings = ["immersive_armorer:dual_barrel_cannon:130", "eos:eos_helenas_nail:130", "pgp:cf10:130", "pgp:ns20:130", "twx:twx_nyp:130", "pgpre:z750:140", "eos:eos_riku_t2:90"]
+				#Guns that always count as loaded (they don't use ammo, e.g. through a gunpack script).
+				no_ammo_needed = ["pgpre:z750"]
+				#Guns with explosive bullets get at least this rating.
+				# Default: 80.0
+				# Range: 0.0 ~ 1000.0
+				explosive_min_rating = 80.0
+				#Bonus when anything sits in the extended magazine slot of the gun.
+				# Default: 10.0
+				# Range: 0.0 ~ 1000.0
+				extended_mag_bonus = 10.0
+				#A gun without ammo (empty, and no matching ammo or ammo box in the inventory) counts with this factor.
+				# Default: 0.5
+				# Range: 0.0 ~ 1.0
+				no_ammo_factor = 0.5
+				#A gun keeps counting as loaded for this many seconds after the player last had ammo for it, so the score
+				#doesn't jump up and down while he shoots, reloads or picks up ammo. 0 = only what he has right now.
+				# Default: 300
+				# Range: 0 ~ 86400
+				ammo_memory_seconds = 300
+				#Rating of a bow.
+				# Default: 14.0
+				# Range: 0.0 ~ 1000.0
+				bow_rating = 14.0
+				#Rating of a crossbow.
+				# Default: 28.0
+				# Range: 0.0 ~ 1000.0
+				crossbow_rating = 28.0
+
+			#What the score does. Values at score 0, at normal_score and at max_score, straight lines in between.
+			[faction_wars.rules.adaptive.effects]
+				#Mob count factor at score 0. At normal_score it is 1.0.
+				# Default: 0.6
+				# Range: 0.1 ~ 1.0
+				size_at_zero = 0.6
+				#Mob count factor at max_score (10 = +1 per 100 points with the defaults).
+				#Never more than [rules] max_alive_per_side are on the field per side: the rest follows as reinforcements.
+				# Default: 10.0
+				# Range: 1.0 ~ 100.0
+				size_at_max = 10.0
+				#Bonus health at score 0. At normal_score it is [rules] bonus_health.
+				# Default: 25.0
+				# Range: 0.0 ~ 10000.0
+				bonus_health_at_zero = 25.0
+				#Bonus health of normal mobs at max_score.
+				# Default: 300.0
+				# Range: 0.0 ~ 10000.0
+				bonus_health_at_max = 300.0
+				#Bonus health of large mobs (iron golems, ravagers ...) at max_score.
+				# Default: 1000.0
+				# Range: 0.0 ~ 100000.0
+				bonus_health_at_max_large = 1000.0
+				#Mobs with at least this much normal max health count as large mobs.
+				# Default: 60.0
+				# Range: 1.0 ~ 10000.0
+				large_mob_health = 60.0
+				#Mobs that always count as large mobs (entity ids).
+				large_mobs = []
+				#Bonus armor at score 0.
+				# Default: 4.0
+				# Range: 0.0 ~ 30.0
+				bonus_armor_at_zero = 4.0
+				#Bonus armor at max_score. Minecraft caps armor at 30.
+				# Default: 30.0
+				# Range: 0.0 ~ 30.0
+				bonus_armor_at_max = 30.0
+				#Armor toughness starts at this score (on top of [rules] bonus_armor_toughness).
+				# Default: 500
+				# Range: 0 ~ 100000
+				toughness_start_score = 500
+				#Toughness goes up every this many points after toughness_start_score.
+				# Default: 50
+				# Range: 1 ~ 100000
+				toughness_step_score = 50
+				#Toughness at toughness_start_score and per step after it (0.5 -> 5.5 at 1000). Minecraft caps it at 20.
+				# Default: 0.5
+				# Range: 0.0 ~ 20.0
+				toughness_per_step = 0.5
+				#Gun chance at score 0.
+				# Default: 0.2
+				# Range: 0.0 ~ 1.0
+				gun_chance_at_zero = 0.2
+				#From this score on every mob that can carry a gun gets one.
+				# Default: 500
+				# Range: 1 ~ 100000
+				gun_chance_full_score = 500
+				#Damage multiplier against players at score 0. At normal_score it is player_damage_multiplier.
+				# Default: 0.15
+				# Range: 0.01 ~ 1.0
+				player_damage_at_zero = 0.15
+				#Damage multiplier against players at max_score (1.0 = full gun damage).
+				# Default: 1.0
+				# Range: 0.01 ~ 1.0
+				player_damage_at_max = 1.0
+
+	#Battles between two factions (/taczarmedmobs war start and natural battles).
+	[faction_wars.war]
+		#Mobs per side when /taczarmedmobs war start is used without a size.
+		# Default: 8
+		# Range: 1 ~ 48
+		default_size = 8
+		#How far in front of the player (in blocks) the battlefield is placed.
+		# Default: 40
+		# Range: 16 ~ 96
+		spawn_distance = 40
+		#Distance between the two sides when they spawn (in blocks).
+		# Default: 32
+		# Range: 8 ~ 96
+		side_gap = 32
+		#A battle ends without a winner after this many seconds.
+		# Default: 600
+		# Range: 60 ~ 7200
+		max_duration_seconds = 600
+
+	#Sieges: /taczarmedmobs war declare <faction>. A faction attacks your commander in waves:
+	#scouts, main force, then their leader with an escort. Keep the commander alive to win.
+	[faction_wars.siege]
+		#Health of your commander (a villager that can't move). If he dies, the siege is lost.
+		#Vanilla caps max health at 1024; above that you need a mod like AttributeFix.
+		# Default: 2500
+		# Range: 20 ~ 20000
+		commander_health = 2500
+		#If false, players can't hurt the commander (no accidental friendly fire, no griefing).
+		commander_player_damage = false
+		#Seconds until the first wave (scouts) arrives.
+		# Default: 10
+		# Range: 0 ~ 600
+		first_wave_delay_seconds = 10
+		#Pause in seconds after a wave is beaten, before the next one comes.
+		# Default: 30
+		# Range: 0 ~ 600
+		wave_pause_seconds = 30
+		#The next wave comes at the latest after this many seconds, even if the current one is not beaten.
+		# Default: 180
+		# Range: 30 ~ 1800
+		max_wave_seconds = 180
+		#Mobs in the first wave (scouts, faster than normal). 0 = no scout wave.
+		# Default: 3
+		# Range: 0 ~ 16
+		scouts = 3
+		#Mobs in the main wave.
+		# Default: 8
+		# Range: 1 ~ 48
+		main_wave_size = 8
+		#Mobs that come with the leader in the last wave.
+		# Default: 4
+		# Range: 0 ~ 48
+		leader_escort = 4
+		#Last wave: as long as the enemy leader lives, reinforcements arrive every this many seconds.
+		#The last wave is "survive and kill their leader". Once he has fallen, no more come.
+		# Default: 30
+		# Range: 5 ~ 600
+		leader_reinforcement_seconds = 30
+		#Mobs per reinforcement group. 0 = no reinforcements.
+		# Default: 4
+		# Range: 0 ~ 48
+		leader_reinforcement_size = 4
+		#Total health of the enemy leader. Vanilla caps max health at 1024; above that you need a mod like AttributeFix.
+		# Default: 3000
+		# Range: 20 ~ 20000
+		leader_health = 3000
+		#Total armor of the enemy leader (Minecraft caps armor at 30).
+		# Default: 30
+		# Range: 0 ~ 30
+		leader_armor = 30
+		#How far from the commander (in blocks) the waves spawn.
+		# Default: 40
+		# Range: 16 ~ 96
+		wave_distance = 40
+		#Morale: once the leader is dead and this share of the last wave has fallen, the rest flee.
+		#0.6 = 60 %. 1.0 = they fight to the last mob.
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		morale_threshold = 0.6
+		#Who may break and place blocks during a siege. Attackers start as soon as they can't go on
+		#(no path to their target, or standing still for a moment), not after a fixed time.
+		#ALL_ATTACKERS = every attacker digs tunnels, pillars up to targets higher up, builds bridges over gaps
+		#  and covers lava and other dangerous blocks. No engineers are spawned in this mode.
+		#LEADER_AND_ENGINEERS = only the leader digs. Engineers (invulnerable, never targeted) build pillars,
+		#  bridges and cover walls.
+		#OFF = nobody changes the world. With the gamerule mobGriefing = false nothing is changed either.
+		#Allowed Values: ALL_ATTACKERS, LEADER_AND_ENGINEERS, OFF
+		breakers = "LEADER_AND_ENGINEERS"
+		#Hardest block attackers can break. Stone 1.5, iron block 5, obsidian 50.
+		#Never: blocks with hardness -1 (bedrock ...) and the block tag #taczarmedmobs:siege_unbreakable.
+		# Default: 50.0
+		# Range: 0.0 ~ 1000.0
+		max_block_hardness = 50.0
+		#Block health = hardness x this. Each hit does 1 damage (more with a pickaxe or axe, and for big mobs).
+		#Several attackers on the same block add up their damage. 6: stone 9 hits, obsidian 300 hits.
+		# Default: 6.0
+		# Range: 0.1 ~ 1000.0
+		block_health_per_hardness = 6.0
+		#Ticks between two hits of one attacker on a block (20 = 1 second).
+		# Default: 10
+		# Range: 1 ~ 200
+		break_interval_ticks = 10
+		#Ticks between two blocks placed by one attacker.
+		# Default: 10
+		# Range: 1 ~ 200
+		build_interval_ticks = 10
+		#At a wall (the target is higher), attackers put ladders on it and climb up.
+		#Others use the same ladders, and also ladders players placed. Uses one block per ladder.
+		ladders = true
+		#How attackers get up without a wall in front of them (or if ladders = false):
+		#SCAFFOLDING = scaffolding tower under themselves, the others climb up inside it.
+		#STAIRS = stairs (one block up and one forward per step, sideways along walls), needs room.
+		#PILLAR = pillar of build_block, only the builder gets up.
+		#If the chosen method is impossible right there, they fall back to a pillar.
+		#Allowed Values: SCAFFOLDING, STAIRS, PILLAR
+		climb_method = "SCAFFOLDING"
+		#When attackers start climbing toward a higher target: horizontal distance <= height difference + this,
+		#or a wall blocks their way. Farther away they first walk on and bridge gaps at their current height,
+		#so nobody builds a pillar far away and stands on it. Up there they bridge toward the target too.
+		# Default: 4
+		# Range: 0 ~ 64
+		climb_distance = 4
+		#Blocks all attackers (or engineers) together may place per wave. The block type is build_block in factions.json.
+		# Default: 128
+		# Range: 0 ~ 4096
+		max_build_blocks_per_wave = 128
+		#Only with breakers = LEADER_AND_ENGINEERS: engineers per wave. Invulnerable, nobody targets them,
+		#bullets fly through them. They build pillars, bridges and cover walls. 0 = none.
+		# Default: 1
+		# Range: 0 ~ 8
+		engineers_per_wave = 1
+		#Engineers blow a hole into whatever blocks the way when they are close to the commander
+		#(or the attackers are stuck) and can't get through. Only blocks are destroyed, nobody is hurt.
+		#Breaks everything except bedrock-like blocks and #taczarmedmobs:siege_unbreakable, also obsidian
+		#(max_block_hardness does not apply). The floor right under the commander is spared. Restored by the map reset.
+		#TNT = he places a charge that goes off after 3 seconds. EXPLODE = he blows himself up, a new one
+		#arrives after engineer_respawn_seconds. OFF = no blasting.
+		#Allowed Values: TNT, EXPLODE, OFF
+		engineer_breach = "EXPLODE"
+		#Radius of the hole a charge blows (in blocks). 4 = about 9x9x9.
+		# Default: 4
+		# Range: 1 ~ 8
+		breach_radius = 4
+		#Engineers start blasting when they are this close to the commander (in blocks) and can't reach him.
+		# Default: 10
+		# Range: 2 ~ 48
+		breach_range = 10
+		#Seconds between two charges of one engineer.
+		# Default: 5
+		# Range: 1 ~ 600
+		breach_cooldown_seconds = 5
+		#Seconds until a missing engineer is replaced (e.g. after he blew himself up). Arrives from outside like a wave.
+		# Default: 10
+		# Range: 1 ~ 600
+		engineer_respawn_seconds = 10
+		#Only with engineer_breach = EXPLODE: engineers also blow up as soon as they reach the commander
+		#(within 3 blocks to the side), even if nothing blocks the way, e.g. when the others would have to build up.
+		explode_at_commander = true
+		#Only with engineer_breach = EXPLODE: seconds between arming and the blast. During this time the engineer
+		#glows, can be hit and can be killed - but only by players. Killed in time = no blast. The commander warns by radio.
+		# Default: 5
+		# Range: 1 ~ 30
+		engineer_fuse_seconds = 5
+		#Damage to the commander if he is within the blast of an engineer who blew himself up. 0 = blocks only.
+		# Default: 250.0
+		# Range: 0.0 ~ 100000.0
+		engineer_commander_damage = 250.0
+		#If the commander counts as unreachable (no attacker found a path and he took no damage for stuck_seconds):
+		#BREAK_BLOCKS = keep breaking and building. Waves 1 and 2 call the next wave early. If nobody is left who
+		#  can break blocks and there is still no progress after give_up_seconds, they withdraw (no winner).
+		#CANCEL = they withdraw right away. With breakers = OFF or mobGriefing = false, CANCEL is always used.
+		#Allowed Values: BREAK_BLOCKS, CANCEL
+		unreachable_action = "BREAK_BLOCKS"
+		#Seconds without a path to the commander, without hitting him and without breaking a block
+		#until he counts as unreachable.
+		# Default: 30
+		# Range: 5 ~ 600
+		stuck_seconds = 30
+		#With BREAK_BLOCKS: extra seconds without progress before the attackers withdraw.
+		# Default: 60
+		# Range: 10 ~ 1800
+		give_up_seconds = 60
+		#The commander reports in chat what happens (scouts spotted, leader fallen, ...).
+		radio_messages = true
+		#After a won siege a supply chest appears next to the commander.
+		#Contents: loot table taczarmedmobs:chests/war_reward (can be changed with a datapack).
+		reward_chest = true
+		#A siege ends without a winner after this many seconds.
+		# Default: 1200
+		# Range: 120 ~ 7200
+		max_duration_seconds = 1200
+
+	#Caravans: a trader with guards and pack animals travels along a route. The trader IS the caravan:
+	#if he dies, the caravan is lost and the pack animals can be killed for their cargo (a chest).
+	#Rewards and cargo come from loot tables taczarmedmobs:chests/caravan_reward_<faction> and caravan_cargo_<faction>.
+	[faction_wars.caravan]
+		#One caravan per faction: "faction;trader;guard;pack_animal;time". time = any or night (smugglers).
+		#Entity ids of mods work too. A faction without an entry sends no caravans.
+		#Sub-factions without their own loot tables / caravan_trades.json entry use their family's.
+		types = ["villagers;minecraft:wandering_trader;guardvillagers:guard;minecraft:llama;any", "illagers;minecraft:pillager;minecraft:pillager;minecraft:donkey;any", "piglins;minecraft:piglin;minecraft:piglin;minecraft:hoglin;any", "undead;minecraft:zombie_villager;minecraft:zombie;minecraft:zombie_horse;night", "wither;minecraft:wither_skeleton;minecraft:wither_skeleton;minecraft:skeleton_horse;night", "brass_guild;minecraft:wandering_trader;guardvillagers:guard;minecraft:mule;any", "iron_watch;minecraft:wandering_trader;minecraft:iron_golem;minecraft:donkey;any", "woodland_covenant;minecraft:pillager;minecraft:vindicator;minecraft:donkey;any", "raven_clan;minecraft:pillager;minecraft:pillager;minecraft:ravager;night", "gilded_syndicate;minecraft:piglin;minecraft:piglin_brute;minecraft:mule;any", "bastion_legion;minecraft:piglin_brute;minecraft:piglin;minecraft:hoglin;any", "grave_legion;minecraft:zombie_villager;minecraft:skeleton;minecraft:skeleton_horse;night", "plague_choir;minecraft:husk;minecraft:husk;minecraft:camel;any", "ashen_order;minecraft:wither_skeleton;minecraft:wither_skeleton;minecraft:mule;any", "black_forge;minecraft:wither_skeleton;minecraft:skeleton;minecraft:skeleton_horse;night"]
+		#Pack animals per caravan. Each carries cargo (a chest when it dies after the trader).
+		# Default: 2
+		# Range: 0 ~ 8
+		pack_animals = 2
+		#Extra health of a pack animal.
+		# Default: 200.0
+		# Range: 0.0 ~ 10000.0
+		pack_bonus_health = 200.0
+		#Trader max health at gear score 0.
+		# Default: 750.0
+		# Range: 1.0 ~ 100000.0
+		trader_health_at_zero = 750.0
+		#Trader max health at normal_score (score 100), also without adaptive strength.
+		# Default: 1500.0
+		# Range: 1.0 ~ 100000.0
+		trader_health = 1500.0
+		#Trader max health at max_score.
+		# Default: 5000.0
+		# Range: 1.0 ~ 100000.0
+		trader_health_at_max = 5000.0
+		#The trader heals this many percent of his max health per second (0.25 = 3.75 HP/s at 1500).
+		# Default: 0.25
+		# Range: 0.0 ~ 100.0
+		trader_regen_percent = 0.25
+		#Below this share of his health the trader turns invisible and invulnerable for a moment. 0 = never.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		shield_below_health = 0.5
+		#How long the trader stays invisible and invulnerable.
+		# Default: 5
+		# Range: 1 ~ 60
+		shield_seconds = 5
+		#Seconds before the trader can do it again.
+		# Default: 60
+		# Range: 1 ~ 3600
+		shield_cooldown_seconds = 60
+		#A fallen guard is back next to the trader after this many seconds, as long as the trader lives.
+		# Default: 15
+		# Range: 1 ~ 600
+		guard_respawn_seconds = 15
+		#Raid waves at gear score 0. Also sets the route length.
+		# Default: 2
+		# Range: 1 ~ 50
+		waves_at_zero = 2
+		#Raid waves at normal_score (score 100).
+		# Default: 3
+		# Range: 1 ~ 50
+		waves = 3
+		#Raid waves at max_score.
+		# Default: 10
+		# Range: 1 ~ 50
+		waves_at_max = 10
+		#The caravan travels this far between two raid waves (also sets the route length).
+		# Default: 50
+		# Range: 8 ~ 512
+		blocks_per_wave = 50
+		#Extra route length (start and final stretch). 3 waves: 3 x 50 + 100 = 250 blocks.
+		# Default: 100
+		# Range: 16 ~ 2048
+		extra_blocks = 100
+		#Factions that raid caravans. Empty = the enemies of the caravan's faction (hostile_to) plus its own faction.
+		#A faction that raids its own caravan shows up as Bandits (red names).
+		raider_factions = []
+		#Raiders per wave at normal_score (score 100), scaled with the gear score like all events.
+		# Default: 6
+		# Range: 1 ~ 48
+		wave_size = 6
+		#Never more raiders than this in one wave.
+		# Default: 10
+		# Range: 1 ~ 48
+		max_wave_size = 10
+		#Raiders spawn in a ring this far from the trader.
+		# Default: 24
+		# Range: 8 ~ 64
+		wave_spawn_distance = 24
+		#Before the first wave the caravan stops and nearby players pick a side in the chat
+		#(defend, help the raiders, stay out). The caravan is invulnerable meanwhile. 0 = no waiting.
+		# Default: 30
+		# Range: 0 ~ 120
+		choice_seconds = 30
+		#Countdown before each wave (the caravan stays invulnerable).
+		# Default: 5
+		# Range: 0 ~ 60
+		countdown_seconds = 5
+		#After a wave the caravan moves on. The next wave comes after at least this many seconds
+		#and blocks_per_wave blocks.
+		# Default: 20
+		# Range: 0 ~ 600
+		raid_pause_seconds = 20
+		#After this many seconds, raiders of a wave that are far from the caravan give up (removed).
+		# Default: 180
+		# Range: 30 ~ 1800
+		wave_max_seconds = 180
+		#Escorts must stay within this many blocks of the trader.
+		# Default: 64
+		# Range: 8 ~ 256
+		escort_radius = 64
+		#An escort that is too far away for this many seconds has failed.
+		# Default: 30
+		# Range: 0 ~ 600
+		escort_grace_seconds = 30
+		#After the trader died, his pack animals stay this many seconds before they run off (are removed).
+		# Default: 120
+		# Range: 10 ~ 3600
+		cargo_seconds = 120
+		#After the caravan arrived (or gave up), it moves on (is removed) after this many seconds.
+		# Default: 15
+		# Range: 1 ~ 600
+		despawn_after_arrival_seconds = 15
+		#Reward and cargo chests disappear (with whatever is left inside) after this many seconds. 0 = they stay.
+		# Default: 30
+		# Range: 0 ~ 3600
+		chest_despawn_seconds = 30
+		#A caravan gives up after this many seconds.
+		# Default: 2400
+		# Range: 120 ~ 14400
+		max_duration_seconds = 2400
+
+	#Messages for events, per event type.
+	[faction_wars.notice]
+		#Players within this many blocks of an event get its messages.
+		# Default: 256
+		# Range: 16 ~ 2048
+		radius = 256
+		#Play the raid horn with important messages.
+		sound = true
+
+		#Display: TITLE (big text in the middle of the screen), CHAT, ACTION_BAR or TITLE_AND_CHAT.
+		[faction_wars.notice.faction_war]
+			enabled = true
+			#Allowed Values: TITLE, CHAT, ACTION_BAR, TITLE_AND_CHAT
+			display = "TITLE"
+
+		[faction_wars.notice.siege]
+			enabled = true
+			#Allowed Values: TITLE, CHAT, ACTION_BAR, TITLE_AND_CHAT
+			display = "TITLE"
+
+		[faction_wars.notice.hunt]
+			enabled = true
+			#Allowed Values: TITLE, CHAT, ACTION_BAR, TITLE_AND_CHAT
+			display = "TITLE"
+
+		#Off by default: an ambush is supposed to be a surprise.
+		[faction_wars.notice.ambush]
+			enabled = false
+			#Allowed Values: TITLE, CHAT, ACTION_BAR, TITLE_AND_CHAT
+			display = "TITLE"
+
+		#The [Escort] button is always sent in the chat as well.
+		[faction_wars.notice.caravan]
+			enabled = true
+			#Allowed Values: TITLE, CHAT, ACTION_BAR, TITLE_AND_CHAT
+			display = "TITLE"
+
+#Guidebook (needs Patchouli): "Armed Mobs Field Manual". Can also be crafted from a book and gunpowder.
+[guide]
+	#Give every player the guidebook the first time they join a world.
+	give_on_first_join = true

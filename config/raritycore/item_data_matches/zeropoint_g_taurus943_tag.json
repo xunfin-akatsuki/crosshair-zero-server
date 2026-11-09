@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 109,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: gun taurus943",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "taurus943",
+      "description": "gun taurus943"
+    }
+  ]
+}

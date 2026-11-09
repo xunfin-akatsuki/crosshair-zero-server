@@ -1,0 +1,19 @@
+["Spawn Options"]
+	#Allow mobs to spawn in daytime
+	"Spawn In Daytime" = true
+	#Allow mobs to spawn at night (Disabling this option means no Outbreak Mob will spawn)
+	"Spawn At Night" = true
+	#Mobs will burn During Daytime
+	"Burn During Daytime" = false
+	#Allow Mobs to spawn in Overworld
+	"Spawn In Overworld" = true
+	#Allow Mobs to spawn in Nether
+	"Spawn In Nether" = false
+	#Allow Mobs to spawn in dimensions other than Overworld or Nether
+	"Spawn In Other Dimensins" = false
+	#Minimum amount of light level that allows mobs to spawn (Must be Greater Than 0)
+	"Minimum Light Level" = 0.0
+	#Maximum amount of light level that allows mobs to spawn (Must be Less Than 15)
+	"Maximum Light Level" = 15.0
+	#Controls whether the Mob will spawn after weight system, Must be between 100 and 0
+	"Overall Spawn Chance" = 100.0

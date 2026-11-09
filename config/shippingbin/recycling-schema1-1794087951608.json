@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "recoveryRate": 0.60,
+  "serviceFeeRate": 0.05,
+  "description": "Net payout = floor(min(base * count * durability * recoveryRate * marketPressure, safeCap) * (1 - serviceFeeRate)). No extra slot-based bulk discount. This is already the net quote; callers must not charge the same service fee again."
+}

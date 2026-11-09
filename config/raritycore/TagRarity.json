@@ -1,0 +1,72 @@
+{
+  "tag_rules": [
+    {
+      "tag": "c:dusts/scheelite",
+      "rarity": 4
+    },
+    {
+      "tag": "c:dusts/tungsten",
+      "rarity": 4
+    },
+    {
+      "tag": "c:gems/diamond",
+      "rarity": 4
+    },
+    {
+      "tag": "c:ingots/brass",
+      "rarity": 3
+    },
+    {
+      "tag": "c:ingots/copper",
+      "rarity": 2
+    },
+    {
+      "tag": "c:ingots/gold",
+      "rarity": 3
+    },
+    {
+      "tag": "c:ingots/iron",
+      "rarity": 3
+    },
+    {
+      "tag": "c:ingots/lead",
+      "rarity": 4
+    },
+    {
+      "tag": "c:ingots/netherite",
+      "rarity": 5
+    },
+    {
+      "tag": "c:ingots/silver",
+      "rarity": 4
+    },
+    {
+      "tag": "c:ingots/steel",
+      "rarity": 4
+    },
+    {
+      "tag": "c:ingots/tungsten",
+      "rarity": 5
+    },
+    {
+      "tag": "c:ingots/zinc",
+      "rarity": 3
+    },
+    {
+      "tag": "c:storage_blocks/tungsten",
+      "rarity": 5
+    },
+    {
+      "tag": "forge:gems/diamond",
+      "rarity": 4
+    },
+    {
+      "tag": "forge:ingots/netherite",
+      "rarity": 5
+    },
+    {
+      "tag": "minecraft:beacon_payment_items",
+      "rarity": 6
+    }
+  ]
+}

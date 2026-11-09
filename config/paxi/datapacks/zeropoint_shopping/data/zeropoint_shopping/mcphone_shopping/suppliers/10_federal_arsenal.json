@@ -1,0 +1,381 @@
+{
+  "name": "联邦军械库·班组与精确",
+  "requires_mod": "tacz",
+  "products": [
+    {
+      "id": "g_ak47",
+      "display_name": "AK-47",
+      "count": 1,
+      "price": 19200,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:ak47"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "g_m16a1",
+      "display_name": "M16A1",
+      "count": 1,
+      "price": 17850,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m16a1"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "g_qbz95",
+      "display_name": "QBZ-95",
+      "count": 1,
+      "price": 21650,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:qbz_95"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "g_sks",
+      "display_name": "SKS 战术型",
+      "count": 1,
+      "price": 20075,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:sks_tactical"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "g_cz75",
+      "display_name": "CZ75",
+      "count": 1,
+      "price": 13400,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:cz75"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "g_mk23",
+      "display_name": "HK MK23",
+      "count": 1,
+      "price": 20000,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:hk_mk23"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "g_kar98",
+      "display_name": "Kar98k",
+      "count": 1,
+      "price": 22000,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:kar98"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "g_m700",
+      "display_name": "M700",
+      "count": 1,
+      "price": 21600,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m700"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "g_ump45",
+      "display_name": "UMP45",
+      "count": 1,
+      "price": 31200,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:ump45"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "g_vector45",
+      "display_name": "Vector .45",
+      "count": 1,
+      "price": 37400,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:vector45"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "g_m870",
+      "display_name": "M870",
+      "count": 1,
+      "price": 20075,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m870"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "g_mk14",
+      "display_name": "MK14 EBR",
+      "count": 1,
+      "price": 44600,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:mk14"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "g_awp",
+      "display_name": "AWM",
+      "count": 1,
+      "price": 87600,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:ai_awp"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "g_p320",
+      "display_name": "P320",
+      "count": 1,
+      "price": 23000,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:p320"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "g_m1911",
+      "display_name": "M1911",
+      "count": 1,
+      "price": 18000,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:m1911"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "a_762x39",
+      "display_name": "7.62×39mm",
+      "count": 60,
+      "price": 1680,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:762x39"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_58x42",
+      "display_name": "5.8×42mm",
+      "count": 60,
+      "price": 1680,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:58x42"
+      },
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_308",
+      "display_name": ".308 Win",
+      "count": 40,
+      "price": 3240,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:308"
+      },
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "a_762x54",
+      "display_name": "7.62×54mmR",
+      "count": 40,
+      "price": 3240,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:762x54"
+      },
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "a_338",
+      "display_name": ".338 Lapua",
+      "count": 30,
+      "price": 2430,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:338"
+      },
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "s_acog",
+      "display_name": "ACOG TA31",
+      "count": 1,
+      "price": 250,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:scope_acog_ta31"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "s_elcan",
+      "display_name": "Elcan 4x",
+      "count": 1,
+      "price": 5000,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:scope_elcan_4x"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "s_laser_lopro",
+      "display_name": "Lopro 激光",
+      "count": 1,
+      "price": 250,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:laser_lopro"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "s_sil_phantom",
+      "display_name": "Phantom 消音器",
+      "count": 1,
+      "price": 250,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:muzzle_silencer_phantom_s1"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "s_mag2",
+      "display_name": "扩容弹匣 II",
+      "count": 1,
+      "price": 250,
+      "tacz": {
+        "type": "attachment",
+        "id": "tacz:extended_mag_2"
+      },
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    }
+  ]
+}

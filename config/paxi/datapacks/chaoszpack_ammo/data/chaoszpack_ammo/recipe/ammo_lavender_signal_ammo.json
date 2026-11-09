@@ -1,0 +1,22 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "tacz_c:case_12g"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "tacz:ammo",
+      "count": 6,
+      "components": {
+        "minecraft:custom_data": {
+          "AmmoId": "lavender:signal_ammo"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+#Infection duration
+# Default: 600
+# Range: > 0
+infectionDuration = 600
+#Base infection chance
+# Default: 80
+# Range: 0 ~ 100
+baseInfectionChance = 50
+#Minimum infection chance
+# Default: 10
+# Range: 0 ~ 100
+minimumInfectionChance = 10
+#If true, wearing armor will lower the infection chance (full Netherite will lower the chance by 60%)
+armorLowersInfectionChance = true
+#If true, random symptoms can occur when infected
+enableRandomSymptoms = true
+#Time in seconds a random symptom will last
+# Default: 30
+# Range: > 0
+randomSymptomsDuration = 30
+#Chance for a random symptom to occur when infected
+# Default: 3
+# Range: 0 ~ 100
+randomSymptomsChance = 3
+#If true, the random effects weakness and slowness effects will last until the infection is cured or drinking milk
+infiniteWeaknessAndSlowness = false
+#Time the immunity from new infections will last
+# Default: 120
+# Range: > 0
+immunityDuration = 120
+#If true, drinking milk will cure the player if infected
+milkCuresInfection = false
+#If true, holding a totem prevents the player from dying when the infection timer expires | default: true
+totemPreventsDyingFromInfection = true
+#If true, Iron Golems will attack infected players
+ironGolemAttacksInfected = false
+#If true, infected players can infect other players by attacking them
+allowPlayersToInfectPlayers = false
+#If true, infected players can infect Villagers by attacking them
+allowPlayersToInfectVillagers = false
+#If true, Zombies can infect Villagers by attacking them
+allowZombiesToInfectVillagers = false
+#If true, an infected Villager will convert into a Zombie Entity when it dies from the infection
+villagerZombieConversion = true
+#If true, enables airborne (aerosol) transmission of infection between nearby players
+enableAirborneInfection = false
+#If true, Villages are also able to transmit and receive the infection via airborne (aerosol) transmission
+allowAirborneInfectionForVillagers = false
+#If true, Villagers flee from infectious entities
+villagerFleeFromInfectiousEntities = true
+#If true, Zombies will spawn with the infectious effect (as Spreaders)
+allowZombiesToSpawnInfectious = false
+#Chance (X in 1000) for a Zombie to spawn with the infectious effect (as Spreaders)
+# Default: 155
+# Range: 1 ~ 1000
+chanceForZombieToSpawnInfectious = 155
+#Maximum radius (in blocks) for aerosol transmission of infection via breathing/spores (default: 6, min: 1)
+# Default: 6
+# Range: > 1
+airborneInfectionRadius = 6
+#Maximum infection chance at (directly adjacent a spreader) for aerosol transmission (default: 50, range: 0-100)
+# Default: 50
+# Range: 0 ~ 100
+airborneMaxChance = 50
+#Base drop chance for Contagious Flesh from zombie-type mobs (0.0 to 1.0)
+# Default: 0.075
+# Range: 0.0 ~ 1.0
+contagiousFleshDropChance = 0.075
+#Looting bonus for Contagious Flesh drops per Looting level (0.0 to 1.0)
+# Default: 0.025
+# Range: 0.0 ~ 1.0
+contagiousFleshLootingBonus = 0.025
+#If true, eating a golden apple will cure the player's infection
+goldenAppleCuresInfection = false
+#If true, eating an enchanted golden apple (god apple) will cure the player's infection
+enchantedGoldenAppleCuresInfection = false
+#If true, writes debug messages to the log
+enableDebugMessages = false

@@ -1,0 +1,179 @@
+#Sound Attract Mod - Scent System Configuration
+[scent_system]
+	#Enable the scent tracking system for mobs.
+	enableScentSystem = true
+	#List of mobs that can smell and track scent trails.
+	scentEligibleMobs = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:wolf"]
+	#Render debug particles for scent nodes (debug only, one-shot).
+	enableScentParticles = false
+	#Enable persistent gameplay scent particles that last as long as the scent node. Per-player colored.
+	enableGameplayScentParticles = false
+	#Ticks between re-spawning particles at each living scent node (lower = more frequent, higher = better performance).
+	# Default: 40
+	# Range: 5 ~ 200
+	scentParticleSpawnInterval = 40
+	#Maximum distance from a player to render scent particles.
+	# Default: 32.0
+	# Range: 8.0 ~ 128.0
+	scentParticleRenderDistance = 32.0
+	#How long a scent node lasts in ticks (default 6000 = 5 minutes).
+	# Default: 6000
+	# Range: 100 ~ 72000
+	scentNodeDurationTicks = 6000
+	#Distance in blocks the player must move to create a new scent node.
+	# Default: 5.0
+	# Range: 1.0 ~ 64.0
+	scentCreationIntervalBlocks = 5.0
+
+	[scent_system.environmental_logic]
+		#Biome temperature above which scent decays faster (Hot).
+		# Default: 1.0
+		# Range: 0.0 ~ 2.0
+		tempHeavyDecayThreshold = 1.0
+		#Biome temperature below which scent is preserved but has reduced range (Cold).
+		# Default: 0.15
+		# Range: -1.0 ~ 2.0
+		tempFreezeThreshold = 0.15
+		#Biome rainfall/humidity above which scent lasts longer (High Humidity).
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		humidityPreserveThreshold = 0.8
+		#Multiplier for scent decay rate when raining.
+		# Default: 4.0
+		# Range: 1.0 ~ 100.0
+		rainDecayMultiplier = 4.0
+		#If true, players in water will not leave scent trails.
+		waterStopsScent = true
+		#If true, rain will wash away scents faster.
+		rainWashesScents = true
+
+	[scent_system.ai_logic]
+		#How long a mob will 'camp' at the last known location of an offline player.
+		# Default: 400
+		# Range: 0 ~ 72000
+		scentAmbushDurationTicks = 400
+		#Interval (in ticks) for updating scent logic.
+		# Default: 20
+		# Range: 1 ~ 100
+		scentUpdateInterval = 20
+		#Amount of scent strength lost per tick.
+		# Default: 0.01
+		# Range: 0.0 ~ 1.0
+		scentStrengthDecay = 0.01
+		#Radius within which mobs can detect scents.
+		# Default: 16.0
+		# Range: 1.0 ~ 64.0
+		scentDetectionRadius = 16.0
+		#Maximum number of mobs that can compute a new scent path per tick (prevents lag spikes during horde scent tracking).
+		# Default: 5
+		# Range: 1 ~ 100
+		scentScanBudgetPerTick = 5
+
+	[scent_system.arrow_scent]
+		#Enable scent trails from arrows and projectiles.
+		enableArrowScentTrail = true
+		#Distance in blocks an arrow must travel to emit a new scent node.
+		# Default: 3.0
+		# Range: 0.5 ~ 16.0
+		arrowScentEmissionIntervalBlocks = 3.0
+		#Base strength of arrow scent nodes.
+		# Default: 0.8
+		# Range: 0.1 ~ 2.0
+		arrowScentStrength = 0.8
+		#How long arrow scent nodes last in ticks (default 500 = 25 seconds).
+		# Default: 500
+		# Range: 100 ~ 72000
+		arrowScentNodeDurationTicks = 500
+		#If true, fresh scent trails override sound attraction priority.
+		scentOverrideSoundPriority = true
+		#Render particles for arrow scent trails.
+		enableScentParticlesForArrows = false
+		#Max arrow scent nodes a single shooter can create per minute.
+		# Default: 20
+		# Range: 10 ~ 500
+		arrowScentRateLimitPerShooterPerMinute = 20
+		#When scentOverrideSoundPriority=true: sounds with weight strictly below this value always lose to fresh scent.
+		# Default: 10.0
+		# Range: 0.0 ~ 1000.0
+		scentOverrideSoundWeightThreshold = 10.0
+		#Above the threshold: soundWeight is compared against (scentStrength * multiplier). Higher = scent wins more often.
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		scentVsSoundHybridMultiplier = 1.0
+		#How long scent-query results are cached per mob (ticks). Lower = fresher but more CPU.
+		# Default: 5
+		# Range: 1 ~ 200
+		scentQueryCacheTtlTicks = 5
+		#Maximum mobs tracked in the scent-query cache (memory cap).
+		# Default: 4096
+		# Range: 128 ~ 65536
+		scentQueryCacheMaxEntries = 4096
+
+	[scent_system.player_odor]
+		#Ticks between player inventory odor scans.
+		# Default: 1200
+		# Range: 20 ~ 12000
+		scanIntervalTicks = 1200
+		#Base food-item odor values in the form namespace:item=value; Spoiled adds a separate spoilage-progress bonus.
+		itemValues = ["minecraft:rotten_flesh=0.25", "minecraft:beef=0.1", "minecraft:porkchop=0.1", "minecraft:chicken=0.1", "minecraft:mutton=0.1", "minecraft:rabbit=0.1", "minecraft:cod=0.05", "minecraft:salmon=0.05"]
+
+	[scent_system.wind_scent]
+		enableWindScent = true
+		# Default: 0.8
+		# Range: 0.5 ~ 1.0
+		activationThreshold = 0.8
+		# Default: 0.65
+		# Range: 0.0 ~ 0.95
+		deactivationThreshold = 0.65
+		# Default: 30
+		# Range: 1 ~ 100
+		updateIntervalTicks = 30
+		# Default: 32
+		# Range: 4 ~ 128
+		maximumDistance = 32
+		# Default: 16
+		# Range: 1 ~ 64
+		maximumParcels = 16
+		# Default: 0.9
+		# Range: 0.0 ~ 1.0
+		windshieldScentReduction = 0.9
+		#Scale Weather2's wind speed into blocks traveled per scent update.
+		# Default: 2.0
+		# Range: 0.0 ~ 4.0
+		windSpeedScale = 2.0
+		#Apply the generic rain decay multiplier to wind scent; rain effects can vary by odorant.
+		rainDecay = true
+		#Controls lateral scent spread as a fraction of wind movement; the per-update spread is capped at half a block.
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		spreadFactor = 0.2
+		#Fraction of scent strength that leaks around a solid obstruction.
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		barrierLeakage = 0.35
+		#Maximum upwind distance in blocks used to detect a windshield.
+		# Default: 4
+		# Range: 1 ~ 16
+		windshieldScanDistance = 4
+		#Minimum Weather2 wind speed for windshield protection to activate.
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		windshieldMinimumWindSpeed = 0.1
+		#Windward block coverage needed to activate the windshield indicator.
+		# Default: 0.34
+		# Range: 0.0 ~ 1.0
+		windshieldActivationThreshold = 0.34
+		#Windward block coverage below which an active windshield indicator turns off; keep below windshieldActivationThreshold to avoid flicker.
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		windshieldDeactivationThreshold = 0.25
+		#Render wind-scent wisps for players whose profile enables showWindScent.
+		enableWindScentParticles = true
+		#Ticks between wind-scent wisp bursts; higher values reduce particle and packet work.
+		# Default: 20
+		# Range: 5 ~ 100
+		windScentParticleIntervalTicks = 20
+		#Maximum wind-scent wisps sent to each viewer per burst.
+		# Default: 32
+		# Range: 1 ~ 128
+		windScentParticleMaxPerViewer = 32

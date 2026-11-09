@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att scope_sig_tango_msr_1_6",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "suffuse:scope_sig_tango_msr_1_6",
+      "description": "zeropoint: att scope_sig_tango_msr_1_6"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 120,
+  "rarity": 4,
+  "enabled": true,
+  "description": "zeropoint: att stock_carbon_bone_c5",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "stock_carbon_bone_c5",
+      "description": "att stock_carbon_bone_c5"
+    }
+  ]
+}

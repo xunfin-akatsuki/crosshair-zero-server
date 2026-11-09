@@ -1,0 +1,227 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:medkit",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:morphine",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:first_aid_supplies",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:tonic",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:bandage",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "contagion:cure_potion"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:beef_stew",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "huaxiadelight:beef_noodle_soup",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:hamburger",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cookscollection:rustic_loaf",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:large_canteen",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:purified_water_bottle",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:apple_juice",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:heating_coat_1",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:cooling_coat_1",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:snow_chestplate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:desert_chestplate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:thermal_coat_1",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:thermometer",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:water_purifier",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:cold_resistance_ring",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

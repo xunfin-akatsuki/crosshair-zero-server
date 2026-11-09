@@ -1,0 +1,284 @@
+{
+  "dynamicScaling": {
+    "dynamicScalingEnabled": true,
+    "healthScalePerPlayer": 0.0,
+    "damageScalePerPlayer": 0.05,
+    "speedScalePerPlayer": 0.0,
+    "armorScalePerPlayer": 0.0,
+    "hordeScalePerPlayer": 0.0,
+    "daysBetweenScaleIncreases": 5.0,
+    "daysHealthScaleIncrease": 0.01,
+    "daysDamageScaleIncrease": 0.01,
+    "daysSpeedScaleIncrease": 0.0,
+    "daysArmorScaleIncrease": 0.0,
+    "daysHordeScaleIncrease": 0.0,
+    "maxHealthScale": 0.3,
+    "maxDamageScale": 1.3,
+    "maxSpeedScale": 1.2,
+    "maxArmorScale": 1.2,
+    "maxHordeScale": 2.0
+  },
+  "difficultyLevels": [
+    {
+      "difficultyName": "Level 1 · 尸潮-喘息期（无尸潮）",
+      "minStartDay": 0,
+      "maxStartDay": 3,
+      "chanceForDifficultyLevelSwitch": 100,
+      "difficultySettingsHordeNights": {
+        "daysBetweenHordeNights": 9999,
+        "chanceForHordeNight": 0,
+        "spawnAdditionalWaves": true,
+        "requirePreviousWaveClear": false,
+        "cooldownBetweenWaves": 20,
+        "chanceForAdditionalWave": 0,
+        "allDayLongHordeNights": false,
+        "maxHordesPerHordeNight": 1,
+        "numberOfPlayersToGetHordePerHordeEvent": 1
+      },
+      "difficultySettingsHordeMobs": {
+        "updateHordeMobAttributes": true,
+        "updateAttributesOfThirdPartyMobs": true,
+        "healthAttributeScaleFactor": 1.0,
+        "damageAttributeScaleFactor": 1.0,
+        "speedAttributeScaleFactor": 1.0,
+        "armorAttributeScaleFactor": 1.0,
+        "hordeMobsTrackingRange": 160.0,
+        "hordeZombiesBurnInTheSun": false,
+        "vanillaZombiesBurnInTheSun": true,
+        "hordeZombiesAreFasterOnWater": false,
+        "hordeMobsCanClimbEachOther": true,
+        "blockBreaking": false,
+        "blockBreakingTier": 1
+      },
+      "difficultySettingsHordes": {
+        "hordeSizeScaleFactor": 1.0,
+        "enableRandomHordes": false,
+        "chanceForRandomHorde": 25,
+        "hordeSelectionMode": "sequential",
+        "listOfPossibleHordes": [
+          1
+        ],
+        "bossHordeEnabled": false,
+        "bossHordeId": 1
+      },
+      "difficultySettingsLureEffect": {
+        "enableLureHordeEffect": false,
+        "nonHordeZombiesCanCauseLureHordeEffect": true,
+        "chanceForLureHordeEffect": 0.0,
+        "durationForLureHordeEffect": 60,
+        "lureHordeEffectSpawnsHorde": false,
+        "chanceForLureEffectToSpawnHorde": 0.0,
+        "strongLureHordeEffectSpawnsHorde": false
+      }
+    },
+    {
+      "difficultyName": "Level 2 · 尸潮-集结期",
+      "minStartDay": 4,
+      "maxStartDay": 9,
+      "chanceForDifficultyLevelSwitch": 100,
+      "difficultySettingsHordeNights": {
+        "daysBetweenHordeNights": 3,
+        "chanceForHordeNight": 100,
+        "spawnAdditionalWaves": true,
+        "requirePreviousWaveClear": false,
+        "cooldownBetweenWaves": 20,
+        "chanceForAdditionalWave": 60,
+        "allDayLongHordeNights": false,
+        "maxHordesPerHordeNight": 2,
+        "numberOfPlayersToGetHordePerHordeEvent": 1
+      },
+      "difficultySettingsHordeMobs": {
+        "updateHordeMobAttributes": true,
+        "updateAttributesOfThirdPartyMobs": true,
+        "healthAttributeScaleFactor": 1.1,
+        "damageAttributeScaleFactor": 1.3,
+        "speedAttributeScaleFactor": 1.0,
+        "armorAttributeScaleFactor": 1.1,
+        "hordeMobsTrackingRange": 160.0,
+        "hordeZombiesBurnInTheSun": false,
+        "vanillaZombiesBurnInTheSun": true,
+        "hordeZombiesAreFasterOnWater": false,
+        "hordeMobsCanClimbEachOther": true,
+        "blockBreaking": false,
+        "blockBreakingTier": 1
+      },
+      "difficultySettingsHordes": {
+        "hordeSizeScaleFactor": 1.2,
+        "enableRandomHordes": false,
+        "chanceForRandomHorde": 25,
+        "hordeSelectionMode": "sequential",
+        "listOfPossibleHordes": [
+          1
+        ],
+        "bossHordeEnabled": false,
+        "bossHordeId": 1
+      },
+      "difficultySettingsLureEffect": {
+        "enableLureHordeEffect": true,
+        "nonHordeZombiesCanCauseLureHordeEffect": true,
+        "chanceForLureHordeEffect": 0.1,
+        "durationForLureHordeEffect": 60,
+        "lureHordeEffectSpawnsHorde": true,
+        "chanceForLureEffectToSpawnHorde": 0.35,
+        "strongLureHordeEffectSpawnsHorde": true
+      }
+    },
+    {
+      "difficultyName": "Level 3 · 尸潮-长夜期",
+      "minStartDay": 10,
+      "maxStartDay": 19,
+      "chanceForDifficultyLevelSwitch": 100,
+      "difficultySettingsHordeNights": {
+        "daysBetweenHordeNights": 3,
+        "chanceForHordeNight": 100,
+        "spawnAdditionalWaves": true,
+        "requirePreviousWaveClear": false,
+        "cooldownBetweenWaves": 20,
+        "chanceForAdditionalWave": 65,
+        "allDayLongHordeNights": false,
+        "maxHordesPerHordeNight": 3,
+        "numberOfPlayersToGetHordePerHordeEvent": 1
+      },
+      "difficultySettingsHordeMobs": {
+        "updateHordeMobAttributes": true,
+        "updateAttributesOfThirdPartyMobs": true,
+        "healthAttributeScaleFactor": 1.2,
+        "damageAttributeScaleFactor": 1.6,
+        "speedAttributeScaleFactor": 1.0,
+        "armorAttributeScaleFactor": 1.25,
+        "hordeMobsTrackingRange": 160.0,
+        "hordeZombiesBurnInTheSun": false,
+        "vanillaZombiesBurnInTheSun": true,
+        "hordeZombiesAreFasterOnWater": false,
+        "hordeMobsCanClimbEachOther": true,
+        "blockBreaking": false,
+        "blockBreakingTier": 1
+      },
+      "difficultySettingsHordes": {
+        "hordeSizeScaleFactor": 1.4,
+        "enableRandomHordes": false,
+        "chanceForRandomHorde": 25,
+        "hordeSelectionMode": "sequential",
+        "listOfPossibleHordes": [
+          1
+        ],
+        "bossHordeEnabled": false,
+        "bossHordeId": 1
+      },
+      "difficultySettingsLureEffect": {
+        "enableLureHordeEffect": true,
+        "nonHordeZombiesCanCauseLureHordeEffect": true,
+        "chanceForLureHordeEffect": 0.1,
+        "durationForLureHordeEffect": 60,
+        "lureHordeEffectSpawnsHorde": true,
+        "chanceForLureEffectToSpawnHorde": 0.35,
+        "strongLureHordeEffectSpawnsHorde": true
+      }
+    },
+    {
+      "difficultyName": "Level 4 · 尸潮-破墙期",
+      "minStartDay": 20,
+      "maxStartDay": 39,
+      "chanceForDifficultyLevelSwitch": 100,
+      "difficultySettingsHordeNights": {
+        "daysBetweenHordeNights": 3,
+        "chanceForHordeNight": 100,
+        "spawnAdditionalWaves": true,
+        "requirePreviousWaveClear": false,
+        "cooldownBetweenWaves": 20,
+        "chanceForAdditionalWave": 70,
+        "allDayLongHordeNights": false,
+        "maxHordesPerHordeNight": 3,
+        "numberOfPlayersToGetHordePerHordeEvent": 1
+      },
+      "difficultySettingsHordeMobs": {
+        "updateHordeMobAttributes": true,
+        "updateAttributesOfThirdPartyMobs": true,
+        "healthAttributeScaleFactor": 1.3,
+        "damageAttributeScaleFactor": 1.9,
+        "speedAttributeScaleFactor": 1.0,
+        "armorAttributeScaleFactor": 1.4,
+        "hordeMobsTrackingRange": 160.0,
+        "hordeZombiesBurnInTheSun": false,
+        "vanillaZombiesBurnInTheSun": true,
+        "hordeZombiesAreFasterOnWater": false,
+        "hordeMobsCanClimbEachOther": true,
+        "blockBreaking": true,
+        "blockBreakingTier": 1
+      },
+      "difficultySettingsHordes": {
+        "hordeSizeScaleFactor": 1.6,
+        "enableRandomHordes": false,
+        "chanceForRandomHorde": 25,
+        "hordeSelectionMode": "sequential",
+        "listOfPossibleHordes": [
+          1
+        ],
+        "bossHordeEnabled": false,
+        "bossHordeId": 1
+      },
+      "difficultySettingsLureEffect": {
+        "enableLureHordeEffect": true,
+        "nonHordeZombiesCanCauseLureHordeEffect": true,
+        "chanceForLureHordeEffect": 0.1,
+        "durationForLureHordeEffect": 60,
+        "lureHordeEffectSpawnsHorde": true,
+        "chanceForLureEffectToSpawnHorde": 0.35,
+        "strongLureHordeEffectSpawnsHorde": true
+      }
+    },
+    {
+      "difficultyName": "Level 5 · 尸潮-归零期",
+      "minStartDay": 40,
+      "maxStartDay": 9999,
+      "chanceForDifficultyLevelSwitch": 100,
+      "difficultySettingsHordeNights": {
+        "daysBetweenHordeNights": 3,
+        "chanceForHordeNight": 100,
+        "spawnAdditionalWaves": true,
+        "requirePreviousWaveClear": false,
+        "cooldownBetweenWaves": 20,
+        "chanceForAdditionalWave": 75,
+        "allDayLongHordeNights": false,
+        "maxHordesPerHordeNight": 3,
+        "numberOfPlayersToGetHordePerHordeEvent": 1
+      },
+      "difficultySettingsHordeMobs": {
+        "updateHordeMobAttributes": true,
+        "updateAttributesOfThirdPartyMobs": true,
+        "healthAttributeScaleFactor": 1.4,
+        "damageAttributeScaleFactor": 2.3,
+        "speedAttributeScaleFactor": 1.0,
+        "armorAttributeScaleFactor": 1.6,
+        "hordeMobsTrackingRange": 160.0,
+        "hordeZombiesBurnInTheSun": false,
+        "vanillaZombiesBurnInTheSun": true,
+        "hordeZombiesAreFasterOnWater": false,
+        "hordeMobsCanClimbEachOther": true,
+        "blockBreaking": true,
+        "blockBreakingTier": 2
+      },
+      "difficultySettingsHordes": {
+        "hordeSizeScaleFactor": 1.8,
+        "enableRandomHordes": false,
+        "chanceForRandomHorde": 25,
+        "hordeSelectionMode": "sequential",
+        "listOfPossibleHordes": [
+          1
+        ],
+        "bossHordeEnabled": false,
+        "bossHordeId": 1
+      },
+      "difficultySettingsLureEffect": {
+        "enableLureHordeEffect": true,
+        "nonHordeZombiesCanCauseLureHordeEffect": true,
+        "chanceForLureHordeEffect": 0.1,
+        "durationForLureHordeEffect": 60,
+        "lureHordeEffectSpawnsHorde": true,
+        "chanceForLureEffectToSpawnHorde": 0.35,
+        "strongLureHordeEffectSpawnsHorde": true
+      }
+    }
+  ],
+  "difficultyConfigVersion": 2
+}

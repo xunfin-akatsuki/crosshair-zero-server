@@ -1,0 +1,60 @@
+{
+  "configVersion": 1,
+  "showSkinPreviewOverlay": false,
+  "overlayPosition": "BOTTOM_RIGHT",
+  "previewScale": 30,
+  "guiScale": 1,
+  "enablePlayerPreviewCustomization": false,
+  "showTitleScreenPreview": true,
+  "showPauseMenuPreview": true,
+  "compactChangeSkinButton": false,
+  "hudOverlayRotation": 20.0,
+  "sizeModelPreviewPercentageTitleScreen": 0,
+  "sizeModelPreviewPercentageSkinMenu": 0,
+  "sizeModelPreviewPercentageCapeMenu": 0,
+  "sizeModelPreviewPercentagePauseMenu": 0,
+  "sizeModelPreviewPercentageHudOverlay": 30,
+  "positionOffsetXTitleScreen": 0,
+  "positionOffsetYTitleScreen": 0,
+  "positionOffsetXSkinMenu": 0,
+  "positionOffsetYSkinMenu": 0,
+  "positionOffsetXCapeMenu": 0,
+  "positionOffsetYCapeMenu": 0,
+  "positionOffsetXPauseMenu": 0,
+  "positionOffsetYPauseMenu": 0,
+  "positionOffsetXHudOverlay": 0,
+  "positionOffsetYHudOverlay": 0,
+  "animationSpeed": 1.0,
+  "enableSmoothRotation": true,
+  "capeAnimationSpeeds": {},
+  "maxCachedTextures": 100,
+  "networkTimeout": 5000,
+  "disableSkinTransparency": false,
+  "hideBuiltInCapes": false,
+  "favoriteCapes": [],
+  "skinSortMode": "LATEST_LAST",
+  "skinListRows": false,
+  "menuBackgroundStyle": "vanilla_blur",
+  "enablePlayerOwnSkinSystem": true,
+  "activeSkinHash": "sha256-b7f486b7661e1aafb044eeda062d2478345698881d435471b3b55dc7ac966aba",
+  "activeCpmModelHash": "",
+  "pendingCpmSkinModeReset": false,
+  "activeModelType": "auto",
+  "activeCapeHash": "",
+  "playerOwnSkinHash": "sha256-b7f486b7661e1aafb044eeda062d2478345698881d435471b3b55dc7ac966aba",
+  "playerOwnSkinHidden": false,
+  "playerOwnSkinTexture": "https://textures.minecraft.net/texture/b7f486b7661e1aafb044eeda062d2478345698881d435471b3b55dc7ac966aba",
+  "playerOwnSkinAccount": "00000000-0000-3006-998f-555b26672dc8:xunfin",
+  "accountSkins": {
+    "skins": {
+      "bf802ae6-1246-4dbd-89b5-7d7d8246ae90:Xunfin": "sha256-b7f486b7661e1aafb044eeda062d2478345698881d435471b3b55dc7ac966aba"
+    },
+    "migrated": true
+  },
+  "accountNicknames": {
+    "nicknames": {}
+  },
+  "accountHiddenArmor": {
+    "hidden": {}
+  }
+}

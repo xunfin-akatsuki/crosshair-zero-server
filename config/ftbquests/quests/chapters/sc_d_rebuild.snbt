@@ -1,0 +1,151 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sc_d_rebuild"
+	group: ""
+	id: "100000000000018A"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000000120"]
+			id: "100000000000018B"
+			rewards: [{
+				id: "100000000000010E"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "100000000000010D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000018B"]
+			id: "100000000000018C"
+			rewards: [{
+				id: "1000000000000110"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "100000000000010F"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000018C"]
+			id: "100000000000018D"
+			rewards: [{
+				id: "1000000000000112"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [{
+				id: "1000000000000111"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000018D"]
+			id: "100000000000018E"
+			rewards: [{
+				id: "1000000000000117"
+				type: "xp"
+				xp: 600
+			}]
+			tasks: [
+				{
+					count: 100L
+					id: "1000000000000113"
+					item: { count: 1, id: "superbwarfare:handgun_ammo" }
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "1000000000000114"
+					item: { count: 1, id: "superbwarfare:rifle_ammo" }
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "1000000000000115"
+					item: { count: 1, id: "superbwarfare:shotgun_ammo" }
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "1000000000000116"
+					item: { count: 1, id: "superbwarfare:sniper_ammo" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000018E"]
+			id: "100000000000018F"
+			rewards: [{
+				id: "1000000000000119"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [{
+				id: "1000000000000118"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000018F"]
+			id: "1000000000000190"
+			rewards: [{
+				id: "100000000000011B"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				id: "100000000000011A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000000190"]
+			id: "1000000000000191"
+			rewards: [
+				{
+					id: "100000000000011D"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 2
+					id: "100000000000011E"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "100000000000011C"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+	]
+}

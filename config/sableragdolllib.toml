@@ -1,0 +1,4 @@
+enableForceLoad = false
+enableRagdollHurt = true
+stunOnHurt = false
+enableInteract = false

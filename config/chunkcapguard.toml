@@ -1,0 +1,14 @@
+[CCG_Common]
+	#Scan interval in minutes
+	# Default: 30
+	# Range: > 1
+	scanInterval = 30
+	#Additional entity type IDs to monitor (ItemEntity is always tracked by default), e.g. ["minecraft:item", "minecraft:zombie"]
+	extraEntityIds = ["minecraft:item", "minecraft:zombie"]
+	#Maximum number of tracked entities per chunk before cleanup
+	# Default: 1000
+	# Range: > 1
+	maxCountPerChunk = 1000
+	#Clean the text of the message, do not modify the characters after %
+	#[English String]: §c[CCG] §7Chunk §f[%s:%s,%s]§7 has §e%s§7 restricted entities, clean instantly!
+	msg_cleanmsg = "§c[区块实体清理] §7区块 §f[%s:%s,%s]§7 有 §e%s§7 个限制实体, 顷刻焚化!"

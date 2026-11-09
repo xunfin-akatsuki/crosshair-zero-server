@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 104,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: gun aa12",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "aa12",
+      "description": "gun aa12"
+    }
+  ]
+}

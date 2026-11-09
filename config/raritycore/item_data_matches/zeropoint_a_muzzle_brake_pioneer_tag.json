@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 120,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_brake_pioneer",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "muzzle_brake_pioneer",
+      "description": "att muzzle_brake_pioneer"
+    }
+  ]
+}

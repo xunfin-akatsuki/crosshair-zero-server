@@ -1,0 +1,29 @@
+{
+  "RepairItem": "createaddition:electrum_ingot",
+  "MaxDurability": 1600,
+  "Jam": true,
+  "RepairCost": 10,
+  "XpCost": 2,
+  "Stats": [
+    {
+      "Type": [
+        "Damage",
+        "Recoil"
+      ],
+      "ReductionThreshold": 0.85,
+      "MaxReduction": 0.65
+    },
+    {
+      "Type": "AmmoSpeed",
+      "ReductionThreshold": 0.8,
+      "MaxReduction": 0.6
+    },
+    {
+      "Type": "Inaccuracy",
+      "ReductionThreshold": 0.75,
+      "MaxReduction": 0.4
+    }
+  ],
+  "JamThreshold": 25,
+  "JamChance": 0.03
+}

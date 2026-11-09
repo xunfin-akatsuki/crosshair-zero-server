@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 114,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att extended_mag_1",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "extended_mag_1",
+      "description": "att extended_mag_1"
+    }
+  ]
+}

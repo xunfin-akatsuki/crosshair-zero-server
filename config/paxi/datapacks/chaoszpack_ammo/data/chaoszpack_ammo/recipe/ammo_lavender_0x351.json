@@ -1,0 +1,116 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tacz_c:case_9mm"
+  },
+  "loops": 1,
+  "transitional_item": {
+    "id": "tacz_c:unfinished_9mm"
+  },
+  "results": [
+    {
+      "id": "tacz:ammo",
+      "count": 10,
+      "components": {
+        "minecraft:custom_data": {
+          "AmmoId": "lavender:0x351"
+        }
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_9mm"
+        },
+        {
+          "item": "zeropoint_ammo:casing_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_9mm"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_9mm"
+        },
+        {
+          "item": "zeropoint_ammo:primer_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_9mm"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_9mm"
+        },
+        {
+          "item": "zeropoint_ammo:powder_magnum"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_9mm"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_9mm"
+        },
+        {
+          "item": "tacz_c:wad"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_9mm"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_9mm"
+        },
+        {
+          "item": "tacz_c:bullet_core"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_9mm"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tacz_c:unfinished_9mm"
+        }
+      ],
+      "results": [
+        {
+          "id": "tacz_c:unfinished_9mm"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "RepairItem": "minecraft:netherite_ingot",
+  "MaxDurability": 2200,
+  "Jam": true,
+  "RepairCost": 6,
+  "XpCost": 3,
+  "Stats": [
+    {
+      "Type": [
+        "Damage",
+        "Recoil",
+        "RPM"
+      ],
+      "ReductionThreshold": 0.9,
+      "MaxReduction": 0.7
+    },
+    {
+      "Type": "AmmoSpeed",
+      "ReductionThreshold": 0.85,
+      "MaxReduction": 0.65
+    },
+    {
+      "Type": "Inaccuracy",
+      "ReductionThreshold": 0.8,
+      "MaxReduction": 0.5
+    },
+    {
+      "Type": "ADS",
+      "ReductionThreshold": 0.85,
+      "MaxReduction": 0.6
+    }
+  ],
+  "JamThreshold": 25,
+  "JamChance": 0.03
+}

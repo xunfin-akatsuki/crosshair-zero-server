@@ -1,0 +1,193 @@
+# Configuration related to card package drop distributions
+# Keep in mind to actually change drops of the pack you need to make custom datapack
+# See wiki for that
+packDrops:
+  # Defines how many cards will be dropped from normal card packs
+  packDropsCount: 5
+
+  # Defines how many cards will be dropped from repacked card packs
+  repackedDropsCount: 3
+
+  # Defines card rarity drop distributions in common packs
+  commonDrops:
+    # Drop weight of common cards
+    commonCardDropChance: 100
+
+    # Drop weight of uncommon cards
+    uncommonCardDropChance: 20
+
+    # Drop weight of rare cards
+    rareCardDropChance: 4
+
+    # Drop weight of epic cards
+    epicCardDropChance: 1
+
+    # Drop weight of legendary cards
+    legendaryCardDropChance: 0
+
+    # Drop weight of mythical cards
+    mythicalCardDropChance: 0
+
+  # Defines card rarity drop distributions in uncommon packs
+  uncommonDrops:
+    # Drop weight of common cards
+    commonCardDropChance: 45
+
+    # Drop weight of uncommon cards
+    uncommonCardDropChance: 50
+
+    # Drop weight of rare cards
+    rareCardDropChance: 12
+
+    # Drop weight of epic cards
+    epicCardDropChance: 3
+
+    # Drop weight of legendary cards
+    legendaryCardDropChance: 1
+
+    # Drop weight of mythical cards
+    mythicalCardDropChance: 0
+
+  # Defines card rarity drop distributions in rare packs
+  rareDrops:
+    # Drop weight of common cards
+    commonCardDropChance: 15
+
+    # Drop weight of uncommon cards
+    uncommonCardDropChance: 45
+
+    # Drop weight of rare cards
+    rareCardDropChance: 50
+
+    # Drop weight of epic cards
+    epicCardDropChance: 12
+
+    # Drop weight of legendary cards
+    legendaryCardDropChance: 2
+
+    # Drop weight of mythical cards
+    mythicalCardDropChance: 1
+
+  # Defines card rarity drop distributions in epic packs
+  epicDrops:
+    # Drop weight of common cards
+    commonCardDropChance: 3
+
+    # Drop weight of uncommon cards
+    uncommonCardDropChance: 15
+
+    # Drop weight of rare cards
+    rareCardDropChance: 45
+
+    # Drop weight of epic cards
+    epicCardDropChance: 50
+
+    # Drop weight of legendary cards
+    legendaryCardDropChance: 10
+
+    # Drop weight of mythical cards
+    mythicalCardDropChance: 2
+
+  # Defines card rarity drop distributions in legendary packs
+  legendaryDrops:
+    # Drop weight of common cards
+    commonCardDropChance: 0
+
+    # Drop weight of uncommon cards
+    uncommonCardDropChance: 3
+
+    # Drop weight of rare cards
+    rareCardDropChance: 15
+
+    # Drop weight of epic cards
+    epicCardDropChance: 45
+
+    # Drop weight of legendary cards
+    legendaryCardDropChance: 50
+
+    # Drop weight of mythical cards
+    mythicalCardDropChance: 8
+
+  # Defines card rarity drop distributions in mythical packs
+  mythicalDrops:
+    # Drop weight of common cards
+    commonCardDropChance: 0
+
+    # Drop weight of uncommon cards
+    uncommonCardDropChance: 0
+
+    # Drop weight of rare cards
+    rareCardDropChance: 3
+
+    # Drop weight of epic cards
+    epicCardDropChance: 15
+
+    # Drop weight of legendary cards
+    legendaryCardDropChance: 45
+
+    # Drop weight of mythical cards
+    mythicalCardDropChance: 60
+
+# Configuration related to mob drops
+# Keep in mind to actually change drops of the pack you need to make custom datapack
+# See wiki for that
+mobDrops:
+  # Chance that any card pack drop will be dropped
+  mobPackDropChance: 0.0
+
+  # Common card pack drop weight
+  commonPackDrop: 30
+
+  # Uncommon card pack drop weight
+  uncommonPackDrop: 25
+
+  # Rare card pack drop weight
+  rarePackDrop: 18
+
+  # Epic card pack drop weight
+  epicPackDrop: 13
+
+  # Legendary card pack drop weight
+  legendaryPackDrop: 10
+
+  # Mythical card pack drop weight
+  mythicalPackDrop: 4
+
+# Configuration related to album bonuses
+# Keep in mind to actually change the bonuses to something you need to make custom datapack
+# See wiki for that
+bonusConfig:
+  # Allows you to disable the default health boost effect
+  healthBonusEnabled: true
+
+  # Allows you to disable the default 'Tools' category haste effect
+  hasteBonusEnabled: true
+
+  # Allows you to disable the default 'Armor' category resistance effect
+  resistanceBonusEnabled: true
+
+  # Allows you to disable the default 'Mob' category strength effect
+  strengthBonusEnabled: true
+
+  # Allows you to disable the default 'Nature' category regeneration effect
+  regenerationBonusEnabled: true
+
+  # Allows you to disable the default 'Items' category speed effect
+  speedBonusEnabled: true
+
+  # Allows you to configure health boost steps given from album points
+  # 1 = 0.5 hearts
+  healthBonusLevelSteps:
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 40
+
+  # Default effect amplifier given when collecting all cards within single category
+  baseMobEffectAmplifier: 0
+
+  # Default effect amplifier given when collecting all cards within single category with Mythical rarity
+  fullMobEffectAmplifier: 1
+

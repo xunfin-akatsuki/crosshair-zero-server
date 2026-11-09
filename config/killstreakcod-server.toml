@@ -1,0 +1,167 @@
+#对本实例所有世界生效；联机使用服务端配置。
+#Global rules; multiplayer uses the hosting server.
+[earning]
+	#按得分而非击杀获取奖励；切换时保留库存、清空未完成进度。
+	#Default: false
+	scorestreaks = false
+	#开启后独立循环累计且死亡不清进度；关闭后每条命每种奖励只自然获取一次。
+	#Default: true
+	repeatableRewards = true
+	#只计敌对生物、Boss 和敌方玩家；关闭后其他非友军生物也可计数。
+	#Default: true
+	hostileKillsOnly = true
+
+[rewards]
+	#是否允许获取与使用核弹，默认关闭。
+	#Default: false
+	mgbEnabled = false
+	#是否允许获取与使用无畏战甲，默认关闭。
+	#Default: false
+	juggernautEnabled = false
+
+[research]
+	#是否启用总部终端研究与预付材料系统。关闭后所有玩家直接使用连杀模式，且不应用任何升级；既有研究保留。
+	#Default: true
+	terminalEnabled = true
+	#禁用升级研究、装配及效果，保留已保存的研究与装配选择。
+	#Default: false
+	disableUpgrades = false
+
+[airspace]
+	#是否检查航线与机体上下三格空间并自动抬升；关闭不改变地狱禁飞规则。
+	#Default: true
+	airspaceChecks = true
+	#炮艇遥控地面区块观察半径，单位为区块。
+	#Gunship ground watch radius in chunks.
+	# Default: 32
+	# Range: 16 ~ 32
+	gunshipViewDistance = 32
+
+#武器基础伤害，1 点为半颗心；0 可关闭该武器的伤害。
+#Base damage before armour and explosion falloff; one point is half a heart. Zero disables damage.
+[damage]
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 32.0
+	# Range: 0.0 ~ 1000000.0
+	bombDrone = 32.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 35.0
+	# Range: 0.0 ~ 1000000.0
+	clusterMine = 35.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 64.0
+	# Range: 0.0 ~ 1000000.0
+	mortar = 64.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 24.0
+	# Range: 0.0 ~ 1000000.0
+	precisionAirstrike = 24.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 180.0
+	# Range: 0.0 ~ 1000000.0
+	cruiseMissile = 180.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 240.0
+	# Range: 0.0 ~ 1000000.0
+	sae = 240.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 3.0
+	# Range: 0.0 ~ 1000000.0
+	sentryGun = 3.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 6.0
+	# Range: 0.0 ~ 1000000.0
+	wheelsonCannon = 6.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 8.0
+	# Range: 0.0 ~ 1000000.0
+	wheelsonSplash = 8.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 3.0
+	# Range: 0.0 ~ 1000000.0
+	overwatchHelo = 3.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 3.5
+	# Range: 0.0 ~ 1000000.0
+	vtolCannon = 3.5
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 55.0
+	# Range: 0.0 ~ 1000000.0
+	vtolRocket = 55.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 8.0
+	# Range: 0.0 ~ 1000000.0
+	vtolHerculesCannon = 8.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 12.0
+	# Range: 0.0 ~ 1000000.0
+	vtolHerculesSplash = 12.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 100.0
+	# Range: 0.0 ~ 1000000.0
+	stealthBomber = 100.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 14.0
+	# Range: 0.0 ~ 1000000.0
+	chopperCannon = 14.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 20.0
+	# Range: 0.0 ~ 1000000.0
+	chopperSplash = 20.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 60.0
+	# Range: 0.0 ~ 1000000.0
+	chopperRocket = 60.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 8.0
+	# Range: 0.0 ~ 1000000.0
+	gunship25mm = 8.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 12.0
+	# Range: 0.0 ~ 1000000.0
+	gunship25mmSplash = 12.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 45.0
+	# Range: 0.0 ~ 1000000.0
+	gunship40mm = 45.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 100.0
+	# Range: 0.0 ~ 1000000.0
+	gunship105mm = 100.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 55.0
+	# Range: 0.0 ~ 1000000.0
+	guidedRocket = 55.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 8.0
+	# Range: 0.0 ~ 1000000.0
+	m134 = 8.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	# Default: 100000.0
+	# Range: 0.0 ~ 1000000.0
+	mgb = 100000.0

@@ -1,0 +1,102 @@
+{
+  "name": "工业原料行",
+  "products": [
+    {
+      "id": "andesite_alloy",
+      "item": "create:andesite_alloy",
+      "count": 16,
+      "price": 800,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "brass_ingot",
+      "item": "create:brass_ingot",
+      "count": 12,
+      "price": 600,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "iron_sheet",
+      "item": "create:iron_sheet",
+      "count": 12,
+      "price": 24
+    },
+    {
+      "id": "copper_sheet",
+      "item": "create:copper_sheet",
+      "count": 12,
+      "price": 24
+    },
+    {
+      "id": "precision_mechanism",
+      "item": "create:precision_mechanism",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "steel_plate",
+      "item": "superbwarfare:steel_plate",
+      "count": 12,
+      "price": 96
+    },
+    {
+      "id": "copper_plate",
+      "item": "superbwarfare:copper_plate",
+      "count": 12,
+      "price": 96
+    },
+    {
+      "id": "iron_ingot",
+      "item": "minecraft:iron_ingot",
+      "count": 16,
+      "price": 352
+    },
+    {
+      "id": "copper_ingot",
+      "item": "minecraft:copper_ingot",
+      "count": 16,
+      "price": 160
+    },
+    {
+      "id": "coal_block",
+      "item": "minecraft:coal_block",
+      "count": 4,
+      "price": 200
+    },
+    {
+      "id": "motor",
+      "item": "superbwarfare:motor",
+      "count": 4,
+      "price": 200,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "large_motor",
+      "item": "superbwarfare:large_motor",
+      "count": 1,
+      "price": 250,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    }
+  ]
+}

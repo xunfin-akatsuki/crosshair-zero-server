@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:ammo",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: ammo 120mm",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "suffuse:120mm",
+      "description": "zeropoint: ammo 120mm"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "name": "拾荒补给站",
+  "products": [
+    {
+      "id": "iron_pickaxe",
+      "item": "minecraft:iron_pickaxe",
+      "count": 1,
+      "price": 56
+    },
+    {
+      "id": "iron_axe",
+      "item": "minecraft:iron_axe",
+      "count": 1,
+      "price": 56
+    },
+    {
+      "id": "iron_sword",
+      "item": "minecraft:iron_sword",
+      "count": 1,
+      "price": 45
+    },
+    {
+      "id": "shield",
+      "item": "minecraft:shield",
+      "count": 1,
+      "price": 30
+    },
+    {
+      "id": "bucket",
+      "item": "minecraft:bucket",
+      "count": 2,
+      "price": 36
+    },
+    {
+      "id": "water_bucket",
+      "item": "minecraft:water_bucket",
+      "count": 1,
+      "price": 20
+    },
+    {
+      "id": "coal",
+      "item": "minecraft:coal",
+      "count": 16,
+      "price": 96
+    },
+    {
+      "id": "iron_ingot",
+      "item": "minecraft:iron_ingot",
+      "count": 16,
+      "price": 352
+    },
+    {
+      "id": "copper_ingot",
+      "item": "minecraft:copper_ingot",
+      "count": 16,
+      "price": 160
+    },
+    {
+      "id": "string",
+      "item": "minecraft:string",
+      "count": 16,
+      "price": 32
+    },
+    {
+      "id": "gunpowder",
+      "item": "minecraft:gunpowder",
+      "count": 12,
+      "price": 60
+    },
+    {
+      "id": "arrow",
+      "item": "minecraft:arrow",
+      "count": 32,
+      "price": 128
+    },
+    {
+      "id": "backpack",
+      "item": "sophisticatedbackpacks:backpack",
+      "count": 1,
+      "price": 138,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "steel_plate",
+      "item": "superbwarfare:steel_plate",
+      "count": 8,
+      "price": 64
+    },
+    {
+      "id": "copper_plate",
+      "item": "superbwarfare:copper_plate",
+      "count": 8,
+      "price": 64
+    },
+    {
+      "id": "motor",
+      "item": "superbwarfare:motor",
+      "count": 2,
+      "price": 100,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    }
+  ]
+}

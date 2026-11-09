@@ -1,0 +1,271 @@
+{
+  "name": "军阀车场",
+  "products": [
+    {
+      "id": "v01",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 20000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:sodayo_pick_up"
+        }
+      },
+      "display_name": "十诫皮卡",
+      "description": "封存的载具，放下即部署（2★）",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "v02",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 20000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:truck"
+        }
+      },
+      "display_name": "军阀卡车",
+      "description": "封存的载具，放下即部署（2★）",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "v03",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 20000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:tiny_speedboat"
+        }
+      },
+      "display_name": "小型快艇",
+      "description": "封存的载具，放下即部署（2★）",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "v04",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 20000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:tom_6"
+        }
+      },
+      "display_name": "Tom F6F 螺旋桨机",
+      "description": "封存的载具，放下即部署（2★）",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 5
+      }
+    },
+    {
+      "id": "v05",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 26000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:sodayo_pick_up_hmg"
+        }
+      },
+      "display_name": "十诫皮卡（重机枪）",
+      "description": "封存的载具，放下即部署（3★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    },
+    {
+      "id": "v06",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 26000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:speedboat"
+        }
+      },
+      "display_name": "快艇",
+      "description": "封存的载具，放下即部署（3★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    },
+    {
+      "id": "v07",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 26000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:kv_16"
+        }
+      },
+      "display_name": "KV-16 幽魂战机",
+      "description": "封存的载具，放下即部署（3★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 8
+      }
+    },
+    {
+      "id": "v08",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 34000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:sodayo_pick_up_rocket"
+        }
+      },
+      "display_name": "十诫皮卡（火箭巢）",
+      "description": "封存的载具，放下即部署（4★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    },
+    {
+      "id": "v09",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 34000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:sodayo_pick_up_tow"
+        }
+      },
+      "display_name": "十诫皮卡（TOW 反坦克）",
+      "description": "封存的载具，放下即部署（4★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    },
+    {
+      "id": "v10",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 34000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:ju_87"
+        }
+      },
+      "display_name": "Ju-87 斯图卡",
+      "description": "封存的载具，放下即部署（4★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    },
+    {
+      "id": "v11",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 34000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:lav_150"
+        }
+      },
+      "display_name": "LAV-150 突击车",
+      "description": "封存的载具，放下即部署（4★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    },
+    {
+      "id": "v12",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 34000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:type_63"
+        }
+      },
+      "display_name": "63 式 107mm 火箭炮",
+      "description": "封存的载具，放下即部署（4★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    },
+    {
+      "id": "v13",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 34000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:mk_42"
+        }
+      },
+      "display_name": "Mk42 舰炮阵地",
+      "description": "封存的载具，放下即部署（4★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    },
+    {
+      "id": "v14",
+      "item": "superbwarfare:container",
+      "count": 1,
+      "price": 34000,
+      "components": {
+        "minecraft:block_entity_data": {
+          "id": "superbwarfare:container",
+          "EntityType": "superbwarfare:ah_6"
+        }
+      },
+      "display_name": "AH-6 小鸟直升机",
+      "description": "封存的载具，放下即部署（4★）",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 12
+      }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "name": "零点计划供应",
+  "products": [
+    {
+      "id": "ancient_cpu",
+      "item": "superbwarfare:ancient_cpu",
+      "count": 1,
+      "price": 15000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "virtual_chip",
+      "item": "superbwarfare:virtual_blueprint_data_chip",
+      "count": 1,
+      "price": 15000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "legendary_chip",
+      "item": "superbwarfare:legendary_blueprint_data_chip",
+      "count": 1,
+      "price": 15000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "epic_chip",
+      "item": "superbwarfare:epic_blueprint_data_chip",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "rare_chip",
+      "item": "superbwarfare:rare_blueprint_data_chip",
+      "count": 1,
+      "price": 750,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    },
+    {
+      "id": "bp_ak47",
+      "item": "superbwarfare:ak_47_blueprint",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "bp_svd",
+      "item": "superbwarfare:svd_blueprint",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "bp_rpg",
+      "item": "superbwarfare:rpg_blueprint",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "bp_m870",
+      "item": "superbwarfare:m_870_blueprint",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "mortar_shell",
+      "item": "superbwarfare:mortar_shell",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 6,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "ap_head",
+      "item": "superbwarfare:ap_head",
+      "count": 1,
+      "price": 250,
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "missile_engine",
+      "item": "superbwarfare:missile_engine",
+      "count": 1,
+      "price": 10
+    },
+    {
+      "id": "rt_token",
+      "item": "resptoken:respawn_token",
+      "count": 1,
+      "price": 30000,
+      "display_name": "复生令牌",
+      "description": "死亡后右键，回到倒下的地方，并获得短暂无敌",
+      "purchase_limit": {
+        "max": 1,
+        "refresh": true,
+        "refresh_days": 14
+      }
+    },
+    {
+      "id": "rt_part",
+      "item": "resptoken:token_part",
+      "count": 1,
+      "price": 5000,
+      "display_name": "令牌核心",
+      "description": "复生令牌的核心部件",
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 7
+      }
+    },
+    {
+      "id": "rt_glue",
+      "item": "resptoken:binding_glue",
+      "count": 2,
+      "price": 150,
+      "display_name": "绑定胶",
+      "description": "把核心与外壳粘成一体",
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 2
+      }
+    }
+  ]
+}

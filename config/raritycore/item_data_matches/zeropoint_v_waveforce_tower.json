@@ -1,0 +1,16 @@
+{
+  "item_id": "superbwarfare:container",
+  "fuzzy_match": true,
+  "priority": 215,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: vehicle crate waveforce_tower",
+  "conditions": [
+    {
+      "path": "components.minecraft:block_entity_data",
+      "type": "contains",
+      "substring": "waveforce_tower",
+      "description": "vehicle waveforce_tower"
+    }
+  ]
+}

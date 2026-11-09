@@ -1,0 +1,70 @@
+{
+  "ammo_id": "tacz:40mm",
+
+  "variant": "40mm_incendiary",
+
+  "life": 100,
+
+  "friction": 0.05,
+
+  "gravity": 0.15,
+
+  "recoil_multiplier": 1,
+
+  "inaccuracy_multiplier": 1.02,
+
+
+  "penetration_class": 0,
+
+  "armor_damage": 0,
+
+  "flesh_damage": 2,
+
+  "stack_size": 2,
+
+  "knockback": 0,
+
+  "explosion": {
+    "radius": 2,
+
+    "delay_count": 30
+  },
+
+  "effects": [
+    {
+      "trigger": "HIT_BLOCK",
+
+      "actions": [
+        {
+          "target": "NEARBY",
+
+          "effect": "zerocontact:ignition",
+
+          "duration": 20,
+
+          "amplifier": 0,
+
+          "chance": 1.0,
+
+          "radius": 4.0
+        }
+      ],
+
+      "scripts": [
+        {
+          "script": "zerocontact:40mm_incendiary_logic",
+
+          "function": "on_hit_glowing",
+
+          "arguments": {
+            "duration": 50,
+
+            "amplifier": 0,
+
+            "radius": 4.0
+          }
+        }
+      ]
+    }
+  ]
+}

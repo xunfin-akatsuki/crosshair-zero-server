@@ -1,0 +1,30 @@
+#How far your eyes, shots and hitbox move sideways at full lean (blocks).
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+peekDistance = 0.5
+#How far the body tilts at full lean (degrees). 0 = step sideways instead of tilting.
+# Default: 20.0
+# Range: 0.0 ~ 45.0
+tiltDegrees = 20.0
+#Share of the remaining lean covered each tick (0.35 = default). Lower is slower.
+# Default: 0.35
+# Range: 0.05 ~ 1.0
+leanSpeed = 0.35
+#false = sprinting cancels the lean and you cannot lean while sprinting.
+allowLeanWhileSprinting = true
+#false = you cannot sprint while leaning (you walk).
+allowSprintWhileLeaning = true
+#Leaning again and again in a short time makes leaning slower.
+fatigueEnabled = false
+#Fatigue added each time you start a lean or switch sides (1.0 = full).
+# Default: 0.25
+# Range: 0.0 ~ 1.0
+fatiguePerLean = 0.25
+#Seconds to recover from full fatigue.
+# Default: 3.0
+# Range: 0.1 ~ 60.0
+fatigueRecoverySeconds = 3.0
+#Lean speed left at full fatigue (percent).
+# Default: 30.0
+# Range: 1.0 ~ 100.0
+fatigueMinSpeed = 30.0

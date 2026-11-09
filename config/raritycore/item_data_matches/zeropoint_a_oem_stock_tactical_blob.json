@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 118,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att oem_stock_tactical",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "oem_stock_tactical",
+      "description": "att oem_stock_tactical"
+    }
+  ]
+}

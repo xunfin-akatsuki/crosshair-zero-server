@@ -1,0 +1,4 @@
+#Extra chunks protected around a city. 0 = city only; 1 = a one-chunk border.
+# Default: 1
+# Range: 0 ~ 1
+cityBufferChunks = 1

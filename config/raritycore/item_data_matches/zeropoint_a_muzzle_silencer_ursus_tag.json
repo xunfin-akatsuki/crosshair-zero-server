@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 121,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_silencer_ursus",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "muzzle_silencer_ursus",
+      "description": "att muzzle_silencer_ursus"
+    }
+  ]
+}

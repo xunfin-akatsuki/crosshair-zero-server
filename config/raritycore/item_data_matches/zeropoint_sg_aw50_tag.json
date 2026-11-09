@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: gun aw50",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "suffuse:aw50",
+      "description": "zeropoint: gun aw50"
+    }
+  ]
+}

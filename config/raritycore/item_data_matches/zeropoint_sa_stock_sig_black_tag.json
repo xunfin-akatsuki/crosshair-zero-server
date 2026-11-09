@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 200,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att stock_sig_black",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "suffuse:stock_sig_black",
+      "description": "zeropoint: att stock_sig_black"
+    }
+  ]
+}

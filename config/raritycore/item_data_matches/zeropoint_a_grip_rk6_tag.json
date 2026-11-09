@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 108,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att grip_rk6",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "grip_rk6",
+      "description": "att grip_rk6"
+    }
+  ]
+}

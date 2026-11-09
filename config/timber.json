@@ -1,0 +1,36 @@
+{
+  // Most logs in one tree; a bigger tree is left alone (only the chopped log breaks) (16..1024, default 256)
+  "max_logs": 256,
+  // Most leaves (and attached blocks) one tree takes with it (100..1200, default 900)
+  "max_blocks": 900,
+  // How far, in blocks sideways, a tree may reach from the cut (4..32, default 12)
+  "radius": 12,
+  // 1: only fell trees when chopping with an axe (#minecraft:axes or #c:tools/axe) (0..1, default 1)
+  "require_axe": 1,
+  // 0: sneaking takes a single log; 1: only fell while sneaking; 2: always fell (0..2, default 0)
+  "sneak": 0,
+  // 1: each log costs axe durability (Unbreaking applies); a tree that would break the axe is not felled (0..1, default 1)
+  "durability": 1,
+  // 0: the tree vanishes at once and drops at the stump (0..1, default 1)
+  "animation": 1,
+  // 0: each log hops out where it lands, leaf drops burst from the crown; 1: everything drops at the player (0..1, default 0)
+  "drops": 0,
+  // 1: logs placed by players are never felled (0..1, default 1)
+  "protect": 1,
+  // 1: action bar message when a tree is not felled, and why (0..1, default 1)
+  "feedback": 1,
+  // 1: explain Timber to each player once, on their first join (0..1, default 0)
+  "welcome": 0,
+  // 1: a free sapling of the tree's kind is planted in each stump cell when the fall ends (giants get four) (0..1, default 0)
+  "replant": 0,
+  // 1: the falling trunk knocks back every mob it sweeps through (never players) (0..1, default 1)
+  "knockback": 1,
+  // Damage the trunk deals to a hostile mob without a name tag that it hits (half hearts); other mobs are only pushed (0..20, default 4)
+  "trunk_damage": 4,
+  // 1: leaves shut in on all sides get no display (cheaper, but the crown looks hollow when it falls) (0..1, default 0)
+  "hide_leaves": 0,
+  // Most displays one fall may spawn (100..4000, default 1200)
+  "display_cap": 1200,
+  // Server milliseconds a fall may spend per tick when work is time-sliced (1..20, default 2)
+  "slice_ms": 2
+}

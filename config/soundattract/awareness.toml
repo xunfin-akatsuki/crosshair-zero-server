@@ -1,0 +1,50 @@
+[awareness_hud]
+	enabled = true
+	# Default: 1.0
+	# Range: 0.5 ~ 2.0
+	scale = 1.0
+	# Default: 190
+	# Range: 40 ~ 255
+	opacity = 190
+	anchor = "AIR_LEVEL"
+	#Allowed Values: BOTTOM_LEFT, BOTTOM_RIGHT
+	position = "BOTTOM_LEFT"
+	# Default: 0
+	# Range: 0 ~ 4096
+	offsetX = 0
+	# Default: 0
+	# Range: 0 ~ 4096
+	offsetY = 0
+	reducedAnimation = false
+	#Show the visibility awareness icon.
+	showVisibility = true
+	#Show the environmental noise awareness icon.
+	showEnvironmentalNoise = true
+	#Show the scent awareness icon.
+	showScent = true
+	#Show the wind shield awareness icon.
+	showWindShield = true
+
+[mob_alerts]
+	enabled = true
+	# Default: 1.0
+	# Range: 0.25 ~ 4.0
+	scale = 1.0
+	# Default: 0.45
+	# Range: 0.0 ~ 4.0
+	heightOffset = 0.45
+	# Default: 48.0
+	# Range: 1.0 ~ 48.0
+	maxDistance = 48.0
+	#Show proximity mob alert icons.
+	showProximity = true
+	#Show detected mob alert icons.
+	showDetected = true
+	#Show near-miss mob alert icons.
+	showNearMiss = true
+	#Show scent mob alert icons.
+	showScent = true
+	#Show raid mob alert icons.
+	showRaid = true
+	#Show fallback icons for unrecognized mob alert types.
+	showOther = true

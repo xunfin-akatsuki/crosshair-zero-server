@@ -1,0 +1,89 @@
+{
+  "name": "灰市药房",
+  "products": [
+    {
+      "id": "bandage",
+      "item": "legendarysurvivaloverhaul:bandage",
+      "count": 8,
+      "price": 400,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "healing_herbs",
+      "item": "legendarysurvivaloverhaul:healing_herbs",
+      "count": 8,
+      "price": 400,
+      "purchase_limit": {
+        "max": 4,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "medkit",
+      "item": "legendarysurvivaloverhaul:medkit",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "morphine",
+      "item": "legendarysurvivaloverhaul:morphine",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "first_aid_supplies",
+      "item": "legendarysurvivaloverhaul:first_aid_supplies",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "heal_clip",
+      "item": "superbwarfare:heal_clip",
+      "count": 1,
+      "price": 5000,
+      "purchase_limit": {
+        "max": 2,
+        "refresh": true,
+        "refresh_days": 3
+      }
+    },
+    {
+      "id": "bone_broth",
+      "item": "farmersdelight:bone_broth",
+      "count": 8,
+      "price": 16
+    },
+    {
+      "id": "beef_stew",
+      "item": "farmersdelight:beef_stew",
+      "count": 8,
+      "price": 8
+    },
+    {
+      "id": "apple_pie",
+      "item": "farmersdelight:apple_pie_slice",
+      "count": 4,
+      "price": 4
+    }
+  ]
+}

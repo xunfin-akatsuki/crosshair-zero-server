@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 106,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: gun scar_l",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "scar_l",
+      "description": "gun scar_l"
+    }
+  ]
+}

@@ -1,0 +1,865 @@
+#General settings
+[general]
+	#If this is true then all chests will be locked until the building is cleared
+	lockChestsUntilCleared = false
+	#This option is only useful when 'lockChestsUntilCleared'. If true only vanilla chests will be locked. Otherwise all tile entities are locked
+	lockOnlyChests = true
+	#This message is given when the player tries to open a chest in a haunted building
+	messageUnsafeBuilding = "§c这里不安全……有什么东西在动。"
+	#This message is given when the player enters a haunted building for the first time
+	messageBuildingHaunted = "§c这栋建筑里有东西。它们还在这里。"
+	#This message is given when the player enters a haunted building after at least 'messageInterval' ticks have passed. Use <same> to have the same message as the first time
+	messageBuildingHauntedRepeat = "§7它们还没走。"
+	#This message is given when the player clears a building
+	messageBuildingCleared = "§a建筑已清理。可以搜刮了。"
+	#This message is given when the player is halfway clearing a building
+	messageBuildingHalfway = "§e还剩一些……"
+	#If this is true then the player will be notified when a building is cleared
+	announceCleared = true
+	#If this is true then the player will be notified when he or she enters a haunted building
+	announceEnter = true
+	#If this is true then the player will get a message when he/she tries to open a locked chest
+	announceChestLocked = true
+	#The chance that a building is haunted
+	# Default: 0.95
+	# Range: 0.0 ~ 1.0
+	hauntedChance = 0.85
+	#Makes 'hauntedChance' relative to the number of chunks in a multibuilding. 0 means that it is the same. 1 means that it multiplies by the number of chunks in the building
+	# Default: 0.30000001192092896
+	# Range: 0.0 ~ 100.0
+	hauntedChanceMultiplier = 0.8
+	#The minimum amount of mobs that are spawned by a haunted building
+	# Default: 10
+	# Range: 1 ~ 10000
+	minMobs = 10
+	#The maximum amount of mobs that are spawned by a haunted building
+	# Default: 50
+	# Range: 1 ~ 10000
+	maxMobs = 30
+	#Makes 'minMobs' relative to the number of chunks in a multibuilding. 0 means that it is the same. 1 means that it multiplies by the number of chunks in the building
+	# Default: 0.30000001192092896
+	# Range: 0.0 ~ 100.0
+	minMobsMultiplier = 0.8
+	#Makes 'maxMobs' relative to the number of chunks in a multibuilding. 0 means that it is the same. 1 means that it multiplies by the number of chunks in the building
+	# Default: 0.30000001192092896
+	# Range: 0.0 ~ 100.0
+	maxMobsMultiplier = 1.0
+	#The chance that a building is haunted. This version is used in case the building is in a Lost City sphere
+	# Default: 0.95
+	# Range: 0.0 ~ 1.0
+	sphereHauntedChance = 0.15
+	#The minimum amount of mobs that are spawned by a haunted building. This version is used in case the building is in a Lost City sphere
+	# Default: 10
+	# Range: 1 ~ 10000
+	sphereMinMobs = 1
+	#The maximum amount of mobs that are spawned by a haunted building. This version is used in case the building is in a Lost City sphere
+	# Default: 50
+	# Range: 1 ~ 10000
+	sphereMaxMobs = 3
+	#The minimum health bonus that the mob will get
+	# Default: 2.0
+	# Range: 0.009999999776482582 ~ 10000.0
+	minHealthBonus = 1.0
+	#The maximum health bonus that the mob will get
+	# Default: 5.0
+	# Range: 0.009999999776482582 ~ 10000.0
+	maxHealthBonus = 4.0
+	#The minimum damage bonus that the mob will get
+	# Default: 2.0
+	# Range: 0.009999999776482582 ~ 10000.0
+	minDamageBonus = 0.009999999776482582
+	#The maximum damage bonus that the mob will get
+	# Default: 5.0
+	# Range: 0.009999999776482582 ~ 10000.0
+	maxDamageBonus = 2.0
+	#The maximum amount of entities that can spawn near each other (of the same type)
+	# Default: 6
+	# Range: 1 ~ 200
+	spawnMaxNearby = 16
+	#The radius for checking maximum amount of entities can spawn in an area.
+	# Default: 8
+	# Range: 1 ~ 128
+	spawnMaxNearbyRadius = 6.0
+	#The minimum distance between the player and newly spawned mobs
+	# Default: 8.0
+	# Range: 0.0 ~ 128.0
+	minSpawnDistance = 3.0
+	#The maximum distance between the player and newly spawned mobs
+	# Default: 16.0
+	# Range: 0.0 ~ 128.0
+	maxSpawnDistance = 12.0
+	#A list of buildings that are safe(r)
+	excludedBuildings = []
+	#List of mobs that can spawn in buildings together with their rarity
+	mobs = [".24=minecraft:zombie", ".10=minecraft:husk", ".07=minecraft:drowned", ".05=minecraft:zombie_villager", ".05=minecraft:skeleton", ".04=minecraft:spider", ".03=minecraft:cave_spider", ".02=minecraft:stray", ".02=minecraft:creeper", ".01=minecraft:witch", ".01=minecraft:enderman", ".06=undeadnights:horde_zombie", ".03=undeadnights:elite_zombie", ".015=undeadnights:demolition_zombie", ".05=mutantszombies:crawler", ".03=mutantszombies:blister_zombie", ".03=mutantszombies:spitter", ".02=mutantszombies:split_head_zombie", ".015=mutantszombies:rotten_mutant", ".012=mutantszombies:zombie_brute", ".004=mutantszombies:mutant_brute", ".004=mutantmonsters:mutant_zombie", ".03=zoniex:tormented_zombie", ".02=zoniex:skin_crawler", ".004=zoniex:disemboweler", ".004=zoniex:spine_wrencher", ".04=cyber_ware_port:cyber_zombie", ".015=cyber_ware_port:cyber_skeleton", ".008=cyber_ware_port:cyber_creeper", ".03=mca:male_zombie_villager", ".03=mca:female_zombie_villager", ".02=tide:cave_crawler", ".01=tacz_bandits:bandit", ".01=alexsmobs:murmur", ".01=alexsmobs:skreecher", ".005=cave_dweller:cave_dweller", ".01=minecraft:villager", ".05=outbreak_kf:cyst", ".04=outbreak_kf:alpha_clot", ".03=outbreak_kf:gorefiend", ".025=outbreak_kf:crawler", ".02=outbreak_kf:stalker", ".015=outbreak_kf:bloat", ".012=outbreak_kf:husk", ".01=outbreak_kf:siren", ".008=outbreak_kf:spitter", ".004=outbreak_kf:scrake", ".003=outbreak_kf:fleshpound"]
+	#List of weapons that the mobs can have together with their rarity
+	randomWeapons = [".18=null", ".06=minecraft:wooden_sword", ".08=minecraft:stone_sword", ".06=minecraft:golden_sword", ".09=minecraft:iron_sword", ".05=minecraft:iron_axe", ".03=minecraft:diamond_sword", ".08=minecraft:bow", ".05=minecraft:crossbow", ".02=minecraft:trident", ".05=farmersdelight:flint_knife", ".05=farmersdelight:iron_knife", ".03=butchery:copper_cleaver", ".02=butchery:iron_cleaver", ".02=butchery:bone_hammer", ".03=superbwarfare:knife", ".02=superbwarfare:hammer", ".03=caverns_and_chasms:copper_sword", ".02=caverns_and_chasms:silver_sword"]
+	#List of helmets that the mobs can have together with their rarity
+	randomHelmets = [".26=null", ".16=minecraft:leather_helmet", ".12=minecraft:golden_helmet", ".12=minecraft:chainmail_helmet", ".08=minecraft:iron_helmet", ".04=minecraft:turtle_helmet", ".05=superbwarfare:ge_helmet_m_35", ".05=superbwarfare:ru_helmet_6b47", ".05=superbwarfare:us_helmet_pasgt", ".04=butchery:fur_suit_helmet", ".03=zerocontact:helmet_cap_cyan"]
+	#List of chestplates that the mobs can have together with their rarity
+	randomChestplates = [".26=null", ".16=minecraft:leather_chestplate", ".12=minecraft:golden_chestplate", ".12=minecraft:chainmail_chestplate", ".08=minecraft:iron_chestplate", ".05=create:cardboard_chestplate", ".05=butchery:butchers_apron_chestplate", ".05=butchery:fur_suit_chestplate", ".04=caverns_and_chasms:copper_chestplate", ".03=butchery:pillager_armor_chestplate"]
+	#List of leggings that the mobs can have together with their rarity
+	randomLeggings = [".28=null", ".18=minecraft:leather_leggings", ".12=minecraft:golden_leggings", ".12=minecraft:chainmail_leggings", ".08=minecraft:iron_leggings", ".06=butchery:fur_suit_leggings", ".05=caverns_and_chasms:copper_leggings", ".04=butchery:pillager_armor_leggings"]
+	#List of boots that the mobs can have together with their rarity
+	randomBoots = [".28=null", ".18=minecraft:leather_boots", ".12=minecraft:golden_boots", ".12=minecraft:chainmail_boots", ".08=minecraft:iron_boots", ".06=butchery:fur_suit_boots", ".05=caverns_and_chasms:copper_boots", ".04=create:cardboard_boots"]
+	#List of effects that a mob can have. Note that multiple effects are possible
+	randomEffects = [".05=minecraft:speed,1", ".04=minecraft:regeneration,1", ".03=minecraft:fire_resistance,1", ".02=minecraft:strength,1", ".02=minecraft:resistance,1", ".01=minecraft:invisibility,1"]
+	#List of console commands to execute the first time a building is entered
+	commandFirstTime = []
+	#List of console commands to execute every time a building is entered
+	commandEntered = []
+	#List of console commands to execute when a building is cleared
+	commandCleared = []
+	#The delay (in ticks) before a new 'haunted' message is given to the player
+	# Default: 12000
+	# Range: 1 ~ 1000000
+	messageInterval = 12000
+	#The amount of ticks that the server waits before checking for new spawns
+	# Default: 200
+	# Range: 1 ~ 1000000
+	serverTickTimeout = 80
+	#If this is true, the horde building spawning max amount will be based on the total mob required to kill, and it won't use SPAWN_MAX_NEARBY/RADIUS at all.
+	useChunkCheck = false
+	#If this is true then mobs will only spawn if the light level is low enough. Otherwise they spawn regardless of light level
+	checkValidSpawn = false
+	#If this is true then mobs will only spawn on blocks but not on air
+	spawnOnBlock = false
+	#Minimum chance for NEW buildings after global, sphere, multibuilding and datapack settings are combined.
+	#Explicit zero chances and excludedBuildings remain safe. Set to 0 to respect lower datapack chances.
+	#Existing saved buildings are never rerolled.
+	# Default: 0.95
+	# Range: 0.0 ~ 1.0
+	minimumHauntedChance = 0.95
+	#Enable independent haunting and game-time renewal for the six supported wilderness structure packs.
+	#Shares city spawn budgets; does not add bosses, edit templates or change vehicle inventories.
+	hauntWildernessStructures = true
+	#Highest danger level a scattered wilderness structure may reach.
+	#1 keeps every cabin, ship, ruin and factory at the same starter difficulty;
+	#raise it only if you want distance/type bonuses there again.
+	# Default: 1
+	# Range: 1 ~ 10
+	wildernessMaxLevel = 1
+	#Hard cap on how many monsters one wilderness structure asks for at once.
+	#Applies on top of the volume formula, so it is safe to keep in single digits.
+	# Default: 8
+	# Range: 1 ~ 32
+	wildernessMaxMobs = 8
+
+#Building difficulty. Assigned levels and names are saved per building.
+[difficulty]
+	enabled = true
+	useSpawnDistance = true
+	useBuildingType = true
+	#One extra level per this many horizontal blocks from world spawn; dimension coordinate scale is applied.
+	# Default: 1500
+	# Range: 1 ~ 30000000
+	blocksPerLevel = 1500
+	# Default: 10
+	# Range: 1 ~ 10
+	maxLevel = 10
+	#Horizontal building-center distance from overworld spawn, inclusive; dimension coordinate scale is applied.
+	#0 disables this cap. Independent of useSpawnDistance. Also lowers saved levels on access without resetting progress.
+	# Default: 1000
+	# Range: 0 ~ 30000000
+	spawnProtectionRadius = 1000
+	#Maximum building level within spawnProtectionRadius. Never raises a lower level.
+	# Default: 2
+	# Range: 1 ~ 10
+	spawnProtectionMaxLevel = 2
+	#Safety cap on the total quota of NEW buildings after difficulty scaling.
+	# Default: 2000
+	# Range: 1 ~ 100000
+	maxTotalMobs = 2000
+	#Maximum horizontal position attempts per desired mob, per building wave.
+	#Vertical candidates resume across ticks under the shared spawnPerformance budget.
+	# Default: 24
+	# Range: 1 ~ 32
+	spawnAttempts = 8
+	#First matching rule wins. Format: namespace:building_glob=baseLevel. '*' matches any text.
+	#Rules match multibuilding IDs first, then individual building IDs; e.g. chaoszpack_reforged:*hospital*=4.
+	buildingOverrides = []
+	#Limit building mobs' ZeroContact helmets, armor and plates by tier.maxProtectionLevel.
+	#Also caps vanilla armor by building tier. Includes existing marked mobs and delayed loadouts; does not change weapons.
+	limitBuildingEquipment = true
+	#Require building ownership, floor support, ceiling and enclosing walls. Never falls back to outdoor spawning.
+	indoorOnly = true
+	# Default: 12
+	# Range: 1 ~ 64
+	indoorCeilingSearch = 12
+	# Default: 32
+	# Range: 1 ~ 64
+	indoorWallSearch = 32
+	#Number of cardinal directions with a two-height wall inside the same building.
+	# Default: 3
+	# Range: 2 ~ 4
+	indoorMinimumWalls = 3
+	#Search above and below player height for actual floor surfaces, including slabs.
+	# Default: 6
+	# Range: 0 ~ 24
+	spawnVerticalSearch = 6
+
+[tier1]
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 1.0
+	# Default: 1
+	# Range: 1 ~ 32
+	spawnsPerCycle = 1
+	# Default: 0
+	# Range: 0 ~ 200
+	nearbyBonus = 0
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 1.0
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.0
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 0.0
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:stone_sword", "minecraft:leather_helmet", "minecraft:leather_chestplate", "minecraft:leather_leggings", "minecraft:leather_boots"]
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	enchantChance = 0.0
+	# Default: 1
+	# Range: 1 ~ 5
+	enchantLevel = 1
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = []
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 1
+	# Range: 1 ~ 6
+	maxProtectionLevel = 1
+
+[tier2]
+	# Default: 1.2
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 1.2
+	# Default: 2
+	# Range: 1 ~ 32
+	spawnsPerCycle = 2
+	# Default: 2
+	# Range: 0 ~ 200
+	nearbyBonus = 3
+	# Default: 1.1
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 1.1
+	# Default: 1.08
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.08
+	# Default: 0.18
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 0.25
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:stone_sword", "minecraft:chainmail_helmet", "minecraft:chainmail_chestplate", "minecraft:chainmail_leggings", "minecraft:chainmail_boots"]
+	# Default: 0.16
+	# Range: 0.0 ~ 1.0
+	enchantChance = 0.25
+	# Default: 1
+	# Range: 1 ~ 5
+	enchantLevel = 1
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,0,0.20"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 2
+	# Range: 1 ~ 6
+	maxProtectionLevel = 2
+
+[tier3]
+	# Default: 1.4
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 1.4
+	# Default: 3
+	# Range: 1 ~ 32
+	spawnsPerCycle = 3
+	# Default: 4
+	# Range: 0 ~ 200
+	nearbyBonus = 6
+	# Default: 1.2
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 1.2
+	# Default: 1.16
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.16
+	# Default: 0.36
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 0.5
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:iron_sword", "minecraft:iron_helmet", "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots"]
+	# Default: 0.32
+	# Range: 0.0 ~ 1.0
+	enchantChance = 0.5
+	# Default: 2
+	# Range: 1 ~ 5
+	enchantLevel = 2
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,0,0.40", "minecraft:resistance,0,0.25"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 3
+	# Range: 1 ~ 6
+	maxProtectionLevel = 3
+
+[tier4]
+	# Default: 1.6
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 1.6
+	# Default: 4
+	# Range: 1 ~ 32
+	spawnsPerCycle = 4
+	# Default: 6
+	# Range: 0 ~ 200
+	nearbyBonus = 9
+	# Default: 1.3
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 1.3
+	# Default: 1.24
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.24
+	# Default: 0.54
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 0.75
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:diamond_sword", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots"]
+	# Default: 0.48
+	# Range: 0.0 ~ 1.0
+	enchantChance = 0.75
+	# Default: 2
+	# Range: 1 ~ 5
+	enchantLevel = 3
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,1,0.50", "minecraft:resistance,0,0.50", "minecraft:fire_resistance,0,0.50"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 4
+	# Range: 1 ~ 6
+	maxProtectionLevel = 4
+
+[tier5]
+	# Default: 1.8
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 1.8
+	# Default: 5
+	# Range: 1 ~ 32
+	spawnsPerCycle = 5
+	# Default: 8
+	# Range: 0 ~ 200
+	nearbyBonus = 12
+	# Default: 1.4
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 1.4
+	# Default: 1.32
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.32
+	# Default: 0.72
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 1.0
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:netherite_sword", "minecraft:netherite_helmet", "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots"]
+	# Default: 0.64
+	# Range: 0.0 ~ 1.0
+	enchantChance = 1.0
+	# Default: 3
+	# Range: 1 ~ 5
+	enchantLevel = 4
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,1,0.70", "minecraft:resistance,1,0.50", "minecraft:fire_resistance,0,0.80", "minecraft:regeneration,0,0.25"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 6
+	# Range: 1 ~ 6
+	maxProtectionLevel = 6
+
+#One persistent elite boss at most per NEW haunted building; no Wither or Dragon by default.
+[boss]
+	#Disabling cancels unspawned bosses when their building is accessed. Already spawned bosses remain and must still be defeated.
+	enabled = true
+	#Unspawned boss plans below this level are canceled when their building is accessed.
+	# Default: 3
+	# Range: 1 ~ 10
+	minimumLevel = 3
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	chance = 0.35
+	#Fraction of the normal mob quota killed before the boss can spawn.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	spawnAfterProgress = 0.75
+	#Additional multiplier on top of building and tier bonuses.
+	# Default: 4.0
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 4.0
+	# Default: 1.75
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.75
+	# Default: 1.1
+	# Range: 0.01 ~ 10.0
+	speedMultiplier = 1.1
+	glowing = true
+	#Weighted mob IDs: weight=namespace:entity. Supports other mods. An empty or invalid pool cancels the boss, not building clearance.
+	entities = ["4=minecraft:husk", "2=minecraft:vindicator", "1=minecraft:ravager"]
+
+#Server-authoritative building entry titles. Install LostSouls on both sides; TravelersTitles is optional and client-only.
+[buildingTitles]
+	enabled = true
+	# Default: 10
+	# Range: 1 ~ 200
+	checkIntervalTicks = 10
+	#Per-player, per-building re-entry cooldown, in ticks.
+	# Default: 200
+	# Range: 0 ~ 72000
+	reentryCooldownTicks = 200
+	# Default: 10
+	# Range: 1 ~ 200
+	fadeInTicks = 10
+	# Default: 60
+	# Range: 1 ~ 1200
+	stayTicks = 60
+	# Default: 20
+	# Range: 1 ~ 200
+	fadeOutTicks = 20
+	#Use vanilla titles when TravelersTitles is absent or its interface is incompatible.
+	vanillaFallback = true
+
+#Integration for Champions Unofficial 21.1.1.7. No hard dependency on Champions.
+[championsIntegration]
+	#Boss-only promotion. Also blocks random, command and inherited champion creation outside this integration.
+	enabled = true
+	#Replace only Champions bonus loot, leaving native entity drops intact.
+	replaceLoot = true
+	#Bonus loot requires a recent player hit, including normal ranged kills.
+	requirePlayerKill = true
+	#entityId=stars. First match wins; overrides saved stars and distance/building difficulty.
+	#Only recognized bosses qualify. Existing bosses are corrected without healing.
+	fixedBossStars = ["minecraft:ender_dragon=5", "alexsmobs:void_worm=5", "minecraft:wither=5"]
+	#Treat living entities declaring a non-static ServerBossEvent/BossEvent field as bosses.
+	detectBossBars = true
+	detectBossArsenalMarker = true
+	#Explicit boss entity IDs, also supporting bosses without boss bars.
+	#The lostsouls:bosses entity-type tag and lostsouls_boss entity tag are also recognized.
+	bossEntities = ["minecraft:wither", "minecraft:ender_dragon", "alexsmobs:void_worm", "aquamirae:captain_cornelia", "mca:grim_reaper", "cyber_ware_port:cyber_wither", "undead_revamp2:slaveman", "undead_revamp2:thehorrors", "undead_revamp2:thepregnant", "undead_revamp2:theheavy", "undead_revamp2:clogger", "undead_revamp2:thedungeon"]
+	#Deny list wins over all boss recognition, including LostSouls bosses.
+	excludedEntities = ["dummmmmmy:target_dummy"]
+	#Randomly selected without duplicates. Explicit affixes avoid vanilla bosses without an archetype.
+	#Splitting is intentionally omitted; summoned minions must not inherit boss status.
+	affixes = ["champions:knocking", "champions:dampening", "champions:hasty", "champions:wounding", "champions:shielding"]
+
+[championTier1]
+	#Stars assigned to this building/distance difficulty; defaults are 1:1.
+	# Default: 1
+	# Range: 1 ~ 5
+	stars = 1
+	#Guaranteed advance stones for this STAR count. Defaults: 1, 2, 4, 8, 16.
+	#Legacy advance_stone entries in loot are ignored to prevent duplicate/random rewards.
+	# Default: 1
+	# Range: 0 ~ 4096
+	advanceStones = 1
+	# Default: 1
+	# Range: 0 ~ 16
+	affixCount = 1
+	# Default: 1
+	# Range: 1 ~ 10
+	affixStrength = 1
+	#Reward for this STAR count, not difficulty. itemId,min,max,chance; all entries roll independently.
+	#Missing optional items are skipped. Quantities are split into valid stacks. No looting multiplier.
+	loot = ["minecraft:diamond,1,2,1.0", "minecraft:emerald,2,4,1.0"]
+
+[championTier2]
+	#Stars assigned to this building/distance difficulty; defaults are 1:1.
+	# Default: 2
+	# Range: 1 ~ 5
+	stars = 2
+	#Guaranteed advance stones for this STAR count. Defaults: 1, 2, 4, 8, 16.
+	#Legacy advance_stone entries in loot are ignored to prevent duplicate/random rewards.
+	# Default: 2
+	# Range: 0 ~ 4096
+	advanceStones = 2
+	# Default: 1
+	# Range: 0 ~ 16
+	affixCount = 1
+	# Default: 1
+	# Range: 1 ~ 10
+	affixStrength = 1
+	#Reward for this STAR count, not difficulty. itemId,min,max,chance; all entries roll independently.
+	#Missing optional items are skipped. Quantities are split into valid stacks. No looting multiplier.
+	loot = ["minecraft:diamond,2,4,1.0", "minecraft:emerald,4,8,1.0"]
+
+[championTier3]
+	#Stars assigned to this building/distance difficulty; defaults are 1:1.
+	# Default: 3
+	# Range: 1 ~ 5
+	stars = 3
+	#Guaranteed advance stones for this STAR count. Defaults: 1, 2, 4, 8, 16.
+	#Legacy advance_stone entries in loot are ignored to prevent duplicate/random rewards.
+	# Default: 4
+	# Range: 0 ~ 4096
+	advanceStones = 4
+	# Default: 2
+	# Range: 0 ~ 16
+	affixCount = 2
+	# Default: 1
+	# Range: 1 ~ 10
+	affixStrength = 1
+	#Reward for this STAR count, not difficulty. itemId,min,max,chance; all entries roll independently.
+	#Missing optional items are skipped. Quantities are split into valid stacks. No looting multiplier.
+	loot = ["minecraft:diamond,3,6,1.0", "minecraft:emerald,6,12,1.0", "minecraft:netherite_scrap,1,2,1.0"]
+
+[championTier4]
+	#Stars assigned to this building/distance difficulty; defaults are 1:1.
+	# Default: 4
+	# Range: 1 ~ 5
+	stars = 4
+	#Guaranteed advance stones for this STAR count. Defaults: 1, 2, 4, 8, 16.
+	#Legacy advance_stone entries in loot are ignored to prevent duplicate/random rewards.
+	# Default: 8
+	# Range: 0 ~ 4096
+	advanceStones = 8
+	# Default: 2
+	# Range: 0 ~ 16
+	affixCount = 2
+	# Default: 2
+	# Range: 1 ~ 10
+	affixStrength = 2
+	#Reward for this STAR count, not difficulty. itemId,min,max,chance; all entries roll independently.
+	#Missing optional items are skipped. Quantities are split into valid stacks. No looting multiplier.
+	loot = ["minecraft:diamond,4,8,1.0", "minecraft:emerald,8,16,1.0", "minecraft:netherite_scrap,2,3,1.0", "minecraft:enchanted_golden_apple,1,1,1.0"]
+
+[championTier5]
+	#Stars assigned to this building/distance difficulty; defaults are 1:1.
+	# Default: 5
+	# Range: 1 ~ 5
+	stars = 5
+	#Guaranteed advance stones for this STAR count. Defaults: 1, 2, 4, 8, 16.
+	#Legacy advance_stone entries in loot are ignored to prevent duplicate/random rewards.
+	# Default: 16
+	# Range: 0 ~ 4096
+	advanceStones = 16
+	# Default: 3
+	# Range: 0 ~ 16
+	affixCount = 3
+	# Default: 2
+	# Range: 1 ~ 10
+	affixStrength = 2
+	#Reward for this STAR count, not difficulty. itemId,min,max,chance; all entries roll independently.
+	#Missing optional items are skipped. Quantities are split into valid stacks. No looting multiplier.
+	loot = ["minecraft:diamond,5,10,1.0", "minecraft:emerald,10,20,1.0", "minecraft:netherite_scrap,3,4,1.0", "minecraft:enchanted_golden_apple,1,2,1.0", "minecraft:netherite_ingot,1,2,1.0"]
+
+#Optional Undead Revamped building pools. Existing building equipment and quota are preserved.
+[undeadSpawns]
+	enabled = true
+	#Fraction of otherwise valid NATURAL spawn placement attempts retained for undead_revamp2.
+	#Independent of enabled. Does not affect building spawns, spawners, summons or existing entities.
+	#0 blocks natural attempts; 1 preserves them. Retries and mob caps mean population is not exactly proportional.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	naturalSpawnRetention = 0.5
+	#Chance to choose the eligible extra pool instead of the original building pool.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	chance = 0.3
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	bossChance = 0.25
+	#Extra multipliers for native bosses selected from bossEntries, replacing boss.healthMultiplier/damageMultiplier.
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	nativeBossHealthMultiplier = 1.0
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	nativeBossDamageMultiplier = 1.0
+	#Entity namespaces whose NATURAL spawns are always cancelled.
+	#They can still appear through the building pools below (entries/bossEntries).
+	naturalBlockedNamespaces = ["outbreak_kf"]
+	#minLevel,maxLevel,weight,buildingGlob,entityId. Matches full multi/single building IDs or profile display_type keys.
+	#Boss IDs are never admitted to this ordinary pool.
+	entries = ["1,2,6,*,undead_revamp2:thebidy", "1,3,3,*,undead_revamp2:thebidyupside", "2,3,4,*,undead_revamp2:sucker", "2,4,3,*,undead_revamp2:thespectre", "2,4,2,*:*hospital*,undead_revamp2:thespitter", "3,5,3,*:*hospital*,undead_revamp2:thesmoker", "3,5,2,*:*hospital*,undead_revamp2:the_moonflower", "3,5,3,*:*school*,undead_revamp2:theskeeper", "3,5,2,*,undead_revamp2:thegliter", "4,5,3,*:*aircraftcarrier*,undead_revamp2:therod", "4,5,2,*:*crash*,undead_revamp2:bomber", "4,5,3,*:*mall*,undead_revamp2:theswarmer", "4,5,2,lostsouls.type.highrise,undead_revamp2:thelurker", "5,5,2,*,undead_revamp2:thewolf", "5,5,2,*:*aircraftcarrier*,undead_revamp2:thebeartamer", "1,3,6,*,outbreak_kf:crawler", "1,3,6,*,outbreak_kf:cyst", "1,3,5,*,outbreak_kf:alpha_clot", "1,2,4,*,outbreak_kf:alpha_clot_day", "1,4,5,*,outbreak_kf:gorefast", "2,4,4,*,outbreak_kf:husk", "2,4,3,*,outbreak_kf:stalker", "2,4,3,*,outbreak_kf:spitter", "3,5,3,*,outbreak_kf:siren", "3,5,2,*,outbreak_kf:gorefiend", "3,5,2,*,outbreak_kf:bloat", "4,5,2,*,outbreak_kf:scrake", "4,5,2,*,outbreak_kf:witch", "5,5,1,*,outbreak_kf:fleshpound"]
+	#Same format as entries, but only selected in the single building boss slot.
+	#Large scripted bosses such as thedungeon are deliberately not spawned inside buildings by default.
+	bossEntries = ["3,5,3,*:*school*,undead_revamp2:slaveman", "4,5,3,*:*hospital*,undead_revamp2:thepregnant", "5,5,2,*:*hospital*,undead_revamp2:thehorrors", "5,5,3,*:*aircraftcarrier*,undead_revamp2:theheavy", "5,5,1,*:*aircraftcarrier*,undead_revamp2:clogger", "4,5,2,*:*military*,outbreak_kf:fleshpound", "5,5,2,*:*hospital*,outbreak_kf:scrake"]
+
+#Optional indoor monsters from Aquamirae, Caverns and Chasms, and Alex's Mobs.
+[buildingMonsters]
+	enabled = true
+	#Share of ordinary building spawns. Undead chance is a separate share.
+	#If both shares exceed 1 in total, they are normalized. Missing eligible pools use the original pool.
+	#These namespaces cannot bypass the configured pool through original building entries while enabled.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	chance = 0.25
+	#minLevel,maxLevel,weight,buildingGlob,entityId. Missing optional entities are skipped.
+	#Matches full building/multibuilding IDs or profile display_type. No bosses in this pool.
+	#Built-in minimum levels remain enforced even if entries are edited or this integration is disabled.
+	entries = ["2,3,4,*,caverns_and_chasms:deeper", "3,5,3,*,caverns_and_chasms:mime", "3,5,2,lostsouls.type.military,caverns_and_chasms:peeper", "3,5,2,*:*crash*,caverns_and_chasms:peeper", "4,5,1,*,caverns_and_chasms:evendeeper", "2,3,3,*,alexsmobs:dropbear", "3,5,3,lostsouls.type.mall,alexsmobs:mimicube", "3,5,3,lostsouls.type.shop,alexsmobs:mimicube", "3,5,3,lostsouls.type.supermarket,alexsmobs:mimicube", "3,5,2,lostsouls.type.hospital,alexsmobs:mimicube", "4,5,2,*,alexsmobs:rocky_roller", "3,5,3,*,aquamirae:maw"]
+
+#Independent indoor residents. Safe and cleared buildings also qualify.
+#Quota and spawned count are saved per whole building; residents are never replenished.
+[buildingNeutrals]
+	enabled = true
+	#Lifetime cap per building, shared by all players and floors.
+	# Default: 3
+	# Range: 0 ~ 16
+	maxPerBuilding = 3
+	#One-time population chance for levels 1 through 5; exactly five numbers.
+	#Rolled only when eligible entities exist. Failed indoor placement does not consume quota.
+	chancesByLevel = [0.7, 0.55, 0.35, 0.2, 0.1]
+	#Same entry format as buildingMonsters. MCA genders are real entity IDs, not professions.
+	#Vanilla villagers are a fallback when MCA villagers are unavailable in the eligible pool.
+	#Monsters, Enemy implementations and recognized bosses are rejected. No combat enhancements or clear credit.
+	entries = ["1,5,5,*,mca:male_villager", "1,5,5,*,mca:female_villager", "1,5,5,*,minecraft:villager", "1,3,1,*,minecraft:cat"]
+
+#Global server-thread budget shared by all building enemies, bosses and residents.
+#Unfinished searches resume on later ticks. No async world access or outdoor fallback.
+[spawnPerformance]
+	#Global work steps per tick. Each step tests at most one vertical placement candidate, or prepares one target.
+	# Default: 8
+	# Range: 1 ~ 128
+	maxStepsPerTick = 8
+	#Global successful entity additions per tick, including bosses and residents.
+	# Default: 2
+	# Range: 1 ~ 32
+	maxSpawnsPerTick = 2
+	#Soft elapsed-time budget checked between steps. A mod constructor/finalizeSpawn cannot be preempted.
+	# Default: 2.0
+	# Range: 0.1 ~ 20.0
+	maxMillisPerTick = 2.0
+	#Duplicate waves for an already queued building are not accumulated.
+	# Default: 128
+	# Range: 1 ~ 4096
+	maxQueuedBuildings = 128
+	#Cancel unfinished work after this many server ticks; no catch-up burst. Saves are unaffected.
+	# Default: 1200
+	# Range: 20 ~ 24000
+	maxJobAgeTicks = 1200
+	#Minimum retry delay after a completed wave tried positions without success; doubles on repeated failures.
+	#Timeouts and player departure do not increase backoff.
+	# Default: 80
+	# Range: 1 ~ 12000
+	failedSearchDelayTicks = 80
+	#Maximum backoff, never less than failedSearchDelayTicks. Successful spawns reset it.
+	# Default: 400
+	# Range: 1 ~ 24000
+	maxFailedSearchDelayTicks = 400
+
+#Cleared haunted buildings become haunted again after server game ticks.
+#Sleeping, /time and server downtime do not advance this clock. No block reconstruction.
+[buildingRenewal]
+	enabled = true
+	showCountdown = true
+	#Base interval; 24000 ticks is one Minecraft day.
+	# Default: 24000
+	# Range: 20 ~ 172800000
+	baseTicks = 24000
+	# Default: 24000
+	# Range: 20 ~ 172800000
+	minimumTicks = 24000
+	# Default: 336000
+	# Range: 20 ~ 172800000
+	maximumTicks = 336000
+	#Reference volume in blocks: one 16x16x6 inhabited floor.
+	#Delay = base * cubeRoot(volume/referenceVolume) * (1 + distance/distanceScale), clamped to limits.
+	# Default: 1536.0
+	# Range: 1.0 ~ 1.0E9
+	referenceVolume = 1536.0
+	#Horizontal overworld-equivalent distance from world spawn; not player beds.
+	# Default: 3000.0
+	# Range: 1.0 ~ 3.0E7
+	distanceScale = 3000.0
+
+[tier6]
+	# Default: 2.5
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 2.5
+	# Default: 6
+	# Range: 1 ~ 32
+	spawnsPerCycle = 6
+	# Default: 10
+	# Range: 0 ~ 200
+	nearbyBonus = 10
+	# Default: 1.7
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 1.7
+	# Default: 1.54
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.54
+	# Default: 0.8999999999999999
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 0.8999999999999999
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:netherite_sword", "minecraft:netherite_helmet", "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots"]
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	enchantChance = 0.8
+	# Default: 3
+	# Range: 1 ~ 5
+	enchantLevel = 3
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,0,0.55", "minecraft:resistance,0,0.25", "minecraft:strength,0,0.20"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 6
+	# Range: 1 ~ 6
+	maxProtectionLevel = 6
+
+[tier7]
+	# Default: 3.0
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 3.0
+	# Default: 7
+	# Range: 1 ~ 32
+	spawnsPerCycle = 7
+	# Default: 12
+	# Range: 0 ~ 200
+	nearbyBonus = 12
+	# Default: 2.0
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 2.0
+	# Default: 1.76
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.76
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 1.0
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:netherite_sword", "minecraft:netherite_helmet", "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots"]
+	# Default: 0.96
+	# Range: 0.0 ~ 1.0
+	enchantChance = 0.96
+	# Default: 4
+	# Range: 1 ~ 5
+	enchantLevel = 4
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,1,0.60", "minecraft:resistance,0,0.35", "minecraft:strength,0,0.35"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 6
+	# Range: 1 ~ 6
+	maxProtectionLevel = 6
+
+[tier8]
+	# Default: 3.5
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 3.5
+	# Default: 8
+	# Range: 1 ~ 32
+	spawnsPerCycle = 8
+	# Default: 14
+	# Range: 0 ~ 200
+	nearbyBonus = 14
+	# Default: 2.3
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 2.3
+	# Default: 1.98
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 1.98
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 1.0
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:netherite_sword", "minecraft:netherite_helmet", "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots"]
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	enchantChance = 1.0
+	# Default: 4
+	# Range: 1 ~ 5
+	enchantLevel = 4
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,1,0.70", "minecraft:resistance,0,0.45", "minecraft:strength,0,0.50"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 6
+	# Range: 1 ~ 6
+	maxProtectionLevel = 6
+
+[tier9]
+	# Default: 4.0
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 4.0
+	# Default: 9
+	# Range: 1 ~ 32
+	spawnsPerCycle = 9
+	# Default: 16
+	# Range: 0 ~ 200
+	nearbyBonus = 16
+	# Default: 2.5999999999999996
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 2.5999999999999996
+	# Default: 2.2
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 2.2
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 1.0
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:netherite_sword", "minecraft:netherite_helmet", "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots"]
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	enchantChance = 1.0
+	# Default: 5
+	# Range: 1 ~ 5
+	enchantLevel = 5
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,1,0.80", "minecraft:resistance,1,0.45", "minecraft:strength,0,0.65", "minecraft:regeneration,0,0.20"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 6
+	# Range: 1 ~ 6
+	maxProtectionLevel = 6
+
+[tier10]
+	# Default: 4.5
+	# Range: 0.01 ~ 100.0
+	mobMultiplier = 4.5
+	# Default: 10
+	# Range: 1 ~ 32
+	spawnsPerCycle = 10
+	# Default: 18
+	# Range: 0 ~ 200
+	nearbyBonus = 18
+	# Default: 2.9
+	# Range: 0.01 ~ 100.0
+	healthMultiplier = 2.9
+	# Default: 2.42
+	# Range: 0.01 ~ 100.0
+	damageMultiplier = 2.42
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	equipmentChance = 1.0
+	#Exactly five item IDs: main hand, helmet, chestplate, leggings, boots. 'none' skips a slot.
+	#Upgrade step preserves modded items; the final building equipment cap can downgrade over-tier armor.
+	equipment = ["minecraft:netherite_sword", "minecraft:netherite_helmet", "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots"]
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	enchantChance = 1.0
+	# Default: 5
+	# Range: 1 ~ 5
+	enchantLevel = 5
+	#Additional effects: registry_id,amplifier,chance. Amplifier 0 means level I.
+	effects = ["minecraft:speed,1,0.90", "minecraft:resistance,1,0.55", "minecraft:strength,1,0.70", "minecraft:regeneration,0,0.30", "minecraft:fire_resistance,0,0.50"]
+	#ZeroContact protection class ceiling, not the vanilla Protection enchantment level. Building tiers default to 1,2,3,4,6.
+	# Default: 6
+	# Range: 1 ~ 6
+	maxProtectionLevel = 6
+
+#Personal ordered boss kills unlock Lost Cities ONLY in twilightforest:twilight_forest.
+#Does not generate cities, change native Twilight progression, or affect the overworld.
+[twilightCityProgression]
+	enabled = true
+	#Spectators always bypass; creative players bypass only when enabled.
+	creativeBypass = true
+	#Share of Twilight ordinary mobs/elite mobs in themed cities.
+	#The remaining share uses the original overworld building pools, equipment and integrations.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	twilightMobShare = 0.3
+	#Fallback city rank: 1 + floor(city center distance from dimension origin / this value), capped at 8.
+	#For continuous/perlin cities without a center the fallback is rank 1. Use cityStyleRanks for explicit tiers.
+	# Default: 2048
+	# Range: 256 ~ 1000000
+	blocksPerRank = 2048
+	#Exact citystyle ID=rank overrides, e.g. lostsouls:twilight_tier_1=1.
+	#Ranks 1..8 require Naga, Lich, Minoshroom, Hydra, all Knight Phantoms, Ur-Ghast, Alpha Yeti, Snow Queen IN ORDER.
+	#A style override uses the city CENTER style, not a neighboring building style.
+	cityStyleRanks = ["lostsouls:twilight_tier_1=1", "lostsouls:twilight_tier_2=2", "lostsouls:twilight_tier_3=3", "lostsouls:twilight_tier_4=4", "lostsouls:twilight_tier_5=5", "lostsouls:twilight_tier_6=6", "lostsouls:twilight_tier_7=7", "lostsouls:twilight_tier_8=8"]

@@ -1,0 +1,24 @@
+{
+  "RepairItem": "immersiveengineering:ingot_steel",
+  "MaxDurability": 1100,
+  "Jam": true,
+  "RepairCost": 8,
+  "XpCost": 1,
+  "Stats": [
+    {
+      "Type": [
+        "Damage",
+        "Recoil"
+      ],
+      "ReductionThreshold": 0.8,
+      "MaxReduction": 0.6
+    },
+    {
+      "Type": "Inaccuracy",
+      "ReductionThreshold": 0.75,
+      "MaxReduction": 0.4
+    }
+  ],
+  "JamThreshold": 25,
+  "JamChance": 0.03
+}

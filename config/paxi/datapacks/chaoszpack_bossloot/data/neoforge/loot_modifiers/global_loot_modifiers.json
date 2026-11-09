@@ -1,0 +1,81 @@
+{
+  "replace": false,
+  "modifiers": [
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_0"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_1"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_2"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_3"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_4"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_5"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_6"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_7"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_8"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_9"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_10"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_11"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_12"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_13"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_14"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_15"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_16"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_17"
+    },
+    {
+      "type": "neoforge:add_table",
+      "name": "chaoszpack_bossloot:boss_bonus_18"
+    }
+  ]
+}

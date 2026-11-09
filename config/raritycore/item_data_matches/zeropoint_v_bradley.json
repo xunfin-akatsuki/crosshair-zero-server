@@ -1,0 +1,16 @@
+{
+  "item_id": "superbwarfare:container",
+  "fuzzy_match": true,
+  "priority": 207,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: vehicle crate bradley",
+  "conditions": [
+    {
+      "path": "components.minecraft:block_entity_data",
+      "type": "contains",
+      "substring": "bradley",
+      "description": "vehicle bradley"
+    }
+  ]
+}

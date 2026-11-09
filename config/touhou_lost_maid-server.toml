@@ -1,0 +1,38 @@
+#女仆服务器配置
+#出生点附近禁止生成女仆的半径
+# Default: 1000
+# Range: > 0
+spawn_protect_range = 1000
+#近战女仆生成权重
+# Default: 100
+# Range: > 1
+attack_lost_maid_spawn_weight = 100
+#弓箭远程女仆生成权重
+# Default: 30
+# Range: > 0
+bow_attack_lost_maid_spawn_weight = 30
+#枪械女仆生成权重
+# Default: 10
+# Range: > 0
+gun_attack_lost_maid_spawn_weight = 10
+#弓箭远程女仆使用药水箭的概率
+# Default: 0.3
+# Range: 0.0 ~ 1.0
+tipped_arrow_chance = 0.3
+#女仆射出的药水箭矢为正面效果的概率
+#说明: 正面效果可对玩家(刻意为之)和女仆生效, 负面效果只对玩家生效
+# Default: 0.2
+# Range: 0.0 ~ 1.0
+benefit_arrow_chance = 0.2
+#女仆掉落物黑名单配置
+#说明: 填入物品的注册名，例如: ["minecraft:diamond", "minecraft:enchanted_golden_apple"]
+banned_items = []
+#女仆装备黑名单配置
+equipment_banned_items = []
+#可以通过驯服的迷失女仆的最大数量
+# Default: 5
+# Range: > 0
+can_tame_count = 5
+#女仆模型白名单
+#说明: 填入模型名，例如: ["geckolib:winefox", "geckolib:winefox_blue"]
+model_white_list = []

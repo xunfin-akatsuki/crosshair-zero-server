@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 120,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_brake_cthulhu",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "muzzle_brake_cthulhu",
+      "description": "att muzzle_brake_cthulhu"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 115,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att muzzle_choke_sg",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "muzzle_choke_sg",
+      "description": "att muzzle_choke_sg"
+    }
+  ]
+}

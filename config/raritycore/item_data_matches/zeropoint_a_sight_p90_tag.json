@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 109,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: att sight_p90",
+  "conditions": [
+    {
+      "path": "tag.AttachmentId",
+      "type": "contains",
+      "substring": "sight_p90",
+      "description": "att sight_p90"
+    }
+  ]
+}

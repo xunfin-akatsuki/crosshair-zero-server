@@ -1,0 +1,24 @@
+{
+  "ammo_id": "tacz:338",
+
+  "variant": "338_fmj",
+
+  "life": 102,
+
+  "friction": 0.0095,
+
+  "gravity": 0.043,
+
+  "recoil_multiplier": 1,
+
+  "inaccuracy_multiplier": 1,
+
+
+  "penetration_class": 6,
+
+  "armor_damage": 0.4,
+
+  "flesh_damage": 14,
+
+  "stack_size": 8
+}

@@ -1,0 +1,7 @@
+{
+  "item_id": "epiphany:intel_book",
+  "conditions": [{"path": "components.minecraft:custom_data.intel_tier", "type": "range", "min": 1, "max": 1}],
+  "priority": 1000,
+  "rarity": 1,
+  "description": "情报书：一星"
+}

@@ -1,0 +1,156 @@
+{
+  "name": "拾荒者枪铺",
+  "requires_mod": "tacz",
+  "products": [
+    {
+      "id": "g_glock17_s",
+      "display_name": "破旧格洛克 17",
+      "count": 1,
+      "price": 7800,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:glock_17"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_cz75_s",
+      "display_name": "旧 CZ75",
+      "count": 1,
+      "price": 13400,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:cz75"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_taurus943_s",
+      "display_name": "土制 Taurus 943",
+      "count": 1,
+      "price": 1350,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:taurus943"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_db_short",
+      "display_name": "短管双管猎枪",
+      "count": 1,
+      "price": 32250,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:db_short"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_db_long",
+      "display_name": "长管双管猎枪",
+      "count": 1,
+      "price": 13200,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:db_long"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "g_springfield",
+      "display_name": "斯普林菲尔德 1873",
+      "count": 1,
+      "price": 32250,
+      "tacz": {
+        "type": "gun",
+        "id": "tacz:springfield1873"
+      },
+      "purchase_limit": {
+        "max": 3,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_9mm_s",
+      "display_name": "9mm（散装）",
+      "count": 30,
+      "price": 300,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:9mm"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_45acp",
+      "display_name": ".45 ACP",
+      "count": 30,
+      "price": 300,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:45acp"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_12g",
+      "display_name": "12 号霰弹",
+      "count": 20,
+      "price": 80,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:12g"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    },
+    {
+      "id": "a_357",
+      "display_name": ".357 Magnum",
+      "count": 20,
+      "price": 560,
+      "tacz": {
+        "type": "ammo",
+        "id": "tacz:357mag"
+      },
+      "purchase_limit": {
+        "max": 8,
+        "refresh": true,
+        "refresh_days": 1
+      }
+    }
+  ]
+}

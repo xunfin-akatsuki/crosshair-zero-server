@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 108,
+  "rarity": 5,
+  "enabled": true,
+  "description": "zeropoint: gun vector45",
+  "conditions": [
+    {
+      "path": "tag.GunId",
+      "type": "contains",
+      "substring": "vector45",
+      "description": "gun vector45"
+    }
+  ]
+}

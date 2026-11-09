@@ -1,0 +1,13 @@
+[damage]
+	#Universal flesh damage
+	flesh_damage_on_unarmored = true
+
+[first_aid]
+	#Adjust the damage factor for limbs
+	# Default: 0.25
+	# Range: 0.1 ~ 128.0
+	limbs_factor = 0.25
+	#Adjust the damage factor for head
+	# Default: 0.2
+	# Range: 0.1 ~ 128.0
+	head_factor = 0.2

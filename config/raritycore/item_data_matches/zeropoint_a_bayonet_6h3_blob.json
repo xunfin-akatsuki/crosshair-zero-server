@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:attachment",
+  "fuzzy_match": true,
+  "priority": 111,
+  "rarity": 3,
+  "enabled": true,
+  "description": "zeropoint: att bayonet_6h3",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "bayonet_6h3",
+      "description": "att bayonet_6h3"
+    }
+  ]
+}

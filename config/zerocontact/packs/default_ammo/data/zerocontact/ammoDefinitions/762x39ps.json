@@ -1,0 +1,24 @@
+{
+  "ammo_id": "tacz:762x39",
+
+  "variant": "762x39ps",
+
+  "life": 58,
+
+  "friction": 0.021,
+
+  "gravity": 0.088,
+
+  "recoil_multiplier": 1,
+
+  "inaccuracy_multiplier": 1,
+
+
+  "penetration_class": 5,
+
+  "armor_damage": 0.05,
+
+  "flesh_damage": 6,
+
+  "stack_size": 60
+}

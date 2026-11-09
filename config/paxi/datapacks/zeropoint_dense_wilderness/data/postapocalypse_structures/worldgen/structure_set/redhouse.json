@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "postapocalypse_structures:redhouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 80,
+    "separation": 28,
+    "salt": 1843477101
+  }
+}

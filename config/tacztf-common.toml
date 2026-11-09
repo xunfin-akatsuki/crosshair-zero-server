@@ -1,0 +1,4 @@
+#A gun with tracer rounds installed fires a tracer every this many rounds (1 is every round).
+# Default: 1
+# Range: 1 ~ 100
+tracerInterval = 1

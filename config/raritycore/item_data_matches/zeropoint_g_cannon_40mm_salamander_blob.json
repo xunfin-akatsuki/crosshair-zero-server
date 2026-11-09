@@ -1,0 +1,16 @@
+{
+  "item_id": "tacz:modern_kinetic_gun",
+  "fuzzy_match": true,
+  "priority": 122,
+  "rarity": 6,
+  "enabled": true,
+  "description": "zeropoint: gun cannon_40mm_salamander",
+  "conditions": [
+    {
+      "path": "components.minecraft:custom_data",
+      "type": "contains",
+      "substring": "cannon_40mm_salamander",
+      "description": "gun cannon_40mm_salamander"
+    }
+  ]
+}

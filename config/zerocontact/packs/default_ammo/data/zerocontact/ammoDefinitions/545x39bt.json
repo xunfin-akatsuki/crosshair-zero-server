@@ -1,0 +1,26 @@
+{
+  "ammo_id": "tacz:545x39",
+
+  "variant": "545x39bt",
+
+  "life": 64,
+
+  "friction": 0.015,
+
+  "gravity": 0.064,
+
+  "recoil_multiplier": 1.04,
+
+  "inaccuracy_multiplier": 1.04,
+
+
+  "penetration_class": 7,
+
+  "armor_damage": 0.12,
+
+  "flesh_damage": 4,
+
+  "stack_size": 60,
+
+  "tracer_color": [255,0,0]
+}

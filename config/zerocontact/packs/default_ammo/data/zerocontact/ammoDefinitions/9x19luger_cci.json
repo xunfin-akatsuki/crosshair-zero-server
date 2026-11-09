@@ -1,0 +1,23 @@
+{
+  "ammo_id": "tacz:9mm",
+
+  "variant": "9x19luger_cci",
+
+  "life": 38,
+
+  "friction": 0.034,
+
+  "gravity": 0.17,
+
+  "recoil_multiplier": 0.94,
+
+  "inaccuracy_multiplier": 0.96,
+
+  "penetration_class": 2,
+
+  "armor_damage": 0.1,
+
+  "flesh_damage": 12,
+
+  "stack_size": 60
+}

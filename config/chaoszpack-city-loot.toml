@@ -1,0 +1,58 @@
+[cityLoot]
+	#Legacy setting: ignored by the six-star probability model.
+	#Edit data/chaoszpack_reforged/city_loot/probabilities.json for current probabilities.
+	# Default: 10000.0
+	# Range: 100.0 ~ 1000000.0
+	distanceCapBlocks = 10000.0
+	#Legacy setting: ignored by the six-star probability model.
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	distanceBonus = 1.0
+	#Legacy setting: ignored. Building categories use total LC floors.
+	# Default: 0.04
+	# Range: 0.0 ~ 0.5
+	buildingFloorBonus = 0.04
+	#Legacy setting: ignored. Container elevation is diagnostic only.
+	# Default: 0.04
+	# Range: 0.0 ~ 0.4
+	containerFloorBonus = 0.04
+	#Legacy setting: ignored. Locks select the locked probability profile.
+	# Default: 0.55
+	# Range: 0.0 ~ 2.0
+	lockBonus = 0.55
+	#Legacy setting: ignored. Exponential weighting has been replaced.
+	# Default: 0.65
+	# Range: 0.0 ~ 1.5
+	weightStrength = 0.65
+	#Legacy setting: ignored. Fixed bonus chips bypass the six-star probabilities.
+	safeReward = true
+	#Log each city container loot roll for in-game verification.
+	logContext = false
+	#Shared maximum chance to retain one Relics/Artifacts or catalog special reward in a Clavis-locked city loot result.
+	#A routed candidate and the existing star probability draw must also match.
+	#Includes Reliquified Artifacts dust and routed special equipment; unlocked containers are never eligible.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	lockedRelicChance = 0.05
+	#Shared special-reward retention chance for a city safe with recorded Clavis lock history.
+	#An unlocked safe without lock history is not eligible. At most one special reward survives.
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	safeRelicChance = 0.1
+	#Route unopened containers in the six supported wilderness structure packs to conservative city-managed loot.
+	#Keeps fixed inventories, machines, vehicle storage and previously touched containers unchanged.
+	wildernessStructureLoot = true
+	#Refill empty city-container slots once per LostSouls building cycle.
+	#Keeps every existing stack and each player's Lootr inventory; never rebuilds destroyed containers.
+	#Requires LostSouls with the BuildingRenewal API; game-time intervals are configured in LostSouls.
+	renewBuildingLoot = true
+	#Per-level probability shift toward higher star tiers (LostSouls building level).
+	#0 disables; 0.12 means each level above 1 moves ~12% of every tier's mass one tier up.
+	# Default: 0.12
+	# Range: 0.0 ~ 0.5
+	buildingLevelBoost = 0.12
+	#Buildings at or above this LostSouls building level always contain at least one safe.
+	#-1 disables. Only applies when LostSouls is installed.
+	# Default: 5
+	# Range: -1 ~ 10
+	safeRequiredLevel = 5

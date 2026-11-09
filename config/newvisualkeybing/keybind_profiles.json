@@ -1,0 +1,3770 @@
+{
+  "version": 1,
+  "selectedProfile": 0,
+  "profiles": [
+    {
+      "name": "默认",
+      "updatedAt": "2026-10-20T22:30:35.028828900",
+      "bindings": [
+        {
+          "name": "create.keyinfo.alt_modifier",
+          "action": "Alt Modifier",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.ctrl_modifier",
+          "action": "Ctrl Modifier",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.control",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.shift_modifier",
+          "action": "Shift Modifier",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.rotate_menu",
+          "action": "打开方块旋转菜单",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.toolmenu",
+          "action": "蓝图工具菜单",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.toolbelt",
+          "action": "访问附近的工具箱",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "simulated.keyinfo.scroll_up",
+          "action": "向上滚动",
+          "category": "Create Simulated",
+          "categoryName": "Create Simulated",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "simulated.keyinfo.scroll_down",
+          "action": "向下滚动",
+          "category": "Create Simulated",
+          "categoryName": "Create Simulated",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "simulated.keyinfo.rotate_mode",
+          "action": "物理手杖旋转模式",
+          "category": "Create Simulated",
+          "categoryName": "Create Simulated",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.modernui.openCenter",
+          "action": "打开操作中心",
+          "category": "Modern UI",
+          "categoryName": "Modern UI",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.modernui.zoom",
+          "action": "缩放",
+          "category": "Modern UI",
+          "categoryName": "Modern UI",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "Build Current Structure",
+          "action": "Build Current Structure",
+          "category": "Prefab - Structure Preview",
+          "categoryName": "Prefab - Structure Preview",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "key.relics.active_abilities_list",
+          "action": "主动能力菜单",
+          "category": "Relics",
+          "categoryName": "Relics",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.relics.research_relic",
+          "action": "研究光标下的遗物",
+          "category": "Relics",
+          "categoryName": "Relics",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_minimap_server_profiles",
+          "action": "Minimap Server Settings",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_alternative_list_players",
+          "action": "“玩家列表”第二键位",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_light_overlay",
+          "action": "切换光照叠加层",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_grid",
+          "action": "切换区块网格",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_pac_chunk_claims",
+          "action": "切换区块领地",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_slime",
+          "action": "切换史莱姆区块",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_entity_radar",
+          "action": "切换实体雷达",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_map",
+          "action": "切换小地图",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_map_waypoints",
+          "action": "切换小地图路径点",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_display_all_sets",
+          "action": "切换所有路径点集的渲染",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_manual_cave_mode",
+          "action": "切换手动洞穴模式",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_waypoints",
+          "action": "切换游戏内路径点",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_switch_waypoint_set",
+          "action": "切换路径点集合",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_tracked_players_in_world",
+          "action": "切换追踪玩家（世界中）",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_tracked_players_on_map",
+          "action": "切换追踪玩家（小地图）",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_reverse_entity_radar",
+          "action": "反转雷达渲染顺序",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_minimap_settings",
+          "action": "小地图设置",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.y",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_instant_waypoint",
+          "action": "快速路径点",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.keypad.add",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_waypoints_key",
+          "action": "打开路径点界面",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.u",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_zoom_out",
+          "action": "拉远小地图",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_zoom_in",
+          "action": "推近小地图",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_enlarge_map",
+          "action": "放大小地图",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_new_waypoint",
+          "action": "新建路径点",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_dimension",
+          "action": "切换维度",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_quick_confirm",
+          "action": "快速手动确认",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.right.shift",
+          "defaultKey": "key.keyboard.right.shift",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_open_map",
+          "action": "打开世界地图",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.m",
+          "defaultKey": "key.keyboard.m",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_world_map_server_settings",
+          "action": "打开服务器设置",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_open_settings",
+          "action": "打开设置",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.right.bracket",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_map_zoom_in",
+          "action": "放大（可选）",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_map_zoom_out",
+          "action": "缩小（可选）",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "artifacts.key.charm_of_sinking.toggle",
+          "action": "启用下沉护符",
+          "category": "artifacts.key_category",
+          "categoryName": "奇异饰品",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "artifacts.key.night_vision_goggles.toggle",
+          "action": "启用夜视仪",
+          "category": "artifacts.key_category",
+          "categoryName": "奇异饰品",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "artifacts.key.universal_attractor.toggle",
+          "action": "启用强力磁铁",
+          "category": "artifacts.key_category",
+          "categoryName": "奇异饰品",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "artifacts.key.charm_of_shrinking.toggle",
+          "action": "启用缩小护符",
+          "category": "artifacts.key_category",
+          "categoryName": "奇异饰品",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "artifacts.key.scarf_of_invisibility.toggle",
+          "action": "启用隐形围巾",
+          "category": "artifacts.key_category",
+          "categoryName": "奇异饰品",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "artifacts.key.helium_flamingo.activate",
+          "action": "激活氦气火烈鸟",
+          "category": "artifacts.key_category",
+          "categoryName": "奇异饰品",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.cycle_pinned_tracker",
+          "action": "Pinned Quest Tracker Visibility",
+          "category": "ftbquests",
+          "categoryName": "FTB 任务",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.quests",
+          "action": "打开任务",
+          "category": "ftbquests",
+          "categoryName": "FTB 任务",
+          "key": "key.keyboard.j",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.move_down",
+          "action": "Move Selection / Scroll Down",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.down",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.move_left",
+          "action": "Move Selection / Scroll Left",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.move_right",
+          "action": "Move Selection / Scroll Right",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.right",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.move_up",
+          "action": "Move Selection / Scroll Up",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.up",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.next_chapter",
+          "action": "Next Chapter",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.player_prefs",
+          "action": "Player Preferences",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.prev_chapter",
+          "action": "Previous Chapter",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.recenter",
+          "action": "Recenter GUI",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.space",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.zoom_reset",
+          "action": "Reset Zoom",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.0",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.search",
+          "action": "Search",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.f",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.extended_info",
+          "action": "See Extended Quest Info",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.f1",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.zoom_in",
+          "action": "Zoom In",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.equal",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui.zoom_out",
+          "action": "Zoom Out",
+          "category": "ftbquests.gui",
+          "categoryName": "FTB Quests (GUI)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.minus",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.copy",
+          "action": "Copy",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.delete",
+          "action": "Delete Hovered / Selected",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.delete",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.complete_object",
+          "action": "Force-complete Hovered",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.force_delete",
+          "action": "Force-delete Hovered / Selected",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.delete",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.reset_object",
+          "action": "Force-reset Hovered",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.reward_tables",
+          "action": "Open Reward Table Editor",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.t",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.paste",
+          "action": "Paste",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.redo",
+          "action": "Redo",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.y",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.reload_theme",
+          "action": "Reload Theme",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.f5",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.save",
+          "action": "Save Quests Now",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.s",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.select_all",
+          "action": "Select All",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.a",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.select_none",
+          "action": "Select None",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.d",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.toggle_crosshairs",
+          "action": "Toggle Crosshairs",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_editor.undo",
+          "action": "Undo",
+          "category": "ftbquests.gui_editor",
+          "categoryName": "FTB Quests (GUI Editor Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_quest_panel.edit_desc",
+          "action": "Edit Description",
+          "category": "ftbquests.gui_quest_panel",
+          "categoryName": "FTB Quests (Quest View Panel)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.d",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_quest_panel.edit_quest_props",
+          "action": "Edit Quest Properties",
+          "category": "ftbquests.gui_quest_panel",
+          "categoryName": "FTB Quests (Quest View Panel)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.q",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_quest_panel.edit_subtitle",
+          "action": "Edit Subtitle",
+          "category": "ftbquests.gui_quest_panel",
+          "categoryName": "FTB Quests (Quest View Panel)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.s",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_quest_panel.edit_title",
+          "action": "Edit Title",
+          "category": "ftbquests.gui_quest_panel",
+          "categoryName": "FTB Quests (Quest View Panel)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.t",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_quest_panel.add_line",
+          "action": "Insert Image",
+          "category": "ftbquests.gui_quest_panel",
+          "categoryName": "FTB Quests (Quest View Panel)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.l",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_quest_panel.add_image",
+          "action": "Insert Line",
+          "category": "ftbquests.gui_quest_panel",
+          "categoryName": "FTB Quests (Quest View Panel)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.i",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbquests.gui_quest_panel.add_page_break",
+          "action": "Insert Page Break",
+          "category": "ftbquests.gui_quest_panel",
+          "categoryName": "FTB Quests (Quest View Panel)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "iris.keybind.wireframe",
+          "action": "Wireframe (SP only)",
+          "category": "iris.keybinds",
+          "categoryName": "Iris",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "iris.keybind.shaderPackSelection",
+          "action": "光影包选择界面",
+          "category": "iris.keybinds",
+          "categoryName": "Iris",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "iris.keybind.toggleShaders",
+          "action": "启用/禁用光影",
+          "category": "iris.keybinds",
+          "categoryName": "Iris",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "iris.keybind.reload",
+          "action": "重新加载光影包",
+          "category": "iris.keybinds",
+          "categoryName": "Iris",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.mca.skin_library",
+          "action": "打开皮肤库",
+          "category": "itemGroup.mca.mca_tab",
+          "categoryName": "凡家物语",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.u",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.cheatOneItem",
+          "action": "作弊获得1个物品",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI（作弊模式）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.cheatOneItem2",
+          "action": "作弊获得1个物品",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI（作弊模式）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.cheatItemStack",
+          "action": "作弊获得1组物品",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI（作弊模式）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.cheatItemStack2",
+          "action": "作弊获得1组物品",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI（作弊模式）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleCheatMode",
+          "action": "切换作弊模式",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI（作弊模式）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.copy.recipe.id",
+          "action": "复制配方ID到剪贴板",
+          "category": "jei.key.category.dev.tools",
+          "categoryName": "JEI（开发者工具）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleEditMode",
+          "action": "切换隐藏原料模式",
+          "category": "jei.key.category.edit.mode",
+          "categoryName": "JEI（编辑模式）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleHideIngredient",
+          "action": "隐藏原料",
+          "category": "jei.key.category.edit.mode",
+          "categoryName": "JEI（编辑模式）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleWildcardHideIngredient",
+          "action": "隐藏原料（通配符）",
+          "category": "jei.key.category.edit.mode",
+          "categoryName": "JEI（编辑模式）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleCheatModeConfigButton",
+          "action": "切换作弊模式",
+          "category": "jei.key.category.hover.config.button",
+          "categoryName": "JEI（将鼠标悬停在配置按钮上）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.shareToChat",
+          "action": "分享物品到聊天栏",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.transferRecipeBookmark",
+          "action": "合成书签配方 (一次)",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.maxTransferRecipeBookmark",
+          "action": "合成书签配方 (最大数量)",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.quickMove",
+          "action": "快速移动幽灵物品",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showBookmarkTooltipFeatures",
+          "action": "显示书签详情",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showUses",
+          "action": "显示用途",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.keyboard.u",
+          "defaultKey": "key.keyboard.u",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showUses2",
+          "action": "显示用途",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showRecipe",
+          "action": "显示配方",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showRecipe2",
+          "action": "显示配方",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.bookmark",
+          "action": "添加/移除书签",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI（鼠标悬停）",
+          "key": "key.keyboard.a",
+          "defaultKey": "key.keyboard.a",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.previousPage",
+          "action": "上一页",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI（叠加层）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.nextPage",
+          "action": "下一页",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI（叠加层）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleOverlay",
+          "action": "显示/隐藏JEI叠加层",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI（叠加层）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleBookmarkOverlay",
+          "action": "显示/隐藏加入书签的原料",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI（叠加层）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.focusSearch",
+          "action": "选中搜索框",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI（叠加层）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.f",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.recipeForward",
+          "action": "Next Recipe",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI（配方）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.recipeBack",
+          "action": "上一配方",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI（配方）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.backspace",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.previousCategory",
+          "action": "上一配方类别",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI（配方）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.page.up",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.previousRecipePage",
+          "action": "上一配方页",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI（配方）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.page.up",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.nextCategory",
+          "action": "下一配方类别",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI（配方）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.page.down",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.nextRecipePage",
+          "action": "下一配方页",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI（配方）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.page.down",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.closeRecipeGui",
+          "action": "关闭配方界面",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI（配方）",
+          "key": "key.keyboard.escape",
+          "defaultKey": "key.keyboard.escape",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.pauseRecipeCycling",
+          "action": "暂停配方原料循环",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI（配方）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.previousSearch",
+          "action": "上一搜索",
+          "category": "jei.key.category.search",
+          "categoryName": "JEI（搜索过滤器）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.up",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.nextSearch",
+          "action": "下一搜索",
+          "category": "jei.key.category.search",
+          "categoryName": "JEI（搜索过滤器）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.down",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.clearSearchBar",
+          "action": "清除搜索过滤器",
+          "category": "jei.key.category.search",
+          "categoryName": "JEI（搜索过滤器）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.bountycraft.open_bounty_gui",
+          "action": "打开悬赏追踪器",
+          "category": "key.categories.bountycraft",
+          "categoryName": "悬赏工艺",
+          "key": "key.keyboard.backslash",
+          "defaultKey": "key.keyboard.j",
+          "priority": 0
+        },
+        {
+          "name": "key.configured.open_mod_list",
+          "action": "打开模组列表",
+          "category": "key.categories.configured",
+          "categoryName": "Configured",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.saveToolbarActivator",
+          "action": "保存快捷栏",
+          "category": "key.categories.creative",
+          "categoryName": "创造模式",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.loadToolbarActivator",
+          "action": "加载快捷栏",
+          "category": "key.categories.creative",
+          "categoryName": "创造模式",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.cyber_ware_port.menu",
+          "action": "打开电子义体菜单",
+          "category": "key.categories.cyber_ware_port",
+          "categoryName": "电子义体",
+          "key": "key.keyboard.caps.lock",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.epiphany.open_ui",
+          "action": "打开 Epiphany 界面",
+          "category": "key.categories.epiphany",
+          "categoryName": "Epiphany",
+          "key": "key.keyboard.k",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.ezweight.open_config",
+          "action": "打开 HUD 配置",
+          "category": "key.categories.ezweight",
+          "categoryName": "eZWeight",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbchunks.claim_manager",
+          "action": "Open Claim Manager",
+          "category": "key.categories.ftbchunks",
+          "categoryName": "FTB Chunks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbchunks.add_waypoint",
+          "action": "Quick Add Waypoint",
+          "category": "key.categories.ftbchunks",
+          "categoryName": "FTB Chunks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbchunks.toggle_minimap",
+          "action": "Toggle Minimap",
+          "category": "key.categories.ftbchunks",
+          "categoryName": "FTB Chunks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbchunks.waypoint_manager",
+          "action": "Waypoint Manager",
+          "category": "key.categories.ftbchunks",
+          "categoryName": "FTB Chunks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbchunks.minimap.zoomIn",
+          "action": "Zoom In Minimap",
+          "category": "key.categories.ftbchunks",
+          "categoryName": "FTB Chunks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.equal",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbchunks.minimap.zoomOut",
+          "action": "Zoom Out Minimap",
+          "category": "key.categories.ftbchunks",
+          "categoryName": "FTB Chunks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.minus",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbchunks.map",
+          "action": "打开FTB区块声明地图",
+          "category": "key.categories.ftbchunks",
+          "categoryName": "FTB Chunks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.m",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbteams.open_gui",
+          "action": "打开队伍GUI",
+          "category": "key.categories.ftbteams",
+          "categoryName": "FTB队伍",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.use",
+          "action": "使用物品/放置方块",
+          "category": "key.categories.gameplay",
+          "categoryName": "游戏内容",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.attack",
+          "action": "攻击/摧毁",
+          "category": "key.categories.gameplay",
+          "categoryName": "游戏内容",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.pickItem",
+          "action": "选取方块",
+          "category": "key.categories.gameplay",
+          "categoryName": "游戏内容",
+          "key": "key.mouse.middle",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.gd656killicon.open_config",
+          "action": "打开配置",
+          "category": "key.categories.gd656killicon",
+          "categoryName": "GD656Killicon",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.g",
+          "priority": 0
+        },
+        {
+          "name": "key.gd656killicon.open_scoreboard",
+          "action": "查看计分板",
+          "category": "key.categories.gd656killicon",
+          "categoryName": "GD656Killicon",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.guaniao.camera.open_creative_controls",
+          "action": "打开创意拍摄控制",
+          "category": "key.categories.guaniao",
+          "categoryName": "观鸟",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.guaniao.camera.cycle_filter",
+          "action": "打开相机滤镜库",
+          "category": "key.categories.guaniao",
+          "categoryName": "观鸟",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.guaniao.camera.focus",
+          "action": "相机对焦",
+          "category": "key.categories.guaniao",
+          "categoryName": "观鸟",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.handheldmoon.lamp_switch.desc",
+          "action": "开关",
+          "category": "key.categories.handheldmoon",
+          "categoryName": "掌中明月",
+          "key": "key.keyboard.x",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.immersiveengineering.chemthrowerSwitch",
+          "action": "切换化学流体罐",
+          "category": "key.categories.immersiveengineering",
+          "categoryName": "沉浸工程",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.immersiveengineering.magnetEquip",
+          "action": "磁力护盾手套（双击）",
+          "category": "key.categories.immersiveengineering",
+          "categoryName": "沉浸工程",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.s",
+          "priority": 0
+        },
+        {
+          "name": "key.immersiveengineering.railgunZoom",
+          "action": "磁轨炮缩放",
+          "category": "key.categories.immersiveengineering",
+          "categoryName": "沉浸工程",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.swapOffhand",
+          "action": "与副手交换物品",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.f",
+          "defaultKey": "key.keyboard.f",
+          "priority": 0
+        },
+        {
+          "name": "key.drop",
+          "action": "丢弃所选物品",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.q",
+          "defaultKey": "key.keyboard.q",
+          "priority": 0
+        },
+        {
+          "name": "key.inventory",
+          "action": "开启/关闭物品栏",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.e",
+          "defaultKey": "key.keyboard.e",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.1",
+          "action": "快捷栏1",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.1",
+          "defaultKey": "key.keyboard.1",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.2",
+          "action": "快捷栏2",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.2",
+          "defaultKey": "key.keyboard.2",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.3",
+          "action": "快捷栏3",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.3",
+          "defaultKey": "key.keyboard.3",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.4",
+          "action": "快捷栏4",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.4",
+          "defaultKey": "key.keyboard.4",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.5",
+          "action": "快捷栏5",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.5",
+          "defaultKey": "key.keyboard.5",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.6",
+          "action": "快捷栏6",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.6",
+          "defaultKey": "key.keyboard.6",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.7",
+          "action": "快捷栏7",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.7",
+          "defaultKey": "key.keyboard.7",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.8",
+          "action": "快捷栏8",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.8",
+          "defaultKey": "key.keyboard.8",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.9",
+          "action": "快捷栏9",
+          "category": "key.categories.inventory",
+          "categoryName": "物品栏",
+          "key": "key.keyboard.9",
+          "defaultKey": "key.keyboard.9",
+          "priority": 0
+        },
+        {
+          "name": "key.kubejs.kubedex",
+          "action": "Kubedex",
+          "category": "key.categories.kubejs",
+          "categoryName": "KubeJS",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.liubai.open_config",
+          "action": "打开留白设置",
+          "category": "key.categories.liubai",
+          "categoryName": "留白",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.l",
+          "priority": 0
+        },
+        {
+          "name": "key.mcphone.hud_toggle",
+          "action": "唤出/收起手机 HUD",
+          "category": "key.categories.mcphone",
+          "categoryName": "MCphone",
+          "key": "key.keyboard.n",
+          "defaultKey": "key.keyboard.g",
+          "priority": 0
+        },
+        {
+          "name": "key.mcphone.open_phone",
+          "action": "打开手机",
+          "category": "key.categories.mcphone",
+          "categoryName": "MCphone",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.mcphone.camera_shutter",
+          "action": "拍照",
+          "category": "key.categories.mcphone",
+          "categoryName": "MCphone",
+          "key": "key.mouse.left",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.mcphone.hud_interact",
+          "action": "操作手机 HUD",
+          "category": "key.categories.mcphone",
+          "categoryName": "MCphone",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.mcphone.reader_prev",
+          "action": "看书：上一页",
+          "category": "key.categories.mcphone",
+          "categoryName": "MCphone",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.page.up",
+          "priority": 0
+        },
+        {
+          "name": "key.mcphone.reader_next",
+          "action": "看书：下一页",
+          "category": "key.categories.mcphone",
+          "categoryName": "MCphone",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.page.down",
+          "priority": 0
+        },
+        {
+          "name": "key.mcphone.camera_exit",
+          "action": "退出相机",
+          "category": "key.categories.mcphone",
+          "categoryName": "MCphone",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.mcpskins.open_armory",
+          "action": "Open Skin Armory",
+          "category": "key.categories.mcpskins",
+          "categoryName": "MCPSkins",
+          "key": "key.keyboard.semicolon",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.zoniex.zoniex_jump",
+          "action": "Zoniex 跳跃",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.space",
+          "priority": 0
+        },
+        {
+          "name": "key.fullscreen",
+          "action": "切换全屏显示",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.f11",
+          "priority": 0
+        },
+        {
+          "name": "key.smoothCamera",
+          "action": "切换电影视角",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "lambdynlights.key.toggle_fps_dynamic_lighting",
+          "action": "切换第一人称光照",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.togglePerspective",
+          "action": "切换视角",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.f5",
+          "defaultKey": "key.keyboard.f5",
+          "priority": 0
+        },
+        {
+          "name": "key.butchery.vindicatornosepress",
+          "action": "卫道士面具",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.butchery.evokermaskpress",
+          "action": "唤魔者面具",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.screenshot",
+          "action": "截图",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.f2",
+          "defaultKey": "key.keyboard.f2",
+          "priority": 0
+        },
+        {
+          "name": "key.corpse.death_history",
+          "action": "打开死亡历史",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.u",
+          "priority": 0
+        },
+        {
+          "name": "key.butchery.pillagernosepress",
+          "action": "掠夺者面具",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.advancements",
+          "action": "进度",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.l",
+          "priority": 0
+        },
+        {
+          "name": "key.spectatorOutlines",
+          "action": "高亮玩家",
+          "category": "key.categories.misc",
+          "categoryName": "杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.forward",
+          "action": "向前移动",
+          "category": "key.categories.movement",
+          "categoryName": "移动",
+          "key": "key.keyboard.w",
+          "defaultKey": "key.keyboard.w",
+          "priority": 0
+        },
+        {
+          "name": "key.right",
+          "action": "向右移动",
+          "category": "key.categories.movement",
+          "categoryName": "移动",
+          "key": "key.keyboard.d",
+          "defaultKey": "key.keyboard.d",
+          "priority": 0
+        },
+        {
+          "name": "key.back",
+          "action": "向后移动",
+          "category": "key.categories.movement",
+          "categoryName": "移动",
+          "key": "key.keyboard.s",
+          "defaultKey": "key.keyboard.s",
+          "priority": 0
+        },
+        {
+          "name": "key.left",
+          "action": "向左移动",
+          "category": "key.categories.movement",
+          "categoryName": "移动",
+          "key": "key.keyboard.a",
+          "defaultKey": "key.keyboard.a",
+          "priority": 0
+        },
+        {
+          "name": "key.sneak",
+          "action": "潜行",
+          "category": "key.categories.movement",
+          "categoryName": "移动",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.sprint",
+          "action": "疾跑",
+          "category": "key.categories.movement",
+          "categoryName": "移动",
+          "key": "key.keyboard.left.control",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "key.jump",
+          "action": "跳跃",
+          "category": "key.categories.movement",
+          "categoryName": "移动",
+          "key": "key.keyboard.space",
+          "defaultKey": "key.keyboard.space",
+          "priority": 0
+        },
+        {
+          "name": "key.chat",
+          "action": "打开聊天栏",
+          "category": "key.categories.multiplayer",
+          "categoryName": "多人游戏",
+          "key": "key.keyboard.t",
+          "defaultKey": "key.keyboard.t",
+          "priority": 0
+        },
+        {
+          "name": "key.playerlist",
+          "action": "显示玩家列表",
+          "category": "key.categories.multiplayer",
+          "categoryName": "多人游戏",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.socialInteractions",
+          "action": "社交屏幕",
+          "category": "key.categories.multiplayer",
+          "categoryName": "多人游戏",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "key.command",
+          "action": "输入命令",
+          "category": "key.categories.multiplayer",
+          "categoryName": "多人游戏",
+          "key": "key.keyboard.slash",
+          "defaultKey": "key.keyboard.slash",
+          "priority": 0
+        },
+        {
+          "name": "key.newvisualkeybing.open_viewer",
+          "action": "打开按键查看器",
+          "category": "key.categories.newvisualkeybing",
+          "categoryName": "New Visual Keybing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.RideZipline",
+          "action": "使用滑索",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.Crawl",
+          "action": "匍匐（爬行）",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.c",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.Breakfall",
+          "action": "受身（落地缓冲）",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.Enable",
+          "action": "启用跑酷",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.p",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.QuickTurn",
+          "action": "快速转向",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.openSetting",
+          "action": "打开跑酷设置",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.p",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.HangDown",
+          "action": "挂杠（吊挂）",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.Vault",
+          "action": "撑越（撑手跳）",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.HideInBlock",
+          "action": "方块藏匿（干草或树叶块）",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.HorizontalWallRun",
+          "action": "横向跑墙",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.WallSlide",
+          "action": "滑墙（贴墙滑降）",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.ClingToCliff",
+          "action": "猫挂（边缘悬挂）",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.FastRun",
+          "action": "疾跑",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.left.control",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.Flipping",
+          "action": "空翻",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.WallJump",
+          "action": "蹬墙跳",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.space",
+          "defaultKey": "key.keyboard.space",
+          "priority": 0
+        },
+        {
+          "name": "key.parcool.Dodge",
+          "action": "躲闪",
+          "category": "key.categories.parcool",
+          "categoryName": "跑酷（ParCool）",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.ponder.ponder",
+          "action": "思索",
+          "category": "key.categories.ponder",
+          "categoryName": "Ponder",
+          "key": "key.keyboard.w",
+          "defaultKey": "key.keyboard.w",
+          "priority": 0
+        },
+        {
+          "name": "key.quickskin.open_menu",
+          "action": "打开皮肤菜单",
+          "category": "key.categories.quickskin",
+          "categoryName": "快速皮肤",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.reliable_gliders.deploy",
+          "action": "展开滑翔翼",
+          "category": "key.categories.reliable_gliders",
+          "categoryName": "可靠滑翔翼",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.interact",
+          "action": "交互",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.f",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.sensitivity_reduce",
+          "action": "减少灵敏度",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.page.down",
+          "defaultKey": "key.keyboard.page.down",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.move_shift",
+          "action": "减速",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.change_seat",
+          "action": "切换座位(+数字)",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.move_space",
+          "action": "刹车/悬停/起落架",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.space",
+          "defaultKey": "key.keyboard.space",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.move_forward",
+          "action": "前进/提升油门",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.w",
+          "defaultKey": "key.keyboard.w",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.move_ctrl",
+          "action": "加力",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.left.control",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.unload_passengers",
+          "action": "卸载乘客",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.u",
+          "defaultKey": "key.keyboard.u",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.unload",
+          "action": "卸载子弹",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.move_right",
+          "action": "右转/向右翻滚",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.d",
+          "defaultKey": "key.keyboard.d",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.move_backward",
+          "action": "后退/降低油门",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.s",
+          "defaultKey": "key.keyboard.s",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.change_fire_mode_forward",
+          "action": "向前切换开火模式",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.up",
+          "defaultKey": "key.keyboard.up",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.change_ammo_forward",
+          "action": "向前切换弹种",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.left",
+          "defaultKey": "key.keyboard.left",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.change_fire_mode_backward",
+          "action": "向后切换开火模式",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.down",
+          "defaultKey": "key.keyboard.down",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.change_ammo_backward",
+          "action": "向后切换弹种",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.right",
+          "defaultKey": "key.keyboard.right",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.sensitivity_increase",
+          "action": "增加灵敏度",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.page.up",
+          "defaultKey": "key.keyboard.page.up",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.breath",
+          "action": "屏息",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.left.control",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.move_left",
+          "action": "左转/向左翻滚",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.a",
+          "defaultKey": "key.keyboard.a",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.active_thermal_imaging",
+          "action": "开启热成像",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.x",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.fire",
+          "action": "开火",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.fire_mode",
+          "action": "开火模式",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.g",
+          "defaultKey": "key.keyboard.n",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.toggle_tactical_map",
+          "action": "打开战术地图",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.m",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.config",
+          "action": "打开配置界面",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.o",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.edit_mode",
+          "action": "改装",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.z",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.disconnect_towing",
+          "action": "断开牵引",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.y",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.melee",
+          "action": "枪械近战",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.v",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.mark",
+          "action": "标记",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.mouse.middle",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.switch_zoom",
+          "action": "瞄准(切换)",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.hold_zoom",
+          "action": "瞄准(按住)",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.dismount",
+          "action": "离开载具",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.loiter_config",
+          "action": "自动盘旋配置",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.j",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.reload",
+          "action": "装填子弹",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.free_camera",
+          "action": "载具自由视角",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.vehicle_seek",
+          "action": "载具锁定目标",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.x",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.superbwarfare.release_decoy",
+          "action": "释放诱饵",
+          "category": "key.categories.superbwarfare",
+          "categoryName": "卓越前线",
+          "key": "key.keyboard.v",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.tctcore.tc_tcore_key",
+          "action": "TCTcore",
+          "category": "key.categories.ui",
+          "categoryName": "游戏界面",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.xaeronav.goto_map_cursor",
+          "action": "(Map) Navigate to cursor position",
+          "category": "key.categories.xaeronav",
+          "categoryName": "XaeroNav",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.xaeronav.clear",
+          "action": "Clear route",
+          "category": "key.categories.xaeronav",
+          "categoryName": "XaeroNav",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.xaeronav.goto_looking_at",
+          "action": "Navigate to the block you are looking at",
+          "category": "key.categories.xaeronav",
+          "categoryName": "XaeroNav",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.xaeronav.open_config_screen",
+          "action": "Open settings screen",
+          "category": "key.categories.xaeronav",
+          "categoryName": "XaeroNav",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.xaeronav.toggle_hud",
+          "action": "Toggle guidance HUD",
+          "category": "key.categories.xaeronav",
+          "categoryName": "XaeroNav",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.open_modular_menu",
+          "action": "Open Modular Gadget Menu",
+          "category": "key.categories.zerocontact",
+          "categoryName": "ZeroContact",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.grave.accent",
+          "priority": 0
+        },
+        {
+          "name": "key.swap_visor",
+          "action": "切换目镜",
+          "category": "key.categories.zerocontact",
+          "categoryName": "ZeroContact",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.zerocontact.module_activate",
+          "action": "切换选中模块状态",
+          "category": "key.categories.zerocontact",
+          "categoryName": "ZeroContact",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.zerocontact.module_hud",
+          "action": "打开/关闭模块快捷菜单",
+          "category": "key.categories.zerocontact",
+          "categoryName": "ZeroContact",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.g",
+          "priority": 0
+        },
+        {
+          "name": "key.open_selector",
+          "action": "打开弹种轮盘",
+          "category": "key.categories.zerocontact",
+          "categoryName": "ZeroContact",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.zerocontact.open_plate_slots",
+          "action": "打开插板槽",
+          "category": "key.categories.zerocontact",
+          "categoryName": "ZeroContact",
+          "key": "key.keyboard.p",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "key.zerocontact.open_radio",
+          "action": "打开电台",
+          "category": "key.categories.zerocontact",
+          "categoryName": "ZeroContact",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.3",
+          "priority": 0
+        },
+        {
+          "name": "key.open_backpack",
+          "action": "打开背包",
+          "category": "key.categories.zerocontact",
+          "categoryName": "ZeroContact",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "keys.eclipticseasons.main/debug_1",
+          "action": "调试界面第一键",
+          "category": "key.category.eclipticseasons.main",
+          "categoryName": "节气",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "keys.eclipticseasons.main/debug",
+          "action": "调试界面第二键",
+          "category": "key.category.eclipticseasons.main",
+          "categoryName": "节气",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.i",
+          "priority": 0
+        },
+        {
+          "name": "key.lrtactical.normal_attack.desc",
+          "action": "普通攻击",
+          "category": "key.category.lrtactical",
+          "categoryName": "LesRaisins 战术装备",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.lrtactical.sp_attack.desc",
+          "action": "重击/特殊动作",
+          "category": "key.category.lrtactical",
+          "categoryName": "LesRaisins 战术装备",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.tool_swap",
+          "action": "基于所指方块/实体替换工具",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "精妙背包",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_1",
+          "action": "打开/关闭第一个插槽中的升级卡",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "精妙背包",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_3",
+          "action": "打开/关闭第三个插槽中的升级卡",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "精妙背包",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_2",
+          "action": "打开/关闭第二个插槽中的升级卡",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "精妙背包",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_5",
+          "action": "打开/关闭第五个插槽中的升级卡",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "精妙背包",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_4",
+          "action": "打开/关闭第四个插槽中的升级卡",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "精妙背包",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.open_backpack",
+          "action": "打开背包",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "精妙背包",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.inventory_interaction",
+          "action": "运行物品交互升级（如取货/卸货升级）",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "精妙背包",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedcore.sort",
+          "action": "整理容器/背包",
+          "category": "key.category.sophisticatedcore.main",
+          "categoryName": "精妙模组",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedcore.transfer_to_storage",
+          "action": "转移至容器",
+          "category": "key.category.sophisticatedcore.main",
+          "categoryName": "精妙模组",
+          "key": "key.keyboard.left.bracket",
+          "defaultKey": "key.keyboard.left.bracket",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedcore.transfer_to_inventory",
+          "action": "转移至物品栏",
+          "category": "key.category.sophisticatedcore.main",
+          "categoryName": "精妙模组",
+          "key": "key.keyboard.right.bracket",
+          "defaultKey": "key.keyboard.right.bracket",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.shoot.desc",
+          "action": "射击",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.fire_select.desc",
+          "action": "开火模式",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.g",
+          "defaultKey": "key.keyboard.g",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.open_config.desc",
+          "action": "打开 TAC 配置文件",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.t",
+          "defaultKey": "key.keyboard.t",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.interact.desc",
+          "action": "持械时互动",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.f",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.reload.desc",
+          "action": "换弹",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.refit.desc",
+          "action": "改装",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.z",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.inspect.desc",
+          "action": "检视",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.i",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.crawl.desc",
+          "action": "爬行",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.c",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.aim.desc",
+          "action": "瞄准",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.zoom.desc",
+          "action": "缩放",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.tacz.melee.desc",
+          "action": "近战",
+          "category": "key.category.tacz",
+          "categoryName": "永恒枪械工坊：Zero",
+          "key": "key.keyboard.v",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.touhou_little_maid.stt_chat.desc",
+          "action": "女仆AI语言对话",
+          "category": "key.category.touhou_little_maid",
+          "categoryName": "Touhou Little Maid",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.touhou_little_maid.dismount.desc",
+          "action": "脱离扫帚",
+          "category": "key.category.touhou_little_maid",
+          "categoryName": "Touhou Little Maid",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.debug_animation.desc",
+          "action": "打开动画调试",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.player_model.desc",
+          "action": "打开玩家模型界面",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.y",
+          "defaultKey": "key.keyboard.y",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.animation_roulette.desc",
+          "action": "打开轮盘动画",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.grave.accent",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.open_extra_player_render.desc",
+          "action": "打开额外玩家渲染配置",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.extra_animation.0.desc",
+          "action": "播放额外动画 0",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.extra_animation.1.desc",
+          "action": "播放额外动画 1",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.extra_animation.2.desc",
+          "action": "播放额外动画 2",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.extra_animation.3.desc",
+          "action": "播放额外动画 3",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.extra_animation.4.desc",
+          "action": "播放额外动画 4",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.extra_animation.5.desc",
+          "action": "播放额外动画 5",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.extra_animation.6.desc",
+          "action": "播放额外动画 6",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.extra_animation.7.desc",
+          "action": "播放额外动画 7",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.yes_steve_model.lock_roulette.desc",
+          "action": "锁定轮盘",
+          "category": "key.category.yes_steve_model",
+          "categoryName": "是，史蒂夫模型",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.l",
+          "priority": 0
+        },
+        {
+          "name": "key.createbigcannons.pitch_mode",
+          "action": "切换炮架模式",
+          "category": "key.createbigcannons.category",
+          "categoryName": "机械动力：火炮",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.createbigcannons.fire_controlled_cannon",
+          "action": "开火所控制的火炮",
+          "category": "key.createbigcannons.category",
+          "categoryName": "机械动力：火炮",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.curios.open.desc",
+          "action": "打开/关闭饰品栏",
+          "category": "key.curios.category",
+          "categoryName": "饰品",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.g",
+          "priority": 0
+        },
+        {
+          "name": "key.slow.desc",
+          "action": "减速 / 停止摆荡",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.climbup.desc",
+          "action": "向上爬",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.climbdown.desc",
+          "action": "向下爬",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.main_throw.desc",
+          "action": "掷出主钩",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.off_throw.desc",
+          "action": "掷出副钩",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.boththrow.desc",
+          "action": "掷出钩爪",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.climb.desc",
+          "action": "攀爬",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.rocket.desc",
+          "action": "火箭",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jumpanddetach.desc",
+          "action": "跳跃并解除",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.enderlaunch.desc",
+          "action": "钩爪末影弹射",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.motoronoff.desc",
+          "action": "马达开/关",
+          "category": "key.grapplemod.category",
+          "categoryName": "抓钩模组",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryhud.toggle",
+          "action": "打开/关闭 InventoryHUD",
+          "category": "key.inventoryhud.category",
+          "categoryName": "Inventory HUD+",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.i",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryhud.toggleall",
+          "action": "打开/关闭所有 HUDs",
+          "category": "key.inventoryhud.category",
+          "categoryName": "Inventory HUD+",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryhud.togglepot",
+          "action": "打开/关闭效果 HUD",
+          "category": "key.inventoryhud.category",
+          "categoryName": "Inventory HUD+",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryhud.togglearm",
+          "action": "打开/关闭盔甲HUD",
+          "category": "key.inventoryhud.category",
+          "categoryName": "Inventory HUD+",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryhud.openconfig",
+          "action": "打开配置",
+          "category": "key.inventoryhud.category",
+          "categoryName": "Inventory HUD+",
+          "key": "key.keyboard.keypad.add",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "key.legendarysurvivaloverhaul.added_desc",
+          "action": "显示描述",
+          "category": "key.legendarysurvivaloverhaul.title",
+          "categoryName": "传说生存",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.legendarysurvivaloverhaul.body_health",
+          "action": "查看身体状态",
+          "category": "key.legendarysurvivaloverhaul.title",
+          "categoryName": "传说生存",
+          "key": "key.keyboard.h",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.modernfix.config",
+          "action": "打开配置屏幕",
+          "category": "key.modernfix",
+          "categoryName": "现代化修复",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.solonion.open_food_book",
+          "action": "打开食物清单",
+          "category": "key.solonion.category",
+          "categoryName": "生活调味料：洋葱版",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.toggle_liquid",
+          "action": "切换流体",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.keypad.2",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.config",
+          "action": "打开配置",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.keypad.3",
+          "defaultKey": "key.keyboard.keypad.0",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.show_overlay",
+          "action": "显示叠加层",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.keypad.1",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.show_uses",
+          "action": "显示用途",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.keypad.4",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.show_details",
+          "action": "显示详情",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.show_recipes",
+          "action": "显示配方",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.keypad.3",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.narrate",
+          "action": "语音复述",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.keypad.5",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.tpose",
+          "action": "T型姿势（Patreon）",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.jet",
+          "action": "冲天姿势（Patreon）",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.point",
+          "action": "向前指",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.no",
+          "action": "否",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.weep",
+          "action": "哭泣",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.dab",
+          "action": "嘻哈超人手势（Patreon）",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.think",
+          "action": "思考",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.wave",
+          "action": "挥手",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.facepalm",
+          "action": "捂脸",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.salute",
+          "action": "敬礼",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.yes",
+          "action": "是",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.zombie",
+          "action": "模仿僵尸（Patreon）",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.cheer",
+          "action": "欢呼",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.headbang",
+          "action": "甩头",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.shrug",
+          "action": "耸肩",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.dance",
+          "action": "跳舞（Patreon）",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.exorcist",
+          "action": "驱魔人姿势（Patreon）",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.clap",
+          "action": "鼓掌",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "夸克丨动作表情",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.shift_lock",
+          "action": "Shift锁定",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "夸克丨物品栏",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.transfer_extract",
+          "action": "取出物品",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "夸克丨物品栏",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.transfer_insert",
+          "action": "存入物品",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "夸克丨物品栏",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.sort_container",
+          "action": "整理容器物品栏",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "夸克丨物品栏",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.sort_player",
+          "action": "整理玩家物品栏",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "夸克丨物品栏",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.variant_selector",
+          "action": "变种选择器",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "夸克丨杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.narrator_full_readout",
+          "action": "复述当前内容：全部",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "夸克丨杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.narrator_readout",
+          "action": "复述当前内容：部分",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "夸克丨杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.change_hotbar",
+          "action": "快捷栏交换",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "夸克丨杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.lock_rotation",
+          "action": "旋转锁定",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "夸克丨杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.camera_mode",
+          "action": "相机模式",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "夸克丨杂项",
+          "key": "key.keyboard.f12",
+          "defaultKey": "key.keyboard.f12",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.autorun",
+          "action": "自动行走",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "夸克丨杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.back",
+          "action": "返回",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "夸克丨杂项",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.4",
+          "priority": 0
+        },
+        {
+          "name": "tacztweaks.key.bolt",
+          "action": "Bolt",
+          "category": "tacztweaks.key.category.mod",
+          "categoryName": "TaCZ Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "tacztweaks.key.reduceSensitivity",
+          "action": "Reduce Sensitivity",
+          "category": "tacztweaks.key.category.mod",
+          "categoryName": "TaCZ Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "tacztweaks.key.tiltGun",
+          "action": "Tilt Gun",
+          "category": "tacztweaks.key.category.mod",
+          "categoryName": "TaCZ Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "tacztweaks.key.unload",
+          "action": "Unload",
+          "category": "tacztweaks.key.category.mod",
+          "categoryName": "TaCZ Tweaks",
+          "key": "key.keyboard.y",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        }
+      ],
+      "combos": [
+        {
+          "mappingName": "key.superbwarfare.interact",
+          "action": "交互",
+          "category": "key.categories.superbwarfare",
+          "firstKey": "key.keyboard.left.control",
+          "secondKey": "key.keyboard.f",
+          "updatedAt": "2026-10-19T23:12:18.844771200"
+        },
+        {
+          "mappingName": "key.tacz.interact.desc",
+          "action": "持械时互动",
+          "category": "key.category.tacz",
+          "firstKey": "key.keyboard.left.control",
+          "secondKey": "key.keyboard.f",
+          "updatedAt": "2026-10-19T23:13:53.435945900"
+        }
+      ]
+    }
+  ],
+  "priorities": {
+    "create.keyinfo.alt_modifier": 0,
+    "create.keyinfo.ctrl_modifier": 0,
+    "create.keyinfo.shift_modifier": 0,
+    "create.keyinfo.rotate_menu": 0,
+    "create.keyinfo.toolmenu": 0,
+    "create.keyinfo.toolbelt": 0,
+    "simulated.keyinfo.scroll_up": 0,
+    "simulated.keyinfo.scroll_down": 0,
+    "simulated.keyinfo.rotate_mode": 0,
+    "key.modernui.openCenter": 0,
+    "key.modernui.zoom": 0,
+    "Build Current Structure": 0,
+    "key.relics.active_abilities_list": 0,
+    "key.relics.research_relic": 0,
+    "gui.xaero_minimap_server_profiles": 0,
+    "gui.xaero_alternative_list_players": 0,
+    "gui.xaero_toggle_light_overlay": 0,
+    "gui.xaero_toggle_grid": 0,
+    "gui.xaero_toggle_pac_chunk_claims": 0,
+    "gui.xaero_toggle_slime": 0,
+    "gui.xaero_toggle_entity_radar": 0,
+    "gui.xaero_toggle_map": 0,
+    "gui.xaero_toggle_map_waypoints": 0,
+    "gui.xaero_display_all_sets": 0,
+    "gui.xaero_toggle_manual_cave_mode": 0,
+    "gui.xaero_toggle_waypoints": 0,
+    "gui.xaero_switch_waypoint_set": 0,
+    "gui.xaero_toggle_tracked_players_in_world": 0,
+    "gui.xaero_toggle_tracked_players_on_map": 0,
+    "gui.xaero_reverse_entity_radar": 0,
+    "gui.xaero_minimap_settings": 0,
+    "gui.xaero_instant_waypoint": 0,
+    "gui.xaero_waypoints_key": 0,
+    "gui.xaero_zoom_out": 0,
+    "gui.xaero_zoom_in": 0,
+    "gui.xaero_enlarge_map": 0,
+    "gui.xaero_new_waypoint": 0,
+    "gui.xaero_toggle_dimension": 0,
+    "gui.xaero_quick_confirm": 0,
+    "gui.xaero_open_map": 0,
+    "gui.xaero_world_map_server_settings": 0,
+    "gui.xaero_open_settings": 0,
+    "gui.xaero_map_zoom_in": 0,
+    "gui.xaero_map_zoom_out": 0,
+    "artifacts.key.charm_of_sinking.toggle": 0,
+    "artifacts.key.night_vision_goggles.toggle": 0,
+    "artifacts.key.universal_attractor.toggle": 0,
+    "artifacts.key.charm_of_shrinking.toggle": 0,
+    "artifacts.key.scarf_of_invisibility.toggle": 0,
+    "artifacts.key.helium_flamingo.activate": 0,
+    "key.ftbquests.cycle_pinned_tracker": 0,
+    "key.ftbquests.quests": 0,
+    "key.ftbquests.gui.move_down": 0,
+    "key.ftbquests.gui.move_left": 0,
+    "key.ftbquests.gui.move_right": 0,
+    "key.ftbquests.gui.move_up": 0,
+    "key.ftbquests.gui.next_chapter": 0,
+    "key.ftbquests.gui.player_prefs": 0,
+    "key.ftbquests.gui.prev_chapter": 0,
+    "key.ftbquests.gui.recenter": 0,
+    "key.ftbquests.gui.zoom_reset": 0,
+    "key.ftbquests.gui.search": 0,
+    "key.ftbquests.gui.extended_info": 0,
+    "key.ftbquests.gui.zoom_in": 0,
+    "key.ftbquests.gui.zoom_out": 0,
+    "key.ftbquests.gui_editor.copy": 0,
+    "key.ftbquests.gui_editor.delete": 0,
+    "key.ftbquests.gui_editor.complete_object": 0,
+    "key.ftbquests.gui_editor.force_delete": 0,
+    "key.ftbquests.gui_editor.reset_object": 0,
+    "key.ftbquests.gui_editor.reward_tables": 0,
+    "key.ftbquests.gui_editor.paste": 0,
+    "key.ftbquests.gui_editor.redo": 0,
+    "key.ftbquests.gui_editor.reload_theme": 0,
+    "key.ftbquests.gui_editor.save": 0,
+    "key.ftbquests.gui_editor.select_all": 0,
+    "key.ftbquests.gui_editor.select_none": 0,
+    "key.ftbquests.gui_editor.toggle_crosshairs": 0,
+    "key.ftbquests.gui_editor.undo": 0,
+    "key.ftbquests.gui_quest_panel.edit_desc": 0,
+    "key.ftbquests.gui_quest_panel.edit_quest_props": 0,
+    "key.ftbquests.gui_quest_panel.edit_subtitle": 0,
+    "key.ftbquests.gui_quest_panel.edit_title": 0,
+    "key.ftbquests.gui_quest_panel.add_line": 0,
+    "key.ftbquests.gui_quest_panel.add_image": 0,
+    "key.ftbquests.gui_quest_panel.add_page_break": 0,
+    "iris.keybind.wireframe": 0,
+    "iris.keybind.shaderPackSelection": 0,
+    "iris.keybind.toggleShaders": 0,
+    "iris.keybind.reload": 0,
+    "key.mca.skin_library": 0,
+    "key.jei.cheatOneItem": 0,
+    "key.jei.cheatOneItem2": 0,
+    "key.jei.cheatItemStack": 0,
+    "key.jei.cheatItemStack2": 0,
+    "key.jei.toggleCheatMode": 0,
+    "key.jei.copy.recipe.id": 0,
+    "key.jei.toggleEditMode": 0,
+    "key.jei.toggleHideIngredient": 0,
+    "key.jei.toggleWildcardHideIngredient": 0,
+    "key.jei.toggleCheatModeConfigButton": 0,
+    "key.jei.shareToChat": 0,
+    "key.jei.transferRecipeBookmark": 0,
+    "key.jei.maxTransferRecipeBookmark": 0,
+    "key.jei.quickMove": 0,
+    "key.jei.showUses": 0,
+    "key.jei.showUses2": 0,
+    "key.jei.showRecipe": 0,
+    "key.jei.showRecipe2": 0,
+    "key.jei.bookmark": 0,
+    "key.jei.previousPage": 0,
+    "key.jei.nextPage": 0,
+    "key.jei.toggleOverlay": 0,
+    "key.jei.toggleBookmarkOverlay": 0,
+    "key.jei.focusSearch": 0,
+    "key.jei.recipeForward": 0,
+    "key.jei.recipeBack": 0,
+    "key.jei.previousCategory": 0,
+    "key.jei.previousRecipePage": 0,
+    "key.jei.nextCategory": 0,
+    "key.jei.nextRecipePage": 0,
+    "key.jei.closeRecipeGui": 0,
+    "key.jei.pauseRecipeCycling": 0,
+    "key.jei.previousSearch": 0,
+    "key.jei.nextSearch": 0,
+    "key.jei.clearSearchBar": 0,
+    "key.configured.open_mod_list": 0,
+    "key.saveToolbarActivator": 0,
+    "key.loadToolbarActivator": 0,
+    "key.cyber_ware_port.menu": 0,
+    "key.epiphany.open_ui": 0,
+    "key.ezweight.open_config": 0,
+    "key.ftbchunks.claim_manager": 0,
+    "key.ftbchunks.add_waypoint": 0,
+    "key.ftbchunks.toggle_minimap": 0,
+    "key.ftbchunks.waypoint_manager": 0,
+    "key.ftbchunks.minimap.zoomIn": 0,
+    "key.ftbchunks.minimap.zoomOut": 0,
+    "key.ftbchunks.map": 0,
+    "key.ftbteams.open_gui": 0,
+    "key.use": 0,
+    "key.attack": 0,
+    "key.pickItem": 0,
+    "key.gd656killicon.open_config": 0,
+    "key.gd656killicon.open_scoreboard": 0,
+    "key.guaniao.camera.open_creative_controls": 0,
+    "key.guaniao.camera.cycle_filter": 0,
+    "key.guaniao.camera.focus": 0,
+    "key.handheldmoon.lamp_switch.desc": 0,
+    "key.immersiveengineering.chemthrowerSwitch": 0,
+    "key.immersiveengineering.magnetEquip": 0,
+    "key.immersiveengineering.railgunZoom": 0,
+    "key.swapOffhand": 0,
+    "key.drop": 0,
+    "key.inventory": 0,
+    "key.hotbar.1": 0,
+    "key.hotbar.2": 0,
+    "key.hotbar.3": 0,
+    "key.hotbar.4": 0,
+    "key.hotbar.5": 0,
+    "key.hotbar.6": 0,
+    "key.hotbar.7": 0,
+    "key.hotbar.8": 0,
+    "key.hotbar.9": 0,
+    "key.kubejs.kubedex": 0,
+    "key.liubai.open_config": 0,
+    "key.mcphone.hud_toggle": 0,
+    "key.mcphone.open_phone": 0,
+    "key.mcphone.camera_shutter": 0,
+    "key.mcphone.hud_interact": 0,
+    "key.mcphone.reader_prev": 0,
+    "key.mcphone.reader_next": 0,
+    "key.mcphone.camera_exit": 0,
+    "key.zoniex.zoniex_jump": 0,
+    "key.fullscreen": 0,
+    "key.smoothCamera": 0,
+    "lambdynlights.key.toggle_fps_dynamic_lighting": 0,
+    "key.togglePerspective": 0,
+    "key.butchery.vindicatornosepress": 0,
+    "key.butchery.evokermaskpress": 0,
+    "key.screenshot": 0,
+    "key.corpse.death_history": 0,
+    "key.butchery.pillagernosepress": 0,
+    "key.advancements": 0,
+    "key.spectatorOutlines": 0,
+    "key.forward": 0,
+    "key.right": 0,
+    "key.back": 0,
+    "key.left": 0,
+    "key.sneak": 0,
+    "key.sprint": 0,
+    "key.jump": 0,
+    "key.chat": 0,
+    "key.playerlist": 0,
+    "key.socialInteractions": 0,
+    "key.command": 0,
+    "key.newvisualkeybing.open_viewer": 0,
+    "key.parcool.RideZipline": 0,
+    "key.parcool.Crawl": 0,
+    "key.parcool.Breakfall": 0,
+    "key.parcool.Enable": 0,
+    "key.parcool.QuickTurn": 0,
+    "key.parcool.openSetting": 0,
+    "key.parcool.HangDown": 0,
+    "key.parcool.Vault": 0,
+    "key.parcool.HideInBlock": 0,
+    "key.parcool.HorizontalWallRun": 0,
+    "key.parcool.WallSlide": 0,
+    "key.parcool.ClingToCliff": 0,
+    "key.parcool.FastRun": 0,
+    "key.parcool.Flipping": 0,
+    "key.parcool.WallJump": 0,
+    "key.parcool.Dodge": 0,
+    "key.ponder.ponder": 0,
+    "key.quickskin.open_menu": 0,
+    "key.reliable_gliders.deploy": 0,
+    "key.superbwarfare.interact": 0,
+    "key.superbwarfare.sensitivity_reduce": 0,
+    "key.superbwarfare.move_shift": 0,
+    "key.superbwarfare.change_seat": 0,
+    "key.superbwarfare.move_space": 0,
+    "key.superbwarfare.move_forward": 0,
+    "key.superbwarfare.move_ctrl": 0,
+    "key.superbwarfare.unload_passengers": 0,
+    "key.superbwarfare.unload": 0,
+    "key.superbwarfare.move_right": 0,
+    "key.superbwarfare.move_backward": 0,
+    "key.superbwarfare.change_fire_mode_forward": 0,
+    "key.superbwarfare.change_ammo_forward": 0,
+    "key.superbwarfare.change_fire_mode_backward": 0,
+    "key.superbwarfare.change_ammo_backward": 0,
+    "key.superbwarfare.sensitivity_increase": 0,
+    "key.superbwarfare.breath": 0,
+    "key.superbwarfare.move_left": 0,
+    "key.superbwarfare.active_thermal_imaging": 0,
+    "key.superbwarfare.fire": 0,
+    "key.superbwarfare.fire_mode": 0,
+    "key.superbwarfare.toggle_tactical_map": 0,
+    "key.superbwarfare.config": 0,
+    "key.superbwarfare.edit_mode": 0,
+    "key.superbwarfare.disconnect_towing": 0,
+    "key.superbwarfare.melee": 0,
+    "key.superbwarfare.mark": 0,
+    "key.superbwarfare.switch_zoom": 0,
+    "key.superbwarfare.hold_zoom": 0,
+    "key.superbwarfare.dismount": 0,
+    "key.superbwarfare.loiter_config": 0,
+    "key.superbwarfare.reload": 0,
+    "key.superbwarfare.free_camera": 0,
+    "key.superbwarfare.vehicle_seek": 0,
+    "key.superbwarfare.release_decoy": 0,
+    "key.tctcore.tc_tcore_key": 0,
+    "key.xaeronav.goto_map_cursor": 0,
+    "key.xaeronav.clear": 0,
+    "key.xaeronav.goto_looking_at": 0,
+    "key.xaeronav.open_config_screen": 0,
+    "key.xaeronav.toggle_hud": 0,
+    "key.open_modular_menu": 0,
+    "key.swap_visor": 0,
+    "key.zerocontact.module_activate": 0,
+    "key.zerocontact.module_hud": 0,
+    "key.open_selector": 0,
+    "key.zerocontact.open_plate_slots": 0,
+    "key.zerocontact.open_radio": 0,
+    "key.open_backpack": 0,
+    "keys.eclipticseasons.main/debug_1": 0,
+    "keys.eclipticseasons.main/debug": 0,
+    "key.lrtactical.normal_attack.desc": 0,
+    "key.lrtactical.sp_attack.desc": 0,
+    "key.sophisticatedbackpacks.tool_swap": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_1": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_3": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_2": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_5": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_4": 0,
+    "key.sophisticatedbackpacks.open_backpack": 0,
+    "key.sophisticatedbackpacks.inventory_interaction": 0,
+    "key.sophisticatedcore.sort": 0,
+    "key.sophisticatedcore.transfer_to_storage": 0,
+    "key.sophisticatedcore.transfer_to_inventory": 0,
+    "key.tacz.shoot.desc": 0,
+    "key.tacz.fire_select.desc": 0,
+    "key.tacz.open_config.desc": 0,
+    "key.tacz.interact.desc": 0,
+    "key.tacz.reload.desc": 0,
+    "key.tacz.refit.desc": 0,
+    "key.tacz.inspect.desc": 0,
+    "key.tacz.crawl.desc": 0,
+    "key.tacz.aim.desc": 0,
+    "key.tacz.zoom.desc": 0,
+    "key.tacz.melee.desc": 0,
+    "key.touhou_little_maid.stt_chat.desc": 0,
+    "key.touhou_little_maid.dismount.desc": 0,
+    "key.yes_steve_model.debug_animation.desc": 0,
+    "key.yes_steve_model.player_model.desc": 0,
+    "key.yes_steve_model.animation_roulette.desc": 0,
+    "key.yes_steve_model.open_extra_player_render.desc": 0,
+    "key.yes_steve_model.extra_animation.0.desc": 0,
+    "key.yes_steve_model.extra_animation.1.desc": 0,
+    "key.yes_steve_model.extra_animation.2.desc": 0,
+    "key.yes_steve_model.extra_animation.3.desc": 0,
+    "key.yes_steve_model.extra_animation.4.desc": 0,
+    "key.yes_steve_model.extra_animation.5.desc": 0,
+    "key.yes_steve_model.extra_animation.6.desc": 0,
+    "key.yes_steve_model.extra_animation.7.desc": 0,
+    "key.yes_steve_model.lock_roulette.desc": 0,
+    "key.createbigcannons.pitch_mode": 0,
+    "key.createbigcannons.fire_controlled_cannon": 0,
+    "key.curios.open.desc": 0,
+    "key.slow.desc": 0,
+    "key.climbup.desc": 0,
+    "key.climbdown.desc": 0,
+    "key.main_throw.desc": 0,
+    "key.off_throw.desc": 0,
+    "key.boththrow.desc": 0,
+    "key.climb.desc": 0,
+    "key.rocket.desc": 0,
+    "key.jumpanddetach.desc": 0,
+    "key.enderlaunch.desc": 0,
+    "key.motoronoff.desc": 0,
+    "key.inventoryhud.toggle": 0,
+    "key.inventoryhud.toggleall": 0,
+    "key.inventoryhud.togglepot": 0,
+    "key.inventoryhud.togglearm": 0,
+    "key.inventoryhud.openconfig": 0,
+    "key.legendarysurvivaloverhaul.added_desc": 0,
+    "key.legendarysurvivaloverhaul.body_health": 0,
+    "key.modernfix.config": 0,
+    "key.solonion.open_food_book": 0,
+    "key.jade.toggle_liquid": 0,
+    "key.jade.config": 0,
+    "key.jade.show_overlay": 0,
+    "key.jade.show_uses": 0,
+    "key.jade.show_details": 0,
+    "key.jade.show_recipes": 0,
+    "key.jade.narrate": 0,
+    "quark.keybind.patreon_emote.tpose": 0,
+    "quark.keybind.patreon_emote.jet": 0,
+    "quark.emote.point": 0,
+    "quark.emote.no": 0,
+    "quark.emote.weep": 0,
+    "quark.keybind.patreon_emote.dab": 0,
+    "quark.emote.think": 0,
+    "quark.emote.wave": 0,
+    "quark.emote.facepalm": 0,
+    "quark.emote.salute": 0,
+    "quark.emote.yes": 0,
+    "quark.keybind.patreon_emote.zombie": 0,
+    "quark.emote.cheer": 0,
+    "quark.emote.headbang": 0,
+    "quark.emote.shrug": 0,
+    "quark.keybind.patreon_emote.dance": 0,
+    "quark.keybind.patreon_emote.exorcist": 0,
+    "quark.emote.clap": 0,
+    "quark.keybind.shift_lock": 0,
+    "quark.keybind.transfer_extract": 0,
+    "quark.keybind.transfer_insert": 0,
+    "quark.keybind.sort_container": 0,
+    "quark.keybind.sort_player": 0,
+    "quark.keybind.variant_selector": 0,
+    "quark.keybind.narrator_full_readout": 0,
+    "quark.keybind.narrator_readout": 0,
+    "quark.keybind.change_hotbar": 0,
+    "quark.keybind.lock_rotation": 0,
+    "quark.keybind.camera_mode": 0,
+    "quark.keybind.autorun": 0,
+    "quark.keybind.back": 0,
+    "tacztweaks.key.bolt": 0,
+    "tacztweaks.key.reduceSensitivity": 0,
+    "tacztweaks.key.tiltGun": 0,
+    "tacztweaks.key.unload": 0
+  },
+  "conflictIgnored": []
+}

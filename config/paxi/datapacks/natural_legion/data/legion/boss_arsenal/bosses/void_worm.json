@@ -1,0 +1,77 @@
+{
+  "entity": "alexsmobs:void_worm",
+  "priority": -10,
+  "spawn_chance": 1,
+  "spawn_mode": "air",
+  "name": "虚空蠕虫 · 虚空增生体",
+  "spawn_radius": 14,
+  "spawn_spacing": 2,
+  "follow_distance": 18,
+  "persistent": true,
+  "waves": [
+    {
+      "id": "phase_100",
+      "health_ratio": 1,
+      "minions": [
+        {
+          "profile": "legion:elite_smg_fly",
+          "count": 2
+        },
+        {
+          "profile": "legion:shotgun_auto_fly",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "phase_75",
+      "health_ratio": 0.75,
+      "minions": [
+        {
+          "profile": "legion:elite_smg_fly",
+          "count": 2
+        },
+        {
+          "profile": "legion:elite_dmr_fly",
+          "count": 1
+        },
+        {
+          "profile": "legion:shotgun_auto_fly",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "phase_50",
+      "health_ratio": 0.5,
+      "minions": [
+        {
+          "profile": "legion:elite_smg_fly",
+          "count": 2
+        },
+        {
+          "profile": "legion:elite_dmr_fly",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "phase_25",
+      "health_ratio": 0.25,
+      "minions": [
+        {
+          "profile": "legion:elite_smg_fly",
+          "count": 3
+        },
+        {
+          "profile": "legion:shotgun_auto_fly",
+          "count": 1
+        },
+        {
+          "profile": "legion:sniper_fly",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

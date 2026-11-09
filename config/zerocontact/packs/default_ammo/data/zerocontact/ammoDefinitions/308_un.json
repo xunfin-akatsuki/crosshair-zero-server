@@ -1,0 +1,24 @@
+{
+  "ammo_id": "tacz:308",
+
+  "variant": "308_un",
+
+  "life": 74,
+
+  "friction": 0.0145,
+
+  "gravity": 0.065,
+
+  "recoil_multiplier": 0.96,
+
+  "inaccuracy_multiplier": 0.96,
+
+
+  "penetration_class": 2,
+
+  "armor_damage": 0.08,
+
+  "flesh_damage": 13,
+
+  "stack_size": 60
+}

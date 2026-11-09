@@ -1,0 +1,45 @@
+titles:
+  noregister:
+    title: '&a请&e注册&a账号'
+    subtitle: '&e输入 &f/register 密码 密码 &e来注册'
+  nologin:
+    title: '&a请&e登录&a账号'
+    subtitle: '&e输入 &f/login 密码 &e来登录'
+  register:
+    title: '&a&l注册成功'
+    subtitle: '&e欢迎来到本服务器'
+  login:
+    title: '&a&l登录成功'
+    subtitle: '&e祝您游戏愉快'
+  autologin:
+    title: '&a&l正版自动登录'
+    subtitle: '&e已为您自动登录'
+message:
+  reload: '&c配置文件已重新加载。'
+  reloadLang: '&c语言文件已重新加载。'
+  noPermission: '&c您没有权限执行此操作。'
+  welcome:
+    register: |-
+      &7
+      &7&6&l欢迎 &c&l{player}
+      &7
+      &7&6&l您的账号注册成功
+      &7
+    login: |-
+      &7
+      &7&a&l欢迎回来 &c&l{player}
+      &7
+      &7&a您已成功登录
+      &7
+    autologin: |-
+      &7
+      &7&a&l正版账号 &c&l{player}
+      &7
+      &7&a您已作为正版玩家自动登录
+      &7
+actionbar:
+  noregister: '&c请先注册后再进入游戏。剩余注册时间：&6<time>&c 秒。'
+  nologin: '&c请登录您的账号。剩余登录时间：&6<time>&c 秒。'
+  register: '&a&l注册完成，祝您游戏愉快。'
+  login: '&a&l登录成功。'
+  autologin: '&d已作为正版玩家自动登录。'
