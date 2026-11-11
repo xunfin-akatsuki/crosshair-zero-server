@@ -14,11 +14,11 @@
 #流浪女仆事件配置
 [wandering_maid]
 	#每隔多少分钟尝试触发一次流浪女仆事件（范围 0~60 分钟；0 表示关闭自动触发，指令触发不受影响）
-	# Default: 5
+	# Default: 20
 	# Range: 0 ~ 60
-	spawnIntervalMinutes = 0
+	spawnIntervalMinutes = 20
 	#每次到达触发时间后，实际生成流浪女仆事件的概率（范围 0%~100%）
-	# Default: 25
+	# Default: 5
 	# Range: 0 ~ 100
 	spawnChancePercent = 5
 	#每名玩家在一次流浪事件中生成的女仆数量（范围 1~10）
@@ -33,7 +33,17 @@
 #流浪商人女仆交易配置
 [wandering_trader_maid_trade]
 	#整套流浪商人女仆交易的总开关。关闭后不生成待售女仆、不添加呼应物品交易，也不显示交易女仆按钮
-	enabled = false
+	enabled = true
+	#每位商人一次性判定携带一名女仆的概率；不补货，最多成交一次。
+	# Default: 15
+	# Range: 0 ~ 100
+	stockChancePercent = 15
+
+[cage_rescue]
+	#每个野外结构首次审查时生成囚笼的概率，失败后不会反复抽取。
+	# Default: 10
+	# Range: 0 ~ 100
+	structureChancePercent = 10
 
 #溺爱女仆占有欲配置
 [doting_possessive]

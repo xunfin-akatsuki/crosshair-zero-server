@@ -54,7 +54,7 @@
 	#Maximum range in blocks which honey glue may initially be placed
 	# Default: 48
 	# Range: > 1
-	honeyGlueRange = 48
+	honeyGlueRange = 128
 	#.
 	#Maximum range in blocks which merging glue may be placed by items such as slime balls
 	# Default: 4.0

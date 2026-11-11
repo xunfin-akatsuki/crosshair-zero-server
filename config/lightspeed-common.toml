@@ -8,7 +8,7 @@
 	#Explicitly install bootstrap Agent JVM arguments for the next launch. Disabled by default to keep exported modpacks free of machine-specific startup paths. Restart after changing this option.
 	installBootstrapAgent = false
 	#Validate persisted per-mod resource caches with the full JAR SHA-256 instead of the default module/version/file-name identity. Reads each JAR once per launch; changing this option requires a restart and rebuilds these caches.
-	verifyJarHash = false
+	verifyJarHash = true
 
 [compatibility]
 	#Opt in to isolating failures owned by explicitly configured third-party resource reload listener classes.

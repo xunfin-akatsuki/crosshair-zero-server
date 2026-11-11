@@ -37,3 +37,13 @@
 	# Default: 2
 	# Range: 1 ~ 4
 	ambushBatchSize = 2
+
+[raid]
+	#Chance to publish a raid when a player enters a ChaosZpack city. Requires zero_armed_mobs 1.4.1+ and Superb Warfare.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	cityEntryChance = 0.25
+	#Per-city cooldown after an entry roll, successful or not. Raids last exactly 30 minutes after acceptance.
+	# Default: 1800
+	# Range: 60 ~ 86400
+	cityEntryCooldownSeconds = 1800

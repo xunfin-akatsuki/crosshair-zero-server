@@ -1,0 +1,85 @@
+#Server-authoritative vehicle AI for this mod's armed mobs.
+enabled = true
+#Base entity whitelist. Wheel, Track, Helicopter, AirShip and Ship engines only.
+#All fixed-wing aircraft and TOM6 are always excluded, even when listed.
+allowedVehicles = ["superbwarfare:lav_150", "superbwarfare:lav_25", "superbwarfare:bmp_2"]
+#Ticks between nearby vehicle searches, staggered per mob.
+# Default: 100
+# Range: 40 ~ 1200
+searchIntervalTicks = 100
+# Default: 16
+# Range: 4 ~ 32
+searchRadiusBlocks = 16
+#Horizontal speed limit in blocks/tick, only while AI is driving (0.22 = 4.4 blocks/s).
+# Default: 0.22
+# Range: 0.08 ~ 0.35
+maxSpeed = 0.22
+# Default: 48
+# Range: 8 ~ 64
+fireRangeBlocks = 48
+# Default: 20
+# Range: 6 ~ 32
+stopDistanceBlocks = 20
+# Default: 30
+# Range: 20 ~ 200
+aimTicks = 30
+# Default: 8
+# Range: 2 ~ 10
+burstTicks = 8
+# Default: 100
+# Range: 60 ~ 400
+burstPauseTicks = 100
+#Additional whitelist, separate so existing 1.1.0 configs gain the new vehicle types.
+#Air vehicles can cycle all installed weapons; ground/boat AI retains the machinegun policy.
+additionalVehicles = ["superbwarfare:ah_6", "superbwarfare:mi_28", "superbwarfare:air_sheep", "superbwarfare:kirov", "superbwarfare:happiest_ghast", "superbwarfare:speedboat", "superbwarfare:tiny_speedboat"]
+# Default: 0.3
+# Range: 0.08 ~ 0.6
+airMaxSpeed = 0.3
+# Default: 0.25
+# Range: 0.08 ~ 0.5
+boatMaxSpeed = 0.25
+# Default: 0.18
+# Range: 0.05 ~ 0.3
+airVerticalMaxSpeed = 0.18
+#Minimum clearance above terrain while pursuing or holding position.
+# Default: 12
+# Range: 6 ~ 32
+flightHeightBlocks = 12
+
+[airCombat]
+	#Independent air combat settings also apply when upgrading an existing config.
+	# Default: 96
+	# Range: 16 ~ 120
+	rangeBlocks = 96
+	# Default: 10
+	# Range: 5 ~ 100
+	aimTicks = 10
+	# Default: 20
+	# Range: 2 ~ 60
+	burstTicks = 20
+	# Default: 25
+	# Range: 10 ~ 200
+	burstPauseTicks = 25
+	# Default: 40
+	# Range: 20 ~ 400
+	rocketIntervalTicks = 40
+	# Default: 100
+	# Range: 40 ~ 1200
+	missileIntervalTicks = 100
+	# Default: 120
+	# Range: 40 ~ 1200
+	bombIntervalTicks = 120
+
+[taczCompatibility]
+	#TaCZ direct-hit damage multiplier against all SBW vehicles, including player-driven vehicles.
+	#Uses SBW gunfire/absolute-gunfire armor rules, not living-entity damage. Does not scale explosions.
+	# Default: 4.0
+	# Range: 1.0 ~ 20.0
+	vehicleDamageMultiplier = 4.0
+	#Minimum hull damage per positive TaCZ hit after armor; 0 disables chip damage.
+	#Does not bypass explicit damage immunity, ownership, friendly-fire or invulnerability checks.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	minimumHullDamage = 0.25
+	#Server-broadcast metal hit sparks and sound. Uses Immersive Ballistic assets when installed.
+	metalHitEffects = true

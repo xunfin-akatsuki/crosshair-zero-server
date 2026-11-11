@@ -1,9 +1,9 @@
 #Whether sub-levels can split when parts are separated
-sub_level_splitting = true
+sub_level_splitting = false
 #Sub-level splitting heatmap steps that take place per tick
 # Default: 200
 # Range: > 1
-sub_level_splitting_heatmap_steps = 200
+sub_level_splitting_heatmap_steps = 32
 #The distance to network sub-levels to players at
 # Default: 320.0
 # Range: 1.0 ~ 1.7976931348623157E308

@@ -124,7 +124,7 @@
 	#Maid fairy's spawn probability (zombie is 100, enderman is 10)
 	# Default: 70
 	# Range: > 0
-	MaidFairySpawnProbability = 1
+	MaidFairySpawnProbability = 0.1
 	#The following dimension do not spawn maid fairy
 	MaidFairyBlacklistDimension = ["minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest"]
 	#Loss power point after player death

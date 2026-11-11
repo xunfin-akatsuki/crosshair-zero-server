@@ -1,0 +1,88 @@
+# TaCZ Armed Mobs - every loaded gun, generated on server start and after /reload.
+#
+# Lines can be copied straight into whitelist or blacklist in common.toml:
+#   blacklist = [
+#       "destiny:sword/*",
+#       "create_armorer:special_melee_wrench",
+#   ]
+# For gun_overrides add the profile: "eos:eos_riku_t2=rifle"
+#
+# Format: type -> combat profile, special traits, allowed / excluded (reason), gear score rating
+# rating = points this gun gives in the gear score ([faction_wars.rules.adaptive.ranged_ratings]).
+#   Change it with gun_ratings, e.g. "tacz:ak47:30" (fixed) or "tacz:ak47:+5" (on top).
+# allowed  = can be handed out to mobs on spawn
+# excluded = never handed out, the reason tells you which setting to change
+
+# ===== create_armorer (13 guns, 10 allowed) =====
+"create_armorer:*",                              # whole pack
+"create_armorer:cannon_40mm_salamander",         # rpg -> heavy, explosive, excluded (type 'rpg' not in allowed_types), rating rpg 90 +30 = 120
+"create_armorer:gl_revolver_devastator",         # rpg -> heavy, explosive, excluded (type 'rpg' not in allowed_types), rating rpg 90 -30, explosive -> 80 = 80
+"create_armorer:mg_platemag_flywheel",           # mg -> rifle, allowed, rating mg 100 +0 = 100
+"create_armorer:pistol_auto_stress",             # pistol -> pistol, allowed, rating pistol 20 +5.2 = 25.2
+"create_armorer:pistol_revolver_torque",         # pistol -> pistol, allowed, rating pistol 20 -4.4 = 15.6
+"create_armorer:rifle_assult_crane",             # rifle -> rifle, allowed, rating rifle 50 +6.1 = 56.1
+"create_armorer:rifle_assult_roller",            # rifle -> rifle, allowed, rating rifle 50 -7.8 = 42.2
+"create_armorer:shotgun_db_stone",               # shotgun -> pistol, allowed, rating shotgun 30 +4.3 = 34.3
+"create_armorer:shotgun_pump_bearing",           # shotgun -> pistol, allowed, rating shotgun 30 +0.9 = 30.9
+"create_armorer:smg_auto_crank",                 # smg -> rifle, allowed, rating smg 30 +3.6 = 33.6
+"create_armorer:sniper_semi_clockwork",          # sniper -> sniper, allowed, rating sniper 100 -10 = 90
+"create_armorer:sniper_semi_m1",                 # sniper -> sniper, allowed, rating sniper 100 -4.3 = 95.7
+"create_armorer:special_melee_wrench",           # rpg -> melee, excluded (type 'rpg' not in allowed_types), rating: counts as melee, melee weapon (16 damage)
+
+# ===== tacz (54 guns, 51 allowed) =====
+"tacz:*",                                        # whole pack
+"tacz:aa12",                                     # shotgun -> pistol, allowed, rating shotgun 30 +2.6 = 32.6
+"tacz:ai_awp",                                   # sniper -> sniper, allowed, rating sniper 100 +4.3 = 104.3
+"tacz:ak47",                                     # rifle -> rifle, allowed, rating rifle 50 +0 = 50
+"tacz:aug",                                      # rifle -> rifle, allowed, rating rifle 50 -2.2 = 47.8
+"tacz:b93r",                                     # pistol -> pistol, allowed, rating pistol 20 +6 = 26
+"tacz:cz75",                                     # pistol -> pistol, allowed, rating pistol 20 +2.0 = 22
+"tacz:db_long",                                  # shotgun -> pistol, allowed, rating shotgun 30 -6 = 24
+"tacz:db_short",                                 # shotgun -> pistol, allowed, rating shotgun 30 -4.3 = 25.7
+"tacz:deagle",                                   # pistol -> pistol, allowed, rating pistol 20 +4 = 24
+"tacz:deagle_golden",                            # pistol -> pistol, allowed, rating pistol 20 +0.4 = 20.4
+"tacz:fn_evolys",                                # mg -> rifle, allowed, rating mg 100 +5 = 105
+"tacz:fn_fal",                                   # rifle -> rifle, allowed, rating rifle 50 -6.7 = 43.3
+"tacz:g36k",                                     # rifle -> rifle, allowed, rating rifle 50 +1.1 = 51.1
+"tacz:glock_17",                                 # pistol -> pistol, allowed, rating pistol 20 -1.6 = 18.4
+"tacz:hk416d",                                   # rifle -> rifle, allowed, rating rifle 50 +7.8 = 57.8
+"tacz:hk_g3",                                    # rifle -> rifle, allowed, rating rifle 50 -8.9 = 41.1
+"tacz:hk_mk23",                                  # pistol -> pistol, allowed, rating pistol 20 -5.6 = 14.4
+"tacz:hk_mp5a5",                                 # smg -> rifle, allowed, rating smg 30 -1.2 = 28.8
+"tacz:kar98",                                    # sniper -> sniper, allowed, rating sniper 100 +1.4 = 101.4
+"tacz:lonetrail",                                # pistol -> pistol, allowed, rating pistol 20 -3.6 = 16.4
+"tacz:m1014",                                    # shotgun -> pistol, allowed, rating shotgun 30 -0.9 = 29.1
+"tacz:m107",                                     # sniper -> sniper, allowed, rating sniper 100 +10 = 110
+"tacz:m16a1",                                    # rifle -> rifle, allowed, rating rifle 50 +6.1 = 56.1
+"tacz:m16a4",                                    # rifle -> rifle, allowed, rating rifle 50 -10 = 40
+"tacz:m1911",                                    # pistol -> pistol, allowed, rating pistol 20 -0.4 = 19.6
+"tacz:m249",                                     # mg -> rifle, allowed, rating mg 100 -10 = 90
+"tacz:m320",                                     # rpg -> heavy, explosive, excluded (type 'rpg' not in allowed_types), rating rpg 90 -10.0 = 80
+"tacz:m4a1",                                     # rifle -> rifle, allowed, rating rifle 50 -1.1 = 48.9
+"tacz:m700",                                     # sniper -> sniper, allowed, rating sniper 100 -1.4 = 98.6
+"tacz:m870",                                     # shotgun -> pistol, allowed, rating shotgun 30 -2.6 = 27.4
+"tacz:m95",                                      # sniper -> sniper, allowed, rating sniper 100 +7.1 = 107.1
+"tacz:m9a4",                                     # pistol -> pistol, allowed, rating pistol 20 -1.6 = 18.4
+"tacz:minigun",                                  # mg -> rifle, fires from inventory, excluded (fires from inventory, works when given to a guard by hand), rating mg 100 +10 = 110
+"tacz:mk14",                                     # rifle -> rifle, allowed, rating rifle 50 -5.6 = 44.4
+"tacz:p320",                                     # pistol -> pistol, allowed, rating pistol 20 +2.0 = 22
+"tacz:p90",                                      # smg -> rifle, allowed, rating smg 30 -3.6 = 26.4
+"tacz:qbz_191",                                  # rifle -> rifle, allowed, rating rifle 50 +3.3 = 53.3
+"tacz:qbz_95",                                   # rifle -> rifle, allowed, rating rifle 50 -3.3 = 46.7
+"tacz:rhino357",                                 # pistol -> pistol, allowed, rating pistol 20 -2.8 = 17.2
+"tacz:rpg7",                                     # rpg -> heavy, explosive, excluded (type 'rpg' not in allowed_types), rating rpg 90 +10.0 = 100
+"tacz:rpk",                                      # mg -> rifle, allowed, rating mg 100 -5 = 95
+"tacz:scar_h",                                   # rifle -> rifle, allowed, rating rifle 50 +10 = 60
+"tacz:scar_l",                                   # rifle -> rifle, allowed, rating rifle 50 -4.4 = 45.6
+"tacz:sks_tactical",                             # rifle -> rifle, allowed, rating rifle 50 +2.2 = 52.2
+"tacz:spas_12",                                  # shotgun -> pistol, allowed, rating shotgun 30 +6 = 36
+"tacz:spr15hb",                                  # rifle -> rifle, allowed, rating rifle 50 +8.9 = 58.9
+"tacz:springfield1873",                          # sniper -> sniper, allowed, rating sniper 100 -7.1 = 92.9
+"tacz:taurus500",                                # pistol -> pistol, allowed, rating pistol 20 +4 = 24
+"tacz:taurus943",                                # pistol -> pistol, allowed, rating pistol 20 -5.6 = 14.4
+"tacz:timeless50",                               # pistol -> pistol, allowed, rating pistol 20 +2.0 = 22
+"tacz:type_81",                                  # rifle -> rifle, allowed, rating rifle 50 +4.4 = 54.4
+"tacz:ump45",                                    # smg -> rifle, allowed, rating smg 30 +1.2 = 31.2
+"tacz:uzi",                                      # smg -> rifle, allowed, rating smg 30 -6 = 24
+"tacz:vector45",                                 # smg -> rifle, allowed, rating smg 30 +6 = 36
+

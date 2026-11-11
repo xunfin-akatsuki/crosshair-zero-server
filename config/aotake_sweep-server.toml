@@ -24,7 +24,7 @@
 		#扫地间隔(毫秒)。
 		# Default: 600000
 		# Range: 0 ~ 604800000
-		sweepInterval = 600000
+		sweepInterval = 300000
 		#The entity list, the following entities will be cleaned up according to the entityListMode.
 		#实体名单，与配置 entityListMode 共同决定列表中的实体是否清理。
 		entityList = ["minecraft:arrow", "minecraft:spectral_arrow", "minecraft:experience_orb", "tick, clazz, itemClazz, createProcessing = [CreateData.Processing.Time] -> tick >= 5 && clazz :> itemClazz && (createProcessing <= 0 || createProcessing == null)"]

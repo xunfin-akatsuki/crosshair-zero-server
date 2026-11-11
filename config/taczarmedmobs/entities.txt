@@ -1,0 +1,291 @@
+# TaCZ Armed Mobs - every mob in this game, generated on server start.
+#
+# Lines can be copied straight into [extra_mobs] entities in common.toml:
+#   entities = [
+#       "minecraft:zombie",              # AI
+#       "minecraft:skeleton",            # AI
+#   ]
+# Or use /taczarmedmobs extra add <mob> in-game (ops only).
+#
+# AI          walks on the ground and can use this mod's gun AI
+# EQUIP ONLY  gets a gun but can't use the AI (flying, swimming, ...)
+# active      currently listed in [extra_mobs] entities
+#
+# Note: whether a mob visibly holds the gun depends on its model. Animals usually don't.
+
+# ===== butchery (2) =====
+"butchery:dragon",                               # AI
+"butchery:turtleshellboat",                      # AI
+
+# ===== cave_dweller (1) =====
+"cave_dweller:cave_dweller",                     # AI
+
+# ===== cyber_ware_port (5) =====
+"cyber_ware_port:cyber_creeper",                 # AI
+"cyber_ware_port:cyber_skeleton",                # AI
+"cyber_ware_port:cyber_wither",                  # EQUIP ONLY
+"cyber_ware_port:cyber_wither_skeleton",         # AI
+"cyber_ware_port:cyber_zombie",                  # AI
+
+# ===== dummmmmmy (1) =====
+"dummmmmmy:target_dummy",                        # EQUIP ONLY
+
+# ===== guaniao (16) =====
+"guaniao:budgerigar",                            # EQUIP ONLY
+"guaniao:cassowary",                             # AI
+"guaniao:cockatiel",                             # EQUIP ONLY
+"guaniao:crow",                                  # EQUIP ONLY
+"guaniao:kestrel",                               # EQUIP ONLY
+"guaniao:kiwi",                                  # AI
+"guaniao:long_tailed_tit",                       # AI
+"guaniao:macaw",                                 # EQUIP ONLY
+"guaniao:myna",                                  # EQUIP ONLY
+"guaniao:night_heron",                           # AI
+"guaniao:pigeon",                                # EQUIP ONLY
+"guaniao:seagull",                               # EQUIP ONLY
+"guaniao:sparrow",                               # AI
+"guaniao:spotted_dove",                          # EQUIP ONLY
+"guaniao:umbrella_cockatoo",                     # EQUIP ONLY
+"guaniao:woodcock",                              # EQUIP ONLY
+
+# ===== mca (5) =====
+"mca:female_villager",                           # AI
+"mca:female_zombie_villager",                    # AI
+"mca:grim_reaper",                               # EQUIP ONLY
+"mca:male_villager",                             # AI
+"mca:male_zombie_villager",                      # AI
+
+# ===== minecraft (82) =====
+"minecraft:allay",                               # EQUIP ONLY
+"minecraft:armadillo",                           # AI
+"minecraft:axolotl",                             # EQUIP ONLY
+"minecraft:bat",                                 # EQUIP ONLY
+"minecraft:bee",                                 # EQUIP ONLY
+"minecraft:blaze",                               # AI
+"minecraft:bogged",                              # AI
+"minecraft:breeze",                              # AI
+"minecraft:camel",                               # AI
+"minecraft:cat",                                 # AI
+"minecraft:cave_spider",                         # AI
+"minecraft:chicken",                             # AI
+"minecraft:cod",                                 # EQUIP ONLY
+"minecraft:cow",                                 # AI
+"minecraft:creeper",                             # AI
+"minecraft:dolphin",                             # EQUIP ONLY
+"minecraft:donkey",                              # AI
+"minecraft:drowned",                             # AI
+"minecraft:elder_guardian",                      # EQUIP ONLY
+"minecraft:ender_dragon",                        # EQUIP ONLY
+"minecraft:enderman",                            # AI
+"minecraft:endermite",                           # AI
+"minecraft:evoker",                              # AI
+"minecraft:fox",                                 # AI
+"minecraft:frog",                                # EQUIP ONLY
+"minecraft:ghast",                               # EQUIP ONLY
+"minecraft:giant",                               # AI
+"minecraft:glow_squid",                          # EQUIP ONLY
+"minecraft:goat",                                # AI
+"minecraft:guardian",                            # EQUIP ONLY
+"minecraft:hoglin",                              # AI
+"minecraft:horse",                               # AI
+"minecraft:husk",                                # AI
+"minecraft:illusioner",                          # AI
+"minecraft:iron_golem",                          # AI
+"minecraft:llama",                               # AI
+"minecraft:magma_cube",                          # EQUIP ONLY
+"minecraft:mooshroom",                           # AI
+"minecraft:mule",                                # AI
+"minecraft:ocelot",                              # AI
+"minecraft:panda",                               # AI
+"minecraft:parrot",                              # EQUIP ONLY
+"minecraft:phantom",                             # EQUIP ONLY
+"minecraft:pig",                                 # AI
+"minecraft:piglin",                              # AI
+"minecraft:piglin_brute",                        # AI
+"minecraft:pillager",                            # AI, active
+"minecraft:polar_bear",                          # AI
+"minecraft:pufferfish",                          # EQUIP ONLY
+"minecraft:rabbit",                              # AI
+"minecraft:ravager",                             # AI
+"minecraft:salmon",                              # EQUIP ONLY
+"minecraft:sheep",                               # AI
+"minecraft:shulker",                             # EQUIP ONLY
+"minecraft:silverfish",                          # AI
+"minecraft:skeleton",                            # AI
+"minecraft:skeleton_horse",                      # AI
+"minecraft:slime",                               # EQUIP ONLY
+"minecraft:sniffer",                             # AI
+"minecraft:snow_golem",                          # AI
+"minecraft:spider",                              # AI
+"minecraft:squid",                               # EQUIP ONLY
+"minecraft:stray",                               # AI
+"minecraft:strider",                             # AI
+"minecraft:tadpole",                             # EQUIP ONLY
+"minecraft:trader_llama",                        # AI
+"minecraft:tropical_fish",                       # EQUIP ONLY
+"minecraft:turtle",                              # EQUIP ONLY
+"minecraft:vex",                                 # EQUIP ONLY
+"minecraft:villager",                            # AI
+"minecraft:vindicator",                          # AI
+"minecraft:wandering_trader",                    # AI
+"minecraft:warden",                              # AI
+"minecraft:witch",                               # AI
+"minecraft:wither",                              # EQUIP ONLY
+"minecraft:wither_skeleton",                     # AI
+"minecraft:wolf",                                # AI
+"minecraft:zoglin",                              # AI
+"minecraft:zombie",                              # AI, active
+"minecraft:zombie_horse",                        # AI
+"minecraft:zombie_villager",                     # AI
+"minecraft:zombified_piglin",                    # AI
+
+# ===== mutantszombies (7) =====
+"mutantszombies:blister_zombie",                 # AI
+"mutantszombies:crawler",                        # AI
+"mutantszombies:mutant_brute",                   # AI
+"mutantszombies:rotten_mutant",                  # AI
+"mutantszombies:spitter",                        # AI
+"mutantszombies:split_head_zombie",              # AI
+"mutantszombies:zombie_brute",                   # AI
+
+# ===== superbwarfare (2) =====
+"superbwarfare:senpai",                          # AI
+"superbwarfare:steel_coil",                      # AI
+
+# ===== tacz_bandits (1) =====
+"tacz_bandits:bandit",                           # AI
+
+# ===== tide (102) =====
+"tide:abyss_angler",                             # EQUIP ONLY
+"tide:alpha_fish",                               # EQUIP ONLY
+"tide:amber_rockfish",                           # EQUIP ONLY
+"tide:anchovy",                                  # EQUIP ONLY
+"tide:angelfish",                                # EQUIP ONLY
+"tide:anglerfish",                               # EQUIP ONLY
+"tide:aquathorn",                                # EQUIP ONLY
+"tide:arapaima",                                 # EQUIP ONLY
+"tide:ash_perch",                                # EQUIP ONLY
+"tide:bedrock_bug",                              # EQUIP ONLY
+"tide:bedrock_tetra",                            # EQUIP ONLY
+"tide:black_crappie",                            # EQUIP ONLY
+"tide:blazing_swordfish",                        # EQUIP ONLY
+"tide:blossom_bass",                             # EQUIP ONLY
+"tide:blue_neonfish",                            # EQUIP ONLY
+"tide:bluegill",                                 # EQUIP ONLY
+"tide:brook_trout",                              # EQUIP ONLY
+"tide:bull_shark",                               # EQUIP ONLY
+"tide:carp",                                     # EQUIP ONLY
+"tide:catfish",                                  # EQUIP ONLY
+"tide:cave_crawler",                             # EQUIP ONLY
+"tide:cave_eel",                                 # EQUIP ONLY
+"tide:chasm_eel",                                # EQUIP ONLY
+"tide:chorus_cod",                               # EQUIP ONLY
+"tide:coelacanth",                               # EQUIP ONLY
+"tide:crimson_fangjaw",                          # EQUIP ONLY
+"tide:crystal_shrimp",                           # EQUIP ONLY
+"tide:crystalline_carp",                         # EQUIP ONLY
+"tide:darkness_eater",                           # EQUIP ONLY
+"tide:deep_blue",                                # EQUIP ONLY
+"tide:deep_grouper",                             # EQUIP ONLY
+"tide:devils_hole_pupfish",                      # EQUIP ONLY
+"tide:dragon_fish",                              # EQUIP ONLY
+"tide:dripstone_darter",                         # EQUIP ONLY
+"tide:dutchman_sock",                            # EQUIP ONLY
+"tide:echo_snapper",                             # EQUIP ONLY
+"tide:elytrout",                                 # EQUIP ONLY
+"tide:ember_koi",                                # EQUIP ONLY
+"tide:ender_glider",                             # EQUIP ONLY
+"tide:enderfin",                                 # EQUIP ONLY
+"tide:endergazer",                               # EQUIP ONLY
+"tide:flounder",                                 # EQUIP ONLY
+"tide:frostbite_flounder",                       # EQUIP ONLY
+"tide:gilded_minnow",                            # EQUIP ONLY
+"tide:glowfish",                                 # EQUIP ONLY
+"tide:great_white_shark",                        # EQUIP ONLY
+"tide:guppy",                                    # EQUIP ONLY
+"tide:incandescent_larva",                       # EQUIP ONLY
+"tide:inferno_guppy",                            # EQUIP ONLY
+"tide:iron_tetra",                               # EQUIP ONLY
+"tide:judgment_fish",                            # EQUIP ONLY
+"tide:lapis_lanternfish",                        # EQUIP ONLY
+"tide:largemouth_bass",                          # EQUIP ONLY
+"tide:luminescent_jellyfish",                    # EQUIP ONLY
+"tide:mackerel",                                 # EQUIP ONLY
+"tide:magma_mackerel",                           # EQUIP ONLY
+"tide:mahi_mahi",                                # EQUIP ONLY
+"tide:manta_ray",                                # EQUIP ONLY
+"tide:mantyvern",                                # EQUIP ONLY
+"tide:marstilus",                                # EQUIP ONLY
+"tide:midas_fish",                               # EQUIP ONLY
+"tide:mirage_catfish",                           # EQUIP ONLY
+"tide:mooneye",                                  # EQUIP ONLY
+"tide:nephrosilu",                               # EQUIP ONLY
+"tide:neptune_koi",                              # EQUIP ONLY
+"tide:obsidian_pike",                            # EQUIP ONLY
+"tide:ocean_perch",                              # EQUIP ONLY
+"tide:pale_clubfish",                            # EQUIP ONLY
+"tide:pentapus",                                 # EQUIP ONLY
+"tide:pike",                                     # EQUIP ONLY
+"tide:pluto_snail",                              # EQUIP ONLY
+"tide:rainbow_trout",                            # EQUIP ONLY
+"tide:red_40",                                   # EQUIP ONLY
+"tide:red_snapper",                              # EQUIP ONLY
+"tide:sailfish",                                 # EQUIP ONLY
+"tide:sand_tiger_shark",                         # EQUIP ONLY
+"tide:saturn_cuttlefish",                        # EQUIP ONLY
+"tide:shadow_shark",                             # EQUIP ONLY
+"tide:shadow_snapper",                           # EQUIP ONLY
+"tide:shooting_starfish",                        # EQUIP ONLY
+"tide:sleepy_carp",                              # EQUIP ONLY
+"tide:slimy_salmon",                             # EQUIP ONLY
+"tide:smallmouth_bass",                          # EQUIP ONLY
+"tide:snatcher_squid",                           # EQUIP ONLY
+"tide:snook",                                    # EQUIP ONLY
+"tide:soulscale",                                # EQUIP ONLY
+"tide:spore_stalker",                            # EQUIP ONLY
+"tide:sturgeon",                                 # EQUIP ONLY
+"tide:sun_emblem",                               # EQUIP ONLY
+"tide:swordfish",                                # EQUIP ONLY
+"tide:tuna",                                     # EQUIP ONLY
+"tide:uranias_pisces",                           # EQUIP ONLY
+"tide:vengeance",                                # EQUIP ONLY
+"tide:violet_carp",                              # EQUIP ONLY
+"tide:voidseeker",                               # EQUIP ONLY
+"tide:volcano_tuna",                             # EQUIP ONLY
+"tide:walleye",                                  # EQUIP ONLY
+"tide:warped_guppy",                             # EQUIP ONLY
+"tide:white_crappie",                            # EQUIP ONLY
+"tide:windbass",                                 # EQUIP ONLY
+"tide:witherfin",                                # EQUIP ONLY
+"tide:yellow_perch",                             # EQUIP ONLY
+
+# ===== undeadnights (3) =====
+"undeadnights:demolition_zombie",                # AI
+"undeadnights:elite_zombie",                     # AI
+"undeadnights:horde_zombie",                     # AI
+
+# ===== wither_spawn_animation (20) =====
+"wither_spawn_animation:animated_altar_bygone_min_x", # AI
+"wither_spawn_animation:animated_altar_bygone_min_z", # AI
+"wither_spawn_animation:animated_altar_bygone_x", # AI
+"wither_spawn_animation:animated_altar_bygone_z", # AI
+"wither_spawn_animation:animated_altar_min_x",   # AI
+"wither_spawn_animation:animated_altar_min_z",   # AI
+"wither_spawn_animation:animated_altar_soil_min_x", # AI
+"wither_spawn_animation:animated_altar_soil_min_z", # AI
+"wither_spawn_animation:animated_altar_soil_x",  # AI
+"wither_spawn_animation:animated_altar_soil_z",  # AI
+"wither_spawn_animation:animated_altar_storm_min_x", # AI
+"wither_spawn_animation:animated_altar_storm_min_z", # AI
+"wither_spawn_animation:animated_altar_storm_soil_min_x", # AI
+"wither_spawn_animation:animated_altar_storm_soil_min_z", # AI
+"wither_spawn_animation:animated_altar_storm_soil_x", # AI
+"wither_spawn_animation:animated_altar_storm_soil_z", # AI
+"wither_spawn_animation:animated_altar_storm_x", # AI
+"wither_spawn_animation:animated_altar_storm_z", # AI
+"wither_spawn_animation:animated_altar_x",       # AI
+"wither_spawn_animation:animated_altar_z",       # AI
+
+# ===== zerocontact (1) =====
+"zerocontact:armed_raider",                      # AI
+
